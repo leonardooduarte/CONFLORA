@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "englishMobile": true,
+  "gallery": true,
+  "zipBytes": 26388807,
+  "errors": [],
+  "buildSha256": "bf3f2c479f17cf2950334f218d05407425ace6f269fa9393cbc99c1d12b58982",
+  "browser": "156.0.8078.79"
+}

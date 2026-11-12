@@ -1,0 +1,156 @@
+{
+  "generatedAt": "2026-11-12T16:11:55.313Z",
+  "browser": "156.0.8078.79",
+  "environment": "Linux container; Chromium headless; viewport emulation, not physical devices",
+  "method": "Production build served by Playwright route.fulfill from dist at an isolated HTTPS test origin. Managed preview relay unavailable.",
+  "results": [
+    {
+      "name": "Desktop: 3D real, primeira interação e captura",
+      "status": "passed",
+      "durationMs": 4612
+    },
+    {
+      "name": "Intensidade acessível por teclado: sem chuva, leve, moderada e intensa",
+      "status": "passed",
+      "durationMs": 27526
+    },
+    {
+      "name": "Solo e superfície alteram o estado e as explicações",
+      "status": "passed",
+      "durationMs": 42215
+    },
+    {
+      "name": "Quatro intervenções com geometria diferente e estado compartilhado",
+      "status": "passed",
+      "durationMs": 9289
+    },
+    {
+      "name": "Comparador contínuo por teclado altera a imagem nos extremos",
+      "status": "passed",
+      "durationMs": 26625
+    },
+    {
+      "name": "Percursos, pausa, luz e reinício possuem comportamento",
+      "status": "passed",
+      "durationMs": 1872
+    },
+    {
+      "name": "Tela cheia nativa abre e fecha a mesma paisagem",
+      "status": "passed",
+      "durationMs": 1190
+    },
+    {
+      "name": "Plantio com alternativa de teclado e remoção",
+      "status": "passed",
+      "durationMs": 3389
+    },
+    {
+      "name": "Guia funcional percorre chuva, comparação e solo",
+      "status": "passed",
+      "durationMs": 27128
+    },
+    {
+      "name": "Anatomia: todos os cinco componentes abrem e mudam destaque",
+      "status": "passed",
+      "durationMs": 5786
+    },
+    {
+      "name": "Transferência de solução e solo ao planejador",
+      "status": "passed",
+      "durationMs": 16599
+    },
+    {
+      "name": "Validação de área impede avanço inválido e leva foco ao campo",
+      "status": "passed",
+      "durationMs": 2352
+    },
+    {
+      "name": "Planejador completo PT, riscos exclusivos e relatório coerente",
+      "status": "passed",
+      "durationMs": 6452
+    },
+    {
+      "name": "Exportações reais: TXT, JSON do kit e avaliação",
+      "status": "passed",
+      "durationMs": 212
+    },
+    {
+      "name": "Impressão real e PDF A4 contêm apenas o relatório",
+      "status": "passed",
+      "durationMs": 99
+    },
+    {
+      "name": "Cópia de resumo usa a área de transferência ou informa a alternativa",
+      "status": "passed",
+      "durationMs": 2280
+    },
+    {
+      "name": "Troca completa para inglês com relatório e opções traduzidos",
+      "status": "passed",
+      "durationMs": 14483
+    },
+    {
+      "name": "Persistência local de idioma e respostas após recarga",
+      "status": "passed",
+      "durationMs": 6787
+    },
+    {
+      "name": "Jornada EN completa e estado sem riscos identificados exige revisão",
+      "status": "passed",
+      "durationMs": 314
+    },
+    {
+      "name": "Acessibilidade automatizada desktop: WCAG 2 A/AA e 2.1 A/AA",
+      "status": "passed",
+      "durationMs": 2101
+    },
+    {
+      "name": "Celular, tablet e desktop: sem rolagem horizontal e capturas reais",
+      "status": "passed",
+      "durationMs": 51595
+    },
+    {
+      "name": "Movimento reduzido: cena continua estável e controles funcionam",
+      "status": "passed",
+      "durationMs": 4955
+    },
+    {
+      "name": "Sem WebGL: esquema interativo, comparação e planejamento",
+      "status": "passed",
+      "durationMs": 1986
+    },
+    {
+      "name": "Armazenamento bloqueado: aplicação e apagamento continuam utilizáveis",
+      "status": "passed",
+      "durationMs": 10011
+    },
+    {
+      "name": "Versão V7 original preservada e comparação visual na mesma resolução",
+      "status": "passed",
+      "durationMs": 1051
+    },
+    {
+      "name": "Zero exceções não tratadas nas jornadas principais",
+      "status": "passed",
+      "durationMs": 1
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "viewport": "desktop",
+      "violations": []
+    },
+    {
+      "viewport": "mobile",
+      "violations": []
+    }
+  ],
+  "limitations": [
+    "Not a complete WCAG 2.2 AA audit",
+    "No Safari or Firefox tests",
+    "No physical mobile devices",
+    "No field hydrology validation",
+    "No Core Web Vitals field measurement"
+  ]
+}

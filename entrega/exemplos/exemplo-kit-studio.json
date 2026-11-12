@@ -1,0 +1,30 @@
+{
+  "schema": "conflora-kit-context/1",
+  "purpose": "Educational context only; not a commercial order or installation design",
+  "language": "pt",
+  "providedByUser": {
+    "country": "BR",
+    "property": "home",
+    "area": "24.5",
+    "source": "roof",
+    "soil": "slow",
+    "slope": "steep",
+    "sun": "mixed",
+    "moisture": "wet",
+    "goal": "biodiversity",
+    "risks": [
+      "well",
+      "pollution"
+    ],
+    "solution": "strip"
+  },
+  "requiresSpecialistAssessment": true,
+  "scientificLimitations": "Sem cálculo de vazão, taxas de infiltração, eficiência, custo ou dimensionamento. Não produz água potável nem comprova descontaminação. O desenho não representa seu terreno real.",
+  "integrationStatus": "in-development",
+  "sources": [
+    "https://www.epa.gov/green-infrastructure/green-infrastructure-and-groundwater-protection",
+    "https://iowastormwater.org/campaigns/rainscaping/rain-gardens/",
+    "https://www.epa.gov/green-infrastructure/green-infrastructure-design-strategies",
+    "https://sites.usp.br/uspsustentabilidade/jardins-de-chuva/"
+  ]
+}

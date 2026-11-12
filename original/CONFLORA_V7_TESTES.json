@@ -1,0 +1,127 @@
+[
+  {
+    "test": "Carregamento 1440px",
+    "result": "pass",
+    "detail": "[]"
+  },
+  {
+    "test": "Sem overflow 1440px",
+    "result": "pass",
+    "detail": "{'scroll': 1440, 'win': 1440}"
+  },
+  {
+    "test": "Controle de chuva",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Faixa vegetada",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Piso permeável",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Jardim de chuva",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Comparador 100%",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Modo Raio X",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Plantio direto na cena",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Inglês",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Português",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Modo imersivo antigo preservado",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Enviar escolha ao planejador",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Laboratório original preservado",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Fluxo do planejador existente",
+    "result": "pass",
+    "detail": "None"
+  },
+  {
+    "test": "Sem erros de JS desktop",
+    "result": "pass",
+    "detail": "[]"
+  },
+  {
+    "test": "Carregamento 768px",
+    "result": "pass",
+    "detail": "[]"
+  },
+  {
+    "test": "Sem overflow 768px",
+    "result": "pass",
+    "detail": "{'scroll': 768, 'win': 768}"
+  },
+  {
+    "test": "Carregamento 390px",
+    "result": "pass",
+    "detail": "[]"
+  },
+  {
+    "test": "Sem overflow 390px",
+    "result": "pass",
+    "detail": "{'scroll': 390, 'win': 390}"
+  },
+  {
+    "test": "Menu móvel 390px",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Acesso ao modo imersivo no celular",
+    "result": "pass",
+    "detail": ""
+  },
+  {
+    "test": "Carregamento 320px",
+    "result": "pass",
+    "detail": "[]"
+  },
+  {
+    "test": "Sem overflow 320px",
+    "result": "pass",
+    "detail": "{'scroll': 320, 'win': 320}"
+  },
+  {
+    "test": "Menu móvel 320px",
+    "result": "pass",
+    "detail": ""
+  }
+]
