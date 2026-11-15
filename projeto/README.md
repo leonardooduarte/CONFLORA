@@ -1,3 +1,7 @@
+# CONFLORA — Ateliê
+
+[Novidades e validação desta revisão](docs/atelier/ENTREGA.md)
+
 # CONFLORA V12
 
 [Execução, funcionalidades e limites](docs/v12/ENTREGA.md) · [Auditoria](docs/v12/AUDITORIA.md) · [Pesquisa e fontes](docs/v12/PESQUISA.md)

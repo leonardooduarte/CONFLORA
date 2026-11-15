@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "interactive preview",
+    "context herbarium",
+    "visit linked to area",
+    "dossier continuity",
+    "focus keyboard",
+    "intention modes",
+    "320/390/768/1440"
+  ]
+}
