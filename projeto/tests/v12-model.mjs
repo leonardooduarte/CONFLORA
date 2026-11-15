@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {normalizeProject} from '../src/core/project.js';
+import {Store} from '../src/core/store.js';
+import {buildPlan} from '../src/core/knowledge.js';
+import {Ed} from '../src/core/editor.js';
+const old={...Store.newProject(),version:11};delete old.plantInterests;delete old.journal;delete old.solutions;
+const migrated=normalizeProject(old);assert.equal(migrated.version,12);assert.deepEqual(migrated.plantInterests,[]);
+assert.throws(()=>normalizeProject({...old,image:'https://untrusted.invalid/photo.jpg'}));assert.throws(()=>normalizeProject({...old,version:900}));
+const clean=normalizeProject({...old,unknownScript:'<script>bad()</script>',annotations:[{id:'bad"<id',type:'pool',x:-40,y:900,notes:'<script>alert(1)</script>'},{type:'javascript:bad'}]});
+assert.equal(clean.unknownScript,undefined);assert.equal(clean.annotations.length,1);assert.equal(clean.annotations[0].x,20);assert.equal(clean.annotations[0].y,630);assert(!Ed.svgContent(clean).includes('<script>'));assert.match(clean.annotations[0].id,/^[\w-]+$/);
+assert.equal(buildPlan(migrated).items.length,0);
+assert.throws(()=>normalizeProject({...old,annotations:[{id:'broken',type:'pool',kind:'path',points:[]}]}));
+assert.equal(normalizeProject({...old,context:{...old.context,sun:'invented'}}).context.sun,'unknown');
+clean.annotations.push({id:'path',type:'pool',kind:'path',x:500,y:325,size:1.5,points:[{x:100,y:200},{x:600,y:400}]});assert(buildPlan(clean).items.some(x=>x.id==='path'));assert(Ed.svgContent(clean,{playPaths:true}).includes('animateMotion'));
+console.log('PASS: migration, import whitelist, local photos, escaping, conditional plan, paths');

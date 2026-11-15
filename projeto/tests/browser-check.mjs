@@ -28,7 +28,7 @@ await page.locator('.editor-lead').scrollIntoViewIfNeeded();await page.waitForTi
 expect(await page.locator('.lead-grid').evaluate(e=>getComputedStyle(e.parentElement).opacity)).toBe('1');
 await page.locator('.ripple-box').scrollIntoViewIfNeeded();await page.waitForTimeout(800);
 await expect(page.locator('.ripple-box canvas')).toBeVisible();
-await page.locator('.ripple-box').hover();await page.mouse.move(1150,400);await page.screenshot({path:out+'/ripple.png'});
+await page.locator('.ripple-box').hover({position:{x:20,y:20}});await page.mouse.move(1150,400);await page.screenshot({path:out+'/ripple.png'});
 await page.getByRole('button',{name:'Explorar',exact:true}).click();
 await expect(page.locator('.morph-wrapper canvas')).toBeVisible();
 await page.getByRole('button',{name:'Next slide',exact:true}).click();

@@ -1,7 +1,7 @@
 {
   "name": "conflora-reactbits-official",
   "private": true,
-  "version": "12.0.0-beta.1",
+  "version": "12.0.0-beta.2",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -11,7 +11,11 @@
     "check:reactbits": "node scripts/check-reactbits.mjs",
     "test:static": "node tests/static-check.mjs",
     "test:browser": "node tests/browser-check.mjs",
-    "test:video4": "node tests/video4-regression.mjs"
+    "test:video4": "node tests/video4-regression.mjs",
+    "test": "npm run test:static && npm run test:model",
+    "test:model": "node tests/v12-model.mjs",
+    "test:v12": "node tests/v12-browser.mjs",
+    "test:accessibility": "node tests/v12-accessibility.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

@@ -115,7 +115,7 @@ try{
  await expect(page.getByRole('dialog',{name:'Open report'})).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
  await page.screenshot({path:out+'/mobile-report.png'});
- await page.getByRole('button',{name:'Fechar',exact:true}).click();
+ await page.getByRole('button',{name:'Close',exact:true}).click();
  await expect(page.locator('.plan-completed')).toContainText('Your plan is ready.');
  expect(errors).toEqual([]);
  // Failure is explicit and retry restores the original animation.

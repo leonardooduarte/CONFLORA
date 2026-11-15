@@ -1,0 +1,552 @@
+[
+  {
+    "id": "commelina",
+    "scientific": "Commelina erecta L.",
+    "common": {
+      "pt": "Trapoeraba (nome regional)",
+      "en": "Erect dayflower"
+    },
+    "family": "Commelinaceae",
+    "region": "BR",
+    "native": "native",
+    "sun": [],
+    "moisture": [
+      "seasonal"
+    ],
+    "height": null,
+    "size": "unknown",
+    "habit": "herb",
+    "evidence": "studied",
+    "sourceIds": [
+      "br"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172048-1",
+    "occurrence": {
+      "pt": "Contexto documentado: experimento em Bauru, São Paulo. A ocorrência local não é garantida.",
+      "en": "Documented context: experiment in Bauru, São Paulo. Local occurrence is not guaranteed."
+    },
+    "care": {
+      "pt": "Manejo observado no experimento; validar cuidados de cultivo locais.",
+      "en": "Maintenance observed in the experiment; verify local cultivation care."
+    },
+    "position": {
+      "pt": "Não estabelecida pelo ensaio em vasos.",
+      "en": "Not established by the pot trial."
+    },
+    "ecology": {
+      "pt": "Cobertura vegetal estudada; sem taxa de infiltração atribuída à espécie.",
+      "en": "Vegetation cover studied; no infiltration rate attributed to the species."
+    },
+    "limits": {
+      "pt": "Pode multiplicar-se com facilidade. O ensaio não equivale a validação em jardim de escala real.",
+      "en": "May spread readily. The trial is not field-scale validation."
+    },
+    "image": {
+      "name": "Commelina erecta",
+      "file": "commelina-erecta.webp",
+      "author": "Assaf Shtilman",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Blue_Pair.JPG",
+      "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+      "sha256": "234dd6a6b092c69465fec53aa6654b16801c5d8739a8aaa075d8c05a6a30b652"
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "distimake",
+    "scientific": "Distimake dissectus (Jacq.) A.R.Simões & Staples",
+    "common": {
+      "pt": "Flor-de-madeira",
+      "en": "Alamo vine"
+    },
+    "family": "Convolvulaceae",
+    "region": "BR",
+    "native": "native",
+    "sun": [],
+    "moisture": [
+      "seasonal"
+    ],
+    "height": null,
+    "size": "unknown",
+    "habit": "climber",
+    "evidence": "studied",
+    "sourceIds": [
+      "br"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77163242-1",
+    "occurrence": {
+      "pt": "Contexto documentado: experimento em Bauru, São Paulo. A ocorrência local não é garantida.",
+      "en": "Documented context: experiment in Bauru, São Paulo. Local occurrence is not guaranteed."
+    },
+    "care": {
+      "pt": "Manejo observado no experimento; validar cuidados de cultivo locais.",
+      "en": "Maintenance observed in the experiment; verify local cultivation care."
+    },
+    "position": {
+      "pt": "Não estabelecida pelo ensaio em vasos.",
+      "en": "Not established by the pot trial."
+    },
+    "ecology": {
+      "pt": "Cobertura vegetal estudada; sem taxa de infiltração atribuída à espécie.",
+      "en": "Vegetation cover studied; no infiltration rate attributed to the species."
+    },
+    "limits": {
+      "pt": "O ensaio exigiu condução dos ramos. Verificar comportamento e expansão no local.",
+      "en": "The trial required training the vines. Verify local growth and spread."
+    },
+    "image": {
+      "name": "Distimake dissectus",
+      "file": "distimake-dissectus.webp",
+      "author": "Jessica Spengler from Hove, United Kingdom",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Merremia_dissecta.jpg",
+      "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+      "sha256": "29b7ebe99a336724673ba9168c9d5cacd222a4d5b848f04d7d88e30baa5a3626"
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "trimezia",
+    "scientific": "Trimezia coerulea (G.Lodd.) Ravenna",
+    "common": {
+      "pt": "Falso-íris",
+      "en": "Blue walking iris"
+    },
+    "family": "Iridaceae",
+    "region": "BR",
+    "native": "native",
+    "sun": [],
+    "moisture": [
+      "seasonal"
+    ],
+    "height": null,
+    "size": "unknown",
+    "habit": "herb",
+    "evidence": "studied",
+    "sourceIds": [
+      "br"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:441647-1",
+    "occurrence": {
+      "pt": "Contexto documentado: experimento em Bauru, São Paulo. A ocorrência local não é garantida.",
+      "en": "Documented context: experiment in Bauru, São Paulo. Local occurrence is not guaranteed."
+    },
+    "care": {
+      "pt": "Manejo observado no experimento; validar cuidados de cultivo locais.",
+      "en": "Maintenance observed in the experiment; verify local cultivation care."
+    },
+    "position": {
+      "pt": "Não estabelecida pelo ensaio em vasos.",
+      "en": "Not established by the pot trial."
+    },
+    "ecology": {
+      "pt": "Cobertura vegetal estudada; sem taxa de infiltração atribuída à espécie.",
+      "en": "Vegetation cover studied; no infiltration rate attributed to the species."
+    },
+    "limits": {
+      "pt": "Publicada no ensaio como Neomarica caerulea; nome aceito aqui segue POWO. Confirmar identificação e procedência.",
+      "en": "Published in the trial as Neomarica caerulea; accepted name here follows POWO. Confirm identification and origin."
+    },
+    "image": {
+      "name": "Neomarica caerulea",
+      "file": "neomarica-caerulea.webp",
+      "author": "Vitorperrut555",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Neomarica_caerulea_in_Nova_Friburgo.jpg",
+      "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+      "sha256": "9aba985ff258a5c757654dcf3c99e67b587d66c2250139bb5186f101cc42d107"
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "syngonium",
+    "scientific": "Syngonium angustatum Schott",
+    "common": {
+      "pt": "Singônio (confirmar identificação)",
+      "en": "Fivefingers"
+    },
+    "family": "Araceae",
+    "region": "BR",
+    "native": "introduced",
+    "sun": [],
+    "moisture": [
+      "seasonal"
+    ],
+    "height": null,
+    "size": "unknown",
+    "habit": "climber",
+    "evidence": "studied",
+    "sourceIds": [
+      "br"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:89127-1",
+    "occurrence": {
+      "pt": "Contexto documentado: experimento em Bauru, São Paulo. A ocorrência local não é garantida.",
+      "en": "Documented context: experiment in Bauru, São Paulo. Local occurrence is not guaranteed."
+    },
+    "care": {
+      "pt": "Manejo observado no experimento; validar cuidados de cultivo locais.",
+      "en": "Maintenance observed in the experiment; verify local cultivation care."
+    },
+    "position": {
+      "pt": "Não estabelecida pelo ensaio em vasos.",
+      "en": "Not established by the pot trial."
+    },
+    "ecology": {
+      "pt": "Cobertura vegetal estudada; sem taxa de infiltração atribuída à espécie.",
+      "en": "Vegetation cover studied; no infiltration rate attributed to the species."
+    },
+    "limits": {
+      "pt": "Divergência importante: o artigo chama as espécies de nativas do Brasil, mas POWO situa esta espécie do México ao Panamá. Tratada aqui como não nativa do Brasil; não indicada para plantio.",
+      "en": "Important conflict: the paper calls the species Brazilian natives, but POWO places this species from Mexico to Panama. Treated here as non-native to Brazil; not proposed for planting."
+    },
+    "image": null,
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "monarda",
+    "scientific": "Monarda fistulosa L.",
+    "common": {
+      "pt": "Wild bergamot (nome em inglês)",
+      "en": "Wild bergamot"
+    },
+    "family": "Lamiaceae",
+    "region": "IA",
+    "native": "native",
+    "sun": [
+      "full",
+      "mixed"
+    ],
+    "moisture": [
+      "mesic"
+    ],
+    "height": "0.30–0.91 m",
+    "size": "medium",
+    "habit": "herb",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:452042-1",
+    "occurrence": {
+      "pt": "Listada entre plantas nativas de Iowa no guia regional.",
+      "en": "Listed among native Iowa plants in the regional guide."
+    },
+    "care": {
+      "pt": "Espalha-se; o guia menciona divisão periódica.",
+      "en": "Spreads; the guide notes periodic division."
+    },
+    "position": {
+      "pt": "Guia: bacia",
+      "en": "Guide: basin"
+    },
+    "ecology": {
+      "pt": "Integra lista técnica de vegetação; não demonstra desempenho individual de filtragem.",
+      "en": "Included in a technical vegetation list; not proof of individual filtering performance."
+    },
+    "limits": {
+      "pt": "Dados regionais de Iowa; não transferir como indicação para o Brasil. Validar origem, solo e manejo local.",
+      "en": "Iowa regional data; do not transfer as guidance for Brazil. Validate origin, soil and local maintenance."
+    },
+    "image": {
+      "name": "Monarda fistulosa",
+      "file": "monarda-fistulosa.webp",
+      "author": "Eric Hunt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Monarda_fistulosa_Arkansas.jpg",
+      "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+      "sha256": "9396c9102b1ce4b2199c41fdeac76b8088a3802732e6614dde6cd04f86b6374d"
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "echinacea",
+    "scientific": "Echinacea pallida (Nutt.) Nutt.",
+    "common": {
+      "pt": "Pale purple coneflower (nome em inglês)",
+      "en": "Pale purple coneflower"
+    },
+    "family": "Asteraceae",
+    "region": "IA",
+    "native": "native",
+    "sun": [
+      "full"
+    ],
+    "moisture": [
+      "moist",
+      "mesic"
+    ],
+    "height": "0.61–0.91 m",
+    "size": "medium",
+    "habit": "herb",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:202374-1",
+    "occurrence": {
+      "pt": "Listada entre plantas nativas de Iowa no guia regional.",
+      "en": "Listed among native Iowa plants in the regional guide."
+    },
+    "care": {
+      "pt": "Conferir espaço e identificação da espécie.",
+      "en": "Check spacing and species identification."
+    },
+    "position": {
+      "pt": "Guia: bacia",
+      "en": "Guide: basin"
+    },
+    "ecology": {
+      "pt": "Integra lista técnica de vegetação; não demonstra desempenho individual de filtragem.",
+      "en": "Included in a technical vegetation list; not proof of individual filtering performance."
+    },
+    "limits": {
+      "pt": "Dados regionais de Iowa; não transferir como indicação para o Brasil. Validar origem, solo e manejo local.",
+      "en": "Iowa regional data; do not transfer as guidance for Brazil. Validate origin, soil and local maintenance."
+    },
+    "image": {
+      "name": "Echinacea pallida",
+      "file": "echinacea-pallida.webp",
+      "author": "Eric Hunt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Echinacea_pallida_(8).jpg",
+      "changes": "Resized and encoded as WebP; responsive crop."
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "rudbeckia",
+    "scientific": "Rudbeckia hirta L.",
+    "common": {
+      "pt": "Black-eyed Susan (nome em inglês)",
+      "en": "Black-eyed Susan"
+    },
+    "family": "Asteraceae",
+    "region": "IA",
+    "native": "native",
+    "sun": [
+      "full",
+      "mixed"
+    ],
+    "moisture": [
+      "mesic",
+      "dry"
+    ],
+    "height": "0.30–0.91 m",
+    "size": "medium",
+    "habit": "herb",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:223740-2",
+    "occurrence": {
+      "pt": "Listada entre plantas nativas de Iowa no guia regional.",
+      "en": "Listed among native Iowa plants in the regional guide."
+    },
+    "care": {
+      "pt": "Vida curta; pode se ressemear.",
+      "en": "Short-lived; may reseed."
+    },
+    "position": {
+      "pt": "Guia: bacia",
+      "en": "Guide: basin"
+    },
+    "ecology": {
+      "pt": "Integra lista técnica de vegetação; não demonstra desempenho individual de filtragem.",
+      "en": "Included in a technical vegetation list; not proof of individual filtering performance."
+    },
+    "limits": {
+      "pt": "Dados regionais de Iowa; não transferir como indicação para o Brasil. Validar origem, solo e manejo local.",
+      "en": "Iowa regional data; do not transfer as guidance for Brazil. Validate origin, soil and local maintenance."
+    },
+    "image": {
+      "name": "Rudbeckia hirta",
+      "file": "rudbeckia-hirta.webp",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Rudbeckia_hirta_kz03.jpg",
+      "changes": "Resized and encoded as WebP; responsive crop."
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "lobelia",
+    "scientific": "Lobelia siphilitica L.",
+    "common": {
+      "pt": "Great blue lobelia (nome em inglês)",
+      "en": "Great blue lobelia"
+    },
+    "family": "Campanulaceae",
+    "region": "IA",
+    "native": "native",
+    "sun": [
+      "full",
+      "mixed"
+    ],
+    "moisture": [
+      "wet",
+      "moist",
+      "mesic"
+    ],
+    "height": "0.61–0.91 m",
+    "size": "medium",
+    "habit": "herb",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:143861-1",
+    "occurrence": {
+      "pt": "Listada entre plantas nativas de Iowa no guia regional.",
+      "en": "Listed among native Iowa plants in the regional guide."
+    },
+    "care": {
+      "pt": "O guia menciona divisão das touceiras.",
+      "en": "The guide notes clump division."
+    },
+    "position": {
+      "pt": "Guia: laterais, bacia, topo da borda",
+      "en": "Guide: sides, basin, berm top"
+    },
+    "ecology": {
+      "pt": "Integra lista técnica de vegetação; não demonstra desempenho individual de filtragem.",
+      "en": "Included in a technical vegetation list; not proof of individual filtering performance."
+    },
+    "limits": {
+      "pt": "Dados regionais de Iowa; não transferir como indicação para o Brasil. Validar origem, solo e manejo local.",
+      "en": "Iowa regional data; do not transfer as guidance for Brazil. Validate origin, soil and local maintenance."
+    },
+    "image": {
+      "name": "Lobelia siphilitica",
+      "file": "lobelia-siphilitica.webp",
+      "author": "Eric Hunt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Lobelia_siphilitica.jpg",
+      "changes": "Resized and encoded as WebP; responsive crop."
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "carex",
+    "scientific": "Carex vulpinoidea Michx.",
+    "common": {
+      "pt": "Brown fox sedge (nome em inglês)",
+      "en": "Brown fox sedge"
+    },
+    "family": "Cyperaceae",
+    "region": "IA",
+    "native": "native",
+    "sun": [
+      "full",
+      "mixed"
+    ],
+    "moisture": [
+      "wet",
+      "moist",
+      "mesic"
+    ],
+    "height": "0.61–0.91 m",
+    "size": "medium",
+    "habit": "sedge",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:324494-2",
+    "occurrence": {
+      "pt": "Listada entre plantas nativas de Iowa no guia regional.",
+      "en": "Listed among native Iowa plants in the regional guide."
+    },
+    "care": {
+      "pt": "Pode se espalhar; acompanhar expansão.",
+      "en": "May spread; monitor expansion."
+    },
+    "position": {
+      "pt": "Guia: laterais, bacia",
+      "en": "Guide: sides, basin"
+    },
+    "ecology": {
+      "pt": "Integra lista técnica de vegetação; não demonstra desempenho individual de filtragem.",
+      "en": "Included in a technical vegetation list; not proof of individual filtering performance."
+    },
+    "limits": {
+      "pt": "Dados regionais de Iowa; não transferir como indicação para o Brasil. Validar origem, solo e manejo local.",
+      "en": "Iowa regional data; do not transfer as guidance for Brazil. Validate origin, soil and local maintenance."
+    },
+    "image": {
+      "name": "Carex vulpinoidea",
+      "file": "carex-vulpinoidea.webp",
+      "author": "Robert H. Mohlenbrock",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "source": "https://commons.wikimedia.org/wiki/File:Carex_vulpinoidea_NRCS-3.jpg",
+      "changes": "Resized and encoded as WebP; responsive crop."
+    },
+    "verifiedAt": "2026-11-15"
+  },
+  {
+    "id": "asclepias",
+    "scientific": "Asclepias tuberosa L.",
+    "common": {
+      "pt": "Butterfly milkweed (nome em inglês)",
+      "en": "Butterfly milkweed"
+    },
+    "family": "Apocynaceae",
+    "region": "IA",
+    "native": "native",
+    "sun": [
+      "full",
+      "mixed"
+    ],
+    "moisture": [
+      "mesic",
+      "dry"
+    ],
+    "height": "0.30–0.61 m",
+    "size": "small",
+    "habit": "herb",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:94704-1",
+    "occurrence": {
+      "pt": "Listada entre plantas nativas de Iowa no guia regional.",
+      "en": "Listed among native Iowa plants in the regional guide."
+    },
+    "care": {
+      "pt": "Conferir disponibilidade de luz e drenagem; não confundir com outras Asclepias.",
+      "en": "Check light and drainage; do not confuse with other Asclepias."
+    },
+    "position": {
+      "pt": "Guia: laterais, bacia, topo da borda",
+      "en": "Guide: sides, basin, berm top"
+    },
+    "ecology": {
+      "pt": "Integra lista técnica de vegetação; não demonstra desempenho individual de filtragem.",
+      "en": "Included in a technical vegetation list; not proof of individual filtering performance."
+    },
+    "limits": {
+      "pt": "Dados regionais de Iowa; não transferir como indicação para o Brasil. Validar origem, solo e manejo local.",
+      "en": "Iowa regional data; do not transfer as guidance for Brazil. Validate origin, soil and local maintenance."
+    },
+    "image": {
+      "name": "Asclepias tuberosa",
+      "file": "asclepias-tuberosa.webp",
+      "author": "Eric Hunt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Asclepias_tuberosa_interior.jpg",
+      "changes": "Resized and encoded as WebP; responsive crop."
+    },
+    "verifiedAt": "2026-11-15"
+  }
+]

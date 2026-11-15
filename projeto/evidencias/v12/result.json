@@ -1,0 +1,390 @@
+{
+  "passed": true,
+  "errors": [],
+  "uploads": [],
+  "perf": {
+    "heap": 39627637,
+    "resources": [
+      {
+        "name": "http://localhost:5176/@vite/client",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/main.jsx?t=1794771403080",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/@react-refresh",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/node_modules/vite/dist/client/env.mjs",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/react.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/react-dom_client.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/src/App.jsx?t=1794771403070",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/style.css?t=1794771403080",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/chunk-IHX5ECWY.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/chunk-ZPWHCABL.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/chunk-42VKYGK5.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/ScrollExpand.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/Stepper.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/AnimatedContent.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/data/kit.json?import",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/core/project.js?t=1794771174536",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/core/knowledge.js?t=1794770943170",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/features/PlanEvidence.jsx?t=1794771298098",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/features/WaterStory.jsx?t=1794770943170",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/SplitText.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/SpringCheck.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/CircularText.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/core/editor.js?t=1794770710706",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/RippleDistortion.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/core/i18n.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/core/store.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/ScrollExpand.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/gsap.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/gsap_ScrollTrigger.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/chunk-5VWL3AAX.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/@hugeicons_react.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/@hugeicons_core-free-icons.js?v=7d206227",
+        "bytes": 7433786
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/Stepper.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/data/plants.json?import&t=1794770759810",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/data/references.json?import",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/EnvironmentalImage.jsx",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/gsap_SplitText.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/@gsap_react.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/motion_react.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/SpringCheck.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/CircularText.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/ogl.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/RippleDistortion.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/node_modules/.vite/deps/chunk-D52COROP.js?v=7d206227",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5176/src/assets/fonts/font-3.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/assets/fonts/font-0.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/assets/fonts/font-5.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/assets/fonts/font-2.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/assets/fonts/font-1.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/conflora-mark.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/rain-garden.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/conflora-mark.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/features/GardenJournal.jsx?t=1794771174534",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/features/RainRoots.jsx?t=1794770943170",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/features/Solutions.jsx?t=1794771246230",
+        "bytes": 21319
+      },
+      {
+        "name": "http://localhost:5176/src/components/GallerySlider.jsx?t=1794771246230",
+        "bytes": 18575
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/MorphSlider.jsx",
+        "bytes": 74468
+      },
+      {
+        "name": "http://localhost:5176/src/components/reactbits/MorphSlider.css",
+        "bytes": 4272
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 109831
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 132005
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/features/PlantLibrary.jsx?t=1794771403070",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/src/assets/fonts/font-4.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/commelina-erecta.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/distimake-dissectus.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/neomarica-caerulea.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/monarda-fistulosa.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/echinacea-pallida.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-observations.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/scene-plan.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/commelina-erecta.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/distimake-dissectus.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/neomarica-caerulea.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/monarda-fistulosa.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5176/botanical/echinacea-pallida.webp",
+        "bytes": 300
+      }
+    ]
+  }
+}

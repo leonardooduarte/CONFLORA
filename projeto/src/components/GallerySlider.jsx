@@ -14,6 +14,7 @@ export default function GallerySlider({items,lang}){
  useEffect(()=>{
   let active=true,raf=0,timer;const images=[];let detach=()=>{};
   setStatus('loading');setLoaded(false);
+  try{const probe=document.createElement('canvas');const gl=probe.getContext('webgl2')||probe.getContext('webgl');if(!gl){setStatus('error');return()=>{active=false}}gl.getExtension('WEBGL_lose_context')?.loseContext()}catch{setStatus('error');return()=>{active=false}}
   const fail=()=>{if(active){setStatus('error');cancelAnimationFrame(raf)}};
   Promise.all(items.map(item=>new Promise((resolve,reject)=>{
    const img=new Image();images.push(img);img.onload=()=>img.decode().then(resolve,reject);img.onerror=reject;img.src=item.image;

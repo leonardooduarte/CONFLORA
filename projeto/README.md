@@ -1,3 +1,9 @@
+# CONFLORA V12
+
+[Execução, funcionalidades e limites](docs/v12/ENTREGA.md) · [Auditoria](docs/v12/AUDITORIA.md) · [Pesquisa e fontes](docs/v12/PESQUISA.md)
+
+A documentação abaixo descreve revisões anteriores e foi preservada como histórico.
+
 # Revisão de integração React Bits
 
 Atualização da gravação conflora4: [correções e testes](docs/CORRECOES_VIDEO4.md).

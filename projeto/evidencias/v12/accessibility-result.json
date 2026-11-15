@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "touch": true,
+  "pan": true,
+  "reducedMotion": true,
+  "noWebGLWater": true,
+  "keyboard": true,
+  "errors": []
+}
