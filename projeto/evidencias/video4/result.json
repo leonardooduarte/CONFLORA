@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "dirty cancel/save/discard",
+    "draft preserved",
+    "saved reopen",
+    "completion/edit/reopen",
+    "full report and print",
+    "own experiment image",
+    "compact numbered markers",
+    "drag/undo",
+    "comparison empty and intervention",
+    "gallery loading/error/retry/original transition",
+    "PT/EN",
+    "mobile editor/gallery/kit"
+  ]
+}

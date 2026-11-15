@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-15",
+  "components": [
+    {
+      "component": "ScrollExpand",
+      "source": "https://reactbits.dev/r/ScrollExpand-JS-CSS.json",
+      "files": [
+        {
+          "file": "ScrollExpand.css",
+          "matchesOfficial": true,
+          "sha256": "1904e6e0c498a45b11b16521e64dafb02f9e7e2bd33305bb7134fb0081d39c1e"
+        },
+        {
+          "file": "ScrollExpand.jsx",
+          "matchesOfficial": true,
+          "sha256": "d8c546f1cde67cdaf9a228fc58d98aa1020e3faf594db36769cd9d17d991a0d4"
+        }
+      ]
+    },
+    {
+      "component": "Stepper",
+      "source": "https://reactbits.dev/r/Stepper-JS-CSS.json",
+      "files": [
+        {
+          "file": "Stepper.css",
+          "matchesOfficial": true,
+          "sha256": "417223c9c56157b27bae7d7214e3fb3a3c8da65e69c6935c6a199fc22b151436"
+        },
+        {
+          "file": "Stepper.jsx",
+          "matchesOfficial": true,
+          "sha256": "9df93b5e34b767652dccd0cd56341a66792db742278310958d38bd4700fb4225"
+        }
+      ]
+    },
+    {
+      "component": "AnimatedContent",
+      "source": "https://reactbits.dev/r/AnimatedContent-JS-CSS.json",
+      "files": [
+        {
+          "file": "AnimatedContent.jsx",
+          "matchesOfficial": true,
+          "sha256": "f18acb24614948733f8351479f03a06d3052ddacfb291e4cbaccead58499bab2"
+        }
+      ]
+    },
+    {
+      "component": "MorphSlider",
+      "source": "https://reactbits.dev/r/MorphSlider-JS-CSS.json",
+      "files": [
+        {
+          "file": "MorphSlider.css",
+          "matchesOfficial": true,
+          "sha256": "213e79d63ec5003698f60c8e81d2b616bf3bb2548327682f02a40c11cd2e9d92"
+        },
+        {
+          "file": "MorphSlider.jsx",
+          "matchesOfficial": true,
+          "sha256": "a815e6842677b944636932346debc21680b09d3a5e0a81b942820ac0fb0f7cd4"
+        }
+      ]
+    },
+    {
+      "component": "SplitText",
+      "source": "https://reactbits.dev/r/SplitText-JS-CSS.json",
+      "files": [
+        {
+          "file": "SplitText.jsx",
+          "matchesOfficial": true,
+          "sha256": "f3b9433ce28aa703f4ea6c4e7a7d023aa91de3f4b21002fc99477ea095c932b1"
+        }
+      ]
+    },
+    {
+      "component": "RippleDistortion",
+      "source": "https://reactbits.dev/r/RippleDistortion-JS-CSS.json",
+      "files": [
+        {
+          "file": "RippleDistortion.css",
+          "matchesOfficial": true,
+          "sha256": "3a7ecc6d99d604a7ee29f8a6ff3f84aece179a5cdc85d981b81179532170c852"
+        },
+        {
+          "file": "RippleDistortion.jsx",
+          "matchesOfficial": true,
+          "sha256": "24854f9b03960040db9245b3031a411ca65ce4be15e05b1028fdd422daf50f0f"
+        }
+      ]
+    },
+    {
+      "component": "SpringCheck",
+      "source": "https://reactbits.dev/r/SpringCheck-JS-CSS.json",
+      "files": [
+        {
+          "file": "SpringCheck.css",
+          "matchesOfficial": true,
+          "sha256": "dc29047d805e99f439356880dda04240c1524693380059650e8188ce456c81c6"
+        },
+        {
+          "file": "SpringCheck.jsx",
+          "matchesOfficial": true,
+          "sha256": "6cadf8f9c798010ac481806a0c14d67d19778b555dba34aa1ac3186142d4cec0"
+        }
+      ]
+    },
+    {
+      "component": "CircularText",
+      "source": "https://reactbits.dev/r/CircularText-JS-CSS.json",
+      "files": [
+        {
+          "file": "CircularText.css",
+          "matchesOfficial": true,
+          "sha256": "12ba80258e1925a4f927c5291d7e40ee43706895625ba84f84a12f08c46d1823"
+        },
+        {
+          "file": "CircularText.jsx",
+          "matchesOfficial": true,
+          "sha256": "a720eba8abd68a12af18b2fc24a598383b953a9c6f6e78cbe79247af818596b1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "passed": true,
+  "errors": [],
+  "uploads": [],
+  "perf": {
+    "heap": 11630291,
+    "resources": [
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/index-BAmzRH0g.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/gsap-vendor-mXmR0H0q.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/react-vendor-CO5h7jqP.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/motion-vendor-DCJGBtam.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/index-Btffhp3s.css",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/font-3-BQ0abr9c.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/font-0-CB7WfZ8W.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/font-5-CGHjAgsg.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/font-2-CYvJJk-g.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/font-1-DCQhiIS7.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/conflora-mark.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/rain-garden.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-garden.png",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/conflora-mark.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/GardenJournal-ByYmDGS6.js",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/RainRoots-TsBJJmD9.js",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/Solutions-BgUB5fDp.js",
+        "bytes": 21153
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/webgl-vendor-DcvrfCN1.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/Solutions-BkpMwwvB.css",
+        "bytes": 2872
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-observations.png",
+        "bytes": 109831
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-plan.png",
+        "bytes": 132005
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-observations.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-garden.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-plan.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/PlantLibrary-BF_Ybkbk.js",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-observations.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-garden.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-plan.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-observations.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-garden.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-plan.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/assets/font-4-C4j453oU.ttf",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/commelina-erecta.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/distimake-dissectus.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/neomarica-caerulea.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-observations.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-garden.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-plan.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/commelina-erecta.webp",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/distimake-dissectus.webp",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/neomarica-caerulea.webp",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/monarda-fistulosa.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/echinacea-pallida.webp",
+        "bytes": 300
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-observations.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-garden.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/scene-plan.png",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/commelina-erecta.webp",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/distimake-dissectus.webp",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/neomarica-caerulea.webp",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/monarda-fistulosa.webp",
+        "bytes": 0
+      },
+      {
+        "name": "http://localhost:5175/CONFLORA/botanical/echinacea-pallida.webp",
+        "bytes": 0
+      }
+    ]
+  }
+}

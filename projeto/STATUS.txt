@@ -1,0 +1,1 @@
+Revisão atual: consulte docs/AUDITORIA_E_CORRECOES.md. Oito componentes oficiais instalados; build, teste estático e teste Chromium passaram.

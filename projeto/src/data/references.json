@@ -1,0 +1,42 @@
+{
+  "br": {
+    "title": "Santos, M. F. N.; Fontes, M. S. G. C.; Oliveira, J. R. (2024). Jardins de chuva: estudo experimental com espécies nativas do Brasil. PLURIS 2024.",
+    "url": "https://www.civil.uminho.pt/planning/Pluris2024/Atas/Papers/Paper806.pdf",
+    "scope": {
+      "pt": "20 protótipos em vasos; cobertura vegetal acompanhada por 15 meses em Bauru. Não mede eficácia no seu terreno. Há inconsistências de datas no corpo do artigo.",
+      "en": "20 pot prototypes; 15-month vegetation cover study in Bauru. Not a performance test for your site. The paper contains internal date inconsistencies."
+    }
+  },
+  "ia": {
+    "title": "ISWEP (2021). Iowa Rain Garden Design & Installation Guide, 3rd edition, Appendix A, pp. 63–69.",
+    "url": "https://iowastormwater.org/wp-content/uploads/Iowa-Rain-Garden-Design-and-Installation-Guide-Third-Edition-Web-March-2021.pdf",
+    "scope": {
+      "pt": "Guia regional de Iowa. As posições são indicações do guia, não dimensionamento para outro lugar.",
+      "en": "Iowa regional guidance. Garden positions are from the guide, not a design for another site."
+    }
+  },
+  "isu": {
+    "title": "Iowa State University Extension (2013). RG 605: Rain Gardens.",
+    "url": "https://naturalresources.extension.iastate.edu/files/inline-files/rg605.pdf",
+    "scope": {
+      "pt": "Orientação educativa regional; verificar atualizações locais.",
+      "en": "Regional educational guidance; check local updates."
+    }
+  },
+  "epa": {
+    "title": "US EPA. Soak Up the Rain: Rain Gardens.",
+    "url": "https://www.epa.gov/soakuptherain/soak-rain-rain-gardens",
+    "scope": {
+      "pt": "Página educativa arquivada: informa que não recebe atualizações.",
+      "en": "Archived educational page: states it is no longer updated."
+    }
+  },
+  "flora": {
+    "title": "Flora e Funga do Brasil, JBRJ — Commelina erecta (FB16912).",
+    "url": "https://floradobrasil.jbrj.gov.br/reflora/floradobrasil/FB16912",
+    "scope": {
+      "pt": "Ligação taxonômica; acesso direto indisponível nesta verificação. Conferir distribuição atual antes de plantar.",
+      "en": "Taxonomic link; direct access unavailable during this review. Verify current distribution before planting."
+    }
+  }
+}

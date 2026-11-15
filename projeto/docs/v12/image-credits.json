@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Commelina erecta",
+    "file": "commelina-erecta.webp",
+    "author": "Assaf Shtilman",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Blue_Pair.JPG",
+    "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+    "sha256": "234dd6a6b092c69465fec53aa6654b16801c5d8739a8aaa075d8c05a6a30b652"
+  },
+  {
+    "name": "Distimake dissectus",
+    "file": "distimake-dissectus.webp",
+    "author": "Jessica Spengler from Hove, United Kingdom",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Merremia_dissecta.jpg",
+    "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+    "sha256": "29b7ebe99a336724673ba9168c9d5cacd222a4d5b848f04d7d88e30baa5a3626"
+  },
+  {
+    "name": "Neomarica caerulea",
+    "file": "neomarica-caerulea.webp",
+    "author": "Vitorperrut555",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Neomarica_caerulea_in_Nova_Friburgo.jpg",
+    "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+    "sha256": "9aba985ff258a5c757654dcf3c99e67b587d66c2250139bb5186f101cc42d107"
+  },
+  {
+    "name": "Syngonium angustatum",
+    "pending": "No verified image"
+  },
+  {
+    "name": "Monarda fistulosa",
+    "file": "monarda-fistulosa.webp",
+    "author": "Eric Hunt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Monarda_fistulosa_Arkansas.jpg",
+    "changes": "Resized and encoded as WebP; displayed with responsive crop.",
+    "sha256": "9396c9102b1ce4b2199c41fdeac76b8088a3802732e6614dde6cd04f86b6374d"
+  },
+  {
+    "name": "Echinacea pallida",
+    "file": "echinacea-pallida.webp",
+    "author": "Eric Hunt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Echinacea_pallida_(8).jpg",
+    "changes": "Resized and encoded as WebP; responsive crop."
+  },
+  {
+    "name": "Rudbeckia hirta",
+    "file": "rudbeckia-hirta.webp",
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rudbeckia_hirta_kz03.jpg",
+    "changes": "Resized and encoded as WebP; responsive crop."
+  },
+  {
+    "name": "Lobelia siphilitica",
+    "file": "lobelia-siphilitica.webp",
+    "author": "Eric Hunt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lobelia_siphilitica.jpg",
+    "changes": "Resized and encoded as WebP; responsive crop."
+  },
+  {
+    "name": "Carex vulpinoidea",
+    "file": "carex-vulpinoidea.webp",
+    "author": "Robert H. Mohlenbrock",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Carex_vulpinoidea_NRCS-3.jpg",
+    "changes": "Resized and encoded as WebP; responsive crop."
+  },
+  {
+    "name": "Asclepias tuberosa",
+    "file": "asclepias-tuberosa.webp",
+    "author": "Eric Hunt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Asclepias_tuberosa_interior.jpg",
+    "changes": "Resized and encoded as WebP; responsive crop."
+  },
+  {
+    "name": "Balam Estate rain garden, Singapore",
+    "file": "../rain-garden.webp",
+    "author": "Rogersoh",
+    "source": "https://commons.wikimedia.org/wiki/File:Rain_garden_overview.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "Resized, encoded as WebP; cropped and distorted interactively for education."
+  }
+]
