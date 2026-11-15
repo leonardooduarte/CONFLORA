@@ -1,4 +1,4 @@
-import{j as xe}from"./index-BjpglUuW.js";import{a as y}from"./gsap-vendor-mXmR0H0q.js";import{R as we,a as ye,G as Te,P as re,M as ne,b as be,T as De}from"./webgl-vendor-DcvrfCN1.js";import"./react-vendor-CO5h7jqP.js";import"./motion-vendor-DCJGBtam.js";const d=100,se={low:.4,medium:.7,high:1},S=1.5,Me=Math.log(500),Ee=`
+import{j as xe}from"./index-TkbsUf7E.js";import{a as y}from"./gsap-vendor-mXmR0H0q.js";import{R as we,a as ye,G as Te,P as re,M as ne,b as be,T as De}from"./webgl-vendor-DcvrfCN1.js";import"./react-vendor-CO5h7jqP.js";import"./motion-vendor-DCJGBtam.js";const d=100,se={low:.4,medium:.7,high:1},S=1.5,Me=Math.log(500),Ee=`
 precision highp float;
 
 attribute vec2 position;
