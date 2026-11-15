@@ -156,6 +156,122 @@
         "SpecularButton.css",
         "SpecularButton.jsx"
       ]
+    },
+    {
+      "component": "GlassSurface",
+      "source": "https://reactbits.dev/r/GlassSurface-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "GlassSurface.css",
+        "GlassSurface.jsx"
+      ]
+    },
+    {
+      "component": "InfiniteMenu",
+      "source": "https://reactbits.dev/r/InfiniteMenu-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "InfiniteMenu.css",
+        "InfiniteMenu.jsx"
+      ]
+    },
+    {
+      "component": "GradualBlur",
+      "source": "https://reactbits.dev/r/GradualBlur-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "GradualBlur.css",
+        "GradualBlur.jsx"
+      ]
+    },
+    {
+      "component": "StrokeText",
+      "source": "https://reactbits.dev/r/StrokeText-JS-CSS.json",
+      "dependencies": [
+        "gsap@^3.13.0"
+      ],
+      "files": [
+        "StrokeText.css",
+        "StrokeText.jsx"
+      ]
+    },
+    {
+      "component": "FluidGlass",
+      "source": "https://reactbits.dev/r/FluidGlass-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "FluidGlass.css",
+        "FluidGlass.jsx"
+      ]
+    },
+    {
+      "component": "ScrollStack",
+      "source": "https://reactbits.dev/r/ScrollStack-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "ScrollStack.css",
+        "ScrollStack.jsx"
+      ]
+    },
+    {
+      "component": "BlurText",
+      "source": "https://reactbits.dev/r/BlurText-JS-CSS.json",
+      "dependencies": [
+        "motion@^12.23.12"
+      ],
+      "files": [
+        "BlurText/BlurText.jsx"
+      ]
+    },
+    {
+      "component": "WebThreads",
+      "source": "https://reactbits.dev/r/WebThreads-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "WebThreads.css",
+        "WebThreads.jsx"
+      ]
+    },
+    {
+      "component": "FlipCard",
+      "source": "https://reactbits.dev/r/FlipCard-JS-CSS.json",
+      "dependencies": [
+        "motion@^12.23.12"
+      ],
+      "files": [
+        "FlipCard.css",
+        "FlipCard.jsx"
+      ]
+    },
+    {
+      "component": "MagicBento",
+      "source": "https://reactbits.dev/r/MagicBento-JS-CSS.json",
+      "dependencies": [
+        "@hugeicons/react@^1.1.10",
+        "@hugeicons/core-free-icons@^4.3.3"
+      ],
+      "files": [
+        "MagicBento.css",
+        "MagicBento.jsx"
+      ]
+    },
+    {
+      "component": "Topography",
+      "source": "https://reactbits.dev/r/Topography-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "Topography.css",
+        "Topography.jsx"
+      ]
+    },
+    {
+      "component": "TiltedCard",
+      "source": "https://reactbits.dev/r/TiltedCard-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "TiltedCard.css",
+        "TiltedCard.jsx"
+      ]
     }
   ],
   "hashes": {
@@ -184,6 +300,29 @@
     "StaggeredMenu.css": "de0ce6b5424aa9dca06b9d8f70f0916a23df4cdbd716104a5bc14a49eb63da0f",
     "StaggeredMenu.jsx": "358ebe761c073a657eff79ab8f3647e98b1285594cc14a425c5ec05721c25464",
     "SpecularButton.css": "af7cad9998bd6102a21fd05da11890ca05c061f9d5e6c96f540fb744684442a9",
-    "SpecularButton.jsx": "22ee7d6decc2abd1b54343f8132cc63bcb1d1e6cf8fe092bd4d33ee6176e1564"
+    "SpecularButton.jsx": "22ee7d6decc2abd1b54343f8132cc63bcb1d1e6cf8fe092bd4d33ee6176e1564",
+    "GlassSurface.css": "90cfc3ad54ad7aa92bb2b700696e2d9f2d8704162ba1b94ebf0b6f8dcecc4e61",
+    "GlassSurface.jsx": "d435562be2930a98270e3ff5881402a301f84813b06f0603ed353af12a9c96b3",
+    "InfiniteMenu.css": "43b8f2f6cb0b09cf820a5016148b358dd4732bb5a3509a235420fa3f12d4409b",
+    "InfiniteMenu.jsx": "241eca2d0325ed7fdb03253d85ab61cf8f8b8b076d8f62141d1893d1b7ac1c28",
+    "GradualBlur.css": "de9d5c313982db8f05629b3b63b019ca5bc8574d1f37d13cf2a4d51e0c45b991",
+    "GradualBlur.jsx": "28416192b79ba19741c1cc52883c113c4d34c35e926aa4ea2998877df28a4d39",
+    "StrokeText.css": "572e1f8076a85a564f099496b8dac313a5e2e0a5afa9fc29db0f90089e711ad8",
+    "StrokeText.jsx": "0c8c15f248d7efecb66158c7afc4226b0f7129ba53bdd3fe3b68bdaaff829a09",
+    "FluidGlass.css": "a8629d4db2275278d1c1b551716bcd7441f9a3e0ab3c763433fc6b346201b76e",
+    "FluidGlass.jsx": "54f05ea86c98a9c2e4c1b23f43aed53fa35d34b3f67c5194533d497a19e1a2ce",
+    "ScrollStack.css": "64b2bf8c66a1958e0405ed6b885086562e635c22f0f1f79950806661d5470013",
+    "ScrollStack.jsx": "e73d47bae2967bf5f4051a8600387ff460dc381a2c8c571c76d28f42aa970292",
+    "BlurText.jsx": "f851c51dd709564b7cf5d4d06a991adab8932e04199dde1b083f8b8363ccb6a3",
+    "WebThreads.css": "e9fc8628a3d5540eb9f731dc49751f58c19900fb9611b9af919c79829f92f2a6",
+    "WebThreads.jsx": "64a11c0bfa71df14a148aa6206c4d340a614102f84470d78584c082cfb6bfc14",
+    "FlipCard.css": "973afcc8b586f7f39c864a005f6d0c5699456d21aff1c5027e508e74fcbbb1b4",
+    "FlipCard.jsx": "d5430f398954b9cfc0fa04a700e9a2788450fe496900d69dcd6a4007859c7f1d",
+    "MagicBento.css": "5ccc3d3d1a9eb9899635eef390a524428622a66e190e573e1d212e71fb1d1cb6",
+    "MagicBento.jsx": "e859218916383eedccc6a049b4aadd6efb1e588c5a73c55c2fc50e6f6490e492",
+    "Topography.css": "d1364beeb385ab74d15411271637282074d0fd2f84a350288c71d7dc328c5a35",
+    "Topography.jsx": "f00931a301efde7a5698554d324ae92792ca986bf0802a37444771c0b747ea16",
+    "TiltedCard.css": "6214acb092fd97b67af30712ae7d53590bd65ee695c79867410dbed68a042904",
+    "TiltedCard.jsx": "c6883584dcae9752f8f72c04eacdd4ab085048d8b4b27490ea2e61090ec9704d"
   }
 }

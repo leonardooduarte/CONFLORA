@@ -10,9 +10,7 @@ await page.goto(process.env.BASE_URL||'http://localhost:5173');
 await page.waitForTimeout(1800);
 await expect(page.locator('h1')).toBeVisible();
 await expect(page.locator('h1 p')).toHaveCount(0);
-const ring=page.locator('.circular-text__ring');
-const r1=await ring.getAttribute('style'); await page.waitForTimeout(300);const r2=await ring.getAttribute('style');
-expect(r1).not.toBe(r2);
+await expect(page.locator('.stroke-text__svg')).toBeVisible();
 await page.screenshot({path:out+'/home.png'});
 const track=page.locator('.scroll-expand__track');
 const top=await track.evaluate(e=>e.getBoundingClientRect().top+scrollY);
@@ -76,5 +74,5 @@ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(800
 expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
 await page.screenshot({path:out+'/mobile.png'});
 expect(errors).toEqual([]);
-await writeFile(out+'/result.json',JSON.stringify({errors,scroll:{before,after},circularRotationChanged:r1!==r2,passed:true},null,2));
+await writeFile(out+'/result.json',JSON.stringify({errors,scroll:{before,after},strokeTitleVisible:true,passed:true},null,2));
 await browser.close();

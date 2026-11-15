@@ -5,3 +5,5 @@ import './style.css';
 createRoot(document.getElementById('root')).render(<React.StrictMode><App/></React.StrictMode>);
 
 import "./atelier.css";
+
+import './premium.css';
