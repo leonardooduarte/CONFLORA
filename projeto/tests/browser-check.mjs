@@ -6,7 +6,7 @@ const browser=await chromium.launch({...(process.env.CHROMIUM_PATH ? {executable
 const page=await browser.newPage({viewport:{width:1440,height:900},acceptDownloads:true});
 const errors=[];page.on('pageerror',e=>errors.push(e.message));
 const {expect}=await import('@playwright/test');
-await page.goto('http://localhost:5173');
+await page.goto(process.env.BASE_URL||'http://localhost:5173');
 await page.waitForTimeout(1800);
 await expect(page.locator('h1')).toBeVisible();
 await expect(page.locator('h1 p')).toHaveCount(0);

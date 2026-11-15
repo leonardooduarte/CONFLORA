@@ -3,7 +3,7 @@ import {readFileSync,existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 const read=p=>readFileSync(resolve(p),'utf8');
 const names=['ScrollExpand','Stepper','AnimatedContent','MorphSlider','SplitText','RippleDistortion','SpringCheck','CircularText'];
-const app=read('src/App.jsx');
+const app=read('src/App.jsx')+read('src/components/GallerySlider.jsx');
 for(const name of names){if(!app.includes(`reactbits/${name}.jsx`))throw Error(`Componente não referenciado: ${name}`);}
 for(const p of ['src/core/editor.js','src/core/store.js','src/core/i18n.js','scripts/install-reactbits.mjs','src/style.css','index.html','package.json']){if(!existsSync(resolve(p)))throw Error('Arquivo ausente: '+p);}
 const pack=JSON.parse(read('package.json'));

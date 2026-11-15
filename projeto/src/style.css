@@ -54,3 +54,37 @@
 .plan-page .stepper__body{padding:16px}
 .plan-page .stepper__header{padding:8px 8px 0}
 }
+/* Video 4: readable frames, compact markers, and complete plan states. */
+.resume-project{max-width:1460px;margin:0 auto 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border:1px solid #526F60;border-radius:var(--radius);font-size:14px}
+.scroll-story .scroll-expand__media{object-fit:contain;background:var(--forest)}
+.scroll-story .scroll-expand__title{align-items:flex-end;padding-bottom:5%;font-size:clamp(28px,3.6vw,52px);text-shadow:0 2px 6px #000,0 0 28px #000}
+.scroll-overlay{background:#0b241de8;border:1px solid #ffffff40;border-radius:var(--radius);padding:24px;box-shadow:0 8px 32px #0004}
+.scroll-overlay h2{font-size:clamp(26px,3vw,42px);text-shadow:none}
+.gallery-cover{position:absolute;inset:0;z-index:5;display:grid;place-items:center;background:var(--paper)}
+.gallery-cover>img{position:absolute;width:100%;height:100%;object-fit:contain;opacity:.65}
+.gallery-cover>div{position:relative;background:var(--paper);border:1px solid var(--border);padding:18px 24px;border-radius:var(--radius);text-align:center;max-width:90%}
+.morph-wrapper[data-status="loading"] .morph-slider,.morph-wrapper[data-status="error"] .morph-slider{visibility:hidden}
+.morph-wrapper[data-status="ready"] .morph-slider{visibility:visible}
+.label-toggle{display:flex;align-items:center;gap:5px;font-size:12px;letter-spacing:0;text-transform:none;font-weight:500}
+.label-toggle input{accent-color:var(--forest)}
+.scene [data-marker-id]{filter:drop-shadow(0 1px 2px #fff9)}
+.scene [data-selected="true"]{filter:drop-shadow(0 0 3px #0b241d)}
+.scene [data-selected="true"]>g>circle{stroke:#0b241d}
+.project-context{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin:20px 0}
+.project-context>div{min-width:0;border-bottom:1px solid var(--border);padding-bottom:8px}
+.project-context>div:last-child{grid-column:1/-1}
+.project-context dt{font-size:12px;font-weight:600;color:var(--secondary);margin-bottom:4px}
+.project-context dd{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5}
+.plan-completed h3{font:400 38px var(--serif);margin:12px 0}
+.report-legend li{overflow-wrap:anywhere}
+.kit-grid{align-items:start}.kit-grid .paper{padding:28px}
+.kit-page .journal-list{margin-top:20px}.kit-page .journal-list article:last-child{border-bottom:0}
+@media(max-width:760px){.resume-project{align-items:flex-start;flex-direction:column}.mini-actions{flex-wrap:wrap}.drawing-top{letter-spacing:0}.scroll-overlay{padding:18px}.project-context{grid-template-columns:1fr}.kit-grid .paper{padding:20px}.plan-extras{padding:18px}}
+@media print{.project-context{font:10pt/1.4 Arial,sans-serif;gap:8px 18px;break-inside:avoid}.project-context dt{font-size:9pt;color:#333}.report-legend{break-inside:auto}.print-only li{break-inside:avoid}}
+/* Reserve a caption band so animated copy never covers the diagram's labels. */
+.scroll-story .scroll-expand__media{height:calc(100% - 210px);top:0;bottom:auto}
+.scroll-story .scroll-expand__overlay{justify-content:flex-end;padding:20px 24px}
+.scroll-story .scroll-expand__title{padding-bottom:90px;align-items:flex-end;text-shadow:none}
+.scroll-overlay{width:min(900px,100%);max-width:900px;padding:18px 24px;gap:12px;box-shadow:none}
+.scroll-overlay h2{font-size:clamp(24px,2.5vw,36px)}
+@media(max-width:760px){.scroll-story .scroll-expand__media{height:calc(100% - 240px)}.scroll-story .scroll-expand__title{padding-bottom:90px;font-size:32px}.scroll-overlay{padding:16px}.scroll-story .scroll-expand__overlay{padding:16px}}

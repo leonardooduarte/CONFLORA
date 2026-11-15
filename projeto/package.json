@@ -10,7 +10,8 @@
     "setup:reactbits": "node scripts/install-reactbits.mjs",
     "check:reactbits": "node scripts/check-reactbits.mjs",
     "test:static": "node tests/static-check.mjs",
-    "test:browser": "node tests/browser-check.mjs"
+    "test:browser": "node tests/browser-check.mjs",
+    "test:video4": "node tests/video4-regression.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

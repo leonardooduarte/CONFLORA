@@ -1,5 +1,7 @@
 # Revisão de integração React Bits
 
+Atualização da gravação conflora4: [correções e testes](docs/CORRECOES_VIDEO4.md).
+
 Veja docs/AUDITORIA_E_CORRECOES.md para o estado atual, testes, evidências e limitações. Os oito componentes oficiais estão incluídos e o build verifica sua integridade.
 
 ---

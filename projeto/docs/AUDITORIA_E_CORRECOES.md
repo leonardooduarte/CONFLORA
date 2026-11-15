@@ -1,3 +1,5 @@
+> Atualização posterior: consulte [CORRECOES_VIDEO4.md](CORRECOES_VIDEO4.md) para os ajustes da gravação conflora4 e a nova cobertura de regressão. As configurações iniciais descritas abaixo são históricas.
+
 # Auditoria CONFLORA — 15/11/2026
 
 ## Estado recebido
