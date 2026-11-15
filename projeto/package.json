@@ -16,7 +16,8 @@
     "test:model": "node tests/v12-model.mjs",
     "test:v12": "node tests/v12-browser.mjs",
     "test:accessibility": "node tests/v12-accessibility.mjs",
-    "test:atelier": "node tests/atelier.mjs"
+    "test:atelier": "node tests/atelier.mjs",
+    "test:six": "node tests/six.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
