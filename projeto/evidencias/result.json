@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "scroll": {
+    "before": "inset(14% 11% round 24px)",
+    "after": "inset(0.00794656% 0.00624373% round 0.0136227px)"
+  },
+  "circularRotationChanged": true,
+  "passed": true
+}

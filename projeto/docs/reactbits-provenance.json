@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-11-15T16:14:17.852Z",
+  "origin": "React Bits (DavidHDev)",
+  "variant": "JS-CSS",
+  "license": "MIT + Commons Clause (consultar LICENSE do React Bits)",
+  "components": [
+    {
+      "component": "ScrollExpand",
+      "source": "https://reactbits.dev/r/ScrollExpand-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "ScrollExpand.css",
+        "ScrollExpand.jsx"
+      ]
+    },
+    {
+      "component": "Stepper",
+      "source": "https://reactbits.dev/r/Stepper-JS-CSS.json",
+      "dependencies": [
+        "@hugeicons/react@^1.1.10",
+        "@hugeicons/core-free-icons@^4.3.3"
+      ],
+      "files": [
+        "Stepper.css",
+        "Stepper.jsx"
+      ]
+    },
+    {
+      "component": "AnimatedContent",
+      "source": "https://reactbits.dev/r/AnimatedContent-JS-CSS.json",
+      "dependencies": [
+        "gsap@^3.13.0"
+      ],
+      "files": [
+        "AnimatedContent/AnimatedContent.jsx"
+      ]
+    },
+    {
+      "component": "MorphSlider",
+      "source": "https://reactbits.dev/r/MorphSlider-JS-CSS.json",
+      "dependencies": [
+        "ogl@^1.0.11",
+        "gsap@^3.13.0"
+      ],
+      "files": [
+        "MorphSlider.css",
+        "MorphSlider.jsx"
+      ]
+    },
+    {
+      "component": "SplitText",
+      "source": "https://reactbits.dev/r/SplitText-JS-CSS.json",
+      "dependencies": [
+        "gsap@^3.13.0",
+        "@gsap/react@^2.1.2"
+      ],
+      "files": [
+        "SplitText/SplitText.jsx"
+      ]
+    },
+    {
+      "component": "RippleDistortion",
+      "source": "https://reactbits.dev/r/RippleDistortion-JS-CSS.json",
+      "dependencies": [
+        "ogl@^1.0.11"
+      ],
+      "files": [
+        "RippleDistortion.css",
+        "RippleDistortion.jsx"
+      ]
+    },
+    {
+      "component": "SpringCheck",
+      "source": "https://reactbits.dev/r/SpringCheck-JS-CSS.json",
+      "dependencies": [
+        "motion@^12.23.12",
+        "@hugeicons/core-free-icons@^4.3.3"
+      ],
+      "files": [
+        "SpringCheck.css",
+        "SpringCheck.jsx"
+      ]
+    },
+    {
+      "component": "CircularText",
+      "source": "https://reactbits.dev/r/CircularText-JS-CSS.json",
+      "dependencies": [
+        "motion@^12.23.12"
+      ],
+      "files": [
+        "CircularText.css",
+        "CircularText.jsx"
+      ]
+    }
+  ],
+  "hashes": {
+    "ScrollExpand.css": "1904e6e0c498a45b11b16521e64dafb02f9e7e2bd33305bb7134fb0081d39c1e",
+    "ScrollExpand.jsx": "d8c546f1cde67cdaf9a228fc58d98aa1020e3faf594db36769cd9d17d991a0d4",
+    "Stepper.css": "417223c9c56157b27bae7d7214e3fb3a3c8da65e69c6935c6a199fc22b151436",
+    "Stepper.jsx": "9df93b5e34b767652dccd0cd56341a66792db742278310958d38bd4700fb4225",
+    "AnimatedContent.jsx": "f18acb24614948733f8351479f03a06d3052ddacfb291e4cbaccead58499bab2",
+    "MorphSlider.css": "213e79d63ec5003698f60c8e81d2b616bf3bb2548327682f02a40c11cd2e9d92",
+    "MorphSlider.jsx": "a815e6842677b944636932346debc21680b09d3a5e0a81b942820ac0fb0f7cd4",
+    "SplitText.jsx": "f3b9433ce28aa703f4ea6c4e7a7d023aa91de3f4b21002fc99477ea095c932b1",
+    "RippleDistortion.css": "3a7ecc6d99d604a7ee29f8a6ff3f84aece179a5cdc85d981b81179532170c852",
+    "RippleDistortion.jsx": "24854f9b03960040db9245b3031a411ca65ce4be15e05b1028fdd422daf50f0f",
+    "SpringCheck.css": "dc29047d805e99f439356880dda04240c1524693380059650e8188ce456c81c6",
+    "SpringCheck.jsx": "6cadf8f9c798010ac481806a0c14d67d19778b555dba34aa1ac3186142d4cec0",
+    "CircularText.css": "12ba80258e1925a4f927c5291d7e40ee43706895625ba84f84a12f08c46d1823",
+    "CircularText.jsx": "a720eba8abd68a12af18b2fc24a598383b953a9c6f6e78cbe79247af818596b1"
+  }
+}
