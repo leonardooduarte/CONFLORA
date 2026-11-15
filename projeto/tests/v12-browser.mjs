@@ -4,9 +4,9 @@ const out=process.env.TEST_OUTPUT||'work/v12';await mkdir(out,{recursive:true});
 const browser=await chromium.launch({...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}),headless:true,args:['--no-sandbox','--enable-unsafe-swiftshader']});
 const context=await browser.newContext({viewport:{width:1440,height:1000},recordVideo:{dir:out+'/recordings',size:{width:1280,height:800}},acceptDownloads:true});
 const page=await context.newPage();const errors=[],uploads=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(['POST','PUT'].includes(r.method()))uploads.push(r.url())});
-const base=process.env.BASE_URL||'http://localhost:5176';const click=name=>page.getByRole('button',{name,exact:true}).click();const shot=async name=>page.screenshot({path:out+'/'+name+'.png'});
+const base=process.env.BASE_URL||'http://localhost:5176';const click=async name=>{const scope=['Salvar interesse','Ler ficha e fontes'].includes(name)?page.locator('.botanic-row'):page;const btn=scope.getByRole('button',{name,exact:true});if(await btn.count()&&await btn.first().isVisible())return btn.first().click();await page.getByRole('button',{name:'Open menu',exact:true}).click();return page.getByRole('link',{name,exact:true}).click()};const shot=async name=>page.screenshot({path:out+'/'+name+'.png'});
 try{
- await page.goto(base);await expect(page.locator('h1')).toContainText('Comece pelo seu espaço.');await shot('01-home');
+ await page.goto(base);await expect(page.locator('h1')).toContainText('Todo lugar');await shot('01-home');
  await page.locator('.water-story').scrollIntoViewIfNeeded();await expect(page.locator('.ripple-box canvas')).toBeVisible({timeout:10000});await page.getByRole('button',{name:'Vegetação',exact:true}).first().click();await expect(page.locator('#water-explanation')).toContainText('Tolerar umidade não comprova');await shot('02-water');
  await click('Meu espaço');await page.locator('input[type=file]').first().setInputFiles('public/scene-garden.png');await expect(page.locator('.scene image')).toHaveCount(1);await click('Adicionar no centro');await expect(page.locator('.marker-number')).toHaveCount(1);
  await click('Desenhar caminho');const c=page.locator('.drawing-controls');

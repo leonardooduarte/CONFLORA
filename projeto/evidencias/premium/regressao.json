@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "scroll": {
+    "before": "inset(8% 6% round 24px)",
+    "after": "inset(7.0617e-06% 5.29627e-06% round 2.11851e-05px)"
+  },
+  "strokeTitleVisible": true,
+  "passed": true
+}
