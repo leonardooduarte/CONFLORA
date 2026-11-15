@@ -5,7 +5,7 @@ import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {join,resolve,basename} from 'node:path';
 import {createHash} from 'node:crypto';
 const base='https://reactbits.dev/r/';
-const names=['ScrollExpand','Stepper','AnimatedContent','MorphSlider','SplitText','RippleDistortion','SpringCheck','CircularText'];
+const names=['ScrollExpand','Stepper','AnimatedContent','MorphSlider','SplitText','RippleDistortion','SpringCheck','CircularText','LineSidebar','AnimatedList','Masonry','AccordionGallery','StaggeredMenu','SpecularButton'];
 const dest=resolve('src/components/reactbits');
 const info=[];
 await mkdir(dest,{recursive:true});

@@ -91,6 +91,71 @@
         "CircularText.css",
         "CircularText.jsx"
       ]
+    },
+    {
+      "component": "LineSidebar",
+      "source": "https://reactbits.dev/r/LineSidebar-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "LineSidebar.css",
+        "LineSidebar.jsx"
+      ]
+    },
+    {
+      "component": "AnimatedList",
+      "source": "https://reactbits.dev/r/AnimatedList-JS-CSS.json",
+      "dependencies": [
+        "@hugeicons/react@^1.1.10",
+        "@hugeicons/core-free-icons@^4.3.3"
+      ],
+      "files": [
+        "AnimatedList.css",
+        "AnimatedList.jsx"
+      ]
+    },
+    {
+      "component": "Masonry",
+      "source": "https://reactbits.dev/r/Masonry-JS-CSS.json",
+      "dependencies": [
+        "react-dom@^19.0.0",
+        "@hugeicons/react@^1.1.10",
+        "@hugeicons/core-free-icons@^4.3.3"
+      ],
+      "files": [
+        "Masonry.css",
+        "Masonry.jsx"
+      ]
+    },
+    {
+      "component": "AccordionGallery",
+      "source": "https://reactbits.dev/r/AccordionGallery-JS-CSS.json",
+      "dependencies": [
+        "gsap@^3.13.0"
+      ],
+      "files": [
+        "AccordionGallery.css",
+        "AccordionGallery.jsx"
+      ]
+    },
+    {
+      "component": "StaggeredMenu",
+      "source": "https://reactbits.dev/r/StaggeredMenu-JS-CSS.json",
+      "dependencies": [
+        "gsap@^3.13.0"
+      ],
+      "files": [
+        "StaggeredMenu.css",
+        "StaggeredMenu.jsx"
+      ]
+    },
+    {
+      "component": "SpecularButton",
+      "source": "https://reactbits.dev/r/SpecularButton-JS-CSS.json",
+      "dependencies": [],
+      "files": [
+        "SpecularButton.css",
+        "SpecularButton.jsx"
+      ]
     }
   ],
   "hashes": {
@@ -107,6 +172,18 @@
     "SpringCheck.css": "dc29047d805e99f439356880dda04240c1524693380059650e8188ce456c81c6",
     "SpringCheck.jsx": "6cadf8f9c798010ac481806a0c14d67d19778b555dba34aa1ac3186142d4cec0",
     "CircularText.css": "12ba80258e1925a4f927c5291d7e40ee43706895625ba84f84a12f08c46d1823",
-    "CircularText.jsx": "a720eba8abd68a12af18b2fc24a598383b953a9c6f6e78cbe79247af818596b1"
+    "CircularText.jsx": "a720eba8abd68a12af18b2fc24a598383b953a9c6f6e78cbe79247af818596b1",
+    "LineSidebar.css": "c54eb77aec1a1311c17cdf97fb69be8cc85b4e28e7749cd92e81dfe0aa3a2481",
+    "LineSidebar.jsx": "1c7221928201ada1ab29047066d60d5fb8fb5b5f95dc794ed68f852b8a30a423",
+    "AnimatedList.css": "c9b74ad88b92e9836b6ec91ad21170da5d5325cfd0a1a18d1a863e545d8baffc",
+    "AnimatedList.jsx": "bd554c09360298bca5b8d74a79595d22fd1c4c4aeb56ab4548eff412385bd593",
+    "Masonry.css": "59f265bb064c777da9c4ec549f378cf52c56a3719122196bbf77ffb3b2f28ea8",
+    "Masonry.jsx": "27b38501bcf6f2f79d9a35938266bc6517bbafce318fcfb1068dcab91d1cbeee",
+    "AccordionGallery.css": "ed6b800ed83052859f1f617ccc2a846db8389cb9580db440dbb97fc0ab39b5e6",
+    "AccordionGallery.jsx": "2ad0e840ee9c6b658f33d66aa9e28685491d24b79cdb792bd5322ad40aa39577",
+    "StaggeredMenu.css": "de0ce6b5424aa9dca06b9d8f70f0916a23df4cdbd716104a5bc14a49eb63da0f",
+    "StaggeredMenu.jsx": "358ebe761c073a657eff79ab8f3647e98b1285594cc14a425c5ec05721c25464",
+    "SpecularButton.css": "af7cad9998bd6102a21fd05da11890ca05c061f9d5e6c96f540fb744684442a9",
+    "SpecularButton.jsx": "22ee7d6decc2abd1b54343f8132cc63bcb1d1e6cf8fe092bd4d33ee6176e1564"
   }
 }
