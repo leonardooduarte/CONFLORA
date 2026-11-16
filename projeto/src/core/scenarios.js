@@ -16,3 +16,21 @@ export function renderScenarioProject(project,slot='original'){
  return {...project,annotations:[...baseline,...scene]};
 }
 export function hasScenario(project,slot){return Boolean(project.scenarios?.[slot]&&Array.isArray(project.scenarios?.[slot]?.markers));}
+
+/**
+ * Restore a saved proposal as the live editable composition, retaining the
+ * source photograph, observed pooling/surfaces/paths and environmental context.
+ * Call from the UI only after the user confirms replacing current proposals.
+ * The surrounding project change() callback supplies undo/redo history.
+ */
+export function restoreScenario(project,slot){
+ if(!hasScenario(project,slot))return false;
+ const originals=(project.annotations||[]).filter(a=>!isProposal(a));
+ const snapshot=project.scenarios[slot].markers.map(a=>structuredClone(a));
+ const occupied=new Set(originals.map(a=>a.id));
+ if(snapshot.some(a=>occupied.has(a.id))||new Set(snapshot.map(a=>a.id)).size!==snapshot.length){
+  throw Error('Scenario marker IDs conflict with observed terrain marks');
+ }
+ project.annotations=[...originals,...snapshot];
+ return true;
+}
