@@ -1,0 +1,9 @@
+{
+  "version": "19.2.0-botanical-orbit-preview",
+  "edition": "Globo interativo · galeria internacional de Polaroids",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-botanical-orbit/",
+  "deployment": "preview",
+  "sourceBranch": "feat/conflora-v19-2-orbiting-polaroids-20261116",
+  "sourceCommit": "e96290ed1ab0bd66cca0ca63ed3ccad6f0dd43fa"
+}

@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "assets": 16,
+  "uniquePhotographs": 16,
+  "seen": 9,
+  "moments": [
+    {
+      "t": 0,
+      "visible": 3,
+      "ids": [
+        "saguaro",
+        "sakura",
+        "banksia"
+      ],
+      "coords": [
+        {
+          "id": "saguaro",
+          "opacity": "1",
+          "x": 1174,
+          "y": 174
+        },
+        {
+          "id": "sakura",
+          "opacity": "1",
+          "x": 795,
+          "y": 165
+        },
+        {
+          "id": "banksia",
+          "opacity": "1",
+          "x": 836,
+          "y": 447
+        }
+      ]
+    },
+    {
+      "t": 1,
+      "visible": 3,
+      "ids": [
+        "rhododendron",
+        "sakura",
+        "banksia"
+      ],
+      "coords": [
+        {
+          "id": "rhododendron",
+          "opacity": "0.572475",
+          "x": 738,
+          "y": 185
+        },
+        {
+          "id": "sakura",
+          "opacity": "1",
+          "x": 869,
+          "y": 172
+        },
+        {
+          "id": "banksia",
+          "opacity": "1",
+          "x": 926,
+          "y": 452
+        }
+      ]
+    },
+    {
+      "t": 2,
+      "visible": 3,
+      "ids": [
+        "rhododendron",
+        "sakura",
+        "banksia"
+      ],
+      "coords": [
+        {
+          "id": "rhododendron",
+          "opacity": "1",
+          "x": 785,
+          "y": 196
+        },
+        {
+          "id": "sakura",
+          "opacity": "1",
+          "x": 973,
+          "y": 175
+        },
+        {
+          "id": "banksia",
+          "opacity": "1",
+          "x": 1036,
+          "y": 452
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "visible": 3,
+      "ids": [
+        "rhododendron",
+        "sakura",
+        "banksia"
+      ],
+      "coords": [
+        {
+          "id": "rhododendron",
+          "opacity": "1",
+          "x": 876,
+          "y": 204
+        },
+        {
+          "id": "sakura",
+          "opacity": "1",
+          "x": 1079,
+          "y": 172
+        },
+        {
+          "id": "banksia",
+          "opacity": "1",
+          "x": 1132,
+          "y": 446
+        }
+      ]
+    },
+    {
+      "t": 4,
+      "visible": 5,
+      "ids": [
+        "rhododendron",
+        "protea",
+        "edelweiss",
+        "sakura",
+        "banksia"
+      ],
+      "coords": [
+        {
+          "id": "rhododendron",
+          "opacity": "1",
+          "x": 986,
+          "y": 206
+        },
+        {
+          "id": "protea",
+          "opacity": "1",
+          "x": 787,
+          "y": 438
+        },
+        {
+          "id": "edelweiss",
+          "opacity": "1",
+          "x": 821,
+          "y": 123
+        },
+        {
+          "id": "sakura",
+          "opacity": "1",
+          "x": 1157,
+          "y": 165
+        },
+        {
+          "id": "banksia",
+          "opacity": "1",
+          "x": 1190,
+          "y": 436
+        }
+      ]
+    },
+    {
+      "t": 5,
+      "visible": 3,
+      "ids": [
+        "rhododendron",
+        "protea",
+        "edelweiss"
+      ],
+      "coords": [
+        {
+          "id": "rhododendron",
+          "opacity": "1",
+          "x": 1094,
+          "y": 203
+        },
+        {
+          "id": "protea",
+          "opacity": "1",
+          "x": 857,
+          "y": 447
+        },
+        {
+          "id": "edelweiss",
+          "opacity": "1",
+          "x": 874,
+          "y": 130
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
