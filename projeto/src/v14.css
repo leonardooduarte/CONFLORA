@@ -9,4 +9,5 @@
 .site-review .notice-box{padding:12px 16px;border-left:3px solid #9e653e;background:#f3e7de}
 .site-review__evidence{font-weight:400}
 .site-review--compact{padding:18px;margin:16px 0}
+ .area-comparison{margin:20px 0}.area-comparison__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.area-comparison__grid article{border:1px solid rgba(11,36,29,.17);background:#f6f5ef;border-radius:9px;padding:16px}.area-comparison__grid h4{font-family:Instrument Serif,Georgia,serif;font-size:1.5rem;margin:.5rem 0}
 @media(max-width:480px){.site-review{padding:16px}.site-review__options{grid-template-columns:minmax(0,1fr)}}
