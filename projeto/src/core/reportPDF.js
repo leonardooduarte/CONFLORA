@@ -1,3 +1,4 @@
+import {buildV20Insight} from './v20Insight.js';
 import {jsPDF} from 'jspdf';
 import {plants,asset,references,say,labels} from './knowledge.js';
 import {buildV19Proposal,sourceBibliography,scenarioMode,exploratoryNotice,scenarioEvidenceCurrent} from './v19Proposal.js';
@@ -10,7 +11,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  const pt=lang==='pt',plan=buildV19Proposal(project,lang),doc=new jsPDF({unit:'mm',format:'a4',compress:true});
  for(const [style,url]of Object.entries(fonts)){const base64=(await dataImage(url)).split(',')[1];doc.addFileToVFS(style+'.ttf',base64);doc.addFont(style+'.ttf',style==='italic'?'Instrument':'DM',style==='regular'?'normal':style);}
  const M=15,W=180,BOTTOM=278;let y=17;
- doc.setProperties({title:'CONFLORA V19 — '+project.name,subject:pt?'Estudo preliminar do terreno':'Preliminary site study',author:'CONFLORA · BRaVE 2026',creator:'CONFLORA V19'});
+ doc.setProperties({title:'CONFLORA V20 — '+project.name,subject:pt?'Estudo preliminar do terreno':'Preliminary site study',author:'CONFLORA · BRaVE 2026',creator:'CONFLORA V20'});
  const font=(size=10,style='normal')=>{doc.setFont(style==='italic'?'Instrument':'DM',style);doc.setFontSize(size);doc.setTextColor('#173c30')};
  const ensure=h=>{if(y+h>BOTTOM){doc.addPage();y=18;}};
  const lines=(text,width=W,size=10,style='normal')=>{font(size,style);return doc.splitTextToSize(String(text||''),width)};
@@ -27,6 +28,19 @@ export async function createV19PDF(project,lang='pt',reportImage){
  const typeNames=pt?{pool:'pontos de acúmulo',roof:'saídas de telhado',paved:'superfícies pavimentadas',space:'áreas livres',plants:'observações vegetais'}:{pool:'pooling points',roof:'roof outlets',paved:'paved surfaces',space:'open areas',plants:'vegetation observations'};
  text(Object.entries(counts).map(([k,n])=>n+' '+(typeNames[k]||k)).join(' · '),10);if(project.context.notes)text(project.context.notes,10);
  if(reportImage)await photo(reportImage,pt?'Observações numeradas na fotografia':'Numbered observations in the photo',55);
+ const insight=buildV20Insight(project,lang);
+ heading(pt?'O que já sabemos sobre seu espaço':'What we know about your space');
+ text(insight.observed.join(' · ')|| (pt?'Ainda sem marcações.':'No marks recorded yet.'),10);
+ if(insight.details.length)text(insight.details.join(' · '),9);
+ for(const item of insight.interpretations.slice(0,4))text('• '+item,9);
+ text((pt?'Estado da evidência botânica: ':'Botanical evidence status: ')+insight.evidenceLabel,10,'bold');
+ heading(pt?'O que verificar agora':'What to check next');
+ for(const step of insight.steps.slice(0,5)){
+  text(step.label,10,'bold');
+  text(step.why+' '+step.how,9);
+ }
+ text(pt?'A análise considera observações declaradas, não medição, inferência da fotografia ou previsão hidráulica.':'This review uses reported observations, not measurement, automatic image analysis or hydraulic performance predictions.',8);
+
  heading(pt?'Análise ambiental preliminar':'Preliminary environmental review');
  for(const a of plan.groups){
   ensure(34);text((a.areaNumbers[0]===null?(pt?'Terreno':'Site'):(pt?'Áreas ':'Areas ')+a.areaNumbers.map(n=>String(n).padStart(2,'0')).join(', '))+' · '+a.category,11,'bold');
@@ -63,7 +77,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  heading(pt?'Referências e créditos':'References and credits');
  const ids=sourceBibliography(project,plan);for(const [i,id]of ids.entries()){const r=references[id];text('['+(i+1)+'] '+r.title,9,'bold');text(say(r.scope,lang),9);text(r.url,8);}
  for(const c of plan.cards){const p=c.plant;text(p.scientific+' · '+(pt?'Taxonomia: ':'Taxonomy: ')+p.taxonomyUrl,8);text((pt?'Fotografia: ':'Photograph: ')+p.image.author+' · '+p.image.license+' · '+p.image.source,8);}
- const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);font(8);doc.text('CONFLORA V19 · '+(pt?'Estudo preliminar':'Preliminary study'),M,288);doc.text(n+' / '+total,195,288,{align:'right'});}
+ const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);font(8);doc.text('CONFLORA V20 · '+(pt?'Estudo preliminar':'Preliminary study'),M,288);doc.text(n+' / '+total,195,288,{align:'right'});}
  return doc;
 }
-export async function downloadV19PDF(project,lang,reportImage){const doc=await createV19PDF(project,lang,reportImage);doc.save('conflora-v19-'+project.id.replace(/[^a-z0-9_-]/gi,'')+'.pdf');}
+export async function downloadV19PDF(project,lang,reportImage){const doc=await createV19PDF(project,lang,reportImage);doc.save('conflora-v20-'+project.id.replace(/[^a-z0-9_-]/gi,'')+'.pdf');}
