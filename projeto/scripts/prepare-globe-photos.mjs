@@ -22,8 +22,8 @@ const urls=file=>{
  const title=file.replaceAll(' ','_'), enc=encodeURIComponent(title);
  const hash=createHash('md5').update(title).digest('hex');
  return [
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/'+hash[0]+'/'+hash.slice(0,2)+'/'+enc+'/480px-'+enc,
   'https://commons.wikimedia.org/wiki/Special:FilePath/'+enc+'?width=480',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/'+hash[0]+'/'+hash.slice(0,2)+'/'+enc+'/480px-'+enc,
   'https://upload.wikimedia.org/wikipedia/commons/'+hash[0]+'/'+hash.slice(0,2)+'/'+enc
  ];
 };
