@@ -1,0 +1,71 @@
+name: CONFLORA V18 — Evidence and report validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/conflora-v18-personalized-plan-20261116
+    paths:
+      - "projeto/src/**"
+      - "projeto/tests/v18-*.mjs"
+      - "projeto/docs/v18/**"
+      - ".github/workflows/preview-v18.yml"
+
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-v18-preview
+  cancel-in-progress: true
+
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install dependencies
+        working-directory: projeto
+        run: npm ci
+      - name: Build and full source/model validation
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/science.mjs
+          node tests/v14-analysis.mjs
+          node tests/v15-model.mjs
+          node tests/v16-model.mjs
+          node tests/v17-gallery.mjs
+          node tests/v18-model.mjs
+      - name: Install Chromium
+        working-directory: projeto
+        run: |
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Browser regressions and V18 report journey
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-v16-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://localhost:5176/ > /dev/null; then break; fi; sleep 1; done
+          node tests/science-browser.mjs
+          node tests/v14-browser.mjs
+          node tests/v15-browser.mjs
+          node tests/v16-browser.mjs
+          npm run test:herbarium
+          node tests/v18-browser.mjs
+      - name: Publish isolated V18 preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v18
+          keep_files: true
+          commit_message: "Preview CONFLORA V18: ${{ github.sha }}"
