@@ -9,3 +9,5 @@ import "./atelier.css";
 import './premium.css';
 
 import './editorial.css';
+
+import './science.css';
