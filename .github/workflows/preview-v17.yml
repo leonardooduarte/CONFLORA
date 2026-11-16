@@ -1,0 +1,70 @@
+name: CONFLORA V17 — Kinetic gallery preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/conflora-v17-personalized-visual-20261116
+    paths:
+      - "projeto/src/features/KineticGallery.jsx"
+      - "projeto/src/features/KineticGallery.css"
+      - "projeto/src/App.jsx"
+      - "projeto/docs/v17/KINETIC_GALLERY.md"
+      - ".github/workflows/preview-v17.yml"
+
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-v17-kinetic-preview
+  cancel-in-progress: true
+
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install dependencies
+        working-directory: projeto
+        run: npm ci
+      - name: Build and full source/model validation
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/science.mjs
+          node tests/v14-analysis.mjs
+          node tests/v15-model.mjs
+          node tests/v16-model.mjs
+          node tests/v17-gallery.mjs
+      - name: Install Chromium
+        working-directory: projeto
+        run: |
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Browser regressions and V17 gallery regressions
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-v16-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://localhost:5176/ > /dev/null; then break; fi; sleep 1; done
+          node tests/science-browser.mjs
+          node tests/v14-browser.mjs
+          node tests/v15-browser.mjs
+          node tests/v16-browser.mjs
+          npm run test:herbarium
+      - name: Publish isolated V16 preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v17
+          keep_files: true
+          commit_message: "Preview CONFLORA V17 gallery: ${{ github.sha }}"
