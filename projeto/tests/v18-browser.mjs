@@ -35,4 +35,36 @@ try{
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,'Mobile viewport should not overflow');
  assert.deepEqual(errors,[]);
  console.log('PASS V18 browser: Brazil evidence cards, safe blocked planting, compact report, A4 PDF, mobile');
+ const second=await browser.newPage({viewport:{width:1280,height:900}});
+ const errors2=[];second.on('pageerror',e=>errors2.push(e.message));
+ try{
+  await second.goto('http://localhost:5176/');
+  await second.getByRole('button',{name:'Analisar meu terreno'}).first().click();
+  await second.locator('input[type=file]').first().setInputFiles('public/scene-garden.png');
+  await second.locator('.line-sidebar').getByText('Água acumulada',{exact:true}).click();
+  await second.getByRole('button',{name:'Adicionar no centro',exact:true}).click();
+  await second.locator('.studio-journey').getByRole('button',{name:/Informar condições/}).click();
+  const conditions=second.locator('.studio-journey');
+  await conditions.getByLabel('Contexto regional').selectOption('IA');
+  await conditions.getByLabel('Luz observada').selectOption('full');
+  await conditions.getByLabel('Umidade observada').selectOption('wet');
+  await conditions.getByLabel('Drenagem observada do solo').selectOption('medium');
+  await conditions.getByLabel('Quanto tempo a água fica?').selectOption('hours');
+  await conditions.getByLabel('Proximidade de construções').selectOption('away');
+  await conditions.getByRole('button',{name:/Organizar meu plano/}).click();
+  const board=second.locator('.plan-extras .v18-proposal');
+  await expect(board).toContainText('Correspondência documental');
+  await board.getByRole('button',{name:'Gerar proposta para meu terreno'}).click();
+  await expect(board.locator('.v18-proposal-visual')).toHaveCount(1);
+  assert(await board.locator('.v18-photo-layer img').count()>=1,'Proposed photo should include verified botanical visual');
+  await board.getByRole('button',{name:'Criar alternativa B'}).click();
+  await expect(board.locator('.v18-proposal-visual')).toHaveCount(2);
+  await second.locator('.plan-extras').getByRole('button',{name:/Abrir relatório/}).last().click();
+  const report=second.locator('.report-modal .v18-report');
+  await expect(report).toBeVisible();
+  await expect(report.locator('.v18-proposal-visual')).toHaveCount(2);
+  assert.equal(await report.locator('.v18-photo-layer img').count()>=2,true);
+  assert.deepEqual(errors2,[]);
+  console.log('PASS V18 browser: Iowa documented species generate editable A/B with botanical photo overlays and appear in report');
+ }finally{await second.close()}
 }finally{await browser.close();}
