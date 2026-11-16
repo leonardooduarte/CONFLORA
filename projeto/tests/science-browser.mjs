@@ -19,7 +19,7 @@ try{
  await expect(page.locator('.herbarium-search')).toBeVisible();
  await expect(page.locator('.atlas-feature')).toBeVisible();
  await expect(page.locator('.selection-results')).toContainText('Penstemon digitalis');
- await expect(page.locator('.knowledge-heading')).toContainText('14 espécies');
+ await expect(page.locator('.knowledge-heading')).toContainText('15 espécies');
  const structure=await page.evaluate(()=>{const a=document.querySelector('.herbarium-search'),b=document.querySelector('.atlas-feature');return Boolean(a&&b&&(a.compareDocumentPosition(b)&Node.DOCUMENT_POSITION_FOLLOWING))});
  assert(structure,'Immersive gallery must remain directly below search');
  await page.setViewportSize({width:390,height:844});
