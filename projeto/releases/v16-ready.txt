@@ -1,0 +1,4 @@
+CONFLORA V16 release candidate
+Version: 2026-11-16 V16
+Purpose: trigger full browser regressions and isolated /previews/conflora-v16/ publication after successful validation.
+Source: commit 2ca413c24b3efd53f89cb25f45fc034560fbef9f
