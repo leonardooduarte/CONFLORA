@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "base": "http://localhost:5176/",
+  "brPdf": {
+    "pages": 3,
+    "bytes": 735336
+  },
+  "iaPdf": {
+    "pages": 3,
+    "bytes": 652932
+  },
+  "viewports": [
+    1440,
+    1280,
+    768,
+    390,
+    360
+  ],
+  "zoom": 200,
+  "reducedMotion": true,
+  "errors": [],
+  "checks": [
+    "7 observations, 3 grouped pooling areas",
+    "blocked unsupported botanical planting",
+    "exploratory A/B",
+    "independent editing, drag, sliders",
+    "PNG export",
+    "direct PDF contents + native A4",
+    "IndexedDB reopen",
+    "portable JSON",
+    "documented Iowa botanical A/B",
+    "PT/EN",
+    "keyboard dialog focus"
+  ]
+}

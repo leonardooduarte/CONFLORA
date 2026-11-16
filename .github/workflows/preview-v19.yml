@@ -1,0 +1,87 @@
+name: CONFLORA V19 — Visual proposals and isolated preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feat/conflora-v19-visual-proposals]
+    paths:
+      - 'projeto/**'
+      - '.github/workflows/preview-v19.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-v19-preview
+  cancel-in-progress: true
+
+jobs:
+  validate-and-publish:
+    if: github.ref == 'refs/heads/feat/conflora-v19-visual-proposals'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install dependencies and PDF verification tools
+        working-directory: projeto
+        run: |
+          npm ci
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+      - name: Production build and source/model regressions
+        working-directory: projeto
+        run: |
+          npm run build
+          node -e "const fs=require('fs');const f='dist/version.json';fs.writeFileSync(f,JSON.stringify({...JSON.parse(fs.readFileSync(f)),sourceCommit:process.env.GITHUB_SHA},null,2))"
+          npm test
+          npm run test:selection
+          node tests/science.mjs
+          node tests/v14-analysis.mjs
+          node tests/v15-model.mjs
+          node tests/v16-model.mjs
+          node tests/v17-gallery.mjs
+          node tests/v18-model.mjs
+          npm run test:v19:model
+      - name: Install Chromium
+        working-directory: projeto
+        run: |
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Real browser, persistence, botanical and PDF regressions
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-v19-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://localhost:5176/ > /dev/null; then break; fi; sleep 1; done
+          node tests/science-browser.mjs
+          node tests/v14-browser.mjs
+          node tests/v15-browser.mjs
+          node tests/v16-browser.mjs
+          npm run test:herbarium
+          node tests/v18-browser.mjs
+          CHROMIUM_PATH=/usr/bin/chromium npm run test:accessibility
+          npm run test:six
+          node tests/v19-browser.mjs
+          node tests/v19-visual-regressions.mjs
+      - name: Keep review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflora-v19-validation
+          path: |
+            projeto/work/v19/
+            projeto/work/v12-accessibility/
+            projeto/work/six/
+          retention-days: 14
+      - name: Publish only the isolated V19 directory
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v19
+          keep_files: true
+          commit_message: 'Preview CONFLORA V19: ${{ github.sha }}'
