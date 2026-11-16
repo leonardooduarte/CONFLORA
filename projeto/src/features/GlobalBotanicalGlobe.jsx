@@ -90,7 +90,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
     const v=parseFloat(style.getPropertyValue('--cobe-visible-'+record.id))||0;
     const bbox=element.getBoundingClientRect();
     if(v<.35||bbox.width<8||bbox.height<8||bbox.right<board.left-7||bbox.left>board.right+7||bbox.bottom<board.top-4||bbox.top>board.bottom+4){
-     element.style.setProperty('--orbit-allowed','0');
+     element.style.opacity='0';
      element.setAttribute('aria-hidden','true');
      continue;
     }
@@ -105,10 +105,10 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
     const fits=accepted.every(other=>!rectsOverlap(item.bbox,other.bbox,6));
     if(accepted.length<limit&&fits){
      accepted.push(item.bbox);next.add(item.record.id);
-     item.element.style.setProperty('--orbit-allowed','1');
+     item.element.style.opacity='var(--cobe-visible-'+item.record.id+', 0)';
      item.element.removeAttribute('aria-hidden');
     }else{
-     item.element.style.setProperty('--orbit-allowed','0');
+     item.element.style.opacity='0';
      item.element.setAttribute('aria-hidden','true');
     }
    }
@@ -175,8 +175,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
        positionAnchor:'--cobe-'+item.id,
        left:'anchor(center)',bottom:'anchor(top)',
        '--orbit-rotation':item.rotate+'deg',
-       '--orbit-allowed':1,
-       opacity:'calc(var(--cobe-visible-'+item.id+', 0) * var(--orbit-allowed))'
+       opacity:'var(--cobe-visible-'+item.id+', 0)'
       }}>
      <div className="globe-orbit__photo">
       <img src={asset(item.file)} alt={item.name} loading={i<8?'eager':'lazy'} draggable="false"/>
