@@ -50,7 +50,7 @@ export default function BotanicalGlobe({lang='pt',onOpen}){
   const canvas=canvasRef.current,root=mountRef.current;
   if(!canvas||!root)return;
   let globe=null,raf=0,mounted=true,initWidth=0;
-  if(!supportsWebgl(canvas)){setWebgl(false);return}
+  // createGlobe itself checks WebGL availability; do not preemptively claim a context.
   const build=()=>{
    const width=Math.floor(canvas.getBoundingClientRect().width);
    if(width<20||!mounted||width===initWidth&&globe)return;
@@ -138,6 +138,7 @@ export default function BotanicalGlobe({lang='pt',onOpen}){
        <b>{region.label[lang]}</b>
        <i>{region.item.scientific}</i>
        <small>{region.source[lang]} · {choice[region.id]+1}/{region.plantIds.length}</small>
+       <a href={region.item.image.source} target="_blank" rel="noreferrer" title={region.item.image.author+' · '+region.item.image.license}>{pt?'Foto: ':'Photo: '}{region.item.image.author} · {region.item.image.license}</a>
       </div>
     </div>)}
    </div>
