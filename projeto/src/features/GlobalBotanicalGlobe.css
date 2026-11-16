@@ -325,3 +325,101 @@
  .globe-orbit__polaroid{transition:none}
  .globe-orbit__canvas{filter:none}
 }
+
+
+/* Video-reference Polaroids: pure marker-anchored photographs with a small caption.
+   Keep the original layout responsive; suppress old two-line info treatment. */
+.globe-orbit__polaroid {
+ width:clamp(79px,7.6vw,110px);
+ padding:6px 6px 19px;
+ line-height:1;
+ min-height:0;
+ box-sizing:border-box;
+ opacity:0;
+ transition:opacity .26s ease,filter .26s ease,visibility .26s ease;
+}
+.globe-orbit__polaroid>img{
+ display:block;
+ width:100%;
+ aspect-ratio:1;
+ object-fit:cover;
+ background:#d4dfd3;
+}
+.globe-orbit__polaroid>span{
+ display:block;
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ color:#273f34;
+ font:italic clamp(10px,.9vw,13px)/1.05 var(--serif,'Instrument Serif',Georgia,serif);
+ margin-top:6px;
+ text-align:center;
+}
+.globe-orbit__polaroid--hidden{visibility:hidden!important;pointer-events:none!important}
+.globe-orbit__eyebrow{
+ position:relative;
+ z-index:2;
+ display:block;
+ font:600 10px/1.5 var(--sans,'DM Sans',system-ui,sans-serif);
+ letter-spacing:.17em;
+ color:#d9c2a1;
+ padding:9px 20px 0;
+ text-align:center;
+}
+.globe-orbit__ambient{
+ position:absolute;
+ pointer-events:none;
+ width:min(95%,600px);
+ aspect-ratio:1;
+ border-radius:50%;
+ background:radial-gradient(circle at 50% 47%,rgba(237,213,173,.11),transparent 68%);
+ inset:50% auto auto 50%;
+ translate:-50% -50%;
+ z-index:-1;
+}
+.globe-orbit__footer{
+ position:relative;
+ z-index:4;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:10px;
+ border-top:1px solid rgba(211,180,141,.24);
+ padding:11px clamp(14px,3vw,35px) 15px;
+ color:#cbd6c9;
+ font:400 11px/1.45 var(--sans,'DM Sans',system-ui,sans-serif);
+}
+.globe-orbit__footer>span{max-width:60%}
+.globe-orbit__footer>div{display:flex;gap:16px;align-items:center}
+.globe-orbit__footer button{
+ background:transparent;
+ border:0;
+ border-bottom:1px solid rgba(235,205,163,.55);
+ padding:5px 0;
+ color:#e8d5ba;
+ cursor:pointer;
+ font:600 10px/1.4 var(--sans,'DM Sans',system-ui,sans-serif);
+}
+.globe-orbit__footer button:focus-visible{outline:2px solid #e4c28e;outline-offset:3px}
+.globe-orbit__credits>header{display:flex;justify-content:space-between;align-items:center}
+.globe-orbit__credits>header>button{
+ background:transparent;
+ border:0;
+ color:#f4ead8;
+ cursor:pointer;
+ font-size:24px;
+}
+@media(max-width:600px){
+ .globe-orbit__polaroid{width:clamp(55px,13vw,70px);padding:4px 4px 11px}
+ .globe-orbit__polaroid>span{font-size:10px;margin-top:4px}
+ .globe-orbit__footer{padding:8px 7px 10px;font-size:10px}
+ .globe-orbit__eyebrow{font-size:8px}
+}
+@media(max-width:380px){
+ .globe-orbit__polaroid{width:56px;padding:4px 4px 10px}
+ .globe-orbit__footer{font-size:9px}
+ .globe-orbit__footer button{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){
+ .globe-orbit__polaroid{transition:none}
+}
