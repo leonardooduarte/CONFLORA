@@ -21,7 +21,7 @@ const brazil=assessSite({regionCode:'BR',sun:'full',moisture:'wet',duration:'hou
 assert(!brazil.selection.candidates.some(c=>c.plant.region==='IA'));
 assert(brazil.evidence.includes('não identificou'));
 const eco=plants.find(p=>p.id==='cyperus-giganteus');
-assert(eco?.evidence==='ecology'&&eco.image===null);
+assert(eco?.evidence==='ecology'&&eco.image?.author&&eco.image?.license&&eco.image?.source);
 assert(eco.sourceIds.every(id=>references[id]?.url));
 assert(!brazil.selection.candidates.some(c=>c.plant.id===eco.id),'A morphological study must not turn into a rain-garden recommendation');
 const original=Store.newProject('space');
