@@ -1,0 +1,51 @@
+name: CONFLORA — Preview Herbário
+
+on:
+  push:
+    branches:
+      - fix/herbarium-area-navigation-20261116
+    paths:
+      - "projeto/**"
+      - ".github/workflows/preview-herbarium.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-preview-herbarium
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout da versão de trabalho
+        uses: actions/checkout@v4
+
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+
+      - name: Instalar dependências
+        working-directory: projeto
+        run: npm ci
+
+      - name: Verificar e compilar
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+
+      - name: Publicar somente a prévia em subpasta
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/herbarium-20261116
+          keep_files: true
+          commit_message: "Preview Herbário: ${{ github.sha }}"
