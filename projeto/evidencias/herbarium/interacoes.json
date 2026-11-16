@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "home and primary navigation",
+    "search",
+    "photo",
+    "area selection",
+    "risk",
+    "interest",
+    "comparison",
+    "preview",
+    "plan",
+    "planting journal",
+    "save",
+    "mobile search"
+  ]
+}
