@@ -22,3 +22,6 @@ Triagem não sistemática de fontes técnicas primárias, revisão publicada e b
 
 ## Próximas fontes prioritárias
 Artigos experimentais brasileiros sobre plantas e evapotranspiração em biorretenção; recomendações de botânicos de São Paulo; flora regional de Itapeva, análise de solos locais, dados publicados de manutenção e estudos de caso com monitoramento. Nenhum desses dados é presumido nesta edição.
+
+## Atualização direcionada V14
+Aprofundado estudo primário de morfoanatomia de *Cyperus giganteus* por Rocha e Martins (2011, DOI 10.1590/S0100-83582011000100002) em zonações de umidade em Ponta Grossa, e o resumo indexado de anatomia radicular por Rodrigues e Estelita (2005). Kew confirma nome aceito e distribuição nativa ampla no Sudeste brasileiro. A espécie foi incluída em ficha informativa, mas não no mecanismo de plantio: não existem dados transferíveis de luminosidade, eficiência hidrológica e aplicabilidade local a Itapeva. Documentação e links em `../v14/PESQUISA.md`. Estudo de protótipos de biorretenção da USP e orientação EPA foram utilizados para os alertas sobre solo, fundações e extravasamento. Não foram atribuídas taxas ou resultados dos sistemas inteiros a plantas isoladas.
