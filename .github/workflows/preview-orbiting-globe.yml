@@ -1,0 +1,105 @@
+name: CONFLORA V19.2 — Orbiting botanical Polaroids
+
+on:
+  push:
+    branches:
+      - feat/conflora-v19-2-orbiting-polaroids-20261116
+    paths:
+      - 'projeto/src/**'
+      - 'projeto/scripts/prepare-globe-photos.mjs'
+      - 'projeto/tests/v19-orbit-globe.mjs'
+      - 'projeto/package.json'
+      - '.github/workflows/preview-orbiting-globe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-orbiting-globe
+  cancel-in-progress: true
+
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Resolve COBE dependency and verify reproducible install
+        working-directory: projeto
+        run: |
+          npm install --no-audit --no-fund
+          npm ci --no-audit --no-fund
+      - name: Retrieve and locally cache 14 verified Commons gallery photographs
+        working-directory: projeto
+        run: |
+          node scripts/prepare-globe-photos.mjs
+          test "$(find public/globe -maxdepth 1 -name '*.jpg' | wc -l)" -eq 14
+      - name: Build and validate inherited V19.1 functionality
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/v19-model.mjs
+          node tests/herbarium-complete.mjs
+      - name: Install Chromium + PDF requirements
+        working-directory: projeto
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Browser test the actual rotating 16-image gallery and existing features
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-orbit-vite.log 2>&1 &
+          for n in $(seq 1 50); do if curl -fsS http://127.0.0.1:5176/ >/dev/null; then break; fi; sleep 1; done
+          node tests/v19-orbit-globe.mjs
+          node tests/v19-visual-regressions.mjs
+          node tests/herbarium-complete-browser.mjs
+          node tests/v19-browser.mjs
+          npm run test:six
+      - name: Commit verified photo assets and exact lockfile back to new branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projeto/public/globe projeto/package-lock.json
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(globe): archive 14 verified Commons photos and lock COBE"
+            git push origin HEAD:feat/conflora-v19-2-orbiting-polaroids-20261116
+          fi
+      - name: Bundle 4 temporal desktop captures + mobile review
+        working-directory: projeto
+        run: |
+          mkdir -p dist/review
+          cp work/globe-orbit-review/*jpg work/globe-orbit-review/results.json dist/review/
+          python3 - <<'PY'
+          import base64,pathlib
+          for name in ['desktop-0.jpg','desktop-2.jpg','mobile-390.jpg']:
+              f=pathlib.Path('work/globe-orbit-review')/name
+              (pathlib.Path('dist/review')/(name+'.b64.txt')).write_text(base64.b64encode(f.read_bytes()).decode('ascii'))
+          PY
+          export CURRENT_COMMIT="$(git rev-parse HEAD)"
+          node -e "const fs=require('fs');const p='dist/version.json';const x=JSON.parse(fs.readFileSync(p));fs.writeFileSync(p,JSON.stringify({...x,version:'19.2.0-botanical-orbit-preview',edition:'Globo interativo · galeria internacional de Polaroids',deployment:'preview',sourceBranch:'feat/conflora-v19-2-orbiting-polaroids-20261116',sourceCommit:process.env.CURRENT_COMMIT,previewPath:'/CONFLORA/previews/conflora-botanical-orbit/'},null,2))"
+      - name: Upload image and test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflora-orbiting-globe-review
+          path: projeto/work/globe-orbit-review/
+          retention-days: 14
+      - name: Publish isolated preview, preserving the V19.1 official site
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-botanical-orbit
+          keep_files: true
+          commit_message: 'CONFLORA rotating Polaroid gallery: ${{ github.sha }}'
