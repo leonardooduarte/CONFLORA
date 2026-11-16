@@ -1,0 +1,20 @@
+/* CONFLORA / Scientific journey: deliberately independent of vendor React Bits files. */
+.studio-journey{margin:1.25rem 0 1.5rem;padding:clamp(1rem,2.4vw,2rem);background:#f6f5ef;border:1px solid rgba(20,55,45,.14);border-radius:20px;color:#15332c}
+.studio-journey header{max-width:62rem;margin-bottom:1rem}
+.studio-journey h2{font-family:'Instrument Serif',Georgia,serif;font-size:clamp(1.7rem,2.6vw,2.6rem);line-height:1.15;font-weight:400;margin:.45rem 0}
+.studio-journey p{max-width:63rem;line-height:1.55}
+.studio-journey-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;margin-block:1.2rem}
+.studio-journey-steps>div{border:1px solid #d9dfd6;border-radius:12px;background:#fff;padding:1rem;display:flex;flex-direction:column;align-items:flex-start;gap:.4rem}
+.studio-journey-steps strong{font-size:.75rem;letter-spacing:.12em;color:#65786b}
+.studio-journey-steps b{font-size:1.05rem}
+.studio-journey-steps small{color:#526e5c;min-height:2.4em}
+.studio-journey-steps .text-action{padding:.45rem 0;margin-top:auto}
+.studio-journey-area{display:block;max-width:38rem;font-weight:600}
+.studio-journey-area select{display:block;margin:.35rem 0 1rem;width:100%;padding:.75rem;border:1px solid #bdc9ba;background:white;border-radius:10px;color:#15332c}
+.studio-journey-conditions{margin:1rem 0;border:1px solid #d9dfd6;border-radius:14px;background:#fff;padding:1rem}
+.studio-journey-actions{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;margin:1rem 0}
+.studio-journey :is(button,select):focus-visible{outline:3px solid #0b6864;outline-offset:3px}
+.herbarium-paths{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:flex-start;margin:1rem 0 1.3rem}
+.herbarium-paths .btn{font-size:.93rem}
+.herbarium-coverage{padding:.85rem 1.1rem;margin:.7rem 0;border-left:3px solid #9da690;background:#eff2e9;max-width:64rem;line-height:1.5}
+@media(max-width:760px){.studio-journey-steps{grid-template-columns:1fr}.studio-journey-steps>div{padding:.8rem}.studio-journey{border-radius:14px;padding:1rem}.studio-journey-actions{flex-direction:column;align-items:stretch}.studio-journey-actions button{width:100%}}
