@@ -36,7 +36,7 @@ export default function ScenarioStudio({project,lang='pt',change,onEdit,readOnly
    <p>{pt?'Crie marcas de jardim ou plantas no editor, salve A e B e carregue qualquer composição para continuar editando. Nenhuma ação altera a fotografia original.':'Create garden or plant marks in the editor, save A and B, and load either composition to keep editing. The original photograph is never changed.'}</p>
   </header>
   <div className="scenario-studio__grid">{snapshots.map(item=><article key={item.slot}>
-   <div className="scenario-studio__label"><strong>{labels[item.slot]}</strong>{item.slot!=='original'&&<small>{item.exists?(pt?`${item.markers.length} elementos`:`${item.markers.length} elements`):(pt?'Não salva':'Not saved')}</small>}</div>
+   <div className="scenario-studio__label"><strong>{labels[item.slot]}</strong>{item.slot!=='original'&&<small>{item.exists?(pt?`${item.markers.length} ${item.markers.length===1?'elemento':'elementos'}`:`${item.markers.length} ${item.markers.length===1?'element':'elements'}`):(pt?'Não salva':'Not saved')}</small>}</div>
    {item.exists?<img src={item.uri} alt={pt?`Prévia de ${labels[item.slot]}`:`Preview of ${labels[item.slot]}`} loading="lazy"/>:<div className="scenario-studio__placeholder">{pt?'Crie uma composição no editor e salve aqui.':'Create a proposal in the editor and save here.'}</div>}
    {item.slot!=='original'&&item.exists&&<div className="scenario-studio__legend"><strong>{pt?'Elementos desta proposta':'Elements in this proposal'}</strong>
     <ol>{item.markers.map((m,i)=><li key={m.id}><span>{String(i+1).padStart(2,'0')}</span>{legend(m,lang)}</li>)}</ol></div>}
