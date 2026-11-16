@@ -35,11 +35,11 @@ for(const [i,item] of photos.entries()){
  }catch{}
  let ok=false;
  for(const [index,url] of urls(item.wikiFile).entries()){
-  for(let attempt=0;attempt<3;attempt++){
+  for(let attempt=0;attempt<1;attempt++){
    try{
     const response=await fetch(url,{
      headers:{'User-Agent':ua,'Accept':'image/jpeg,image/*;q=.8,*/*;q=.1'},
-     signal:AbortSignal.timeout(24000),
+     signal:AbortSignal.timeout(9000),
      redirect:'follow'
     });
     if(!response.ok)throw Error('HTTP '+response.status);
@@ -51,7 +51,7 @@ for(const [i,item] of photos.entries()){
     await writeFile(dst,data);
     console.log('DOWNLOADED '+(i+1)+'/'+photos.length+' '+item.id+' '+data.length+'B source#'+index);
     ok=true;break;
-   }catch(error){console.warn('RETRY '+item.id+' source#'+index+' attempt '+attempt+' '+error.message);await sleep(1000*(attempt+1))}
+   }catch(error){console.warn('RETRY '+item.id+' source#'+index+' attempt '+attempt+' '+error.message);await sleep(300)}
   }
   if(ok)break;
  }
