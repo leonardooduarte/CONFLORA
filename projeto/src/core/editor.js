@@ -17,7 +17,7 @@ export const Ed = (()=>{
  <g font-family="Arial,sans-serif" fill="#5B675B" font-size="14" font-weight="700" letter-spacing="2"><text x="86" y="120">CASA / ÁREA COBERTA</text><text x="544" y="117">ÁREA EXTERNA</text></g>
  <g font-family="Arial,sans-serif" fill="#64675D" font-size="12" letter-spacing="1"><text x="68" y="587">ESQUEMA ILUSTRATIVO · SEM ESCALA</text></g>`;}
  function marker(a,labels,selected=false,number=1,mode='full'){
-  const x=clamp(+a.x||0,0,W),y=clamp(+a.y||0,0,H),scale=clamp(+a.size||1,.55,2.4),c=colors[a.type]||'#527766';
+  const x=clamp(+a.x||0,0,W),y=clamp(+a.y||0,0,H),scale=clamp(+a.size||1,.55,2.4),c=a.studyKind==='exclusion'?'#b55240':a.studyKind==='review'?'#b88945':colors[a.type]||'#527766';
   let art='';
   if(a.type==='pool') art=`<g fill="none" stroke="${c}" stroke-width="4"><ellipse rx="54" ry="27"/><ellipse rx="37" ry="17" stroke-width="2"/><ellipse rx="20" ry="8" stroke-width="2"/></g><circle r="5" fill="${c}"/>`;
   else if(a.type==='roof') art=`<path d="M-36 -15 L14 -15 L14 21" fill="none" stroke="${c}" stroke-width="8" stroke-linecap="round"/><path d="M-2 12 L14 30 L30 12" fill="none" stroke="${c}" stroke-width="7" stroke-linejoin="round"/>`;
@@ -30,10 +30,10 @@ export const Ed = (()=>{
    if(a.kind==='polygon')art=`<polygon points="${pts}" fill="${c}" fill-opacity=".22" stroke="${c}" stroke-width="3"/>`;
    else art=`<defs><marker id="arrow-${esc(a.id)}" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0L7 3L0 6Z" fill="#237B8A"/></marker></defs><polyline points="${pts}" fill="none" stroke="#237B8A" stroke-width="5" marker-end="url(#arrow-${esc(a.id)})"/>`;
   }
-  const label=esc(a.speciesId?(plants.find(p=>p.id===a.speciesId)?.scientific||'Espécie / Species'):a.kind==='path'?(labels.waterPath||'Caminho de água / Water path'):(labels?.[a.type]??a.type)),sel=selected?`<circle r="${a.type==='garden'?145*scale:86*scale}" fill="none" stroke="#D8F9A0" stroke-width="3" stroke-dasharray="9 6"/>`:'';
+  const label=esc(a.studyKind?a.notes:a.speciesId?(plants.find(p=>p.id===a.speciesId)?.scientific||'Espécie / Species'):a.kind==='path'?(labels.waterPath||'Caminho de água / Water path'):(labels?.[a.type]??a.type)),sel=selected?`<circle r="${a.type==='garden'?145*scale:86*scale}" fill="none" stroke="#D8F9A0" stroke-width="3" stroke-dasharray="9 6"/>`:'';
   const badge=mode==='numbers'?`<g class="marker-number" transform="translate(25 -30)"><circle r="17" fill="#0B2C23" stroke="#FFFFFF" stroke-width="2"/><text text-anchor="middle" y="5" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">${number}</text></g>`:'';
   const labelArt=`<g class="marker-name" transform="translate(0 ${a.type==='garden'?90*scale:65*scale})"><rect x="-${Math.max(65,(label.length+4)*4.5)}" y="-17" width="${Math.max(130,(label.length+4)*9)}" height="30" rx="15" fill="#0B2C23"/><text text-anchor="middle" y="3" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8F7ED">${number}. ${label}</text></g>`;
-  return `<g data-marker-id="${esc(a.id)}" data-selected="${selected}" tabindex="-1" role="img" aria-label="${label}" style="cursor:grab"><title>${number}. ${label}</title><g transform="translate(${x} ${y})">${sel}<g transform="scale(${scale})">${art}</g>${badge}${mode==='full'||selected||a.speciesId?labelArt:''}</g></g>`;
+  return `<g data-marker-id="${esc(a.id)}" data-selected="${selected}" tabindex="-1" role="img" aria-label="${label}" style="cursor:grab"><title>${number}. ${label}</title><g transform="translate(${x} ${y})">${sel}<g opacity="${a.opacity??1}" transform="rotate(${a.rotation||0}) scale(${scale} ${scale*(a.perspective??1)})">${art}</g>${badge}${mode==='full'||selected||a.speciesId?labelArt:''}</g></g>`;
  }
  function svgContent(project,opts={}){
   const labels=opts.labels||{}; const selected=opts.selected; const compare=!!opts.compare; const fraction=clamp(Number(opts.fraction??50),0,100)/100;

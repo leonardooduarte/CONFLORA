@@ -1,6 +1,7 @@
-import React,{useMemo} from 'react';
+import React,{useMemo,useEffect,useState} from 'react';
 import {Ed} from '../core/editor.js';
-import {plants} from '../core/knowledge.js';
+import {proposalSVG,dataImage} from '../core/proposalImage.js';
+import {plants,asset} from '../core/knowledge.js';
 import {captureScenario,restoreScenario,renderScenarioProject,hasScenario,getLiveProposals} from '../core/scenarios.js';
 
 const slotNames={
@@ -12,13 +13,15 @@ const legend=(mark,lang)=>{
  return plant?.scientific||(mark.notes?.trim())||(lang==='pt'?'Jardim conceitual':'Conceptual garden');
 };
 export default function ScenarioStudio({project,lang='pt',change,onEdit,readOnly=false}){
+ const [photos,setPhotos]=useState({});
+ useEffect(()=>{let disposed=false;const urls=[...new Set(['A','B'].flatMap(s=>(project.scenarios?.[s]?.markers||[]).map(m=>plants.find(p=>p.id===m.speciesId)?.image?.file).filter(Boolean)).map(file=>asset('botanical/'+file)))];Promise.all(urls.map(async u=>[u,await dataImage(u)])).then(pairs=>{if(!disposed)setPhotos(Object.fromEntries(pairs))}).catch(()=>{});return()=>{disposed=true}},[project.scenarios]);
  const pt=lang==='pt',proposals=getLiveProposals(project),labels=slotNames[lang];
  const snapshots=useMemo(()=>['original','A','B'].map(slot=>{
   const exists=slot==='original'||hasScenario(project,slot);
   const current=exists?renderScenarioProject(project,slot):null;
-  const svg=current?Ed.svgContent(current,{labelMode:'numbers',svgLabel:labels[slot]}):null;
+  const svg=current?(slot!=='original'&&project.image?proposalSVG(project,slot,lang,photos):Ed.svgContent(current,{labelMode:'numbers',svgLabel:labels[slot]})):null;
   return {slot,exists,uri:svg?'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg):null,markers:slot==='original'?[]:project.scenarios?.[slot]?.markers||[]};
- }),[project,lang]);
+ }),[project,lang,photos]);
  const save=slot=>{
   if(hasScenario(project,slot)&&!window.confirm(pt?`Substituir a composição ${slot} salva pelas marcações atuais? A outra composição não será alterada.`:`Replace saved composition ${slot} with current marks? The other composition is unchanged.`))return;
   change(p=>captureScenario(p,slot));

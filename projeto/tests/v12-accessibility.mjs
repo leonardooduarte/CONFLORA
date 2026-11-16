@@ -4,12 +4,12 @@ const out=process.env.TEST_OUTPUT||'work/v12-accessibility';await mkdir(out,{rec
 const browser=await chromium.launch({...(process.env.CHROMIUM_PATH?{executablePath:process.env.CHROMIUM_PATH}:{}),headless:true,args:['--no-sandbox','--enable-unsafe-swiftshader']});
 try{
  const mobile=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true});const page=await mobile.newPage();await page.goto(process.env.BASE_URL||'http://localhost:5176');await page.getByRole('button',{name:'Começar sem foto',exact:true}).first().click();
- await page.getByRole('button',{name:'Desenhar caminho',exact:true}).click();
+ await page.locator('.mobile-studio-tabs').getByRole('button',{name:'Ferramentas',exact:true}).click();await page.getByRole('button',{name:'Desenhar caminho',exact:true}).click();await page.locator('.mobile-studio-tabs').getByRole('button',{name:'Imagem',exact:true}).click();
  const svg=page.locator('.scene svg');await svg.scrollIntoViewIfNeeded();const box=await svg.boundingBox();
  // SVG has letterboxing on small screens: use its CTM to transform actual normalized coordinates.
  for(const [x,y] of [[200,200],[600,400]]){const point=await svg.evaluate((el,[x,y])=>{const p=el.createSVGPoint();p.x=x;p.y=y;const q=p.matrixTransform(el.getScreenCTM());return {x:q.x,y:q.y}},[x,y]);await page.touchscreen.tap(point.x,point.y)}
  await page.getByRole('button',{name:'Concluir desenho',exact:true}).click();await expect(page.locator('.scene polyline')).toHaveAttribute('points','-200,-100 200,100');
- await page.getByRole('button',{name:'Reproduzir caminhos',exact:true}).click();await expect(page.locator('animateMotion')).toHaveCount(1);
+ await page.locator('.mobile-studio-tabs').getByRole('button',{name:'Ferramentas',exact:true}).click();await page.getByRole('button',{name:'Reproduzir caminhos',exact:true}).click();await page.locator('.mobile-studio-tabs').getByRole('button',{name:'Imagem',exact:true}).click();await expect(page.locator('animateMotion')).toHaveCount(1);
  await page.getByRole('button',{name:'Aproximar',exact:true}).click();const before=await svg.getAttribute('viewBox');await page.getByRole('button',{name:'Deslocar →',exact:true}).click();expect(await svg.getAttribute('viewBox')).not.toBe(before);await page.getByRole('button',{name:'Enquadrar',exact:true}).click();await expect(svg).toHaveAttribute('viewBox','0 0 1000 650');
  await page.screenshot({path:out+'/touch-path.png'});await mobile.close();
  const reduced=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});const r=await reduced.newPage();await r.goto(process.env.BASE_URL||'http://localhost:5176');await r.locator('.water-story').scrollIntoViewIfNeeded();await expect(r.locator('.environment-static')).toBeVisible();await expect(r.locator('.ripple-box canvas')).toHaveCount(0);await r.screenshot({path:out+'/reduced-static.png'});await reduced.close();
