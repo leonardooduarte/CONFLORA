@@ -1,6 +1,7 @@
 import {SelectionResults} from './TerrainSelection.jsx';
 import React from 'react';
 import SiteReview from './SiteReview.jsx';
+import AreaComparison from './AreaComparison.jsx';
 import {buildPlan,plants,references,say} from '../core/knowledge.js';
 export default function PlanEvidence({project,lang}){
  const pt=lang==='pt',plan=buildPlan(project,lang),a=project.annotations;
