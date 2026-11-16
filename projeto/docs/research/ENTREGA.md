@@ -10,3 +10,6 @@
 
 ## Publicação e limites
 A versão oficial https://leonardooduarte.github.io/CONFLORA/ não deve ser substituída. A prévia é publicada pelo workflow da branch de trabalho em caminho separado. Documentos de validação só afirmam testes concluídos após confirmação dos resultados do Actions. Esta entrega não é projeto executivo ou recomendação profissional.
+
+## Evolução V14 (complemento)
+A versão V14 foi desenvolvida em branch própria: leitura de risco e alternativas condicionadas por área, comparação qualitativa entre locais e ficha brasileira informativa *Cyperus giganteus*. Catálogo com 15 fichas, sem assumir elegibilidade da espécie para seleção. Documentação detalhada em `../v14/ENTREGA.md`. Os testes/publicação da V14 precisam ser conferidos no workflow dedicado antes de confirmação.
