@@ -13,3 +13,6 @@ A versão oficial https://leonardooduarte.github.io/CONFLORA/ não deve ser subs
 
 ## Evolução V14 (complemento)
 A versão V14 foi desenvolvida em branch própria: leitura de risco e alternativas condicionadas por área, comparação qualitativa entre locais e ficha brasileira informativa *Cyperus giganteus*. Catálogo com 15 fichas, sem assumir elegibilidade da espécie para seleção. Documentação detalhada em `../v14/ENTREGA.md`. Os testes/publicação da V14 precisam ser conferidos no workflow dedicado antes de confirmação.
+
+## Evolução V15 — evidências e comparação de cenários
+A V15 registrou 18 fichas botânicas, com as três novas espécies brasileiras `Alternanthera brasiliana`, `Rhynchanthera grandiflora` e `Arachis repens` tratadas como **pesquisa**, não como indicação automática de plantio. As evidências por campo estão em `src/data/evidenceClaims.json`. O editor e o plano oferecem agora cenários conceituais A/B sem substituir a foto original, com importação/exportação compatível. Consulte `../v15/REVISAO_BOTANICA.md`, `../v15/MOTOR_SELECAO.md` e `../v15/TESTES.md` para limites e validação.
