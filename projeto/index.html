@@ -7,6 +7,19 @@
  <meta name="description" content="CONFLORA — observe seu espaço, explore possibilidades e organize um plano inicial." />
  <link rel="icon" type="image/png" href="/conflora-mark.png" />
  <title>CONFLORA — Meu espaço</title>
+ <script>
+  // Attribution query strings may be appended by external chat/share clients.
+  // Keep the public CONFLORA URL clean without a redirect or losing the project route.
+  (() => {
+   const url = new URL(window.location.href);
+   let changed = false;
+   for (const key of [...url.searchParams.keys()]) {
+    if (/^utm_/i.test(key)) { url.searchParams.delete(key); changed = true; }
+   }
+   if (changed) window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+  })();
+ </script>
+
 </head>
 <body>
  <div id="root"></div>
