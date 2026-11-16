@@ -1,0 +1,42 @@
+name: CONFLORA V16 — Quick checks
+
+on:
+  push:
+    branches:
+      - feat/conflora-v16-usability-science-20261116
+    paths:
+      - "projeto/src/**"
+      - "projeto/tests/**"
+      - "projeto/package.json"
+      - ".github/workflows/ci-v16.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: conflora-v16-quick
+  cancel-in-progress: true
+
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install dependencies
+        working-directory: projeto
+        run: npm ci
+      - name: Build and fast regression checks
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/science.mjs
+          node tests/v14-analysis.mjs
+          node tests/v15-model.mjs
+          node tests/v16-model.mjs
