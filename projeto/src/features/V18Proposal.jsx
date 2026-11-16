@@ -55,7 +55,7 @@ export default function V18Proposal({project,lang='pt',onGenerate,onEdit,report=
        <p>{x.reason}</p>
        {x.areas.length>0&&<p className="v18-plant-areas">{pt?'Áreas: ':'Areas: '}{x.areas.join(', ')}</p>}
        <a href={x.source?.url||p.taxonomyUrl} target="_blank" rel="noreferrer">{pt?'Fonte científica':'Scientific source'}</a>
-       {p.image&&<small className="v18-credit">{pt?'Foto: ':'Photo: '}{p.image.author} · {p.image.license}</small>}
+       {p.image&&<small className="v18-credit">{pt?'Foto: ':'Photo: '}<a href={p.image.source} target="_blank" rel="noreferrer">{p.image.author}</a> · <a href={p.image.licenseUrl} target="_blank" rel="noreferrer">{p.image.license}</a></small>}
      </div>
     </article>;
    })}</div>:<p>{pt?'A base ainda não reúne registros pertinentes com imagens verificadas para as condições informadas.':'The database has no relevant records with verified photographs for the reported context.'}</p>}
