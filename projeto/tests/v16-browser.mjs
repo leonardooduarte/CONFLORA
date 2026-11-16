@@ -1,0 +1,38 @@
+import {chromium,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1280,height:900}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ await page.goto('http://localhost:5176/');
+ await page.getByRole('button',{name:'Analisar meu terreno'}).first().click();
+ await page.locator('input[type=file]').first().setInputFiles('public/scene-garden.png');
+ await page.locator('.line-sidebar').getByText('Jardim de chuva',{exact:true}).click();
+ await page.getByRole('button',{name:'Adicionar no centro',exact:true}).click();
+ const studio=page.locator('.scenario-studio').first();
+ await expect(studio).toBeVisible();
+ await studio.getByRole('button',{name:'Salvar composição A'}).click();
+ await expect(studio).toContainText('1 elementos');
+ await page.getByRole('button',{name:'Adicionar no centro',exact:true}).click();
+ await studio.getByRole('button',{name:'Salvar composição B'}).click();
+ await expect(studio).toContainText('2 elementos');
+ page.once('dialog',dialog=>dialog.accept());
+ await studio.getByRole('button',{name:'Carregar para editar A'}).click();
+ await expect(page.locator('#workspace-svg [data-marker-id]')).toHaveCount(1);
+ await expect(studio).toContainText('2 elementos');
+ await expect(studio.locator('.scenario-studio__legend')).toHaveCount(2);
+ await page.locator('.studio-journey').getByRole('button',{name:/Organizar meu plano/}).click();
+ await expect(page.locator('.plan-extras .scenario-studio')).toBeVisible();
+ await expect(page.locator('.personalized-outcome')).toContainText('O que seu terreno nos permite investigar');
+ await page.getByRole('button',{name:/Herbário/}).first().click();
+ await expect(page.locator('.knowledge-heading')).toContainText('19 espécies');
+ await page.getByLabel('Contexto do catálogo').selectOption('BR');
+ await page.getByLabel('Pesquisar espécies').fill('Inga');
+ await expect(page.locator('.botanic-row')).toHaveCount(1);
+ await expect(page.locator('.botanic-row')).toContainText('Inga affinis');
+ assert(await page.locator('.atlas-feature').count()===1);
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
+ assert.deepEqual(errors,[]);
+ console.log('PASS V16 browser: independent A/B restore/edit, personal summary, Brazilian evidence, preserved gallery, mobile');
+}finally{await browser.close()}
