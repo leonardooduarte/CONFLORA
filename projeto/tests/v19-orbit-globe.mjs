@@ -5,7 +5,8 @@ import {mkdir,writeFile} from 'node:fs/promises';
 const out='work/globe-orbit-review';
 await mkdir(out,{recursive:true});
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
-const page=await browser.newPage({viewport:{width:1440,height:940},deviceScaleFactor:1});
+const context=await browser.newContext({viewport:{width:1440,height:940},deviceScaleFactor:1,recordVideo:{dir:out,size:{width:960,height:626}}});
+const page=await context.newPage();
 const errors=[];
 page.on('pageerror',e=>errors.push(e.message));
 const getVisible=async()=>page.locator('.globe-orbit__polaroid').evaluateAll(els=>els.filter(el=>{
@@ -42,7 +43,7 @@ try{
  const rootInfo=await stage.evaluate(el=>({webgl:!!el.querySelector('canvas'),anchorSupport:CSS.supports('position-anchor: --cobe-test'),count:el.dataset.visibleCount}));
  assert(rootInfo.anchorSupport,'Browser must exercise native marker anchors');
  const moments=[],seen=new Set();
- for(const [idx,delay] of [250,4900,4900,4900].entries()){
+ for(const [idx,delay] of [250,4900,4900,4900,4900,4900].entries()){
   await page.waitForTimeout(delay);
   const v=await getVisible();
   for(const x of v)seen.add(x.id);
@@ -89,4 +90,4 @@ try{
 }catch(error){
  await page.screenshot({path:out+'/failure.jpg',type:'jpeg',quality:80,fullPage:false}).catch(()=>{});
  console.error('ORBIT_FAILURE',error);throw error;
-}finally{await browser.close()}
+}finally{await context.close();await browser.close()}
