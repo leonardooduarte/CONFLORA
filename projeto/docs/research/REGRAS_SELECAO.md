@@ -18,3 +18,6 @@ Campos candidatos: luz, umidade, região, fonte e tipo de evidência. Novas plan
 
 ## Não confundIR
 `Seleção para investigação` ≠ prescrição de plantio, diagnóstico da drenagem, taxa de infiltração ou cálculo de retenção hídrica.
+
+## Complemento V14 — leitura de áreas
+A seleção original permanece em `src/core/selection.js`. A nova função `src/core/siteAnalysis.js` interpreta observações declaradas de duração, solo e proximidade a construções e apresenta verificações e soluções *para investigar*, nunca projeto executivo. Água persistente ou construções próximas priorizam avaliação profissional; drenagem aparente lenta impede apresentar jardim de chuva como opção sem estudo do solo. A ficha ecológica de *Cyperus giganteus* aparece no Herbário, porém não entra no motor de correspondências. Ver `../v14/REGRAS.md`.
