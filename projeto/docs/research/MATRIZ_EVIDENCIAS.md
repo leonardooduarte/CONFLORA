@@ -13,7 +13,7 @@ Legenda: T=registro taxonômico; G=guia técnico regional; R=revisão secundári
 | Rudbeckia fulgida | Iowa | G: ISWEP A, p.63 | úmida a seca | Pendente. Verificar taxonomia e luz |
 | Carex blanda | Iowa | G: ISWEP A, p.68–69 | molhada a mesic | Pendente. Verificar distribuição e exposição |
 | Symphyotrichum laeve | Iowa | G: ISWEP A, p.62 | úmida a seca, pleno sol | Pendente. Verificar taxonomia e região |
-| Cyperus giganteus | Brasil | T: Kew; R: Vieira et al. (2026) | registro como candidata de literatura | Pendente. Sem teste hidrológico regional por espécie |
+| Cyperus giganteus | Brasil | T: Kew; R: Vieira et al. (2026); A: Rocha & Martins (2011); A: Rodrigues & Estelita (2005) | exposição sazonal em ambiente marginal, anatomia radicular; luz não documentada | Ficha informativa integrada; não elegível à seleção para plantio; sem teste hidrológico por espécie em jardim de chuva |
 | Alternanthera brasiliana | Brasil | T: Kew; R: Vieira et al. (2026) | registro como candidata de literatura | Pendente. Sem ficha transferível de luz/umidade |
 | Rhynchanthera grandiflora | Brasil | T: Kew; R: Vieira et al. (2026) | registro como candidata de literatura | Pendente. Não validada para Itapeva |
 | Agrostis montevidensis | Brasil | R: Vieira et al. (2026) | apenas menção em revisão | Pendente. Taxonomia/cultivo ainda não verificados |
@@ -34,3 +34,6 @@ O guia ISWEP apresenta condições de uso regionais; isso **não** equivale a ta
 - Kew Cyperus: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1
 - Kew Alternanthera: https://powo.science.kew.org/taxon/10294-2
 - Kew Rhynchanthera: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1
+
+## Complemento V14
+A = estudo primário de anatomia/morfologia, distinto de avaliação hidrológica. A ficha de *Cyperus giganteus* é documental, com `moisture: ['seasonal']`, sem parâmetro operacional de umidade/luz e sem fotografia licenciada. Não foi transformada em recomendação para Itapeva. Ver `../v14/PESQUISA.md`.
