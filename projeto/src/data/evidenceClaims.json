@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-11-16",
   "species": {
     "commelina": {
@@ -9,7 +9,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172048-1",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -17,7 +18,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172048-1",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -25,22 +27,32 @@
         "sourceId": "br",
         "evidenceType": "pot-prototype",
         "scope": "Bauru pot prototypes; not field scale",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "moisture": {
         "field": "moisture",
-        "values": [
-          "seasonal"
-        ],
+        "values": [],
         "sourceId": "br",
         "evidenceType": "pot-prototype",
-        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
-        "matching": false
+        "scope": "Controlled drip irrigation in Bauru pot prototypes; vegetation cover endpoint. Comparable wet/moist/mesic/dry tolerance not established.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
         "value": "prototype-only",
         "matching": false
+      },
+      "experimentalRegime": {
+        "field": "experimentalContext",
+        "value": "20 pot prototypes, 4 species, controlled drip irrigation; vegetation cover monitored",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "region": "Bauru/SP, Brazil",
+        "scope": "Methods pp. 4–5 and vegetation results; not a light gradient or flood-tolerance trial.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       }
     },
     "distimake": {
@@ -50,7 +62,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77163242-1",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -58,7 +71,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77163242-1",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -66,22 +80,32 @@
         "sourceId": "br",
         "evidenceType": "pot-prototype",
         "scope": "Bauru pot prototypes; not field scale",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "moisture": {
         "field": "moisture",
-        "values": [
-          "seasonal"
-        ],
+        "values": [],
         "sourceId": "br",
         "evidenceType": "pot-prototype",
-        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
-        "matching": false
+        "scope": "Controlled drip irrigation in Bauru pot prototypes; vegetation cover endpoint. Comparable wet/moist/mesic/dry tolerance not established.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
         "value": "prototype-only",
         "matching": false
+      },
+      "experimentalRegime": {
+        "field": "experimentalContext",
+        "value": "20 pot prototypes, 4 species, controlled drip irrigation; vegetation cover monitored",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "region": "Bauru/SP, Brazil",
+        "scope": "Methods pp. 4–5 and vegetation results; not a light gradient or flood-tolerance trial.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       }
     },
     "trimezia": {
@@ -91,7 +115,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:441647-1",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -99,7 +124,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:441647-1",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -107,22 +133,32 @@
         "sourceId": "br",
         "evidenceType": "pot-prototype",
         "scope": "Bauru pot prototypes; not field scale",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "moisture": {
         "field": "moisture",
-        "values": [
-          "seasonal"
-        ],
+        "values": [],
         "sourceId": "br",
         "evidenceType": "pot-prototype",
-        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
-        "matching": false
+        "scope": "Controlled drip irrigation in Bauru pot prototypes; vegetation cover endpoint. Comparable wet/moist/mesic/dry tolerance not established.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
         "value": "prototype-only",
         "matching": false
+      },
+      "experimentalRegime": {
+        "field": "experimentalContext",
+        "value": "20 pot prototypes, 4 species, controlled drip irrigation; vegetation cover monitored",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "region": "Bauru/SP, Brazil",
+        "scope": "Methods pp. 4–5 and vegetation results; not a light gradient or flood-tolerance trial.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       }
     },
     "syngonium": {
@@ -132,7 +168,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:89127-1",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -140,7 +177,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:89127-1",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -148,22 +186,32 @@
         "sourceId": "br",
         "evidenceType": "pot-prototype",
         "scope": "Bauru pot prototypes; not field scale",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "moisture": {
         "field": "moisture",
-        "values": [
-          "seasonal"
-        ],
+        "values": [],
         "sourceId": "br",
         "evidenceType": "pot-prototype",
-        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
-        "matching": false
+        "scope": "Controlled drip irrigation in Bauru pot prototypes; vegetation cover endpoint. Comparable wet/moist/mesic/dry tolerance not established.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
         "value": "prototype-only",
         "matching": false
+      },
+      "experimentalRegime": {
+        "field": "experimentalContext",
+        "value": "20 pot prototypes, 4 species, controlled drip irrigation; vegetation cover monitored",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "region": "Bauru/SP, Brazil",
+        "scope": "Methods pp. 4–5 and vegetation results; not a light gradient or flood-tolerance trial.",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       }
     },
     "monarda": {
@@ -671,7 +719,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -679,7 +728,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -687,7 +737,8 @@
         "sourceId": "cyperus2011",
         "evidenceType": "primary-ecology",
         "scope": "Research-only; not a hydrological performance trial",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "moisture": {
         "field": "moisture",
@@ -697,7 +748,8 @@
         "sourceId": "cyperus2011",
         "evidenceType": "morphological-habitat",
         "scope": "Natural marginal wet-site occurrence; not flood-performance tolerance",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
@@ -709,7 +761,16 @@
         "sourceId": "cyperus2011",
         "evidenceType": "plant-morphoanatomy",
         "scope": "Wet margin anatomical adaptation; not runoff uptake",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
+      },
+      "rootAnatomy": {
+        "value": "Schizo-lysigenous aerenchyma described during root development",
+        "sourceId": "cyperus2005",
+        "evidenceType": "anatomical",
+        "scope": "Anatomical observation; not a water-uptake/infiltration rate",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed"
       }
     },
     "alternanthera-brasiliana": {
@@ -719,7 +780,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:10294-2",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -727,7 +789,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:10294-2",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -735,7 +798,8 @@
         "sourceId": "alternanthera2014",
         "evidenceType": "primary-ecology",
         "scope": "Research-only; not a hydrological performance trial",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
@@ -748,7 +812,8 @@
         "sourceId": "alternanthera2014",
         "evidenceType": "ecology-or-propagation",
         "scope": "Habitat/propagation observation, no hydraulic tests",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       }
     },
     "rhynchanthera-grandiflora": {
@@ -758,7 +823,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -766,7 +832,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -774,7 +841,8 @@
         "sourceId": "rhynchanthera2016",
         "evidenceType": "primary-ecology",
         "scope": "Research-only; not a hydrological performance trial",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
@@ -787,7 +855,16 @@
         "sourceId": "rhynchanthera2016",
         "evidenceType": "ecology-or-propagation",
         "scope": "Habitat/propagation observation, no hydraulic tests",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
+      },
+      "adultHeight": {
+        "value": "0.7–2 m in the surveyed material",
+        "sourceId": "rhynchanthera2016",
+        "evidenceType": "floristic-morphology",
+        "scope": "RPPN Itororó, Uberlândia/MG; not a spacing or root-setback parameter",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed"
       }
     },
     "arachis-repens": {
@@ -797,7 +874,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17315-2",
         "evidenceType": "taxonomic",
         "scope": "Taxonomic status and broad distribution, not site suitability",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -805,7 +883,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17315-2",
         "evidenceType": "distribution",
         "scope": "Broad regional distribution; not a local planting endorsement",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -813,7 +892,8 @@
         "sourceId": "arachis2026",
         "evidenceType": "primary-ecology",
         "scope": "Research-only; not a hydrological performance trial",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
@@ -826,7 +906,8 @@
         "sourceId": "arachis2026",
         "evidenceType": "erosion-field-study",
         "scope": "Erosion on mined sand slopes, not rain-garden infiltration",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       }
     },
     "inga-affinis": {
@@ -836,7 +917,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/128358-2",
         "evidenceType": "taxonomic",
         "scope": "POWO accepted name; published experimental name is a synonym.",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "region": {
         "field": "region",
@@ -844,7 +926,8 @@
         "sourceUrl": "https://powo.science.kew.org/taxon/128358-2",
         "evidenceType": "distribution",
         "scope": "Brazil Southeast broad range; no confirmed occurrence in Itapeva.",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-powo-reviewed"
       },
       "sourceContext": {
         "field": "context",
@@ -852,7 +935,8 @@
         "sourceId": "inga-flood-2026",
         "evidenceType": "controlled-seedling-flooding",
         "scope": "44 days flooded seedlings, NOT site performance.",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "floodResponse": {
         "field": "flood-exposure",
@@ -860,12 +944,21 @@
         "sourceId": "inga-flood-2026",
         "evidenceType": "controlled-seedling-flooding",
         "scope": "Measured adverse growth and physiological responses; cannot recommend residential planting.",
-        "matching": false
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed-with-scope-limits"
       },
       "status": {
         "field": "eligibility",
         "value": "research-only",
         "matching": false
+      },
+      "floodTrial": {
+        "value": "Seedlings subjected to 44 days of flooding; reduced growth and pigments, increased sugars",
+        "sourceId": "inga-flood-2026",
+        "evidenceType": "seedling-flood-experiment",
+        "scope": "Upper Paraná context; young plants, not a residential garden trial or efficacy metric",
+        "matching": false,
+        "reviewStatus": "v19-primary-reviewed"
       }
     }
   }

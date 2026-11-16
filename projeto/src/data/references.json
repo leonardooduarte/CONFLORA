@@ -3,9 +3,12 @@
     "title": "Santos, M. F. N.; Fontes, M. S. G. C.; Oliveira, J. R. (2024). Jardins de chuva: estudo experimental com espécies nativas do Brasil. PLURIS 2024.",
     "url": "https://www.civil.uminho.pt/planning/Pluris2024/Atas/Papers/Paper806.pdf",
     "scope": {
-      "pt": "20 protótipos em vasos; cobertura vegetal acompanhada por 15 meses em Bauru. Não mede eficácia no seu terreno. Há inconsistências de datas no corpo do artigo.",
-      "en": "20 pot prototypes; 15-month vegetation cover study in Bauru. Not a performance test for your site. The paper contains internal date inconsistencies."
-    }
+      "pt": "Ensaio de cobertura vegetal em 20 vasos de 55 L, irrigados duas vezes ao dia, em Bauru (pp. 4–5). Não compara faixas de umidade nem comprova tolerância ao encharcamento local ou eficácia hidráulica. Há inconsistências internas de datas.",
+      "en": "Vegetation-cover study in twenty 55 L pots irrigated twice daily in Bauru (pp. 4–5). No comparative moisture ranges, local flooding tolerance or hydraulic efficacy. Internal date inconsistencies remain."
+    },
+    "reviewedAt": "2026-11-16",
+    "reviewStatus": "full-text-reviewed",
+    "referenceType": "experimental"
   },
   "ia": {
     "title": "ISWEP (2021). Iowa Rain Garden Design & Installation Guide, 3rd edition, Appendix A, pp. 63–69.",
@@ -13,7 +16,10 @@
     "scope": {
       "pt": "Guia regional de Iowa. As posições são indicações do guia, não dimensionamento para outro lugar.",
       "en": "Iowa regional guidance. Garden positions are from the guide, not a design for another site."
-    }
+    },
+    "reviewedAt": "2026-11-16",
+    "reviewStatus": "full-text-reviewed",
+    "referenceType": "regional-technical"
   },
   "isu": {
     "title": "Iowa State University Extension — Natural Resource Stewardship (RG 605: link original indisponível)",
@@ -38,7 +44,9 @@
     "scope": {
       "pt": "Ligação taxonômica; acesso direto indisponível nesta verificação. Conferir distribuição atual antes de plantar.",
       "en": "Taxonomic link; direct access unavailable during this review. Verify current distribution before planting."
-    }
+    },
+    "reviewStatus": "blocked-anti-bot",
+    "reviewedAt": "2026-11-16"
   },
   "cyperus2011": {
     "title": "Rocha, D. C.; Martins, D. (2011). Adaptações morfoanatômicas de Cyperaceae ao ambiente aquático. Planta Daninha 29(1).",
@@ -62,15 +70,21 @@
     "scope": {
       "pt": "Orientação técnica norte-americana sobre solo, vegetação, extravasamento e afastamento de estruturas; conceitos gerais, não parâmetros de dimensionamento brasileiros.",
       "en": "US technical guidance on media, plants, overflow and siting away from structures; general concepts, not Brazilian design parameters."
-    }
+    },
+    "reviewedAt": "2026-11-16",
+    "reviewStatus": "full-text-reviewed",
+    "referenceType": "technical-general"
   },
   "usp-biorretencao": {
-    "title": "USP. Biorretenção: tecnologia ambiental urbana para manejo das águas de chuva (pesquisa com protótipo em São Paulo).",
+    "title": "Moura, N. C. B. (2014). Biorretenção: tecnologia ambiental urbana para manejo das águas de chuva. Tese de doutorado, FAU-USP. DOI 10.11606/T.16.2014.tde-30052014-104153.",
     "url": "https://teses.usp.br/teses/disponiveis/16/16135/tde-30052014-104153/pt-br.html",
     "scope": {
-      "pt": "Protótipo de sistema com duas coberturas vegetais e monitoramento; dados do sistema completo não são eficácia de espécie isolada.",
+      "pt": "Registro e resumo da tese consultados. Protótipo 1:1 em São Paulo com duas coberturas vegetais; resultados do sistema completo não demonstram eficácia individual de espécie nem adequação a Itapeva.",
       "en": "Field-scale prototype with two plant covers; whole-system monitoring is not a species-specific performance measurement."
-    }
+    },
+    "reviewedAt": "2026-11-16",
+    "reviewStatus": "abstract-reviewed",
+    "referenceType": "institutional-system-study"
   },
   "alternanthera2014": {
     "title": "Tracz, V.; Cruz-Silva, C. T. A.; Luz, M. Z. (2014). Produção de mudas de penicilina (Alternanthera brasiliana) via estaquia. Revista Brasileira de Plantas Medicinais 16(3 supl. 1). DOI 10.1590/1983-084x/12_098.",

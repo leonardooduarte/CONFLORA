@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-16",
+  "sources": [
+    {
+      "id": "commelina",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172048-1",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172048-1",
+      "status": 200,
+      "bytes": 168342,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "distimake",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77163242-1",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77163242-1",
+      "status": 200,
+      "bytes": 149562,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "trimezia",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:441647-1",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:441647-1",
+      "status": 200,
+      "bytes": 117599,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "syngonium",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:89127-1",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:89127-1",
+      "status": 200,
+      "bytes": 125120,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "cyperus-giganteus",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
+      "status": 200,
+      "bytes": 123292,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "alternanthera-brasiliana",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:10294-2",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:10294-2",
+      "status": 200,
+      "bytes": 155724,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "rhynchanthera-grandiflora",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1",
+      "status": 200,
+      "bytes": 122916,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "arachis-repens",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17315-2",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17315-2",
+      "status": 200,
+      "bytes": 120569,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "inga-affinis",
+      "url": "https://powo.science.kew.org/taxon/128358-2",
+      "resolvedUrl": "https://powo.science.kew.org/taxon/128358-2",
+      "status": 200,
+      "bytes": 133247,
+      "contentReviewed": true,
+      "reviewScope": "Accepted name and broad native range in POWO; no site recommendation"
+    },
+    {
+      "id": "ia",
+      "url": "https://iowastormwater.org/wp-content/uploads/Iowa-Rain-Garden-Design-and-Installation-Guide-Third-Edition-Web-March-2021.pdf",
+      "resolvedUrl": "https://iowastormwater.org/wp-content/uploads/Iowa-Rain-Garden-Design-and-Installation-Guide-Third-Edition-Web-March-2021.pdf",
+      "status": 200,
+      "bytes": 18347767,
+      "reviewScope": "Regional guide, Appendix A, pp. 63–69; PDF re-opened, existing interpretation retained",
+      "sourceRole": "regional-technical"
+    },
+    {
+      "id": "flora",
+      "url": "https://floradobrasil.jbrj.gov.br/reflora/floradobrasil/FB16912",
+      "resolvedUrl": "https://floradobrasil.jbrj.gov.br:443/consulta/ficha.html?idDadosListaBrasil=16912",
+      "status": 200,
+      "bytes": 4405,
+      "contentReviewed": false,
+      "limitation": "HTTP 200 is an anti-bot challenge; botanical content not accessible",
+      "sourceRole": "blocked-anti-bot"
+    },
+    {
+      "id": "usp-biorretencao",
+      "url": "https://teses.usp.br/teses/disponiveis/16/16135/tde-30052014-104153/pt-br.html",
+      "resolvedUrl": "https://teses.usp.br/teses/disponiveis/16/16135/tde-30052014-104153/pt-br.html",
+      "status": 200,
+      "bytes": 43798,
+      "reviewScope": "Repository bibliographic record and abstract; not full thesis PDF",
+      "sourceRole": "institutional-system-study"
+    },
+    {
+      "id": "br",
+      "url": "https://www.civil.uminho.pt/planning/Pluris2024/Atas/Papers/Paper806.pdf",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Full text",
+      "sourceRole": "experimental"
+    },
+    {
+      "id": "cyperus2011",
+      "url": "https://www.scielo.br/scielo.php?pid=S0100-83582011000100002&script=sci_arttext",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Full text"
+    },
+    {
+      "id": "cyperus2005",
+      "url": "https://www.scielo.br/j/rbb/a/jCdc6QfWVj8598phDhChbpR/?format=html",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Full text"
+    },
+    {
+      "id": "alternanthera2014",
+      "url": "https://www.scielo.br/j/rbpm/a/VpGTDKvzhQsTRVnLqfpHwvg/?lang=pt",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Full text"
+    },
+    {
+      "id": "rhynchanthera2016",
+      "url": "https://www.scielo.br/j/hoehnea/a/NSK7kYKxhzCkYSJkGvwVbwD/?lang=pt",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Full text"
+    },
+    {
+      "id": "arachis2026",
+      "url": "https://www.scielo.br/j/remi/a/gSwt6FYmXWNGvSjJHmg53gj/?format=html&lang=en",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Full text"
+    },
+    {
+      "id": "inga-flood-2026",
+      "url": "https://doi.org/10.1590/1519-6984.301423",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Abstract, methods and results"
+    },
+    {
+      "id": "epa-bioretention",
+      "url": "https://www.epa.gov/system/files/documents/2021-11/bmp-bioretention-rain-gardens.pdf",
+      "status": 200,
+      "contentReviewed": true,
+      "reviewScope": "Full text",
+      "sourceRole": "technical-general"
+    }
+  ],
+  "excludedSupplement": {
+    "url": "https://abc.habitacao.org.br/wp-content/uploads/2025/10/AGH25A-SDUH-SP-Caderno-de-Tipologias-Urbanas-Modulares.pdf",
+    "http": 200,
+    "content": "25-slide presentation, São Paulo 2025",
+    "reason": "No species-specific comparable evidence extracted; not adopted by the matcher"
+  }
+}
