@@ -1,6 +1,6 @@
 import React from 'react';
 import {assessSite} from '../core/siteAnalysis.js';
-import {plants,references,say} from '../core/knowledge.js';
+import {plants,references,say,labels} from '../core/knowledge.js';
 import {evaluatePlantEvidence} from '../core/evidence.js';
 import {hasScenario} from '../core/scenarios.js';
 
@@ -29,7 +29,7 @@ export default function PersonalizedOutcome({project,lang='pt'}){
   {entries.length?<div className="personalized-outcome__areas">{entries.map(({a,number,review,context})=><article key={a.id}>
    <div className="personalized-outcome__area-title"><strong>{pt?'Área':'Area'} {String(number).padStart(2,'0')}</strong><span>{desc[lang][review.status]}</span></div>
    <h4>{a.notes||(pt?'Área marcada pelo usuário':'User-marked area')}</h4>
-   <p>{pt?'Observações e condições declaradas:':'Reported conditions:'} {Object.entries(names[lang]).filter(([k])=>known(context[k])).map(([k,n])=>`${n}: ${context[k]}`).join(' · ')||(pt?'não especificadas':'not specified')}</p>
+   <p>{pt?'Observações e condições declaradas:':'Reported conditions:'} {Object.entries(names[lang]).filter(([k])=>known(context[k])).map(([k,n])=>`${n}: ${labels[lang][context[k]]||context[k]}`).join(' · ')||(pt?'não especificadas':'not specified')}</p>
    {review.warnings.length>0&&<p className="personalized-outcome__warning">{review.warnings[0]}</p>}
    <p><strong>{pt?'Seleção botânica: ':'Plant evidence: '}</strong>{review.evidence}</p>
    {review.selection.candidates.length>0&&<ul>{review.selection.candidates.slice(0,4).map(({plant:p,reasons})=>{
