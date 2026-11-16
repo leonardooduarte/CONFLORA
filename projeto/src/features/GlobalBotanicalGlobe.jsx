@@ -4,222 +4,200 @@ import {asset} from '../core/knowledge.js';
 import {globeGallery} from '../data/globeGallery.js';
 import './GlobalBotanicalGlobe.css';
 
-const reducedMotion=()=>window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-const clamp=(n,a,b)=>Math.min(b,Math.max(a,n));
-const safeAnchors=()=>typeof CSS!=='undefined'&&CSS.supports?.('position-anchor: --cobe-test')===true;
+/*
+ * The globe is the gallery: all Polaroids are geographic COBE markers.
+ * This closely follows the original example's position-anchor and
+ * --cobe-visible-* mechanics. No independently rotating photo carousel,
+ * guessed camera longitude, or separate bottom thumbnail list.
+ *
+ * Botanical records in this visual experience are NOT planting advice.
+ */
+const canAnchor=()=>typeof CSS!=='undefined'&&CSS.supports('position-anchor: --cobe-example');
+const prefersLessMotion=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const clamp=(x,min,max)=>Math.max(min,Math.min(max,x));
 
 export default function GlobalBotanicalGlobe({lang='pt'}){
- const pt=lang==='pt';
+ const pt=lang==='pt',records=useMemo(()=>globeGallery,[]);
+ const canvas=useRef(null),root=useRef(null),cardMap=useRef(new Map()),instance=useRef(null);
+ const phase=useRef(.32),tilt=useRef(.14),drag=useRef(null),playing=useRef(true);
+ const visible=useRef(false),reduce=useRef(false),raf=useRef(0);
+ const [credits,setCredits]=useState(false);
+ const [paused,setPaused]=useState(false);
  const [supported,setSupported]=useState(true);
  const [anchors,setAnchors]=useState(true);
- const [paused,setPaused]=useState(false);
- const [credits,setCredits]=useState(false);
- const canvas=useRef(null),stage=useRef(null),sphere=useRef(null);
- const cards=useRef(new Map()),frame=useRef(null);
- const phi=useRef(.46),theta=useRef(.12),drag=useRef(null),active=useRef(false);
- const lastFrame=useRef(0),lastLayout=useRef(0),pause=useRef(false),reduced=useRef(false);
- const kept=useRef(new Set());
- const gallery=useMemo(()=>globeGallery,[]);
- useEffect(()=>{pause.current=paused},[paused]);
+
+ useEffect(()=>{playing.current=!paused},[paused]);
  useEffect(()=>{
-  setAnchors(safeAnchors());
-  const mq=window.matchMedia('(prefers-reduced-motion:reduce)');
-  const sync=()=>{reduced.current=mq.matches};sync();
-  mq.addEventListener('change',sync);
-  return()=>mq.removeEventListener('change',sync);
+   setAnchors(canAnchor());
+   const query=window.matchMedia('(prefers-reduced-motion: reduce)');
+   const sync=()=>{reduce.current=query.matches};sync();
+   query.addEventListener?.('change',sync);
+   return()=>query.removeEventListener?.('change',sync);
  },[]);
+
  useEffect(()=>{
-  const element=canvas.current,root=stage.current;
-  if(!element||!root)return;
-  let instance=null,disposed=false;
-  const observer=new IntersectionObserver(([entry])=>{active.current=entry.isIntersecting},{rootMargin:'100px',threshold:0});
-  observer.observe(root);
-  const destroy=()=>{if(instance){instance.destroy();instance=null}};
-  const initialize=()=>{
-   const size=element.getBoundingClientRect().width;
-   if(!size||disposed)return;
-   const n=Math.round(size);
-   if(n<150)return;
-   destroy();
-   const ratio=Math.min(window.devicePixelRatio||1,1.6);
+  const surface=canvas.current,host=root.current;
+  if(!surface||!host)return;
+  let disposed=false,last=0,lastCheck=0,lastWidth=0;
+  const io=new IntersectionObserver(([entry])=>{visible.current=entry.isIntersecting},{threshold:0,rootMargin:'70px'});
+  io.observe(host);
+  const create=()=>{
+   if(disposed)return;
+   const width=Math.round(surface.getBoundingClientRect().width);
+   if(width<150||width===lastWidth&&instance.current)return;
+   lastWidth=width;
+   instance.current?.destroy();
+   instance.current=null;
+   const pixelRatio=Math.min(window.devicePixelRatio||1,1.7);
    try{
-    instance=createGlobe(element,{
-     devicePixelRatio:ratio,
-     width:Math.round(n*ratio),
-     height:Math.round(n*ratio),
-     phi:phi.current,
-     theta:theta.current,
-     dark:0,
-     diffuse:1.68,
-     mapSamples:17500,
-     mapBrightness:7.5,
-     baseColor:[.95,.95,.91],
-     markerColor:[.42,.66,.48],
-     glowColor:[.76,.67,.52],
-     markerElevation:0.017,
-     markers:gallery.map(record=>({id:record.id,location:record.location,size:.032})),
-     arcs:[],
-     opacity:.94,
+    instance.current=createGlobe(surface,{
+      devicePixelRatio:pixelRatio,
+      width:Math.round(width*pixelRatio),
+      height:Math.round(width*pixelRatio),
+      phi:phase.current,theta:tilt.current,
+      dark:0,diffuse:1.54,
+      mapSamples:17500,mapBrightness:7.5,
+      baseColor:[.95,.95,.89],
+      glowColor:[.78,.73,.61],
+      markerColor:[.30,.55,.44],
+      markerElevation:0,
+      markers:records.map(item=>({id:item.id,location:item.location,size:.021})),
+      arcs:[],opacity:.92
     });
     setSupported(true);
-   }catch(error){
-    console.warn('CONFLORA: optional globe rendering unavailable',error);
+   }catch(err){
+    console.warn('CONFLORA globe unavailable:',err);
     setSupported(false);
    }
   };
-  const ro=new ResizeObserver(entries=>{
-   const size=entries[0]?.contentRect?.width||0;
-   if(size>100&&(!sphere.current||Math.abs(sphere.current-size)>4)){
-    sphere.current=size;initialize();
-   }
-  });
-  ro.observe(element);initialize();
-  const rectsOverlap=(a,b,gap=7)=>a.left<b.right+gap&&a.right+gap>b.left&&a.top<b.bottom+gap&&a.bottom+gap>b.top;
-  const declutter=()=>{
-   if(!safeAnchors())return;
-   const scene=root.querySelector('.globe-orbit__scene');
+  const ro=new ResizeObserver(create);ro.observe(surface);create();
+
+  /* COBE itself controls each Polaroid's front/back visibility with its
+   * --cobe-visible-ID variable. Read the computed opacity from that same
+   * source instead of inferring camera direction from longitude.
+   */
+  function arrange(){
+   if(!canAnchor())return;
+   const scene=host.querySelector('.globe-orbit__scene');
    if(!scene)return;
-   const board=scene.getBoundingClientRect();
-   const small=board.width<410;
-   const limit=small?4:6;
+   const stage=scene.getBoundingClientRect();
+   const narrow=stage.width<430;
+   const max=narrow?4:7;
+   const threshold=narrow?.25:.18;
    const candidates=[];
-   for(const record of gallery){
-    const element=cards.current.get(record.id);
-    if(!element)continue;
-    const style=getComputedStyle(element);
-    // COBE v2 exposes DOM anchor positions; derive front-hemisphere opacity
-    // independently so cards never appear on the back if the optional
-    // --cobe-visible-* CSS variables are not inherited in this DOM context.
-    const lat=record.location[0]*Math.PI/180;
-    const lon=record.location[1]*Math.PI/180;
-    const cameraLon=-Math.PI/2-phi.current;
-    const angular=Math.atan2(Math.sin(lon-cameraLon),Math.cos(lon-cameraLon));
-    const depth=Math.cos(lat)*Math.cos(angular);
-    const v=clamp((depth-.025)/.17,0,1);
-    const bbox=element.getBoundingClientRect();
-    if(v<.35||bbox.width<8||bbox.height<8||bbox.right<board.left-7||bbox.left>board.right+7||bbox.bottom<board.top-4||bbox.top>board.bottom+4){
-     element.style.opacity='0';
-     element.setAttribute('aria-hidden','true');
-     continue;
-    }
-    const center=bbox.left+bbox.width/2;
-    const previous=kept.current.has(record.id);
-    const proximity=Math.abs(center-(board.left+board.width/2))/board.width;
-    candidates.push({record,element,bbox,v,score:(previous?40:0)+v*24-proximity*8});
+   for(let i=0;i<records.length;i++){
+    const item=records[i],el=cardMap.current.get(item.id);
+    if(!el)continue;
+    const opacity=Number.parseFloat(getComputedStyle(el).opacity)||0;
+    const r=el.getBoundingClientRect();
+    const inside=r.width>32&&r.height>42&&r.right>stage.left-14&&r.left<stage.right+14&&r.bottom>stage.top-47&&r.top<stage.bottom+20;
+    if(opacity>threshold&&inside)candidates.push({el,id:item.id,r,opacity,i});
+    el.classList.add('globe-orbit__polaroid--hidden');
    }
-   root.dataset.candidates=JSON.stringify(candidates.map(c=>({id:c.record.id,v:+c.v.toFixed(2),x:Math.round(c.bbox.x),y:Math.round(c.bbox.y)})));
-   candidates.sort((a,b)=>b.score-a.score);
-   const accepted=[],next=new Set();
-   for(const item of candidates){
-    const fits=accepted.every(other=>!rectsOverlap(item.bbox,other,6));
-    if(accepted.length<limit&&fits){
-     accepted.push(item.bbox);next.add(item.record.id);
-     item.element.style.opacity=String(item.v);
-     item.element.removeAttribute('aria-hidden');
-    }else{
-     item.element.style.opacity='0';
-     item.element.setAttribute('aria-hidden','true');
-    }
+   // Prefer photographs already visible and markers facing the camera. The
+   // priority is intentionally modest: overlapping Polaroids are part of the
+   // reference composition, so we only remove severe overlaps.
+   candidates.sort((a,b)=>b.opacity-a.opacity || a.i-b.i);
+   const selected=[];
+   const overlaps=(a,b)=>{
+    const w=Math.max(0,Math.min(a.right,b.right)-Math.max(a.left,b.left));
+    const h=Math.max(0,Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top));
+    return w*h/(Math.min(a.width*a.height,b.width*b.height)||1)>.41;
+   };
+   for(const c of candidates){
+    if(selected.length>=max)break;
+    if(selected.every(x=>!overlaps(x.r,c.r)))selected.push(c);
    }
-   kept.current=next;
-   root.dataset.visibleCount=String(next.size);
-   root.dataset.visibleIds=[...next].join(',');
-   root.dataset.phi=phi.current.toFixed(3);
+   for(const c of selected)c.el.classList.remove('globe-orbit__polaroid--hidden');
+   host.dataset.visibleCount=String(selected.length);
+   host.dataset.visibleIds=selected.map(x=>x.id).join(',');
+   host.dataset.rotation=phase.current.toFixed(2);
+  }
+
+  const tick=time=>{
+    if(disposed)return;
+    const dt=last?Math.min(time-last,52):16;last=time;
+    if(instance.current&&visible.current&&!document.hidden){
+      if(playing.current&&!reduce.current&&!drag.current){
+       // One revolution in ~29 seconds, like the measured reference sequence.
+       phase.current+=dt*.000216;
+      }
+      instance.current.update({phi:phase.current,theta:tilt.current});
+      if(time-lastCheck>155){lastCheck=time;arrange()}
+    }
+    raf.current=requestAnimationFrame(tick);
   };
-  const animate=(time)=>{
-   if(disposed)return;
-   const elapsed=Math.min(time-(lastFrame.current||time),50);
-   lastFrame.current=time;
-   if(instance&&active.current&&!document.hidden){
-    if(!pause.current&&!drag.current&&!reduced.current){
-     // ~22s per revolution: moving photo constellation as in the reference.
-     phi.current+=elapsed*.00043;
-    }
-    instance.update({phi:phi.current,theta:theta.current});
-    if(time-lastLayout.current>170){
-     lastLayout.current=time;
-     declutter();
-    }
-   }
-   frame.current=requestAnimationFrame(animate);
-  };
-  frame.current=requestAnimationFrame(animate);
+  raf.current=requestAnimationFrame(tick);
   return()=>{
-   disposed=true;
-   cancelAnimationFrame(frame.current);
-   observer.disconnect();ro.disconnect();destroy();
+    disposed=true;
+    cancelAnimationFrame(raf.current);
+    ro.disconnect();io.disconnect();
+    instance.current?.destroy();instance.current=null;
   };
- },[gallery]);
+ },[records]);
+
  const down=e=>{
-  if(e.pointerType==='mouse'&&e.button!==0)return;
-  drag.current={id:e.pointerId,x:e.clientX,y:e.clientY};
-  e.currentTarget.setPointerCapture?.(e.pointerId);
+   if(e.pointerType==='mouse'&&e.button!==0)return;
+   drag.current={id:e.pointerId,x:e.clientX,y:e.clientY};
+   e.currentTarget.setPointerCapture?.(e.pointerId);
  };
  const move=e=>{
-  const current=drag.current;
-  if(!current)return;
-  phi.current+=(e.clientX-current.x)/230;
-  theta.current=clamp(theta.current+(e.clientY-current.y)/440,-.58,.58);
-  drag.current={...current,x:e.clientX,y:e.clientY};
+   const last=drag.current;
+   if(!last)return;
+   phase.current+=(e.clientX-last.x)/260;
+   tilt.current=clamp(tilt.current+(e.clientY-last.y)/650,-.7,.7);
+   drag.current={...last,x:e.clientX,y:e.clientY};
  };
  const up=e=>{
-  drag.current=null;
-  if(e.currentTarget.hasPointerCapture?.(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);
+   drag.current=null;
+   if(e.currentTarget.hasPointerCapture?.(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);
  };
- return <div className="globe-orbit" ref={stage} data-gallery-total={gallery.length}>
-  <div className="globe-orbit__topline">
-   <span>CONFLORA <span aria-hidden="true">/</span> {pt?'ATLAS VIVO':'LIVING ATLAS'}</span>
-   <span>{String(gallery.length).padStart(2,'0')} {pt?'REGISTROS VISUAIS':'VISUAL RECORDS'}</span>
-  </div>
-  <div className="globe-orbit__scene" aria-label={pt?'Planeta giratório com Polaroids de flores e plantas de diferentes regiões do mundo':'Rotating globe with Polaroid photographs of plants from different world regions'}>
-   <div className="globe-orbit__halo" aria-hidden="true"/>
-   {!supported&&<div className="globe-orbit__fallback" role="img" aria-label={pt?'Representação decorativa do planeta':'Decorative globe representation'}/>}
-   <canvas className="globe-orbit__canvas" ref={canvas}
-      onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} aria-hidden="true"/>
-   {gallery.map((item,i)=><div
-      ref={el=>{if(el)cards.current.set(item.id,el);else cards.current.delete(item.id)}}
-      key={item.id}
-      className={'globe-orbit__polaroid globe-orbit__polaroid--'+(i%4)}
-      data-polaroid-id={item.id}
-      aria-label={item.name+' — '+(pt?item.region:item.regionEn)}
-      style={{
+ return <div className="globe-orbit" ref={root} data-gallery-total={records.length}>
+  <div className="globe-orbit__eyebrow">{pt?'FLORA PELO MUNDO':'FLORA AROUND THE WORLD'}</div>
+  <div className="globe-orbit__scene" aria-label={pt?'Globo giratório com fotografias Polaroid de plantas ao redor do planeta':'Rotating globe surrounded by Polaroid photographs of global plants'}>
+   <div className="globe-orbit__ambient" aria-hidden="true"/>
+   {!supported&&<div className="globe-orbit__fallback" role="img" aria-label={pt?'Representação do globo':'Globe representation'}/>}
+   <canvas className="globe-orbit__canvas" ref={canvas} aria-hidden="true"
+      onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}/>
+   {records.map((item,i)=><div key={item.id}
+     ref={el=>{if(el)cardMap.current.set(item.id,el);else cardMap.current.delete(item.id)}}
+     className={'globe-orbit__polaroid globe-orbit__polaroid--'+(i%5)}
+     data-polaroid-id={item.id}
+     role="img"
+     aria-label={item.name+' — '+(pt?item.region:item.regionEn)}
+     style={{
        positionAnchor:'--cobe-'+item.id,
-       left:'anchor(center)',bottom:'anchor(top)',
-       '--orbit-rotation':item.rotate+'deg',
-       opacity:0
-      }}>
-     <div className="globe-orbit__photo">
-      <img src={asset(item.file)} alt={item.name} loading={i<8?'eager':'lazy'} draggable="false"/>
-     </div>
-     <div className="globe-orbit__label">
-      <span>{pt?item.namePt:item.labelEn}</span>
-      <small>{pt?item.region:item.regionEn}</small>
-     </div>
-    </div>)}
+       bottom:'anchor(top)',
+       left:'anchor(center)',
+       translate:'-50% 0',
+       opacity:'var(--cobe-visible-'+item.id+', 0)',
+       filter:'blur(calc((1 - var(--cobe-visible-'+item.id+', 0)) * 6px))',
+       '--orbit-rotation':item.rotate+'deg'
+     }}>
+     <img src={asset(item.file)} alt="" loading={i<9?'eager':'lazy'} draggable="false"/>
+     <span>{pt?item.namePt:item.labelEn}</span>
+   </div>)}
    {!anchors&&<div className="globe-orbit__anchor-fallback" aria-hidden="true">
-      {[gallery[2],gallery[3],gallery[5],gallery[10]].map((item,i)=><figure key={item.id} style={{'--i':i}}>
-       <img src={asset(item.file)} alt=""/><figcaption>{item.name}</figcaption>
+      {records.slice(2,8).map((item,i)=><figure key={item.id} style={{'--i':i}}>
+       <img src={asset(item.file)} alt=""/><figcaption>{pt?item.namePt:item.labelEn}</figcaption>
       </figure>)}
    </div>}
   </div>
-  <div className="globe-orbit__footnote">
-   <span>{pt?'Explore a flora pelo planeta.':'Discover flora across the planet.'}</span>
-   <div className="globe-orbit__actions">
-    <button type="button" onClick={()=>setPaused(v=>!v)} aria-pressed={paused} title={pt?'Pausar ou retomar a rotação':'Pause or resume rotation'}>
-     {paused?(pt?'Reproduzir':'Play'):(pt?'Pausar':'Pause')} <span aria-hidden="true">{paused?'▶':'Ⅱ'}</span>
-    </button>
-    <button type="button" className="globe-orbit__credit-trigger" onClick={()=>setCredits(v=>!v)} aria-expanded={credits}>
-      {pt?'Créditos':'Credits'} <span aria-hidden="true">↗</span>
-    </button>
-   </div>
+  <div className="globe-orbit__footer">
+    <span>{pt?'Um planeta, muitas formas de vida.':'One planet, many forms of life.'}</span>
+    <div>
+     <button type="button" onClick={()=>setPaused(p=>!p)} aria-pressed={paused}>
+      {paused?(pt?'Continuar':'Resume'):(pt?'Pausar':'Pause')}
+     </button>
+     <button type="button" onClick={()=>setCredits(p=>!p)} aria-expanded={credits}>
+      {pt?'Créditos':'Credits'}
+     </button>
+    </div>
   </div>
-  {credits&&<div className="globe-orbit__credits" role="region" aria-label={pt?'Fontes e licenças fotográficas':'Photo sources and licenses'}>
-   <div className="globe-orbit__credit-head">
-    <strong>{pt?'Fotografias e procedência':'Photographs and provenance'}</strong>
-    <button type="button" onClick={()=>setCredits(false)} aria-label={pt?'Fechar créditos':'Close credits'}>×</button>
-   </div>
-   <p>{pt?'O globo é uma galeria de imagens, não um catálogo de recomendações. Os pontos representam locais de fotografias ou contextos documentais indicados; não demonstram a origem natural das espécies.':'This globe is a photo gallery, not a planting guide. Pins indicate documented image locations or research contexts, not natural plant origins.'}</p>
-   <ul>{gallery.map(item=><li key={item.id}><i>{item.name}</i> · {item.author} · {item.license} · <a href={item.source} rel="noreferrer" target="_blank">{pt?'Fonte':'Source'} ↗</a></li>)}</ul>
-  </div>}
+  {credits&&<aside className="globe-orbit__credits" aria-label={pt?'Créditos da galeria botânica':'Botanical gallery credits'}>
+    <header><strong>{pt?'Fontes das fotografias':'Photo sources'}</strong><button type="button" onClick={()=>setCredits(false)} aria-label={pt?'Fechar créditos':'Close credits'}>×</button></header>
+    <p>{pt?'Galeria visual internacional; os pontos indicam locais ou contextos documentados, não recomendações para plantio nem a distribuição natural de cada espécie.':'International visual gallery; pins show documented photographic or research contexts, not planting recommendations or native species distributions.'}</p>
+    <ul>{records.map(item=><li key={item.id}><i>{item.name}</i> · {item.author} · {item.license} — <a target="_blank" rel="noreferrer" href={item.source}>{pt?'Fonte':'Source'}</a></li>)}</ul>
+  </aside>}
  </div>;
 }
