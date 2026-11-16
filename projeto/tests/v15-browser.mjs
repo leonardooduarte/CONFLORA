@@ -27,6 +27,7 @@ try{
  await page.getByLabel('Pesquisar espécies').fill('');
  const workbench=page.locator('.selection-workbench');
  await workbench.locator('summary').first().click();
+ await workbench.getByLabel('Contexto regional').selectOption('BR');
  const inspector=workbench.locator('.evidence-inspector');
  await inspector.locator('summary').click();
  await expect(inspector).toContainText('Fichas para pesquisa');
