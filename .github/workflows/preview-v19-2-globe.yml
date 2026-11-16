@@ -1,0 +1,93 @@
+name: CONFLORA V19.2 — Botanical globe preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/conflora-v19-2-botanical-globe-20261116
+    paths:
+      - 'projeto/src/features/BotanicalGlobe.*'
+      - 'projeto/src/features/PremiumExperience.jsx'
+      - 'projeto/package.json'
+      - 'projeto/tests/v19-globe.mjs'
+      - 'projeto/docs/v19-2-globe/**'
+      - '.github/workflows/preview-v19-2-globe.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-v19-2-botanical-globe
+  cancel-in-progress: true
+
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Resolve cobe v2 and lock the dependency graph
+        working-directory: projeto
+        run: |
+          npm install --no-audit --no-fund
+          npm ci --no-audit --no-fund
+      - name: Validate V19.1 baseline and build React + Vite
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/v19-model.mjs
+          node tests/herbarium-complete.mjs
+      - name: Install Chromium and PDF utilities
+        working-directory: projeto
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Test actual botanical globe and existing interactive journeys
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-globe-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://localhost:5176/ >/dev/null; then break; fi; sleep 1; done
+          node tests/v19-globe.mjs
+          node tests/v19-visual-regressions.mjs
+          node tests/herbarium-complete-browser.mjs
+          node tests/v19-browser.mjs
+          npm run test:six
+      - name: Persist audited package-lock.json to the isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- projeto/package-lock.json; then
+            git add projeto/package-lock.json
+            git commit -m "build(globe): lock verified cobe dependency"
+            git push origin HEAD:feat/conflora-v19-2-botanical-globe-20261116
+          fi
+      - name: Bundle screenshots and preview version
+        working-directory: projeto
+        run: |
+          mkdir -p dist/review
+          cp work/globe-v19-2/*.png work/globe-v19-2/result.json dist/review/
+          node -e "const fs=require('fs');const p='dist/version.json';const old=JSON.parse(fs.readFileSync(p));fs.writeFileSync(p,JSON.stringify({...old,version:'19.2.0-botanical-globe-preview',edition:'Globo botânico com fontes geográficas',sourceBranch:'feat/conflora-v19-2-botanical-globe-20261116',previewPath:'/CONFLORA/previews/conflora-v19-2-globe/',deployment:'preview'},null,2))"
+      - name: Preserve browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflora-v19-2-globe-review
+          path: projeto/work/globe-v19-2/
+          retention-days: 14
+      - name: Publish isolated botanical globe preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v19-2-globe
+          keep_files: true
+          commit_message: 'CONFLORA V19.2 botanical globe preview: ${{ github.sha }}'
