@@ -12,7 +12,7 @@ assert.equal(result.areaCount,3,'Original 3 evaluated areas preserved');
 assert.equal(result.marks,7,'Seven annotations preserved');
 assert(result.observed.some(s=>s.startsWith('3 pontos de água acumulada')));
 assert(result.observed.some(s=>s.startsWith('3 saídas do telhado')));
-assert(result.observed.some(s=>s.startsWith('1 superfícies pavimentadas')));
+assert(result.observed.some(s=>s.startsWith('1 superfície pavimentada')));
 assert.equal(result.evidence,'research','Brazilian sample must remain research-only');
 assert.equal(result.candidateCount,0,'No invented documented botanical match');
 assert(result.evidenceLabel.includes('nenhuma planta foi validada'));
