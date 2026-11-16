@@ -192,7 +192,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
       <img src={asset(item.file)} alt={item.name} loading={i<8?'eager':'lazy'} draggable="false"/>
      </div>
      <div className="globe-orbit__label">
-      <span>{item.name}</span>
+      <span>{pt?item.namePt:item.labelEn}</span>
       <small>{pt?item.region:item.regionEn}</small>
      </div>
     </div>)}
