@@ -1,0 +1,38 @@
+import {chromium,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1280,height:900}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try {
+ await page.goto('http://localhost:5176');
+ await page.getByRole('button',{name:'Analisar meu terreno'}).first().click();
+ await expect(page.locator('.studio-journey')).toBeVisible();
+ await page.locator('input[type=file]').first().setInputFiles('public/scene-garden.png');
+ await page.locator('.line-sidebar').getByText('Jardim de chuva',{exact:true}).click();
+ await page.getByRole('button',{name:'Adicionar no centro',exact:true}).click();
+ const journey=page.locator('.studio-journey');
+ await journey.getByRole('button',{name:/Informar condições/}).click();
+ await journey.getByLabel('Contexto regional').selectOption('IA');
+ await journey.getByLabel('Luz observada').selectOption('full');
+ await journey.getByLabel('Umidade observada').selectOption('moist');
+ await journey.getByLabel('Quanto tempo a água fica?').selectOption('hours');
+ await journey.getByLabel('Proximidade de construções').selectOption('away');
+ await expect(journey.locator('.site-review')).toContainText('Jardim de chuva');
+ await journey.getByLabel('Quanto tempo a água fica?').selectOption('persistent');
+ await journey.getByLabel('Proximidade de construções').selectOption('near');
+ await expect(journey.locator('.site-review').getByRole('alert').first()).toContainText('avaliação profissional');
+ await expect(journey.locator('.site-review__options li')).toHaveCount(0);
+ await journey.getByRole('button',{name:/Encontrar plantas para esta área/}).click();
+ await expect(page.locator('.atlas-feature')).toBeVisible();
+ await expect(page.locator('.knowledge-heading')).toContainText('15 espécies');
+ await page.getByLabel('Pesquisar espécies').fill('Cyperus');
+ await expect(page.locator('.botanic-row')).toHaveCount(1);
+ await expect(page.locator('.botanic-row')).toContainText('Cyperus giganteus');
+ await expect(page.locator('.botanic-row')).toContainText('Pesquisa ecológica documentada');
+ const mainHtml=await page.evaluate(()=>Array.from(document.querySelectorAll('.herbarium-search,.atlas-feature')).map(n=>n.className).join('|'));
+ assert.equal(mainHtml,'herbarium-search|atlas-feature');
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
+ assert.deepEqual(errors,[]);
+ console.log('PASS V14 browser: area observations, contextual warning, preserved atlas, research-only plant, mobile width');
+} finally {await browser.close()}
