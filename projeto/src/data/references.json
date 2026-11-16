@@ -39,5 +39,37 @@
       "pt": "Ligação taxonômica; acesso direto indisponível nesta verificação. Conferir distribuição atual antes de plantar.",
       "en": "Taxonomic link; direct access unavailable during this review. Verify current distribution before planting."
     }
+  },
+  "cyperus2011": {
+    "title": "Rocha, D. C.; Martins, D. (2011). Adaptações morfoanatômicas de Cyperaceae ao ambiente aquático. Planta Daninha 29(1).",
+    "url": "https://www.scielo.br/scielo.php?pid=S0100-83582011000100002&script=sci_arttext",
+    "scope": {
+      "pt": "Estudo primário de anatomia vegetal em faixas de umidade em Ponta Grossa-PR; não testa jardins de chuva nem desempenho de drenagem.",
+      "en": "Primary anatomical study across moisture zones in Paraná; no rain-garden field test or drainage performance."
+    }
+  },
+  "cyperus2005": {
+    "title": "Rodrigues, A. C.; Estelita, M. E. M. (2005). Anatomia da raiz de Cyperus giganteus Vahl (Cyperaceae) em desenvolvimento. Revista Brasileira de Botânica.",
+    "url": "https://www.scielo.br/j/rbb/a/jCdc6QfWVj8598phDhChbpR/?format=html",
+    "scope": {
+      "pt": "Pesquisa primária de anatomia radicular; descreve estruturas, não taxas de infiltração, absorção de água ou redução de alagamentos.",
+      "en": "Primary root anatomy study; describes structures, not infiltration, water uptake or flooding reduction rates."
+    }
+  },
+  "epa-bioretention": {
+    "title": "US EPA (2021). NPDES Stormwater Best Management Practice: Bioretention (Rain Gardens).",
+    "url": "https://www.epa.gov/system/files/documents/2021-11/bmp-bioretention-rain-gardens.pdf",
+    "scope": {
+      "pt": "Orientação técnica norte-americana sobre solo, vegetação, extravasamento e afastamento de estruturas; conceitos gerais, não parâmetros de dimensionamento brasileiros.",
+      "en": "US technical guidance on media, plants, overflow and siting away from structures; general concepts, not Brazilian design parameters."
+    }
+  },
+  "usp-biorretencao": {
+    "title": "USP. Biorretenção: tecnologia ambiental urbana para manejo das águas de chuva (pesquisa com protótipo em São Paulo).",
+    "url": "https://teses.usp.br/teses/disponiveis/16/16135/tde-30052014-104153/pt-br.html",
+    "scope": {
+      "pt": "Protótipo de sistema com duas coberturas vegetais e monitoramento; dados do sistema completo não são eficácia de espécie isolada.",
+      "en": "Field-scale prototype with two plant covers; whole-system monitoring is not a species-specific performance measurement."
+    }
   }
 }
