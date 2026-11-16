@@ -17,6 +17,16 @@ export function normalizeProject(raw){
  p.annotations=raw.annotations.filter(a=>a&&types.has(a.type)).slice(0,200).map(a=>({id:/^[a-zA-Z0-9_-]{1,100}$/.test(a.id)?a.id:Store.id(),type:a.type,speciesId:str(a.speciesId,80),conditions:a.conditions&&typeof a.conditions==='object'?Object.fromEntries(Object.entries(cleanConditions(a.conditions)).filter(([k])=>Object.hasOwn(a.conditions,k))):undefined,x:num(a.x,20,980,500),y:num(a.y,20,630,325),size:num(a.size,.55,2.4,1),notes:str(a.notes,700),hidden:Boolean(a.hidden),kind:['polygon','path'].includes(a.kind)?a.kind:'point',points:Array.isArray(a.points)?a.points.slice(0,80).filter(p=>p&&Number.isFinite(+p.x)&&Number.isFinite(+p.y)).map(p=>({x:num(p.x,0,1000),y:num(p.y,0,650)})):[]}));
  for(const a of p.annotations)if((a.kind==='polygon'&&a.points.length<3)||(a.kind==='path'&&a.points.length<2))throw Error('Incomplete geometry');
  if(new Set(p.annotations.map(a=>a.id)).size!==p.annotations.length)throw Error('Duplicate marker id');
+ // Backward-compatible V11/V12 schema: scenario markers are whitelisted with the same
+ // normalizer as regular annotations; no extra image or untrusted SVG is imported.
+ p.scenarios={A:null,B:null};
+ for(const slot of ['A','B']){
+  const original=raw.scenarios?.[slot];
+  if(!original||!Array.isArray(original.markers))continue;
+  const safe=normalizeProject({...raw,annotations:original.markers,scenarios:undefined}).annotations
+   .filter(a=>a.type==='garden'||(a.type==='plants'&&a.speciesId));
+  p.scenarios[slot]={markers:safe,savedAt:num(original.savedAt,0,Date.now(),Date.now())};
+ }
  p.plantInterests=Array.isArray(raw.plantInterests)?raw.plantInterests.slice(0,100).filter(x=>x&&typeof x.id==='string').map(x=>({id:str(x.id,80),areaId:str(x.areaId,100)})):[];
  p.solutions=Array.isArray(raw.solutions)?raw.solutions.filter(v=>['rain','vegetated','permeable'].includes(v)):[];
  const entry=e=>({id:str(e.id,100)||Store.id(),date:str(e.date,30)||new Date().toISOString().slice(0,10),speciesId:str(e.speciesId,80),type:['rain','maintenance','planting','change'].includes(e.type)?e.type:'change',text:str(e.text),photo:photo(e.photo),areaId:str(e.areaId,100)});
