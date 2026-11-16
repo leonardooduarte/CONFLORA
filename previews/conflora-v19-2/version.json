@@ -1,0 +1,7 @@
+{
+  "version": "19.2.0-opening-preview",
+  "edition": "Abertura editorial CONFLORA",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-v19-2/",
+  "sourceCommit": "99edc8518cec55e4233e38c16cd2dd1cc88e0bb2"
+}
