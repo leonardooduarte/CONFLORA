@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "project navigation",
+    "kit disclosure",
+    "modal",
+    "note persistence",
+    "mobile panels",
+    "390px overflow",
+    "English"
+  ]
+}
