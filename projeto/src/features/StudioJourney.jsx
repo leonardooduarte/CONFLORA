@@ -24,11 +24,14 @@ export default function StudioJourney({project,lang,selected,onChoose,onPhoto,on
    <div><strong>01</strong><b>{pt?'Fotografia':'Photo'}</b><small>{project.image?(pt?'Imagem adicionada':'Photo added'):(pt?'Ainda sem foto':'No photo yet')}</small><button type="button" className="text-action" onClick={onPhoto}>{pt?(project.image?'Trocar fotografia':'Enviar fotografia'):(project.image?'Change photo':'Upload photo')} ↗</button></div>
    <div><strong>02</strong><b>{pt?'Área observada':'Observed area'}</b><small>{annotations.length} {pt?'marcações':'marks'}</small><button type="button" className="text-action" onClick={onMark}>{pt?'Marcar água na imagem':'Mark water on image'} ↗</button></div>
    <div><strong>03</strong><b>{pt?'Condições':'Conditions'}</b><small>{result.sufficient?(pt?'Dados iniciais suficientes':'Initial conditions available'):(pt?'Precisamos de região, luz ou umidade':'Region, sun or moisture needed')}</small><button type="button" className="text-action" onClick={()=>setShowConditions(v=>!v)} aria-expanded={showConditions}>{pt?'Informar condições':'Describe conditions'} ↗</button></div>
+   <div><strong>04</strong><b>{pt?'Análise e próximos passos':'Review and next steps'}</b><small>{pt?'Veja o que sabemos e o que falta verificar.':'See what we know and what is still missing.'}</small><button type="button" className="text-action" onClick={onPlan}>{pt?'Consultar síntese do terreno':'Review site summary'} ↗</button></div>
   </div>
   {annotations.length>0&&<label className="studio-journey-area">{pt?'Qual ponto/área quer investigar?':'Which observation should we investigate?'}
    <select value={area?.id||''} onChange={e=>onChoose(e.target.value)}>{annotations.map((a,i)=><option key={a.id} value={a.id}>{String(i+1).padStart(2,'0')} · {a.notes|| (pt?'Marcação sem descrição':'Unlabeled mark')}</option>)}</select>
   </label>}
   {showConditions&&<div className="studio-journey-conditions">
+   <p className="studio-journey-conditions__origin"><strong>{area?(pt?'Condições da marcação selecionada':'Conditions for the selected mark'):(pt?'Condições do terreno inteiro':'Whole-site conditions')}</strong> · {area?(pt?'Valores não modificados nesta área vêm das condições gerais.':'Unchanged values are inherited from the site.'): (pt?'Aplicáveis como padrão às áreas sem informação local.':'Defaults for areas without local values.')}</p>
+   {area&&Object.keys(area.conditions||{}).length>0&&<small>{pt?'Campos alterados somente nesta área: ':'Area-specific fields: '}{Object.keys(area.conditions).join(', ')}</small>}
    <Conditions context={context} lang={lang} onChange={(key,value)=>onCondition(area?.id,key,value)}/>
    <p className="fine">{pt?'As respostas ficam associadas à marcação selecionada. Campos desconhecidos não viram compatibilidade presumida.':'Responses are linked to the selected mark. Unknown values do not become assumed matches.'}</p>
   </div>}
