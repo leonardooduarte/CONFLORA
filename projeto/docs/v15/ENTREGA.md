@@ -16,4 +16,9 @@ Branch `feat/conflora-v15-evidence-scenarios-20261116`, originada da V14 validad
 - Não foi medida nem simulada a absorção de água das espécies.
 - Não foi feita recomendação técnica para Itapeva e não há avaliação por especialista.
 - Novas fotos de espécies: pendentes por falta de fonte/licença identificada.
-- Publicação e aprovação de CI: conferir workflow antes de informar conclusão.
+- CI e publicação foram conferidos: ver `TESTES.md` e a execução [43895584137](https://github.com/leonardooduarte/CONFLORA/actions/runs/43895584137).
+
+## Prévia funcional
+https://leonardooduarte.github.io/CONFLORA/previews/conflora-v15/
+
+A prévia contém HTML e ativos de produção confirmados no GitHub Pages. O site principal e as cinco imagens recentes permaneceram preservados. A página pública não foi inspecionada manualmente fora do navegador de testes Chromium.
