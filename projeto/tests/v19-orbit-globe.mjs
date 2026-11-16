@@ -49,6 +49,8 @@ try{
   moments.push({t:idx,visible:v.length,ids:v.map(x=>x.id),coords:v});
   await page.screenshot({path:out+'/desktop-'+idx+'.jpg',type:'jpeg',quality:78,fullPage:false});
  }
+ const diag=await stage.evaluate(el=>({phi:el.dataset.phi,candidates:el.dataset.candidates,visibleCount:el.dataset.visibleCount,visibleIds:el.dataset.visibleIds,styles:[...el.querySelectorAll('.globe-orbit__polaroid')].slice(0,8).map(e=>({id:e.dataset.polaroidId,opacity:getComputedStyle(e).opacity,inlineOpacity:e.style.opacity,anchor:getComputedStyle(e).positionAnchor,custom:getComputedStyle(document.documentElement).getPropertyValue('--cobe-visible-'+e.dataset.polaroidId)}))}));
+ console.log('GLOBE_DIAGNOSTICS '+JSON.stringify(diag));
  assert(moments.some(x=>x.visible>=3),'At least three Polaroids should accompany the rotating globe: '+JSON.stringify(moments));
  assert(moments.every(x=>x.visible<=8),'Decluttering should keep the composition legible: '+JSON.stringify(moments));
  assert(seen.size>=6,'Globe rotation must reveal diverse new plant photos: '+JSON.stringify(moments));
