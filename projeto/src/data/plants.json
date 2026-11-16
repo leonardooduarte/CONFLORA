@@ -911,5 +911,49 @@
       "pt": "Condições de alagamento e luminosidade em jardins de chuva não validadas; resultados de erosão de taludes não são transferíveis automaticamente.",
       "en": "Flooding and rain-garden sun conditions unvalidated; mining-slope erosion results cannot be transferred automatically."
     }
+  },
+  {
+    "id": "inga-affinis",
+    "scientific": "Inga affinis DC.",
+    "common": {
+      "pt": "Ingá (nome genérico; confirmar localmente)",
+      "en": "Inga tree (confirm local name)"
+    },
+    "family": "Fabaceae",
+    "region": "BR",
+    "native": "native",
+    "sun": [],
+    "moisture": [],
+    "height": null,
+    "size": "large",
+    "habit": "tree",
+    "evidence": "ecology",
+    "sourceIds": [
+      "inga-flood-2026",
+      "inga-kew-2026"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/128358-2",
+    "occurrence": {
+      "pt": "Nativa de partes do Brasil, inclusive Sudeste, segundo Kew. O artigo de 2026 usou o sinônimo Inga vera subsp. affinis em vegetação ribeirinha da planície do Alto Paraná; sem comprovação de ocorrência em Itapeva.",
+      "en": "Native in parts of Brazil, including Southeast, according to Kew. A 2026 paper used the synonym Inga vera subsp. affinis in Upper Paraná River floodplain vegetation; occurrence in Itapeva is not established."
+    },
+    "care": {
+      "pt": "Árvore de porte a verificar para locais urbanos; o experimento de mudas não aborda afastamento de casas, tubulações ou manutenção residencial.",
+      "en": "Tree size and urban clearances require evaluation; the seedling experiment does not cover setbacks, utilities or residential maintenance."
+    },
+    "position": {
+      "pt": "Não é indicação para canteiro ou fundo de jardim de chuva. O ensaio foi realizado em mudas, não em jardins residenciais.",
+      "en": "Not a rain-garden planting recommendation. The trial investigated seedlings, not household gardens."
+    },
+    "ecology": {
+      "pt": "Feitosa e colaboradores (2026) submeteram mudas a alagamento por 44 dias. Observaram menor crescimento e redução dos pigmentos fotossintéticos, além de maior produção de açúcares solúveis. Adaptação fisiológica não equivale a desempenho hidráulico.",
+      "en": "Feitosa and colleagues (2026) flooded seedlings for 44 days. They observed reduced growth and photosynthetic pigments alongside increased soluble sugars. Physiological adjustment is not hydraulic performance."
+    },
+    "limits": {
+      "pt": "Evidência experimental direta sobre resposta de mudas ao alagamento, mas sem dados de luz, solo, porte urbano e desempenho de biorretenção; excluída da seleção de plantio.",
+      "en": "Direct experimental seedling flood response, but lacking sun, urban soil, suitable planting size and bioretention performance; not eligible for site-matching."
+    },
+    "image": null,
+    "verifiedAt": "2026-11-16"
   }
 ]
