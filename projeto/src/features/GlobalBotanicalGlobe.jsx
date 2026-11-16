@@ -107,6 +107,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
     const proximity=Math.abs(center-(board.left+board.width/2))/board.width;
     candidates.push({record,element,bbox,v,score:(previous?40:0)+v*24-proximity*8});
    }
+   root.dataset.candidates=JSON.stringify(candidates.map(c=>({id:c.record.id,v:+c.v.toFixed(2),x:Math.round(c.bbox.x),y:Math.round(c.bbox.y)})));
    candidates.sort((a,b)=>b.score-a.score);
    const accepted=[],next=new Set();
    for(const item of candidates){
@@ -122,6 +123,8 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
    }
    kept.current=next;
    root.dataset.visibleCount=String(next.size);
+   root.dataset.visibleIds=[...next].join(',');
+   root.dataset.phi=phi.current.toFixed(3);
   };
   const animate=(time)=>{
    if(disposed)return;
