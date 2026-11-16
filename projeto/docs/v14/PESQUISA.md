@@ -5,7 +5,7 @@ A pesquisa nesta edição é uma **triagem narrativa direcionada**, não revisã
 ## Fontes primárias pesquisadas
 
 1. **Rocha, D. C.; Martins, D. (2011)** — *Adaptações morfoanatômicas de Cyperaceae ao ambiente aquático*. Planta Daninha 29(1), DOI 10.1590/S0100-83582011000100002. Texto HTML: https://www.scielo.br/j/pd/a/h35W48ndDzJCpf9bfDgLb8n/?lang=pt . Examinou anatomia de cinco ciperáceas em zonas de umidade da represa Alagados, Ponta Grossa-PR. *Cyperus giganteus* foi encontrada em áreas marginais com exposição sazonal; não houve experimento de desempenho de jardim de chuva.
-2. **Rodrigues, A. C.; Estelita, M. E. M. (2005)** — *Anatomia da raiz de Cyperus giganteus Vahl (Cyperaceae) em desenvolvimento*. Revista Brasileira de Botânica. HTML: https://www.scielo.br/j/rbb/a/jCdc6QfWVj8598phDhChbpR/?format=html . Trata da anatomia radicular da espécie, não de remoção de água em solo urbano.
+2. **Rodrigues, A. C.; Estelita, M. E. M. (2005)** — *Anatomia da raiz de Cyperus giganteus Vahl (Cyperaceae) em desenvolvimento*. Revista Brasileira de Botânica. HTML: https://www.scielo.br/j/rbb/a/jCdc6QfWVj8598phDhChbpR/?format=html . O resumo indexado descreve anatomia radicular; o acesso direto ao texto integral não foi confirmado nesta consulta. Não trata de remoção de água em solo urbano.
 3. **Royal Botanic Gardens, Kew — POWO**, ficha `Cyperus giganteus Vahl`: https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1 . Nome aceito e nativa do Sudeste brasileiro em escala regional, o que não demonstra ocorrência em Itapeva.
 
 ## Evidência em escala de sistema
