@@ -1,0 +1,37 @@
+import {chromium,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1280,height:900}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ await page.goto('http://localhost:5176/');
+ await page.getByRole('button',{name:'Analisar meu terreno'}).first().click();
+ await page.locator('input[type=file]').first().setInputFiles('public/scene-garden.png');
+ await page.locator('.line-sidebar').getByText('Jardim de chuva',{exact:true}).click();
+ await page.getByRole('button',{name:'Adicionar no centro',exact:true}).click();
+ const scenarios=page.locator('.studio-journey').locator('..').locator('.scenario-studio');
+ await expect(scenarios).toBeVisible();
+ await scenarios.getByRole('button',{name:/Salvar composição A/}).click();
+ await expect(scenarios).toContainText('1 marcações salvas');
+ await expect(scenarios.locator('img')).toHaveCount(2);
+ await page.locator('.studio-journey').getByRole('button',{name:/Organizar meu plano/}).click();
+ await expect(page.locator('.plan-extras .scenario-studio')).toBeVisible();
+ await expect(page.locator('.plan-extras .scenario-studio img')).toHaveCount(2);
+ await page.getByRole('button',{name:/Herbário/}).first().click();
+ await expect(page.locator('.knowledge-heading')).toContainText('18 espécies');
+ await expect(page.locator('.atlas-feature')).toBeVisible();
+ await page.getByLabel('Contexto do catálogo').selectOption('BR');
+ await page.getByLabel('Pesquisar espécies').fill('Arachis');
+ await expect(page.locator('.botanic-row')).toHaveCount(1);
+ await expect(page.locator('.botanic-row')).toContainText('Arachis repens');
+ await page.getByLabel('Pesquisar espécies').fill('');
+ const inspector=page.locator('.evidence-inspector');
+ await inspector.locator('summary').click();
+ await expect(inspector).toContainText('Fichas para pesquisa');
+ const order=await page.evaluate(()=>Array.from(document.querySelectorAll('.herbarium-search,.atlas-feature')).map(x=>x.className).join('|'));
+ assert.equal(order,'herbarium-search|atlas-feature');
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);
+ assert.deepEqual(errors,[]);
+ console.log('PASS V15 browser: photo, scenario capture, plan, research herbarium, evidence audit, mobile');
+}finally{await browser.close()}
