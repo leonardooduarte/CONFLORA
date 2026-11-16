@@ -1,7 +1,7 @@
 {
-  "version": "19.0.0-preview.1",
-  "edition": "Da análise à proposta visual",
+  "version": "19.1.0-preview.1",
+  "edition": "Da análise à proposta visual · Herbário ampliado",
   "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
   "previewPath": "/CONFLORA/previews/conflora-v19/",
-  "sourceCommit": "6ef6c77a7439f42da5199884ea06d48ce025c335"
+  "sourceCommit": "ea79ff3bb864e5be659f5dde77d0cea1cca8cee3"
 }
