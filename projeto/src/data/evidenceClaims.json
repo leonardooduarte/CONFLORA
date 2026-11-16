@@ -828,6 +828,45 @@
         "scope": "Erosion on mined sand slopes, not rain-garden infiltration",
         "matching": false
       }
+    },
+    "inga-affinis": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Inga affinis DC.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/128358-2",
+        "evidenceType": "taxonomic",
+        "scope": "POWO accepted name; published experimental name is a synonym.",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/128358-2",
+        "evidenceType": "distribution",
+        "scope": "Brazil Southeast broad range; no confirmed occurrence in Itapeva.",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "ecology",
+        "sourceId": "inga-flood-2026",
+        "evidenceType": "controlled-seedling-flooding",
+        "scope": "44 days flooded seedlings, NOT site performance.",
+        "matching": false
+      },
+      "floodResponse": {
+        "field": "flood-exposure",
+        "value": "44 days flooded seedlings",
+        "sourceId": "inga-flood-2026",
+        "evidenceType": "controlled-seedling-flooding",
+        "scope": "Measured adverse growth and physiological responses; cannot recommend residential planting.",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "research-only",
+        "matching": false
+      }
     }
   }
 }
