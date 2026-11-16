@@ -54,7 +54,20 @@ try{
  console.log('GLOBE_DIAGNOSTICS '+JSON.stringify(diag));
  assert(moments.some(x=>x.visible>=3),'At least three Polaroids should accompany the rotating globe: '+JSON.stringify(moments));
  assert(moments.every(x=>x.visible<=8),'Decluttering should keep the composition legible: '+JSON.stringify(moments));
- assert(seen.size>=6,'Globe rotation must reveal diverse new plant photos: '+JSON.stringify(moments));
+ // An interactive half-turn must reveal other documented world photographs.
+ const globeBox=await stage.locator('.globe-orbit__canvas').boundingBox();
+ for(const [idx,dx] of [300,-440,395].entries()){
+  const cx=globeBox.x+globeBox.width/2, cy=globeBox.y+globeBox.height/2;
+  await page.mouse.move(cx,cy);
+  await page.mouse.down();
+  await page.mouse.move(cx+dx,cy,{steps:14});
+  await page.mouse.up();
+  await page.waitForTimeout(700);
+  const newlyVisible=await getVisible();
+  for(const item of newlyVisible)seen.add(item.id);
+  await page.screenshot({path:out+'/drag-'+idx+'.jpg',type:'jpeg',quality:78,fullPage:false});
+ }
+ assert(seen.size>=7,'Rotation plus drag must reveal seven distinct botanical images: '+JSON.stringify({seen:[...seen],moments}));
  const anchored=await stage.locator('.globe-orbit__polaroid').first().evaluate(el=>getComputedStyle(el).positionAnchor);
  assert(anchored?.startsWith('--cobe-'),'Polaroids must be anchored to globe locations');
  const before=await stage.locator('.globe-orbit__canvas').boundingBox();
