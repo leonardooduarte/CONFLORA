@@ -1,0 +1,173 @@
+{
+  "note": "CC author and license credits for independently licensed photos; not the scientifically reviewed Herbarium",
+  "images": [
+    {
+      "id": "jacaranda",
+      "file": "globe/jacaranda.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Jacaranda_mimosifolia,_Buenos_Aires.jpg",
+      "author": "Raf24~commonswiki",
+      "license": "CC BY 4.0",
+      "location": [
+        -34.61,
+        -58.38
+      ],
+      "kind": "photo"
+    },
+    {
+      "id": "rafflesia",
+      "file": "globe/rafflesia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Rafflesia_arnoldii,_Sumatra.jpg",
+      "author": "LukeTriton",
+      "license": "CC BY-SA 4.0",
+      "location": [
+        -0.236719,
+        100.357497
+      ],
+      "kind": "photo"
+    },
+    {
+      "id": "rhododendron",
+      "file": "globe/rhododendron.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Rhododendron_arboreum_at_Phoolbari,_Nepal.jpg",
+      "author": "Nirmal Dulal",
+      "license": "CC BY-SA 4.0",
+      "location": [
+        28,
+        84
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "protea",
+      "file": "globe/protea.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Protea_cynaroides_MS_9113.jpg",
+      "author": "Marco Schmidt",
+      "license": "CC BY-SA 3.0",
+      "location": [
+        -33.93,
+        18.86
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "victoria",
+      "file": "globe/victoria.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Victoria_amazonica_Manaus_10_2006_195.jpg",
+      "author": "Mariordo",
+      "license": "CC BY 3.0",
+      "location": [
+        -3.12,
+        -60.03
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "saguaro",
+      "file": "globe/saguaro.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Carnegiea_gigantea_(1).jpg",
+      "author": "Diane AZ",
+      "license": "CC BY 2.0",
+      "location": [
+        32.31,
+        -110.82
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "edelweiss",
+      "file": "globe/edelweiss.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Leontopodium_alpinum_detail.jpg",
+      "author": "Michael Schmid",
+      "license": "CC BY-SA 2.0 AT",
+      "location": [
+        47.71,
+        15.72
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "heliconia",
+      "file": "globe/heliconia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Heliconia_rostrata_2.jpg",
+      "author": "Franz Xaver",
+      "license": "CC BY-SA 3.0",
+      "location": [
+        8.71,
+        -83.2
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "puya",
+      "file": "globe/puya.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:La_Puya_Raimondi.jpg",
+      "author": "Vane59",
+      "license": "CC BY-SA 3.0",
+      "location": [
+        -9.53,
+        -77.53
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "sakura",
+      "file": "globe/sakura.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cherry_Blossoms_-_Kyoto_(33142637823).jpg",
+      "author": "白士 李",
+      "license": "CC BY 2.0",
+      "location": [
+        34.966998,
+        135.668792
+      ],
+      "kind": "photo"
+    },
+    {
+      "id": "nymphaea",
+      "file": "globe/nymphaea.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Water_lily_flower_close_capture.jpg",
+      "author": "Thimuth",
+      "license": "CC BY-SA 4.0",
+      "location": [
+        7.03,
+        80.08
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "tulipa",
+      "file": "globe/tulipa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Red_tulips_from_Keukenhof,_The_Netherlands.jpg",
+      "author": "Dira0101",
+      "license": "CC BY-SA 4.0",
+      "location": [
+        52.27,
+        4.55
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "strelitzia",
+      "file": "globe/strelitzia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:20260411_Strelitzia_reginae.jpg",
+      "author": "Flocci Nivis",
+      "license": "CC BY 4.0",
+      "location": [
+        48.193,
+        16.385
+      ],
+      "kind": "photo_region"
+    },
+    {
+      "id": "banksia",
+      "file": "globe/banksia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Banksia_serrata_(50723546127).jpg",
+      "author": "Dushan Hanuska",
+      "license": "CC BY-SA 2.0",
+      "location": [
+        -33.7525,
+        151.1041
+      ],
+      "kind": "photo"
+    }
+  ]
+}
