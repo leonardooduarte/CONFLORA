@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checkList": [
+    "original V19.1 editor intact",
+    "guided fourth step",
+    "area inheritance explanation",
+    "Itapeva 7 marks",
+    "research not recommendation",
+    "safe actionable checks",
+    "A/B contrast",
+    "actual PDF download with V20 content",
+    "PT/EN",
+    "responsive 1440/768/390/320"
+  ],
+  "pdfBytes": 725164,
+  "errors": []
+}

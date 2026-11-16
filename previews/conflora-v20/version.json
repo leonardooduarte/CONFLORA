@@ -1,0 +1,9 @@
+{
+  "version": "20.0.0-preview",
+  "edition": "Jornada integrada e análise preliminar",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-v20/",
+  "deployment": "preview",
+  "sourceBranch": "feat/conflora-v20-planning-journey",
+  "sourceCommit": "d25aadbf3632ec00ca881c666162f17c6143e78b"
+}
