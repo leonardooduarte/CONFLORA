@@ -782,5 +782,134 @@
     },
     "image": null,
     "verifiedAt": "2026-11-16"
+  },
+  {
+    "region": "BR",
+    "native": "native",
+    "evidence": "ecology",
+    "verifiedAt": "2026-11-16",
+    "image": null,
+    "sun": [],
+    "moisture": [],
+    "height": null,
+    "size": "unknown",
+    "id": "alternanthera-brasiliana",
+    "scientific": "Alternanthera brasiliana (L.) Kuntze",
+    "common": {
+      "pt": "Perpétua-do-mato / penicilina",
+      "en": "Brazilian joyweed"
+    },
+    "family": "Amaranthaceae",
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:10294-2",
+    "sourceIds": [
+      "alternanthera2014"
+    ],
+    "habit": "herb",
+    "occurrence": {
+      "pt": "Nativa do Sudeste do Brasil segundo POWO. Estudo de propagação por estaquia realizado no Brasil; menção bibliográfica a solos drenados e encharcados não comprova desempenho em jardins de chuva.",
+      "en": "Native to Brazil Southeast per POWO. Cutting propagation study in Brazil; secondary background mentioning drained and wet soils does not prove rain-garden performance."
+    },
+    "care": {
+      "pt": "Propagação por estaquia foi investigada; instruções locais de manejo em jardim de chuva não foram verificadas.",
+      "en": "Propagation through cuttings has been studied; local rain-garden care is not established."
+    },
+    "position": {
+      "pt": "Nenhuma posição em jardim de chuva validada.",
+      "en": "No verified rain-garden planting zone."
+    },
+    "ecology": {
+      "pt": "Pesquisa experimental tratou do enraizamento de estacas, não de redução de escoamento ou eficiência de drenagem.",
+      "en": "The experiment measured rooting of cuttings, not runoff reduction or drainage efficiency."
+    },
+    "limits": {
+      "pt": "Sem tolerância quantitativa à duração de alagamento, faixa de luz ou evidência local de Itapeva. Não elegível a seleção operacional.",
+      "en": "No quantitative flooding duration, sun exposure or local Itapeva evidence. Not eligible for operational plant matching."
+    }
+  },
+  {
+    "region": "BR",
+    "native": "native",
+    "evidence": "ecology",
+    "verifiedAt": "2026-11-16",
+    "image": null,
+    "sun": [],
+    "moisture": [],
+    "height": "0,7–2,0 m (levantamento florístico)",
+    "size": "unknown",
+    "id": "rhynchanthera-grandiflora",
+    "scientific": "Rhynchanthera grandiflora (Aubl.) DC.",
+    "common": {
+      "pt": "Quaresmeira (nome popular variável)",
+      "en": "Rhynchanthera"
+    },
+    "family": "Melastomataceae",
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1",
+    "sourceIds": [
+      "rhynchanthera2016"
+    ],
+    "habit": "shrub",
+    "occurrence": {
+      "pt": "Kew registra distribuição nativa no Sudeste brasileiro. Bacci e colaboradores documentaram a espécie em locais úmidos de uma reserva de Uberlândia, MG; isso não demonstra presença em Itapeva.",
+      "en": "Kew lists native distribution in Brazil Southeast. Bacci and colleagues documented the species in wet habitats of a Minas Gerais reserve; not evidence of occurrence in Itapeva."
+    },
+    "care": {
+      "pt": "Manejo em canteiros de biorretenção não estudado na fonte consultada.",
+      "en": "Bioretention planting and care are not studied in the source."
+    },
+    "position": {
+      "pt": "Porte de subarbusto/arbusto; não posicionar como espécie de fundo de jardim de chuva sem estudos pertinentes.",
+      "en": "A subshrub/shrub; no documented rain-garden bottom-zone recommendation."
+    },
+    "ecology": {
+      "pt": "Ocorrência em locais úmidos observada em estudo florístico, sem avaliação de saturação permanente ou evapotranspiração.",
+      "en": "Observed wet-site habitat in floristic research; no measured permanent saturation tolerance or evapotranspiration."
+    },
+    "limits": {
+      "pt": "Habitat úmido não é prova de tolerância a enchente urbana nem eficácia hidráulica. Porte e condições locais precisam de verificação.",
+      "en": "Wet habitats do not prove urban-flood tolerance or hydraulic effectiveness. Mature size and site conditions need review."
+    }
+  },
+  {
+    "region": "BR",
+    "native": "native",
+    "evidence": "ecology",
+    "verifiedAt": "2026-11-16",
+    "image": null,
+    "sun": [],
+    "moisture": [],
+    "height": null,
+    "size": "unknown",
+    "id": "arachis-repens",
+    "scientific": "Arachis repens Handro",
+    "common": {
+      "pt": "Amendoim-rasteiro",
+      "en": "Groundnut groundcover"
+    },
+    "family": "Fabaceae",
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17315-2",
+    "sourceIds": [
+      "arachis2026"
+    ],
+    "habit": "herb",
+    "occurrence": {
+      "pt": "Nativa do Sudeste brasileiro segundo POWO. Experimento brasileiro utilizou cobertura com esta espécie em taludes de extração de areia, não em jardins de chuva.",
+      "en": "Native to Brazil Southeast per POWO. A Brazilian field trial planted this species on sand-mining slopes, not in rain gardens."
+    },
+    "care": {
+      "pt": "O estudo observou variação sazonal da cobertura, com redução da cobertura foliar em períodos frios; não estabelece manejo residencial.",
+      "en": "Study reports seasonal changes in vegetative cover in cool weather; home-garden maintenance not established."
+    },
+    "position": {
+      "pt": "Foi pesquisada em taludes com erosão; posição adequada a jardins de chuva não foi investigada.",
+      "en": "Tested on erosive slopes; rain-garden planting position was not investigated."
+    },
+    "ecology": {
+      "pt": "Stein et al. (2026) avaliaram 24 parcelas de taludes e mediram erosão, escoamento e sobrevivência vegetal. Não é evidência de absorção de água por planta ou solução de quintal.",
+      "en": "Stein et al. (2026) measured erosion, runoff and survival in 24 slope plots. This does not establish individual water uptake or home rain-garden performance."
+    },
+    "limits": {
+      "pt": "Condições de alagamento e luminosidade em jardins de chuva não validadas; resultados de erosão de taludes não são transferíveis automaticamente.",
+      "en": "Flooding and rain-garden sun conditions unvalidated; mining-slope erosion results cannot be transferred automatically."
+    }
   }
 ]
