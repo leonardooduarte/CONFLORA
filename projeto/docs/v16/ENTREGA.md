@@ -14,4 +14,8 @@ Base: `feat/conflora-v15-evidence-scenarios-20261116` commit `5109ab9b2ea77b4b01
 Nenhum cálculo de vazão, infiltração ou litros absorvidos por planta; sem validação científica local de Itapeva. Estudos de mudas não justificam recomendação de árvores próximas a casas. Fotos sem licença confirmada ficam como placeholder.
 
 ## Publicação
-A prévia V16 só deve ser anunciada após a execução CI completa, conferência de HTML/ativos e comparação das cinco imagens oficiais. A raiz do site deve permanecer intacta.
+**Prévia V16 verificada:** https://leonardooduarte.github.io/CONFLORA/previews/conflora-v16/
+
+**Execução completa aprovada:** https://github.com/leonardooduarte/CONFLORA/actions/runs/43901755909
+
+O GitHub Pages confirmou HTML, JavaScript, CSS e fotos. As cinco imagens recentes têm hashes idênticos aos arquivos do site principal, que não foi alterado. Consulte `TESTES.md` para cobertura e limites.
