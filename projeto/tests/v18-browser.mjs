@@ -28,6 +28,9 @@ try{
  assert.equal(await modal.locator('.v18-report__hero').count(),1);
  const pdf=await page.pdf({format:'A4',printBackground:true});
  assert(pdf.length>14000,'Printed PDF must have actual content');
+ const pages=(pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length;
+ assert(pages>=1&&pages<=8,'Unexpected A4 page count: '+pages);
+ console.log('V18 actual A4 PDF pages: '+pages+', bytes: '+pdf.length);
  await page.setViewportSize({width:390,height:844});
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,'Mobile viewport should not overflow');
  assert.deepEqual(errors,[]);
