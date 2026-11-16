@@ -65,7 +65,7 @@ export default function V18Proposal({project,lang='pt',onGenerate,onEdit,report=
    <h3>{pt?'Como o espaço poderia ficar':'How the space might look'}</h3>
    {available.length>0?<div className="v18-visual-list">{available.map(slot=><ProposalVisual key={slot} project={project} slot={slot} lang={lang}/>)}</div>:<p className="v18-empty">{pt?'Ainda não há uma composição botânica salva. A plataforma só gera automaticamente elementos associados a espécies com correspondência documental, sem alertas prioritários e com informações suficientes sobre drenagem, duração do acúmulo e afastamento de construções.':'No botanical composition is saved. Automatic placement requires documented matches, no priority warnings, and sufficient information on drainage, pooling duration and distance from buildings.'}</p>}
    {!report&&<div className="v18-actions">
-    {onGenerate&&<><button className="btn" type="button" onClick={()=>onGenerate('A')}>{pt?'Gerar composição A':'Generate composition A'}</button><button className="btn secondary" type="button" onClick={()=>onGenerate('B')}>{pt?'Gerar alternativa B':'Generate alternative B'}</button></>}
+    {onGenerate&&<><button className="btn" type="button" onClick={()=>onGenerate('A')}>{pt?'Gerar proposta para meu terreno':'Generate my site proposal'}</button><button className="btn secondary" type="button" onClick={()=>onGenerate('B')}>{pt?'Criar alternativa B':'Create alternative B'}</button></>}
     {onEdit&&<button type="button" className="btn secondary" onClick={onEdit}>{pt?'Editar no ateliê':'Edit in atelier'}</button>}
    </div>}
    <p className="v18-disclaimer">{proposal.caveats}</p>
