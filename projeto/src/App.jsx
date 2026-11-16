@@ -18,6 +18,7 @@ import {plants,labels as knowledgeLabels} from './core/knowledge.js';
 import WaterStory from './features/WaterStory.jsx';
 import StudioJourney from './features/StudioJourney.jsx';
 import ScenarioStudio from './features/ScenarioStudio.jsx';
+import KineticGallery from './features/KineticGallery.jsx';
 const PlantLibrary=lazy(()=>import('./features/PlantLibrary.jsx'));
 const Solutions=lazy(()=>import('./features/Solutions.jsx'));
 const GardenJournal=lazy(()=>import('./features/GardenJournal.jsx'));
@@ -161,7 +162,7 @@ export default function App(){
 
  {page==='home'&&<main>
   <PremiumOpening lang={lang} project={project} onStart={()=>openOrMake('editor')} onPhoto={()=>newProject('space',true)} onBlank={()=>newProject('space',false)} onAtlas={()=>explorePlants('')} onResume={()=>go('editor')}/>
-  <HerbariumFeature lang={lang} onOpen={()=>explorePlants('')}/><LivingStory lang={lang} onAtlas={()=>explorePlants('')} onStart={()=>openOrMake('editor')}/>
+  <HerbariumFeature lang={lang} onOpen={()=>explorePlants('')}/><KineticGallery lang={lang} onExplore={()=>explorePlants('')}/><LivingStory lang={lang} onAtlas={()=>explorePlants('')} onStart={()=>openOrMake('editor')}/>
   <section className="scroll-story" aria-label={text.image}><ScrollExpand src={asset('conflora-courtyard.webp')} alt={lang==='pt'?'Ilustração conceitual CONFLORA: água, solo e vegetação':'CONFLORA conceptual illustration: water, soil and vegetation'} title={text.image} scrollHint={text.scroll} useWindowScroll startWidth={88} startHeight={84} mediaZoom={1} scrollDistance={0.8} holdDistance={0.15}><div className="scroll-overlay"><h2>{text.imageInfo}</h2><Button onClick={()=>newProject('space',true)}>{text.start} ›</Button></div></ScrollExpand><p className="photo-credit">CONFLORA · {lang==='pt'?'Ilustração conceitual gerada para o CONFLORA; não representa um projeto executado ou uma recomendação de plantio.':'Conceptual illustration generated for CONFLORA; not a built project or planting recommendation.'}</p></section>
   <section className="editor-lead"><AnimatedContent distance={90} direction="vertical" duration={0.9} ease="power3.out" stagger={0.12} threshold={0.15}><div className="lead-grid"><SectionTitle eyebrow="01 / OBSERVE">{text.prompt}</SectionTitle><p>{text.hollow}<br/>{text.photoNotRequired}</p></div></AnimatedContent><div className="preview-grid"><div className="preview-figure"><ol className="observation-method">{(lang==='pt'?['Fotografe seu espaço','Marque o que você observa','Investigue as condições e espécies']:['Photograph your space','Mark what you observe','Investigate conditions and species']).map((label,i)=><li key={label}><span>0{i+1}</span>{label}</li>)}</ol></div>{startPanel}</div></section>
   <WaterStory lang={lang} onExplore={()=>go('gallery')}/>
