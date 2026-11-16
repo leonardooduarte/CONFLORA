@@ -111,7 +111,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
    candidates.sort((a,b)=>b.score-a.score);
    const accepted=[],next=new Set();
    for(const item of candidates){
-    const fits=accepted.every(other=>!rectsOverlap(item.bbox,other.bbox,6));
+    const fits=accepted.every(other=>!rectsOverlap(item.bbox,other,6));
     if(accepted.length<limit&&fits){
      accepted.push(item.bbox);next.add(item.record.id);
      item.element.style.opacity=String(item.v);
