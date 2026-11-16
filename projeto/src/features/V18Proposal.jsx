@@ -11,6 +11,20 @@ export default function V18Proposal({project,lang='pt',onGenerate,onEdit,report=
  const available=['A','B'].filter(slot=>Array.isArray(project.scenarios?.[slot]?.markers)&&project.scenarios[slot].markers.length);
  const documented=proposal.cards.filter(x=>x.status==='candidate');
  const research=proposal.cards.filter(x=>x.status==='research');
+ // The printed report groups truly identical observations instead of wasting
+ // pages repeating the same text for separate pooling markers.
+ const displayAreas=report?Object.values(proposal.regions.reduce((acc,area)=>{
+   const signature=JSON.stringify({
+    conditions:['regionCode','sun','moisture','soil','duration','building'].map(k=>area.context[k]||'unknown'),
+    warnings:area.review.warnings,
+    status:area.review.status,
+    candidates:area.candidates.map(x=>x.plant.id),
+    note:area.mark.notes||''
+   });
+   if(!acc[signature])acc[signature]={...area,areaNumbers:[]};
+   acc[signature].areaNumbers.push(area.number);
+   return acc;
+ },{})):proposal.regions.map(area=>({...area,areaNumbers:[area.number]}));
  return <section className={'v18-proposal'+(report?' v18-proposal--report':'')} aria-label={pt?'Minha proposta CONFLORA':'My CONFLORA proposal'}>
   <header className="v18-proposal__header">
    <span className="eyebrow">CONFLORA / {pt?'PROPOSTA PRELIMINAR':'PRELIMINARY PROPOSAL'}</span>
@@ -20,8 +34,8 @@ export default function V18Proposal({project,lang='pt',onGenerate,onEdit,report=
   </header>
   <div className="v18-area-list">
    <h3>{pt?'O que cada área permite investigar':'What each area allows us to explore'}</h3>
-   {proposal.regions.map(area=><article key={area.id} className="v18-area">
-    <div className="v18-area__head"><strong>{area.number===null?(pt?'Visão geral':'Overall site'):(pt?'Área ':'Area ')+String(area.number).padStart(2,'0')}</strong><span className={'v18-status '+(area.reviewPriority?'v18-status--risk':'')}>{area.reviewPriority?(pt?'Verificação técnica prioritária':'Professional review priority'):area.candidates.length?(pt?'Correspondência documentada':'Documented matching'):(pt?'Pesquisa e verificações':'Research and checks')}</span></div>
+   {displayAreas.map(area=><article key={area.id} className="v18-area">
+    <div className="v18-area__head"><strong>{area.areaNumbers[0]===null?(pt?'Visão geral':'Overall site'):(area.areaNumbers.length>1?(pt?'Áreas ':'Areas '):(pt?'Área ':'Area '))+area.areaNumbers.map(n=>String(n).padStart(2,'0')).join(', ')}</strong><span className={'v18-status '+(area.reviewPriority?'v18-status--risk':'')}>{area.reviewPriority?(pt?'Verificação técnica prioritária':'Professional review priority'):area.candidates.length?(pt?'Correspondência documentada':'Documented matching'):(pt?'Pesquisa e verificações':'Research and checks')}</span></div>
     <p>{area.mark.notes|| (pt?'Área identificada nas marcações do usuário.':'Area marked by the user.')}</p>
     {area.review.warnings.length>0&&<p className="v18-warning">{area.review.warnings[0]}</p>}
     {area.candidates.length>0?<p>{pt?'Espécies com correspondência documental: ':'Species with documented matches: '}{area.candidates.map(x=>x.plant.scientific).join('; ')}. {pt?'A implantação exige avaliação local.':'Local assessment is still required.'}</p>:<p>{pt?'Nenhuma espécie foi validada para plantio nesta área com os dados atuais. Os registros botânicos a seguir são apenas referências de pesquisa.':'No species is validated for planting in this area from the current data. The botanical records below are for research only.'}</p>}
