@@ -38,6 +38,17 @@ try{
   await expect(globe.locator('.botanical-globe__polaroid')).toHaveCount(2);
   const anchored=await globe.locator('.botanical-globe__polaroid').first().evaluate(el=>getComputedStyle(el).positionAnchor);
   assert(anchored.includes('cobe-br'),'Botanical Polaroid must be bound to first geographic marker');
+  const layout=await globe.evaluate(root=>{
+    const scene=root.querySelector('.botanical-globe__scene').getBoundingClientRect();
+    const cards=[...root.querySelectorAll('.botanical-globe__polaroid')].map(el=>{
+      const b=el.getBoundingClientRect(),s=getComputedStyle(el);
+      return {className:el.className,opacity:Number(s.opacity),x:Math.round(b.x),y:Math.round(b.y),w:Math.round(b.width),h:Math.round(b.height),insideScene:b.x>scene.x-110&&b.right<scene.right+110};
+    });
+    return {scene:{x:scene.x,y:scene.y,width:scene.width,height:scene.height},cards};
+  });
+  console.log('GLOBE_POLAROID_LAYOUT '+JSON.stringify(layout));
+  assert(layout.cards.some(c=>c.opacity>.15),'At least one geolocated Polaroid should actually be visible in the initial view');
+  assert(layout.cards.filter(c=>c.opacity>.15).every(c=>c.w>20&&c.h>50&&c.insideScene),'Visible Polaroids must have actual on-globe placement');
  }
  await hero.screenshot({path:'work/globe-v19-2/desktop.png'});
  await globe.getByRole('button',{name:'Pausar'}).click();
