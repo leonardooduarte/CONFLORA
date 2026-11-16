@@ -12,7 +12,7 @@ try{
  const studio=page.locator('.scenario-studio').first();
  await expect(studio).toBeVisible();
  await studio.getByRole('button',{name:'Salvar composição A'}).click();
- await expect(studio).toContainText('1 elementos');
+ await expect(studio).toContainText('1 elemento');
  await page.getByRole('button',{name:'Adicionar no centro',exact:true}).click();
  await studio.getByRole('button',{name:'Salvar composição B'}).click();
  await expect(studio).toContainText('2 elementos');
