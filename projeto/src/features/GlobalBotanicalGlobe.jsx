@@ -133,7 +133,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
    if(instance&&active.current&&!document.hidden){
     if(!pause.current&&!drag.current&&!reduced.current){
      // ~22s per revolution: moving photo constellation as in the reference.
-     phi.current+=elapsed*.00028;
+     phi.current+=elapsed*.00043;
     }
     instance.update({phi:phi.current,theta:theta.current});
     if(time-lastLayout.current>170){
