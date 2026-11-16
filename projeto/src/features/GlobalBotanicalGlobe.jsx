@@ -87,7 +87,15 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
     const element=cards.current.get(record.id);
     if(!element)continue;
     const style=getComputedStyle(element);
-    const v=parseFloat(style.getPropertyValue('--cobe-visible-'+record.id))||0;
+    // COBE v2 exposes DOM anchor positions; derive front-hemisphere opacity
+    // independently so cards never appear on the back if the optional
+    // --cobe-visible-* CSS variables are not inherited in this DOM context.
+    const lat=record.location[0]*Math.PI/180;
+    const lon=record.location[1]*Math.PI/180;
+    const cameraLon=-Math.PI/2-phi.current;
+    const angular=Math.atan2(Math.sin(lon-cameraLon),Math.cos(lon-cameraLon));
+    const depth=Math.cos(lat)*Math.cos(angular);
+    const v=clamp((depth-.025)/.17,0,1);
     const bbox=element.getBoundingClientRect();
     if(v<.35||bbox.width<8||bbox.height<8||bbox.right<board.left-7||bbox.left>board.right+7||bbox.bottom<board.top-4||bbox.top>board.bottom+4){
      element.style.opacity='0';
@@ -97,7 +105,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
     const center=bbox.left+bbox.width/2;
     const previous=kept.current.has(record.id);
     const proximity=Math.abs(center-(board.left+board.width/2))/board.width;
-    candidates.push({record,element,bbox,score:(previous?40:0)+v*24-proximity*8});
+    candidates.push({record,element,bbox,v,score:(previous?40:0)+v*24-proximity*8});
    }
    candidates.sort((a,b)=>b.score-a.score);
    const accepted=[],next=new Set();
@@ -105,7 +113,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
     const fits=accepted.every(other=>!rectsOverlap(item.bbox,other.bbox,6));
     if(accepted.length<limit&&fits){
      accepted.push(item.bbox);next.add(item.record.id);
-     item.element.style.opacity='var(--cobe-visible-'+item.record.id+', 0)';
+     item.element.style.opacity=String(item.v);
      item.element.removeAttribute('aria-hidden');
     }else{
      item.element.style.opacity='0';
@@ -175,7 +183,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
        positionAnchor:'--cobe-'+item.id,
        left:'anchor(center)',bottom:'anchor(top)',
        '--orbit-rotation':item.rotate+'deg',
-       opacity:'var(--cobe-visible-'+item.id+', 0)'
+       opacity:0
       }}>
      <div className="globe-orbit__photo">
       <img src={asset(item.file)} alt={item.name} loading={i<8?'eager':'lazy'} draggable="false"/>
