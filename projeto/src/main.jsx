@@ -7,3 +7,5 @@ createRoot(document.getElementById('root')).render(<React.StrictMode><App/></Rea
 import "./atelier.css";
 
 import './premium.css';
+
+import './editorial.css';
