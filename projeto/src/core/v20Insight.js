@@ -28,7 +28,7 @@ export function buildV20Insight(project,lang='pt'){
  const plan=buildV19Proposal(project,lang);
  const observed=[];
  const labels={pool:['pontos de água acumulada','pooling marks'],roof:['saídas do telhado','roof outlets'],paved:['superfícies pavimentadas','paved surfaces'],space:['áreas demarcadas','marked areas']};
- for(const type of ['pool','roof','paved','space'])if(count(type)>0)observed.push(String(count(type))+' '+labels[type][pt?0:1]);
+ for(const type of ['pool','roof','paved','space'])if(count(type)>0){const n=count(type);const singular={pool:['ponto de água acumulada','pooling point'],roof:['saída do telhado','roof outlet'],paved:['superfície pavimentada','paved surface'],space:['área demarcada','marked area']};observed.push(String(n)+' '+(n===1?singular[type][pt?0:1]:labels[type][pt?0:1]));}
  if(paths>0)observed.push(String(paths)+' '+choose(lang,'caminhos desenhados pelo usuário','user-drawn water paths'));
  const details=[];
  if(known(project.context?.region))details.push(choose(lang,'Localidade informada: ','Reported location: ')+project.context.region);
