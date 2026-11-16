@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "V19.1 original heading/buttons",
+    "hero photo replaced only",
+    "Bauru experiment and Iowa guide labeled as source contexts",
+    "licensed plant photography",
+    "COBE canvas and CSS anchors",
+    "plant photo carousel",
+    "pause/resume",
+    "PT/EN",
+    "mobile 390/360/320",
+    "reduced motion",
+    "Herbarium 19 records"
+  ],
+  "errors": []
+}

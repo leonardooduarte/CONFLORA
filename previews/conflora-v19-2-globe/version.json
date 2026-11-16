@@ -1,0 +1,8 @@
+{
+  "version": "19.2.0-botanical-globe-preview",
+  "edition": "Globo botânico com fontes geográficas",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-v19-2-globe/",
+  "sourceBranch": "feat/conflora-v19-2-botanical-globe-20261116",
+  "deployment": "preview"
+}
