@@ -25,6 +25,7 @@ try {
  await journey.getByRole('button',{name:/Encontrar plantas para esta área/}).click();
  await expect(page.locator('.atlas-feature')).toBeVisible();
  await expect(page.locator('.knowledge-heading')).toContainText('15 espécies');
+ await page.getByLabel('Contexto do catálogo').selectOption('BR');
  await page.getByLabel('Pesquisar espécies').fill('Cyperus');
  await expect(page.locator('.botanic-row')).toHaveCount(1);
  await expect(page.locator('.botanic-row')).toContainText('Cyperus giganteus');
