@@ -19,7 +19,7 @@ function makeTask(id,lang,priority='normal'){
  return {id,priority,label:c[pt?0:1],why:c[pt?2:3],how:c[pt?4:5],
   follow:choose(lang,'Atualize o registro e reabra a análise para reavaliar as hipóteses.','Update the record and revisit the review to reassess the concepts.')};
 }
-const origin=(field,local,global)=>known(local?.[field])?'area':known(global?.[field])?'site':'unknown';
+const origin=(field,local,global)=>local&&Object.hasOwn(local,field)?'area':known(global?.[field])?'site':'unknown';
 export function buildV20Insight(project,lang='pt'){
  if(!project)return null;
  const pt=lang==='pt',c=cleanConditions(project.context||{}),marks=(project.annotations||[]).filter(a=>a&&a.type!=='plants'&&a.type!=='garden');
