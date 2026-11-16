@@ -71,5 +71,29 @@
       "pt": "Protótipo de sistema com duas coberturas vegetais e monitoramento; dados do sistema completo não são eficácia de espécie isolada.",
       "en": "Field-scale prototype with two plant covers; whole-system monitoring is not a species-specific performance measurement."
     }
+  },
+  "alternanthera2014": {
+    "title": "Tracz, V.; Cruz-Silva, C. T. A.; Luz, M. Z. (2014). Produção de mudas de penicilina (Alternanthera brasiliana) via estaquia. Revista Brasileira de Plantas Medicinais 16(3 supl. 1). DOI 10.1590/1983-084x/12_098.",
+    "url": "https://www.scielo.br/j/rbpm/a/VpGTDKvzhQsTRVnLqfpHwvg/?lang=pt",
+    "scope": {
+      "pt": "Estudo original de propagação por estaquia; a referência a solos drenados/encharcados ocorre na introdução, citando outra fonte, e não demonstra tolerância em jardim de chuva.",
+      "en": "Original cutting propagation experiment; wet and drained soil habitats are mentioned as secondary background, not experimentally tested rain-garden tolerance."
+    }
+  },
+  "rhynchanthera2016": {
+    "title": "Bacci, L. F.; Versiane, A. F. A.; Oliveira, A. L. F.; Romero, R. (2016). Melastomataceae na RPPN do Clube Caça e Pesca Itororó, Uberlândia, MG, Brasil. Hoehnea 43(4). DOI 10.1590/2236-8906-27/2016.",
+    "url": "https://www.scielo.br/j/hoehnea/a/NSK7kYKxhzCkYSJkGvwVbwD/?lang=pt",
+    "scope": {
+      "pt": "Levantamento florístico com espécime de R. grandiflora, descrição morfológica (0,7–2 m) e ocorrência em locais úmidos; não é experimento de biorretenção.",
+      "en": "Floristic survey with a R. grandiflora voucher, height range (0.7–2 m), and wet-site habitat; not a bioretention experiment."
+    }
+  },
+  "arachis2026": {
+    "title": "Stein, M.; Bressani, L. A.; Overbeck, G. E. (2026). Experimental field measurements of soil erosion on newly planted slopes of an excavated sand pit. REM International Engineering Journal 79(1). DOI 10.1590/0370-44672023790062.",
+    "url": "https://www.scielo.br/j/remi/a/gSwt6FYmXWNGvSjJHmg53gj/?format=html&lang=en",
+    "scope": {
+      "pt": "Experimento de campo em 24 parcelas de taludes de mineração, acompanhando erosão, escoamento e sobrevivência de Arachis repens; o artigo registra resultados variáveis. Não avalia jardim de chuva ou absorção individual da espécie em quintal.",
+      "en": "Field trial in 24 restored-sand-pit slope plots tracking erosion, runoff and Arachis repens survival; results varied by sampling. Not a rain-garden or individual uptake trial."
+    }
   }
 }
