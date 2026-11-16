@@ -1,7 +1,7 @@
 # Herbário e seleção fundamentada
 
 ## Entrega
-Herbário no menu principal e móvel, dois caminhos na abertura, seção editorial botânica imediatamente após abertura. Busca e contexto regional acessíveis antes de formulários/animações. Galeria InfiniteMenu original preservada em disclosure; catálogo e filtros independentes. Ficha rápida, leitura científica expansível, comparação de até três espécies.
+Herbário no menu principal e móvel, dois caminhos na abertura, seção editorial botânica imediatamente após abertura. Busca e contexto regional acessíveis antes de formulários/animações. Galeria InfiniteMenu original aberta imediatamente após a busca e o contexto regional; catálogo e filtros independentes. Ficha rápida, leitura científica expansível, comparação de até três espécies.
 
 Condições do espaço/área: região, luz, drenagem observada, umidade, duração do acúmulo, proximidade de construções, espaço e disponibilidade de manutenção, todos com Não sei. Localização aproximada/área numérica continuam no planejador. Interesses permanecem ligados à área. Prévia adiciona marca de vegetação com espécie identificada: arrastar, escala e visibilidade são os controles existentes. É uma representação esquemática, sem escala física/crescimento.
 
@@ -24,3 +24,5 @@ Brasil: dados insuficientes de luz/umidade podem gerar seleção vazia. Isso é 
 
 ## Verificação e limites
 Build, testes estáticos/modelo, teste de seleção e suíte de navegador específica executados; resultados finais em evidencias/herbarium. Suíte cobre foto, área, condições, alerta, interesse, comparação, prévia, plano, registro de plantio, salvamento e busca móvel. Regressão geral inclui editor/Step­per/relatório/downloads. Não foram executadas todas as variantes históricas de testes nem auditoria completa de acessibilidade/Safari/hardware físico. Aviso de bundle >500kB persiste. Fontes originais React Bits preservadas com hashes do build. main intacta.
+
+Revisão da galeria: removido o disclosure e promovida a galeria antes das condições do terreno, sem alterar animação ou fontes oficiais.
