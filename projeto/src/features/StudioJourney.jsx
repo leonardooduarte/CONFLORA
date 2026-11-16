@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import {Conditions} from './TerrainSelection.jsx';
 import {selectPlants} from '../core/selection.js';
+import SiteReview from './SiteReview.jsx';
 
 /**
  * Non-diagnostic guided connection between the existing editor, documented
@@ -31,6 +32,7 @@ export default function StudioJourney({project,lang,selected,onChoose,onPhoto,on
    <Conditions context={context} lang={lang} onChange={(key,value)=>onCondition(area?.id,key,value)}/>
    <p className="fine">{pt?'As respostas ficam associadas à marcação selecionada. Campos desconhecidos não viram compatibilidade presumida.':'Responses are linked to the selected mark. Unknown values do not become assumed matches.'}</p>
   </div>}
+  {(area&&(result.sufficient||['hours','day','persistent'].includes(context.duration)||context.building==='near'))&&<SiteReview context={context} lang={lang} markType={area.type} onPlants={()=>onPlants(area.id)} compact/>}
   <div className="studio-journey-actions">
     <button type="button" className="btn" onClick={()=>onPlants(area?.id||'')}>{pt?'Encontrar plantas para esta área':'Find plants for this area'} ↗</button>
     <button type="button" className="btn secondary" onClick={onPlan}>{pt?'Organizar meu plano':'Organize my plan'}</button>
