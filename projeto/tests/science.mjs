@@ -2,8 +2,11 @@ import assert from 'node:assert/strict';
 import {plants} from '../src/core/knowledge.js';
 import {selectPlants} from '../src/core/selection.js';
 
-assert.equal(plants.length,14);
+assert.equal(plants.length,15);
 assert.equal(new Set(plants.map(p=>p.id)).size,plants.length);
+const researchOnly=plants.find(p=>p.id==='cyperus-giganteus');
+assert(researchOnly?.region==='BR'&&researchOnly.evidence==='ecology'&&researchOnly.moisture.includes('seasonal')&&researchOnly.sun.length===0);
+assert(!selectPlants({regionCode:'BR',sun:'full',moisture:'wet'}).candidates.some(x=>x.plant.id==='cyperus-giganteus'));
 const ids=['penstemon-digitalis','zizia-aurea','mertensia-virginica','panicum-virgatum'];
 for(const id of ids){
  const p=plants.find(p=>p.id===id);
