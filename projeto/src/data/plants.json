@@ -736,5 +736,51 @@
       "pt": "Porte elevado e expansão potencial exigem avaliação; luminosidade não validada nesta edição. Não recomendar no Brasil.",
       "en": "Tall habit and spread require checks; light not verified here. Do not recommend in Brazil."
     }
+  },
+  {
+    "id": "cyperus-giganteus",
+    "scientific": "Cyperus giganteus Vahl",
+    "common": {
+      "pt": "Piri (nome registrado na literatura)",
+      "en": "Piri (regional name)"
+    },
+    "family": "Cyperaceae",
+    "region": "BR",
+    "native": "native",
+    "sun": [],
+    "moisture": [
+      "seasonal"
+    ],
+    "height": null,
+    "size": "unknown",
+    "habit": "sedge",
+    "evidence": "ecology",
+    "sourceIds": [
+      "cyperus2011",
+      "cyperus2005"
+    ],
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
+    "occurrence": {
+      "pt": "Nativa do Sudeste do Brasil segundo POWO; estudo de plantas na represa Alagados (Ponta Grossa, PR) e descrição de comunidades do Pantanal. Não comprova ocorrência ou adequação em Itapeva.",
+      "en": "Native to Brazil Southeast according to POWO; studied near Alagados Reservoir (Paraná) and reported in Pantanal communities. Occurrence or suitability in Itapeva is not established."
+    },
+    "care": {
+      "pt": "Cuidados específicos para jardins residenciais não verificados nessas fontes; observar hábito rizomatoso e porte antes de considerar uso.",
+      "en": "Residential rain garden care not verified in these sources; consider rhizomatous habit and mature size before investigating."
+    },
+    "position": {
+      "pt": "O estudo de 2011 observou indivíduos maiores em faixas marginais, sem submersão total, com umidade sazonal. Não estabelece posição de plantio em jardim de chuva.",
+      "en": "A 2011 study observed larger plants in marginal zones without complete submersion and with seasonal moisture. It does not establish rain-garden planting position."
+    },
+    "ecology": {
+      "pt": "Rocha e Martins (2011) descreveram adaptações morfoanatômicas em ambiente com gradiente de umidade. Rodrigues e Estelita (2005) estudaram anatomia radicular; nenhum desses estudos mediu redução de escoamento por planta.",
+      "en": "Rocha & Martins (2011) studied morphoanatomical adaptations across a moisture gradient. Rodrigues & Estelita (2005) examined root anatomy; neither measured plant-specific runoff reduction."
+    },
+    "limits": {
+      "pt": "Cadastro documental para pesquisa, não elegível à seleção preliminar: não há dados transferíveis de luz, eficiência hídrica ou validação de uso no terreno do usuário. Não indica tolerância à submersão permanente.",
+      "en": "Research-only record, not eligible for preliminary matching: no transferable light, hydrological performance or user-site validation. Permanent submersion tolerance is not established."
+    },
+    "image": null,
+    "verifiedAt": "2026-11-16"
   }
 ]
