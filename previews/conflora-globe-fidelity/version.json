@@ -1,0 +1,9 @@
+{
+  "version": "19.2.0-botanical-orbit-preview",
+  "edition": "Globo interativo · galeria internacional de Polaroids",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-globe-fidelity/",
+  "deployment": "preview",
+  "sourceBranch": "fix/conflora-globe-video-fidelity-20261116",
+  "sourceCommit": "82c70daa337e6ec0547ccb2d48f558d1a5bc5b0d"
+}

@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "photos": 16,
+  "distinctSeen": 11,
+  "moments": [
+    {
+      "t": 0,
+      "visible": 4,
+      "ids": [
+        "brazil-field",
+        "iowa-field",
+        "saguaro",
+        "heliconia"
+      ]
+    },
+    {
+      "t": 1,
+      "visible": 4,
+      "ids": [
+        "iowa-field",
+        "heliconia",
+        "sakura",
+        "banksia"
+      ]
+    },
+    {
+      "t": 2,
+      "visible": 4,
+      "ids": [
+        "iowa-field",
+        "victoria",
+        "sakura",
+        "banksia"
+      ]
+    },
+    {
+      "t": 3,
+      "visible": 4,
+      "ids": [
+        "iowa-field",
+        "heliconia",
+        "sakura",
+        "banksia"
+      ]
+    },
+    {
+      "t": 4,
+      "visible": 5,
+      "ids": [
+        "iowa-field",
+        "rafflesia",
+        "heliconia",
+        "sakura",
+        "banksia"
+      ]
+    },
+    {
+      "t": 5,
+      "visible": 5,
+      "ids": [
+        "iowa-field",
+        "rafflesia",
+        "rhododendron",
+        "sakura",
+        "banksia"
+      ]
+    }
+  ],
+  "errors": []
+}
