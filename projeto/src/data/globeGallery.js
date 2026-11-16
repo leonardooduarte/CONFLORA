@@ -51,7 +51,7 @@ export const globeGallery = [
       -34.61,
       -58.38
     ],
-    "file": "globe/jacaranda.webp",
+    "file": "globe/jacaranda.jpg",
     "wikiFile": "Jacaranda mimosifolia, Buenos Aires.jpg",
     "author": "Raf24~commonswiki",
     "license": "CC BY 4.0",
@@ -70,7 +70,7 @@ export const globeGallery = [
       -0.236719,
       100.357497
     ],
-    "file": "globe/rafflesia.webp",
+    "file": "globe/rafflesia.jpg",
     "wikiFile": "Rafflesia arnoldii, Sumatra.jpg",
     "author": "LukeTriton",
     "license": "CC BY-SA 4.0",
@@ -89,7 +89,7 @@ export const globeGallery = [
       28,
       84
     ],
-    "file": "globe/rhododendron.webp",
+    "file": "globe/rhododendron.jpg",
     "wikiFile": "Rhododendron arboreum at Phoolbari, Nepal.jpg",
     "author": "Nirmal Dulal",
     "license": "CC BY-SA 4.0",
@@ -108,7 +108,7 @@ export const globeGallery = [
       -33.93,
       18.86
     ],
-    "file": "globe/protea.webp",
+    "file": "globe/protea.jpg",
     "wikiFile": "Protea cynaroides MS 9113.jpg",
     "author": "Marco Schmidt",
     "license": "CC BY-SA 3.0",
@@ -127,7 +127,7 @@ export const globeGallery = [
       -3.12,
       -60.03
     ],
-    "file": "globe/victoria.webp",
+    "file": "globe/victoria.jpg",
     "wikiFile": "Victoria amazonica Manaus 10 2006 195.jpg",
     "author": "Mariordo",
     "license": "CC BY 3.0",
@@ -146,7 +146,7 @@ export const globeGallery = [
       32.31,
       -110.82
     ],
-    "file": "globe/saguaro.webp",
+    "file": "globe/saguaro.jpg",
     "wikiFile": "Carnegiea gigantea (1).jpg",
     "author": "Diane AZ",
     "license": "CC BY 2.0",
@@ -165,7 +165,7 @@ export const globeGallery = [
       47.71,
       15.72
     ],
-    "file": "globe/edelweiss.webp",
+    "file": "globe/edelweiss.jpg",
     "wikiFile": "Leontopodium alpinum detail.jpg",
     "author": "Michael Schmid",
     "license": "CC BY-SA 2.0 AT",
@@ -184,7 +184,7 @@ export const globeGallery = [
       8.71,
       -83.2
     ],
-    "file": "globe/heliconia.webp",
+    "file": "globe/heliconia.jpg",
     "wikiFile": "Heliconia rostrata 2.jpg",
     "author": "Franz Xaver",
     "license": "CC BY-SA 3.0",
@@ -203,7 +203,7 @@ export const globeGallery = [
       -9.53,
       -77.53
     ],
-    "file": "globe/puya.webp",
+    "file": "globe/puya.jpg",
     "wikiFile": "La Puya Raimondi.jpg",
     "author": "Vane59",
     "license": "CC BY-SA 3.0",
@@ -222,7 +222,7 @@ export const globeGallery = [
       34.966998,
       135.668792
     ],
-    "file": "globe/sakura.webp",
+    "file": "globe/sakura.jpg",
     "wikiFile": "Cherry Blossoms - Kyoto (33142637823).jpg",
     "author": "白士 李",
     "license": "CC BY 2.0",
@@ -241,7 +241,7 @@ export const globeGallery = [
       7.03,
       80.08
     ],
-    "file": "globe/nymphaea.webp",
+    "file": "globe/nymphaea.jpg",
     "wikiFile": "Water lily flower close capture.jpg",
     "author": "Thimuth",
     "license": "CC BY-SA 4.0",
@@ -260,7 +260,7 @@ export const globeGallery = [
       52.27,
       4.55
     ],
-    "file": "globe/tulipa.webp",
+    "file": "globe/tulipa.jpg",
     "wikiFile": "Red tulips from Keukenhof, The Netherlands.jpg",
     "author": "Dira0101",
     "license": "CC BY-SA 4.0",
@@ -279,7 +279,7 @@ export const globeGallery = [
       48.193,
       16.385
     ],
-    "file": "globe/strelitzia.webp",
+    "file": "globe/strelitzia.jpg",
     "wikiFile": "20260411 Strelitzia reginae.jpg",
     "author": "Flocci Nivis",
     "license": "CC BY 4.0",
@@ -298,7 +298,7 @@ export const globeGallery = [
       -33.7525,
       151.1041
     ],
-    "file": "globe/banksia.webp",
+    "file": "globe/banksia.jpg",
     "wikiFile": "Banksia serrata (50723546127).jpg",
     "author": "Dushan Hanuska",
     "license": "CC BY-SA 2.0",
