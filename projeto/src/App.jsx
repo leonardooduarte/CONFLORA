@@ -180,7 +180,7 @@ export default function App(){
 
  <Suspense fallback={<main className="subpage" role="status">{lang==='pt'?'Abrindo conteúdo…':'Opening content…'}</main>}>
  {page==='gallery'&&<Solutions project={project} change={change} lang={lang} onPlants={()=>explorePlants('')} onRoots={()=>go('roots')} onStudio={()=>openOrMake('editor')}/>}
- {page==='plants'&&<PlantLibrary onPreview={()=>{go('editor');setMobilePanel('canvas')}} project={project} change={change} lang={lang} areaId={plantArea} onBack={()=>go('editor')}/>}
+ {page==='plants'&&<PlantLibrary onPreview={()=>{go('editor');setMobilePanel('canvas')}} project={project} change={change} lang={lang} areaId={plantArea} onBack={()=>go('editor')} onAnalyze={()=>openOrMake('editor')}/>}
  {page==='journal'&&project&&<GardenJournal onEditor={()=>go('editor')} onPlants={()=>explorePlants('')} onPlan={()=>go('plan')} key={project.id} project={project} change={change} lang={lang} onSave={save}/>}
  {page==='roots'&&<RainRoots lang={lang}/>}
  </Suspense>
