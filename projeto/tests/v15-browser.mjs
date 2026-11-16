@@ -12,7 +12,7 @@ try{
  const scenarios=page.locator('.studio-journey').locator('..').locator('.scenario-studio');
  await expect(scenarios).toBeVisible();
  await scenarios.getByRole('button',{name:/Salvar composição A/}).click();
- await expect(scenarios).toContainText('1 elementos');
+ await expect(scenarios).toContainText('1 elemento');
  await expect(scenarios.locator('img')).toHaveCount(2);
  await page.locator('.studio-journey').getByRole('button',{name:/Organizar meu plano/}).click();
  await expect(page.locator('.plan-extras .scenario-studio')).toBeVisible();
