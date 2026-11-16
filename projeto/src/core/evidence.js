@@ -8,7 +8,7 @@ export function evaluatePlantEvidence(plant,raw={},lang='pt'){
  const context=cleanConditions(raw),sheet=claims.species[plant.id]||{},pt=lang==='pt',matches=[],contradictions=[],unknown=[],citations=[];
  const addClaim=(field,value)=>{
   const claim=sheet[field];
-  if(value==='unknown')return;
+  if(value==='unknown'){unknown.push(pt?`Condição ${field==='sun'?'de luz':'de umidade'} não informada.`:`${field} condition not provided.`);return;}
   if(!claim||!claim.matching||!Array.isArray(claim.values)||!claim.values.length){
    unknown.push(pt?`Não há faixa documentada para ${field==='sun'?'luz':'umidade'} informada.`:`No matching ${field} evidence for this observation.`);return;
   }

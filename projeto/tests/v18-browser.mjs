@@ -56,14 +56,14 @@ try{
   await expect(board).toContainText('Correspondência documental');
   await board.getByRole('button',{name:'Gerar proposta para meu terreno'}).click();
   await expect(board.locator('.v18-proposal-visual')).toHaveCount(1);
-  assert(await board.locator('.v18-photo-layer img').count()>=1,'Proposed photo should include verified botanical visual');
+  assert(await board.locator('.v19-svg [data-proposal-id]').count()>=1,'Proposed photo should include verified botanical visual');
   await board.getByRole('button',{name:'Criar alternativa B'}).click();
   await expect(board.locator('.v18-proposal-visual')).toHaveCount(2);
   await second.locator('.plan-extras').getByRole('button',{name:/Abrir relatório/}).last().click();
   const report=second.locator('.report-modal .v18-report');
   await expect(report).toBeVisible();
   await expect(report.locator('.v18-proposal-visual')).toHaveCount(2);
-  assert.equal(await report.locator('.v18-photo-layer img').count()>=2,true);
+  assert.equal(await report.locator('.v19-svg [data-proposal-id]').count()>=2,true);
   assert.deepEqual(errors2,[]);
   console.log('PASS V18 browser: Iowa documented species generate editable A/B with botanical photo overlays and appear in report');
  }finally{await second.close()}

@@ -10,9 +10,7 @@
     "region": "BR",
     "native": "native",
     "sun": [],
-    "moisture": [
-      "seasonal"
-    ],
+    "moisture": [],
     "height": null,
     "size": "unknown",
     "habit": "herb",
@@ -38,8 +36,8 @@
       "en": "Vegetation cover studied; no infiltration rate attributed to the species."
     },
     "limits": {
-      "pt": "Pode multiplicar-se com facilidade. O ensaio não equivale a validação em jardim de escala real.",
-      "en": "May spread readily. The trial is not field-scale validation."
+      "pt": "Pode multiplicar-se com facilidade. O ensaio não equivale a validação em jardim de escala real. A irrigação controlada do ensaio não estabelece tolerância ao encharcamento local.",
+      "en": "May spread readily. The trial is not field-scale validation. Controlled trial irrigation does not establish local waterlogging tolerance."
     },
     "image": {
       "name": "Commelina erecta",
@@ -64,9 +62,7 @@
     "region": "BR",
     "native": "native",
     "sun": [],
-    "moisture": [
-      "seasonal"
-    ],
+    "moisture": [],
     "height": null,
     "size": "unknown",
     "habit": "climber",
@@ -92,8 +88,8 @@
       "en": "Vegetation cover studied; no infiltration rate attributed to the species."
     },
     "limits": {
-      "pt": "O ensaio exigiu condução dos ramos. Verificar comportamento e expansão no local.",
-      "en": "The trial required training the vines. Verify local growth and spread."
+      "pt": "O ensaio exigiu condução dos ramos. Verificar comportamento e expansão no local. A irrigação controlada do ensaio não estabelece tolerância ao encharcamento local.",
+      "en": "The trial required training the vines. Verify local growth and spread. Controlled trial irrigation does not establish local waterlogging tolerance."
     },
     "image": {
       "name": "Distimake dissectus",
@@ -118,9 +114,7 @@
     "region": "BR",
     "native": "native",
     "sun": [],
-    "moisture": [
-      "seasonal"
-    ],
+    "moisture": [],
     "height": null,
     "size": "unknown",
     "habit": "herb",
@@ -146,8 +140,8 @@
       "en": "Vegetation cover studied; no infiltration rate attributed to the species."
     },
     "limits": {
-      "pt": "Publicada no ensaio como Neomarica caerulea; nome aceito aqui segue POWO. Confirmar identificação e procedência.",
-      "en": "Published in the trial as Neomarica caerulea; accepted name here follows POWO. Confirm identification and origin."
+      "pt": "Publicada no ensaio como Neomarica caerulea; nome aceito aqui segue POWO. Confirmar identificação e procedência. A irrigação controlada do ensaio não estabelece tolerância ao encharcamento local.",
+      "en": "Published in the trial as Neomarica caerulea; accepted name here follows POWO. Confirm identification and origin. Controlled trial irrigation does not establish local waterlogging tolerance."
     },
     "image": {
       "name": "Neomarica caerulea",
@@ -172,9 +166,7 @@
     "region": "BR",
     "native": "introduced",
     "sun": [],
-    "moisture": [
-      "seasonal"
-    ],
+    "moisture": [],
     "height": null,
     "size": "unknown",
     "habit": "climber",
@@ -200,8 +192,8 @@
       "en": "Vegetation cover studied; no infiltration rate attributed to the species."
     },
     "limits": {
-      "pt": "Divergência importante: o artigo chama as espécies de nativas do Brasil, mas POWO situa esta espécie do México ao Panamá. Tratada aqui como não nativa do Brasil; não indicada para plantio.",
-      "en": "Important conflict: the paper calls the species Brazilian natives, but POWO places this species from Mexico to Panama. Treated here as non-native to Brazil; not proposed for planting."
+      "pt": "Divergência importante: o artigo chama as espécies de nativas do Brasil, mas POWO situa esta espécie do México ao Panamá. Tratada aqui como não nativa do Brasil; não indicada para plantio. A irrigação controlada do ensaio não estabelece tolerância ao encharcamento local.",
+      "en": "Important conflict: the paper calls the species Brazilian natives, but POWO places this species from Mexico to Panama. Treated here as non-native to Brazil; not proposed for planting. Controlled trial irrigation does not establish local waterlogging tolerance."
     },
     "image": null,
     "verifiedAt": "2026-11-15"

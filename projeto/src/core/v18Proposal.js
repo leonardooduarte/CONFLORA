@@ -47,14 +47,14 @@ export function buildV18Proposal(project,lang='pt'){
 /** Auto-generate a non-destructive visual hypothesis only from evidenced species.
  * Returns {created,reason}; never overwrites observational annotations or photos.
  */
-export function makeV18Scenario(project,slot='A',lang='pt'){
+export function makeV18Scenario(project,slot='A',lang='pt',options={}){
  if(!['A','B'].includes(slot))throw Error('Unsupported slot');
  const proposal=buildV18Proposal(project,lang),pt=lang==='pt';
  const eligible=proposal.regions.filter(x=>x.canDraft);
  if(!eligible.length)return {created:false,reason:pt?'Não há espécies com dados suficientes e condições seguras para gerar uma composição de plantio. Consulte as fichas de pesquisa e verifique drenagem, duração da água e proximidade de construções.':'There are no adequately evidenced plants and sufficiently verified conditions for an automated planting composition.'};
  const markers=[];
  for(const area of eligible){
-   const species=area.candidates.slice(0,2);
+   const species=area.candidates.filter(c=>!options.requirePhoto||c.plant.image).slice(0,2);
    const centerX=Number(area.mark.x)||500,centerY=Number(area.mark.y)||325;
    for(let i=0;i<species.length;i++){
     const x=abs(centerX+(slot==='A'?1:-1)*(i*72-35),40,960);

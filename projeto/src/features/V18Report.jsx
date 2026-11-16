@@ -5,8 +5,8 @@ import V18Proposal from './V18Proposal.jsx';
 /** Dedicated A4 report composition; intentionally omits empty A/B blocks and
  * repeated filter screens, and respects project-specific source evidence.
  */
-export default function V18Report({project,lang='pt',reportImage}){
- const pt=lang==='pt',proposal=buildV18Proposal(project,lang);
+export default function V18Report({project,lang='pt',reportImage,proposalData,ProposalComponent=V18Proposal,referenceNumbers,bibliography,closingChecks}){
+ const pt=lang==='pt',proposal=proposalData||buildV18Proposal(project,lang);
  const types={pool:pt?'Pontos de água acumulada':'Pooling points',roof:pt?'Saídas do telhado':'Roof outlets',paved:pt?'Superfície pavimentada':'Paved areas',space:pt?'Áreas livres':'Open areas',garden:pt?'Intervenções exploradas':'Proposed gardens',plants:pt?'Marcações vegetais':'Plant marks'};
  const observed=(project.annotations||[]).filter(a=>a.type!=='plants'&&a.type!=='garden');
  const groups=Object.entries(types).filter(([key])=>observed.some(a=>a.type===key)).map(([key,label])=>({label,n:observed.filter(a=>a.type===key).length}));
@@ -30,6 +30,7 @@ export default function V18Report({project,lang='pt',reportImage}){
    <div className="v18-report__conditions">
     {[[pt?'Região':'Region',project.context?.regionCode==='BR'?'Brasil':project.context?.regionCode==='IA'?'Iowa':null],[pt?'Solo':'Soil',({slow:pt?'Aparentemente lento':'Apparently slow',medium:pt?'Intermediário':'Moderate',fast:pt?'Aparentemente rápido':'Apparently fast'})[project.context?.soil]],[pt?'Luz':'Sun',({full:pt?'Muito sol':'Full sun',mixed:pt?'Sol e sombra':'Sun and shade',shade:pt?'Sombra':'Shade'})[project.context?.sun]],[pt?'Umidade':'Moisture',({wet:pt?'Molhado':'Wet',moist:pt?'Úmido':'Moist',mesic:pt?'Intermediária':'Mesic',dry:pt?'Seco':'Dry'})[project.context?.moisture]]].filter(x=>x[1]).map(([key,value])=><div key={key}><b>{key}</b><span>{value}</span></div>)}
    </div>
+   {project.context.notes&&<p>{project.context.notes}</p>}
    {groups.length>0&&<p className="v18-report__observations">{groups.map(g=>g.n+' '+g.label.toLowerCase()).join(' · ')}.</p>}
   </section>
   {reportImage&&<section className="v18-report__annotations">
@@ -37,17 +38,18 @@ export default function V18Report({project,lang='pt',reportImage}){
     <img src={reportImage} alt={pt?'Foto com marcações e numeração das observações':'Annotated photograph with numbered observations'}/>
     {observed.filter(x=>x.notes?.trim()).length>0&&<ol>{observed.filter(x=>x.notes?.trim()).map(x=><li key={x.id}>{x.notes.trim()}</li>)}</ol>}
   </section>}
-  <V18Proposal project={project} lang={lang} report/>
+  <ProposalComponent project={project} lang={lang} report referenceNumbers={referenceNumbers}/>
   <section className="v18-report__closing">
     <h2>{pt?'Próximas verificações':'Next checks'}</h2>
-    <ol>{[
+    <ol>{(closingChecks||[
       pt?'Observar quanto tempo a água permanece após a chuva.':'Observe how long water remains after rain.',
       pt?'Conferir distância de construções, redes enterradas e saída segura do excedente.':'Check building setbacks, underground utilities and safe overflow.',
       pt?'Verificar infiltração real do solo antes de considerar jardins de chuva.':'Test actual soil infiltration before considering rain gardens.',
       pt?'Conferir identificação e disponibilidade regional de espécies com orientação profissional.':'Confirm plant identification and regional availability with professional guidance.'
-    ].map(x=><li key={x}>{x}</li>)}</ol>
+    ]).map(x=><li key={x}>{x}</li>)}</ol>
     <p>{proposal.caveats}</p>
   </section>
+  {bibliography}
   <footer className="v18-report__footer">{pt?'CONFLORA · Relatório de exploração ambiental, não projeto executivo':'CONFLORA · Environmental exploration, not an engineering design'}</footer>
  </article>;
 }

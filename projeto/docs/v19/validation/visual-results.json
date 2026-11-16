@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "base": "http://localhost:5176/",
+  "errors": [],
+  "checks": [
+    "URL UTM cleanup",
+    "Topography canvas",
+    "Specular hover",
+    "ScrollStack responds to scroll",
+    "WebThreads canvas",
+    "9 loaded kinetic images",
+    "InfiniteMenu changing frames and pause",
+    "TiltedCard hover",
+    "FlipCard click",
+    "FluidGlass canvas",
+    "Clean Water Kit PT/EN",
+    "mobile 360",
+    "kinetic reduced motion"
+  ]
+}

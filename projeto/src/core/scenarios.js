@@ -7,7 +7,7 @@ export function captureScenario(project,slot){
  const markers=getLiveProposals(project);
  if(!markers.length)return false;
  project.scenarios={A:null,B:null,...(project.scenarios||{})};
- project.scenarios[slot]={markers,savedAt:Date.now()};
+ project.scenarios[slot]={markers,mode:markers.some(m=>m.speciesId)?'botanical':'exploratory',savedAt:Date.now()};
  return true;
 }
 export function renderScenarioProject(project,slot='original'){
