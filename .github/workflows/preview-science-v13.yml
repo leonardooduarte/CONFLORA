@@ -1,0 +1,63 @@
+name: CONFLORA — Preview Científica V13
+
+on:
+  push:
+    branches:
+      - feat/conflora-evidence-analysis-20261116
+    paths:
+      - "projeto/**"
+      - ".github/workflows/preview-science-v13.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-science-preview
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+
+      - name: Instalar dependências
+        working-directory: projeto
+        run: npm ci
+
+      - name: Testar regras, dados e gerar build
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/science.mjs
+
+      - name: Instalar navegador de teste
+        working-directory: projeto
+        run: |
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+
+      - name: Testar a jornada real em Chromium
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://localhost:5176/ > /dev/null; then break; fi; sleep 1; done
+          node tests/science-browser.mjs
+          npm run test:herbarium
+
+      - name: Publicar prévia em endereço separado
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-science-v13
+          keep_files: true
+          commit_message: "Preview scientific CONFLORA V13: ${{ github.sha }}"
