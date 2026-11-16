@@ -11,7 +11,7 @@ const ids=['penstemon-digitalis','zizia-aurea','mertensia-virginica','panicum-vi
 for(const id of ids){
  const p=plants.find(p=>p.id===id);
  assert(p&&p.region==='IA'&&p.evidence==='guide'&&p.taxonomyUrl&&p.sourceIds.includes('ia'));
- assert.equal(p.image,null,'No unlicensed stock image should be substituted');
+ assert(p.image?.author&&p.image?.license&&p.image?.source&&p.image?.sha256,'New photographs require full traceable credit');
 }
 const evidence=selectPlants({regionCode:'IA',sun:'full',moisture:'moist'},'pt');
 assert(evidence.candidates.some(c=>c.plant.id==='penstemon-digitalis'));

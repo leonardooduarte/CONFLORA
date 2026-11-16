@@ -5,3 +5,5 @@
 
 .v19-visual:has(.v19-edit[open]) .v19-svg{touch-action:none}
 @media(max-width:480px){.v19-proposal .v18-plant-card{display:block}.v19-proposal .v18-plant-card__photo{height:180px;width:100%;object-fit:cover}.v19-proposal .v18-plant-card__body{padding:14px}.v19-proposal .v18-plant-card__body p{font-size:14px}}
+
+.botanic-profile{padding:20px;border-left:3px solid #b48c63;background:#eff0e5;margin-bottom:24px}.botanic-profile h3{font:32px/1.1 var(--serif);margin:0 0 14px}.botanic-overview{max-width:70ch;line-height:1.65}.botanic-traits{font-size:13px;color:#4a6653}.photo-pending small{display:block;font:13px/1.6 var(--sans)}

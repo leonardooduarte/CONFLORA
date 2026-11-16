@@ -19,7 +19,7 @@ for(const p of plants){
  }
 }
 for(const id of ['alternanthera-brasiliana','rhynchanthera-grandiflora','arachis-repens','cyperus-giganteus']){
- const p=plants.find(x=>x.id===id);assert(p&&p.region==='BR'&&p.evidence==='ecology'&&!p.image);
+ const p=plants.find(x=>x.id===id);assert(p&&p.region==='BR'&&p.evidence==='ecology'&&p.image?.author&&p.image?.license);
  const evaluation=evaluatePlantEvidence(p,{regionCode:'BR',sun:'full',moisture:'wet'});
  assert.equal(evaluation.status,'research');assert(evaluation.citations.length);
 }

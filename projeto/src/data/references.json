@@ -125,5 +125,41 @@
       "pt": "Nomenclatura taxonômica aceita e distribuição ampla, não adequação a jardins de chuva ou presença em Itapeva.",
       "en": "Accepted name and broad distribution, not suitability for rain gardens or occurrence in Itapeva."
     }
+  },
+  "extension-penstemon-digitalis": {
+    "title": "NC State Extension — Plant Toolbox: Penstemon digitalis Nutt. ex Sims",
+    "url": "https://plants.ces.ncsu.edu/plants/penstemon-digitalis/",
+    "scope": {
+      "pt": "Descrição botânica e cultivo no contexto norte-americano. Informação complementar; não é ensaio hidráulico nem aprovação para o Brasil.",
+      "en": "Botanical description and cultivation in North America. Supplemental information, not a hydraulic trial or approval for Brazil."
+    },
+    "reviewedAt": "2026-11-16"
+  },
+  "extension-zizia-aurea": {
+    "title": "NC State Extension — Plant Toolbox: Zizia aurea (L.) W.D.J.Koch",
+    "url": "https://plants.ces.ncsu.edu/plants/zizia-aurea/",
+    "scope": {
+      "pt": "Descrição botânica e cultivo no contexto norte-americano. Informação complementar; não é ensaio hidráulico nem aprovação para o Brasil.",
+      "en": "Botanical description and cultivation in North America. Supplemental information, not a hydraulic trial or approval for Brazil."
+    },
+    "reviewedAt": "2026-11-16"
+  },
+  "extension-mertensia-virginica": {
+    "title": "NC State Extension — Plant Toolbox: Mertensia virginica (L.) Pers. ex Link",
+    "url": "https://plants.ces.ncsu.edu/plants/mertensia-virginica/",
+    "scope": {
+      "pt": "Descrição botânica e cultivo no contexto norte-americano. Informação complementar; não é ensaio hidráulico nem aprovação para o Brasil.",
+      "en": "Botanical description and cultivation in North America. Supplemental information, not a hydraulic trial or approval for Brazil."
+    },
+    "reviewedAt": "2026-11-16"
+  },
+  "extension-panicum-virgatum": {
+    "title": "NC State Extension — Plant Toolbox: Panicum virgatum L.",
+    "url": "https://plants.ces.ncsu.edu/plants/panicum-virgatum/",
+    "scope": {
+      "pt": "Descrição botânica e cultivo no contexto norte-americano. Informação complementar; não é ensaio hidráulico nem aprovação para o Brasil.",
+      "en": "Botanical description and cultivation in North America. Supplemental information, not a hydraulic trial or approval for Brazil."
+    },
+    "reviewedAt": "2026-11-16"
   }
 }

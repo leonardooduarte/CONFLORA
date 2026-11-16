@@ -195,8 +195,17 @@
       "pt": "Divergência importante: o artigo chama as espécies de nativas do Brasil, mas POWO situa esta espécie do México ao Panamá. Tratada aqui como não nativa do Brasil; não indicada para plantio. A irrigação controlada do ensaio não estabelece tolerância ao encharcamento local.",
       "en": "Important conflict: the paper calls the species Brazilian natives, but POWO places this species from Mexico to Panama. Treated here as non-native to Brazil; not proposed for planting. Controlled trial irrigation does not establish local waterlogging tolerance."
     },
-    "image": null,
-    "verifiedAt": "2026-11-15"
+    "image": {
+      "name": "Syngonium angustatum",
+      "file": "syngonium-commons.jpg",
+      "author": "Raquel Patro",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Syngonium_angustatum.jpg",
+      "sha256": "30ccd42dfe312cfcef1ecaaba1e6d960ecb36db3d59cc1a1948eb855a54c1dd3",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
+    "verifiedAt": "2026-11-16"
   },
   {
     "id": "monarda",
@@ -307,7 +316,8 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Echinacea_pallida_(8).jpg",
-      "changes": "Resized and encoded as WebP; responsive crop."
+      "changes": "Resized and encoded as WebP; responsive crop.",
+      "sha256": "e232a14e77a7a02b28047351cdfc26fe289c49892c67c4b5bc5a68b06fcb2c73"
     },
     "verifiedAt": "2026-11-15"
   },
@@ -364,7 +374,8 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Rudbeckia_hirta_kz03.jpg",
-      "changes": "Resized and encoded as WebP; responsive crop."
+      "changes": "Resized and encoded as WebP; responsive crop.",
+      "sha256": "5a1a168dc0454c73bc4821e81a64a9906dc49406c86946a1940dfdb7905c6982"
     },
     "verifiedAt": "2026-11-15"
   },
@@ -422,7 +433,8 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Lobelia_siphilitica.jpg",
-      "changes": "Resized and encoded as WebP; responsive crop."
+      "changes": "Resized and encoded as WebP; responsive crop.",
+      "sha256": "dd552f8938a927652e10aced534580d1a637f0a0235b97b2836c1277e7884d0f"
     },
     "verifiedAt": "2026-11-15"
   },
@@ -478,9 +490,10 @@
       "file": "carex-vulpinoidea.webp",
       "author": "Robert H. Mohlenbrock",
       "license": "Public domain",
-      "licenseUrl": "",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#United_States",
       "source": "https://commons.wikimedia.org/wiki/File:Carex_vulpinoidea_NRCS-3.jpg",
-      "changes": "Resized and encoded as WebP; responsive crop."
+      "changes": "Resized and encoded as WebP; responsive crop.",
+      "sha256": "bacec36f3dddc3814bcd4b3729282346b51c4b0c97b15c93fd8ba786f023d652"
     },
     "verifiedAt": "2026-11-15"
   },
@@ -537,7 +550,8 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Asclepias_tuberosa_interior.jpg",
-      "changes": "Resized and encoded as WebP; responsive crop."
+      "changes": "Resized and encoded as WebP; responsive crop.",
+      "sha256": "32e6d660a3d1ff1f06b74e1609363c3a76314c464d2559f9ee81d6d1550377ff"
     },
     "verifiedAt": "2026-11-15"
   },
@@ -546,10 +560,20 @@
     "native": "native",
     "evidence": "guide",
     "sourceIds": [
-      "ia"
+      "ia",
+      "extension-penstemon-digitalis"
     ],
     "verifiedAt": "2026-11-16",
-    "image": null,
+    "image": {
+      "name": "Penstemon digitalis",
+      "file": "penstemon-digitalis-commons.jpg",
+      "author": "Cbaile19",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Penstemon_digitalis,_2023-06-10,_South_Side,_02.jpg",
+      "sha256": "76b21a19e71b71158e808e48c7bdd99c65e35951233408a1d26da9006e3c93af",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "id": "penstemon-digitalis",
     "scientific": "Penstemon digitalis Nutt. ex Sims",
     "common": {
@@ -588,6 +612,17 @@
     "limits": {
       "pt": "Dados de Iowa; mais de 0,91 m, requer avaliar espaço e manejo. Não é indicação para o Brasil.",
       "en": "Iowa evidence; exceeds 0.91 m and requires space/care checks. Not guidance for Brazil."
+    },
+    "profile": {
+      "description": {
+        "pt": "Perene em touceiras, com flores tubulares brancas em grupos terminais; não é uma dedaleira do gênero Digitalis.",
+        "en": "Clump-forming perennial with white tubular flowers in terminal clusters; not a Digitalis foxglove."
+      },
+      "cultivation": {
+        "pt": "A extensão descreve solos bem drenados, úmidos a secos, e sol a sombra leve. Floração no fim da primavera/início do verão norte-americano.",
+        "en": "Extension describes well-drained moist to dry soil and sun to light shade; flowering in late spring/early summer in North America."
+      },
+      "sourceId": "extension-penstemon-digitalis"
     }
   },
   {
@@ -595,10 +630,20 @@
     "native": "native",
     "evidence": "guide",
     "sourceIds": [
-      "ia"
+      "ia",
+      "extension-zizia-aurea"
     ],
     "verifiedAt": "2026-11-16",
-    "image": null,
+    "image": {
+      "name": "Zizia aurea",
+      "file": "zizia-aurea-commons.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Zizia_aurea_kz03.jpg",
+      "sha256": "a9f8fa62ddee571c71c13d189efdd43636711d962061d718132736d29fdbf012",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "id": "zizia-aurea",
     "scientific": "Zizia aurea (L.) W.D.J.Koch",
     "common": {
@@ -634,6 +679,17 @@
     "limits": {
       "pt": "Luz não validada nesta edição; confirmar exposição, solo e manutenção local. Sem indicação para o Brasil.",
       "en": "Light not verified in this edition; confirm exposure, soil and local care. Not for Brazilian recommendation."
+    },
+    "profile": {
+      "description": {
+        "pt": "Flores amarelas reunidas em umbelas; forma pequenas colônias. A fonte registra uso como planta hospedeira da borboleta Black Swallowtail.",
+        "en": "Yellow flowers in umbels; forms small colonies. The source records it as a Black Swallowtail host plant."
+      },
+      "cultivation": {
+        "pt": "A fonte descreve sol pleno a parcial, tolerância à seca de verão e manutenção baixa no contexto norte-americano. A altura publicada difere do guia de Iowa; não foi unificada artificialmente.",
+        "en": "The source describes full to partial sun, summer-dry tolerance and low maintenance in North America. Its height differs from the Iowa guide; ranges were not artificially merged."
+      },
+      "sourceId": "extension-zizia-aurea"
     }
   },
   {
@@ -641,10 +697,20 @@
     "native": "native",
     "evidence": "guide",
     "sourceIds": [
-      "ia"
+      "ia",
+      "extension-mertensia-virginica"
     ],
     "verifiedAt": "2026-11-16",
-    "image": null,
+    "image": {
+      "name": "Mertensia virginica",
+      "file": "mertensia-virginica-commons.jpg",
+      "author": "Khan \"Sadh\" N. Mostafa",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mertensia_virginica.bbg.jpg",
+      "sha256": "f51c4f53ef6a34e69f43fb32e763ca3ba72ddc752270191933017ed643334f1d",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "id": "mertensia-virginica",
     "scientific": "Mertensia virginica (L.) Pers. ex Link",
     "common": {
@@ -680,6 +746,17 @@
     "limits": {
       "pt": "Luz não verificada aqui; porte e condições são contexto Iowa. Não transferir ao Brasil.",
       "en": "Light not verified here; size/conditions apply to Iowa. Do not transfer to Brazil."
+    },
+    "profile": {
+      "description": {
+        "pt": "Perene com botões rosados que abrem em flores azuis pendentes, em forma de sino; entra em dormência no verão.",
+        "en": "Perennial with pink buds opening into pendant blue bell-shaped flowers; summer dormant."
+      },
+      "cultivation": {
+        "pt": "Sombra parcial a profunda, solo úmido rico em matéria orgânica e bem drenado na ficha de extensão. Dormência não significa, por si só, perda da planta.",
+        "en": "Partial to deep shade and moist, organic-rich, well-drained soil in the extension record. Dormancy alone does not mean the plant has died."
+      },
+      "sourceId": "extension-mertensia-virginica"
     }
   },
   {
@@ -687,10 +764,20 @@
     "native": "native",
     "evidence": "guide",
     "sourceIds": [
-      "ia"
+      "ia",
+      "extension-panicum-virgatum"
     ],
     "verifiedAt": "2026-11-16",
-    "image": null,
+    "image": {
+      "name": "Panicum virgatum",
+      "file": "panicum-virgatum-commons.jpg",
+      "author": "Warren Gretz, DOE/NREL",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Copyright_tags#Public_domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Panicum_virgatum.jpg",
+      "sha256": "079bfe7ca4d63caf9820b649ff00bb1af7ff4a8c32ed59d5d69272d51fd0a6ab",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "id": "panicum-virgatum",
     "scientific": "Panicum virgatum L.",
     "common": {
@@ -727,6 +814,17 @@
     "limits": {
       "pt": "Porte elevado e expansão potencial exigem avaliação; luminosidade não validada nesta edição. Não recomendar no Brasil.",
       "en": "Tall habit and spread require checks; light not verified here. Do not recommend in Brazil."
+    },
+    "profile": {
+      "description": {
+        "pt": "Gramínea perene em touceiras, com folhas estreitas e inflorescências em panículas. Cultivares variam em altura e coloração.",
+        "en": "Clump-forming perennial grass with narrow leaves and panicles; cultivars vary in height and color."
+      },
+      "cultivation": {
+        "pt": "A extensão registra sol pleno a parcial, solos úmidos e alagamento ocasional. Isso não documenta segurança junto a construções nem dimensiona drenagem.",
+        "en": "Extension records full to partial sun, moist soil and occasional flooding. This does not establish building setbacks or size drainage infrastructure."
+      },
+      "sourceId": "extension-panicum-virgatum"
     }
   },
   {
@@ -772,7 +870,16 @@
       "pt": "Cadastro documental para pesquisa, não elegível à seleção preliminar: não há dados transferíveis de luz, eficiência hídrica ou validação de uso no terreno do usuário. Não indica tolerância à submersão permanente.",
       "en": "Research-only record, not eligible for preliminary matching: no transferable light, hydrological performance or user-site validation. Permanent submersion tolerance is not established."
     },
-    "image": null,
+    "image": {
+      "name": "Cyperus giganteus",
+      "file": "cyperus-giganteus-commons.jpg",
+      "author": "Andrés González",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cyperus_giganteus-_Soriano,_Palmar,_Suelo_arenoso_h%C3%BAmedo_al_margen_de_peque%C3%B1a_ca%C3%B1ada_afluente_de_la_Ca%C3%B1ada_de_las_Pajas_5.jpg",
+      "sha256": "eb2b5570912d8fdecaa9ad9e303bd016a175f0cf5667865b5c29cc3131562554",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "verifiedAt": "2026-11-16"
   },
   {
@@ -780,7 +887,16 @@
     "native": "native",
     "evidence": "ecology",
     "verifiedAt": "2026-11-16",
-    "image": null,
+    "image": {
+      "name": "Alternanthera brasiliana",
+      "file": "alternanthera-brasiliana-commons.jpg",
+      "author": "CostaPPPR",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Alternanthera-brasiliana2.jpg",
+      "sha256": "e54c387d6d02be12f09c50d3e0c503ca464d4c8ee6a032c1f5ada6347847e2fb",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "sun": [],
     "moisture": [],
     "height": null,
@@ -823,7 +939,16 @@
     "native": "native",
     "evidence": "ecology",
     "verifiedAt": "2026-11-16",
-    "image": null,
+    "image": {
+      "name": "Rhynchanthera grandiflora",
+      "file": "rhynchanthera-grandiflora-commons.jpg",
+      "author": "João Medeiros",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Rhynchanthera_grandiflora.jpg",
+      "sha256": "dfbe36e84f0561b4eacb3cb3daa38b063410af1312e78812b98a7975886dbfaf",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "sun": [],
     "moisture": [],
     "height": "0,7–2,0 m (levantamento florístico)",
@@ -866,7 +991,16 @@
     "native": "native",
     "evidence": "ecology",
     "verifiedAt": "2026-11-16",
-    "image": null,
+    "image": {
+      "name": "Arachis repens",
+      "file": "arachis-repens-commons.jpg",
+      "author": "Vitor dos Santos",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Arachis_repens_-_Vitor_dos_Santos_-_349258280.jpeg",
+      "sha256": "3e90f904ed0aea610bf39ddc648745757f3b93ac506be417699aa0e9ceb9e556",
+      "changes": "Original downloaded file; responsive crop in interface only."
+    },
     "sun": [],
     "moisture": [],
     "height": null,
@@ -945,7 +1079,18 @@
       "pt": "Evidência experimental direta sobre resposta de mudas ao alagamento, mas sem dados de luz, solo, porte urbano e desempenho de biorretenção; excluída da seleção de plantio.",
       "en": "Direct experimental seedling flood response, but lacking sun, urban soil, suitable planting size and bioretention performance; not eligible for site-matching."
     },
-    "image": null,
+    "image": {
+      "name": "Inga affinis",
+      "file": "inga-affinis-inaturalist.jpg",
+      "author": "cristianol1456",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/755975670",
+      "observation": "https://www.inaturalist.org/observations/410985562",
+      "changes": "Downloaded large rendition; responsive crop in interface only.",
+      "sha256": "a5f4b45af1cb0f2c0b5b6802a3bc5469b3d71b70e12c65630ea1d231191dd819",
+      "verification": "iNaturalist research-grade observation, exact taxon 287893; documentary and visual review, not an expert determination"
+    },
     "verifiedAt": "2026-11-16"
   }
 ]
