@@ -38,7 +38,7 @@ export default function PlantLibrary({project,change,lang,areaId='',onBack,onPre
   setPendingRead(null);
  },[pendingRead,list]);
  const save=p=>change(n=>{const i=n.plantInterests.findIndex(x=>x.id===p.id&&x.areaId===areaId);if(i<0)n.plantInterests.push({id:p.id,areaId});else n.plantInterests.splice(i,1)});
- const options={region:[['BR',pt?'Brasil':'Brazil'],['IA','USA · Iowa']],sun:['full','mixed','shade'],moisture:['wet','moist','mesic','dry','seasonal'],size:['small','medium','unknown'],habit:['herb','climber','sedge'],native:['native','introduced'],evidence:['studied','guide']};
+ const options={region:[['BR',pt?'Brasil':'Brazil'],['IA','USA · Iowa']],sun:['full','mixed','shade'],moisture:['wet','moist','mesic','dry','seasonal'],size:['small','medium','unknown'],habit:['herb','climber','sedge'],native:['native','introduced'],evidence:['studied','guide','ecology']};
  const captions=pt?{region:'Contexto regional',sun:'Luz documentada',moisture:'Umidade documentada',size:'Porte',habit:'Vegetação',native:'Origem no contexto',evidence:'Evidência'}:{region:'Regional context',sun:'Documented light',moisture:'Documented moisture',size:'Height',habit:'Vegetation',native:'Origin in context',evidence:'Evidence'};
  const details=p=><div className="botanic-details"><dl>{[
   [pt?'Nome científico aceito':'Accepted scientific name',p.scientific],[pt?'Família':'Family',p.family],
