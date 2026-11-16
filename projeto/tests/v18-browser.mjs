@@ -17,7 +17,7 @@ try{
  await expect(page.locator('.plan-extras .v18-proposal')).toBeVisible();
  await expect(page.locator('.v18-botanical')).toContainText('Somente pesquisa');
  assert(await page.locator('.plan-extras .v18-plant-card__photo').count()>=3);
- await page.locator('.plan-extras .v18-actions').getByRole('button',{name:'Gerar composição A'}).click();
+ await page.locator('.plan-extras .v18-actions').getByRole('button',{name:'Gerar proposta para meu terreno'}).click();
  await expect(page.getByRole('status').first()).toContainText('composição automática exige');
  assert.equal(await page.locator('.plan-extras .v18-visual-list .v18-proposal-visual').count(),0);
  await page.locator('.plan-extras').getByRole('button',{name:/Abrir relatório/}).last().click();
