@@ -25,7 +25,9 @@ try{
  await expect(page.locator('.botanic-row')).toHaveCount(1);
  await expect(page.locator('.botanic-row')).toContainText('Arachis repens');
  await page.getByLabel('Pesquisar espécies').fill('');
- const inspector=page.locator('.evidence-inspector');
+ const workbench=page.locator('.selection-workbench');
+ await workbench.locator('summary').first().click();
+ const inspector=workbench.locator('.evidence-inspector');
  await inspector.locator('summary').click();
  await expect(inspector).toContainText('Fichas para pesquisa');
  const order=await page.evaluate(()=>Array.from(document.querySelectorAll('.herbarium-search,.atlas-feature')).map(x=>x.className).join('|'));
