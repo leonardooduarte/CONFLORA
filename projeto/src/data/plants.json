@@ -548,5 +548,193 @@
       "changes": "Resized and encoded as WebP; responsive crop."
     },
     "verifiedAt": "2026-11-15"
+  },
+  {
+    "region": "IA",
+    "native": "native",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "verifiedAt": "2026-11-16",
+    "image": null,
+    "id": "penstemon-digitalis",
+    "scientific": "Penstemon digitalis Nutt. ex Sims",
+    "common": {
+      "pt": "Foxglove beardtongue (nome em inglês)",
+      "en": "Foxglove beardtongue"
+    },
+    "family": "Plantaginaceae",
+    "sun": [
+      "full",
+      "mixed"
+    ],
+    "moisture": [
+      "moist",
+      "mesic"
+    ],
+    "height": "> 0,91 m (guia)",
+    "size": "unknown",
+    "habit": "herb",
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/808077-1",
+    "occurrence": {
+      "pt": "Nativa de Iowa segundo POWO; incluída no Apêndice A do guia ISWEP.",
+      "en": "Native to Iowa according to POWO; listed in ISWEP Appendix A."
+    },
+    "care": {
+      "pt": "Forma touceiras; o guia alerta que pode se espalhar com vigor.",
+      "en": "Clump-forming; the guide warns it can spread vigorously."
+    },
+    "position": {
+      "pt": "Guia de Iowa: fundo da bacia.",
+      "en": "Iowa guide: basin bottom."
+    },
+    "ecology": {
+      "pt": "Listada para jardins de chuva em Iowa; sem medição de retenção de água por espécie.",
+      "en": "Listed for Iowa rain gardens; no species-specific runoff retention measurement."
+    },
+    "limits": {
+      "pt": "Dados de Iowa; mais de 0,91 m, requer avaliar espaço e manejo. Não é indicação para o Brasil.",
+      "en": "Iowa evidence; exceeds 0.91 m and requires space/care checks. Not guidance for Brazil."
+    }
+  },
+  {
+    "region": "IA",
+    "native": "native",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "verifiedAt": "2026-11-16",
+    "image": null,
+    "id": "zizia-aurea",
+    "scientific": "Zizia aurea (L.) W.D.J.Koch",
+    "common": {
+      "pt": "Golden Alexander (nome em inglês)",
+      "en": "Golden Alexander"
+    },
+    "family": "Apiaceae",
+    "sun": [],
+    "moisture": [
+      "moist",
+      "mesic"
+    ],
+    "height": "0,61–0,91 m (guia)",
+    "size": "medium",
+    "habit": "herb",
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:850044-1",
+    "occurrence": {
+      "pt": "Nativa de Iowa segundo POWO; incluída no Apêndice A do guia ISWEP.",
+      "en": "Native to Iowa according to POWO; listed in ISWEP Appendix A."
+    },
+    "care": {
+      "pt": "O guia não estabelece uma rotina de manutenção específica na ficha.",
+      "en": "The guide's entry does not establish a species-specific care schedule."
+    },
+    "position": {
+      "pt": "Guia de Iowa: fundo da bacia.",
+      "en": "Iowa guide: basin bottom."
+    },
+    "ecology": {
+      "pt": "Faixa de umidade úmida a intermediária documentada no guia; não demonstra eficácia hidráulica isolada.",
+      "en": "Moist-to-mesic range documented in the guide; no isolated hydraulic efficacy demonstrated."
+    },
+    "limits": {
+      "pt": "Luz não validada nesta edição; confirmar exposição, solo e manutenção local. Sem indicação para o Brasil.",
+      "en": "Light not verified in this edition; confirm exposure, soil and local care. Not for Brazilian recommendation."
+    }
+  },
+  {
+    "region": "IA",
+    "native": "native",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "verifiedAt": "2026-11-16",
+    "image": null,
+    "id": "mertensia-virginica",
+    "scientific": "Mertensia virginica (L.) Pers. ex Link",
+    "common": {
+      "pt": "Virginia bluebells (nome em inglês)",
+      "en": "Virginia bluebells"
+    },
+    "family": "Boraginaceae",
+    "sun": [],
+    "moisture": [
+      "wet",
+      "moist"
+    ],
+    "height": "0,30–0,61 m (guia)",
+    "size": "small",
+    "habit": "herb",
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/118695-1",
+    "occurrence": {
+      "pt": "Nativa de Iowa segundo POWO; presente no guia regional de Iowa.",
+      "en": "Native to Iowa according to POWO; included in the regional Iowa guide."
+    },
+    "care": {
+      "pt": "O guia descreve crescimento rápido e mudança de cor das flores; exige confirmação de cuidados no local.",
+      "en": "Guide notes fast growth and changing flower color; local care needs verifying."
+    },
+    "position": {
+      "pt": "Guia de Iowa: lados, fundo e topo da berma.",
+      "en": "Iowa guide: sides, bottom and top of berm."
+    },
+    "ecology": {
+      "pt": "Faixa molhada a úmida documentada; não comprova redução de alagamentos pela planta isolada.",
+      "en": "Wet-to-moist documented range; no proof that this plant alone reduces flooding."
+    },
+    "limits": {
+      "pt": "Luz não verificada aqui; porte e condições são contexto Iowa. Não transferir ao Brasil.",
+      "en": "Light not verified here; size/conditions apply to Iowa. Do not transfer to Brazil."
+    }
+  },
+  {
+    "region": "IA",
+    "native": "native",
+    "evidence": "guide",
+    "sourceIds": [
+      "ia"
+    ],
+    "verifiedAt": "2026-11-16",
+    "image": null,
+    "id": "panicum-virgatum",
+    "scientific": "Panicum virgatum L.",
+    "common": {
+      "pt": "Switchgrass (nome em inglês)",
+      "en": "Switchgrass"
+    },
+    "family": "Poaceae",
+    "sun": [],
+    "moisture": [
+      "moist",
+      "mesic",
+      "dry"
+    ],
+    "height": "> 0,91 m (guia)",
+    "size": "unknown",
+    "habit": "herb",
+    "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1",
+    "occurrence": {
+      "pt": "Nativa de Iowa segundo POWO; listada entre gramíneas do guia ISWEP.",
+      "en": "Native to Iowa per POWO; listed among grasses in ISWEP."
+    },
+    "care": {
+      "pt": "O guia alerta que pode se espalhar e dominar outras plantas se não for manejada.",
+      "en": "Guide cautions that it may spread and overtake other plants without management."
+    },
+    "position": {
+      "pt": "Posição específica não validada nesta verificação da tabela.",
+      "en": "Specific location icons not verified during this review."
+    },
+    "ecology": {
+      "pt": "Faixa documentada de umidade intermediária a seca; não implica remoção ou absorção superior de água.",
+      "en": "Moist-to-dry conditions documented; does not imply superior water removal or uptake."
+    },
+    "limits": {
+      "pt": "Porte elevado e expansão potencial exigem avaliação; luminosidade não validada nesta edição. Não recomendar no Brasil.",
+      "en": "Tall habit and spread require checks; light not verified here. Do not recommend in Brazil."
+    }
   }
 ]
