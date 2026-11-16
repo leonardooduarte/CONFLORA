@@ -6,6 +6,7 @@ import {hasScenario} from '../core/scenarios.js';
 
 const desc={pt:{assessment:'Avaliação técnica prioritária',incomplete:'Mais informações necessárias',exploratory:'Alternativas para investigar'},en:{assessment:'Professional assessment first',incomplete:'More information needed',exploratory:'Approaches worth exploring'}};
 const names={pt:{sun:'Luz',moisture:'Umidade',soil:'Solo',duration:'Duração do acúmulo',building:'Construções próximas'},en:{sun:'Sun',moisture:'Moisture',soil:'Soil',duration:'Pooling duration',building:'Nearby buildings'}};
+const conditionValues={pt:{hours:'algumas horas',day:'até um dia',persistent:'mais de um dia/recorrente',near:'próximo',away:'afastado',slow:'aparentemente lenta',medium:'intermediária',fast:'aparentemente rápida',small:'pequeno',large:'amplo'},en:{hours:'a few hours',day:'up to a day',persistent:'more than one day/recurrent',near:'nearby',away:'away',slow:'apparently slow',medium:'intermediate',fast:'apparently fast',small:'small',large:'ample'}};
 const known=v=>v&&v!=='unknown';
 /** Consolidates documented evidence; never converts plant interest into a planting instruction. */
 export default function PersonalizedOutcome({project,lang='pt'}){
@@ -29,7 +30,7 @@ export default function PersonalizedOutcome({project,lang='pt'}){
   {entries.length?<div className="personalized-outcome__areas">{entries.map(({a,number,review,context})=><article key={a.id}>
    <div className="personalized-outcome__area-title"><strong>{pt?'Área':'Area'} {String(number).padStart(2,'0')}</strong><span>{desc[lang][review.status]}</span></div>
    <h4>{a.notes||(pt?'Área marcada pelo usuário':'User-marked area')}</h4>
-   <p>{pt?'Observações e condições declaradas:':'Reported conditions:'} {Object.entries(names[lang]).filter(([k])=>known(context[k])).map(([k,n])=>`${n}: ${labels[lang][context[k]]||context[k]}`).join(' · ')||(pt?'não especificadas':'not specified')}</p>
+   <p>{pt?'Observações e condições declaradas:':'Reported conditions:'} {Object.entries(names[lang]).filter(([k])=>known(context[k])).map(([k,n])=>`${n}: ${labels[lang][context[k]]||conditionValues[lang][context[k]]||context[k]}`).join(' · ')||(pt?'não especificadas':'not specified')}</p>
    {review.warnings.length>0&&<p className="personalized-outcome__warning">{review.warnings[0]}</p>}
    <p><strong>{pt?'Seleção botânica: ':'Plant evidence: '}</strong>{review.evidence}</p>
    {review.selection.candidates.length>0&&<ul>{review.selection.candidates.slice(0,4).map(({plant:p,reasons})=>{
