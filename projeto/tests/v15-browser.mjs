@@ -12,13 +12,13 @@ try{
  const scenarios=page.locator('.studio-journey').locator('..').locator('.scenario-studio');
  await expect(scenarios).toBeVisible();
  await scenarios.getByRole('button',{name:/Salvar composição A/}).click();
- await expect(scenarios).toContainText('1 marcações salvas');
+ await expect(scenarios).toContainText('1 elementos');
  await expect(scenarios.locator('img')).toHaveCount(2);
  await page.locator('.studio-journey').getByRole('button',{name:/Organizar meu plano/}).click();
  await expect(page.locator('.plan-extras .scenario-studio')).toBeVisible();
  await expect(page.locator('.plan-extras .scenario-studio img')).toHaveCount(2);
  await page.getByRole('button',{name:/Herbário/}).first().click();
- await expect(page.locator('.knowledge-heading')).toContainText('18 espécies');
+ await expect(page.locator('.knowledge-heading')).toContainText('19 espécies');
  await expect(page.locator('.atlas-feature')).toBeVisible();
  await page.getByLabel('Contexto do catálogo').selectOption('BR');
  await page.getByLabel('Pesquisar espécies').fill('Arachis');
