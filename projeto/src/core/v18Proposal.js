@@ -21,7 +21,7 @@ export function buildV18Proposal(project,lang='pt'){
    const context={...(project?.context||{}),...(a.conditions||{})};
    const review=assessSite(context,lang,a.type);
    const candidates=review.selection.candidates
-     .filter(x=>evaluatePlantEvidence(x.plant,context,lang).status==='documented')
+     .filter(x=>supplied(context.sun)&&supplied(context.moisture)&&evaluatePlantEvidence(x.plant,context,lang).status==='documented')
      .map(x=>({plant:x.plant,status:'candidate',source:references[x.plant.sourceIds[0]],reason:pt?'Correspondência documentada de luz e umidade; verificar condições locais.':'Documented sun and moisture match; verify local conditions.'}));
    const unresolved=plants.filter(p=>p.region===context.regionCode&&['studied','ecology'].includes(p.evidence)&&p.sourceIds.includes('br')&&p.image)
      .slice(0,4).map(p=>({plant:p,status:'research',source:references[p.sourceIds[0]],reason:pt?'Espécie estudada em protótipo em Bauru; não é recomendação de plantio nem comprovação para este terreno.':'Species studied in a Bauru prototype; not a planting recommendation nor site validation.'}));
