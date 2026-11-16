@@ -3,9 +3,9 @@ import {assessSite} from '../core/siteAnalysis.js';
 
 export default function AreaComparison({project,lang='pt'}){
  const pt=lang==='pt';
- const items=project.annotations.filter(a=>a.conditions&&Object.values(a.conditions).some(v=>v&&v!=='unknown')&&a.type!=='plants').map(a=>({
-  ...a,review:assessSite({...project.context,...a.conditions},lang,a.type)
- }));
+ const items=project.annotations.map((a,index)=>({
+  ...a,originalIndex:index,review:assessSite({...project.context,...(a.conditions||{})},lang,a.type)
+ })).filter(a=>a.conditions&&Object.values(a.conditions).some(v=>v&&v!=='unknown')&&a.type!=='plants');
  if(items.length<2)return null;
  const status={assessment:pt?'Verificação profissional prioritária':'Professional assessment first',incomplete:pt?'Dados ainda insuficientes':'Insufficient information',exploratory:pt?'Possibilidades documentais para investigar':'Documented possibilities to explore'};
  return <section className="area-comparison" aria-label={pt?'Comparação de áreas':'Area comparison'}>
