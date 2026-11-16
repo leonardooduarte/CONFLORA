@@ -12,7 +12,7 @@ export default function AreaComparison({project,lang='pt'}){
   <span className="eyebrow">CONFLORA / {pt?'OLHAR COMPARATIVO':'COMPARATIVE VIEW'}</span>
   <h3>{pt?'Áreas diferentes, cuidados diferentes.':'Different areas, different precautions.'}</h3>
   <div className="area-comparison__grid">{items.map((a,i)=><article key={a.id}>
-   <span className="eyebrow">{pt?'ÁREA':'AREA'} {String(project.annotations.indexOf(a)+1).padStart(2,'0')}</span>
+   <span className="eyebrow">{pt?'ÁREA':'AREA'} {String(a.originalIndex+1).padStart(2,'0')}</span>
    <h4>{a.notes||(pt?'Marcação sem descrição':'Unlabeled observation')}</h4>
    <p><strong>{status[a.review.status]}</strong></p>
    <p>{pt?'Correspondências botânicas documentadas: ':'Documented botanical matches: '}{a.review.candidateCount}</p>
