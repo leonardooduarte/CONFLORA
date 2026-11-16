@@ -3,7 +3,7 @@ name: CONFLORA V19 — Visual proposals and isolated preview
 on:
   workflow_dispatch:
   push:
-    branches: [feat/conflora-v19-visual-proposals]
+    branches: [feat/conflora-v19-visual-proposals, feat/conflora-herbarium-completeness]
     paths:
       - 'projeto/**'
       - '.github/workflows/preview-v19.yml'
@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   validate-and-publish:
-    if: github.ref == 'refs/heads/feat/conflora-v19-visual-proposals'
+    if: github.ref == 'refs/heads/feat/conflora-v19-visual-proposals' || github.ref == 'refs/heads/feat/conflora-herbarium-completeness'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -46,6 +46,7 @@ jobs:
           node tests/v17-gallery.mjs
           node tests/v18-model.mjs
           npm run test:v19:model
+          node tests/herbarium-complete.mjs
       - name: Install Chromium
         working-directory: projeto
         run: |
@@ -61,6 +62,7 @@ jobs:
           node tests/v15-browser.mjs
           node tests/v16-browser.mjs
           npm run test:herbarium
+          node tests/herbarium-complete-browser.mjs
           node tests/v18-browser.mjs
           CHROMIUM_PATH=/usr/bin/chromium npm run test:accessibility
           npm run test:six
@@ -73,6 +75,7 @@ jobs:
           name: conflora-v19-validation
           path: |
             projeto/work/v19/
+            projeto/work/herbarium-complete/
             projeto/work/v12-accessibility/
             projeto/work/six/
           retention-days: 14
