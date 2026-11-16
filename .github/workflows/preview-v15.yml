@@ -1,0 +1,62 @@
+name: CONFLORA — V15 Scientific Preview
+
+on:
+  push:
+    branches:
+      - feat/conflora-v15-evidence-scenarios-20261116
+    paths:
+      - "projeto/**"
+      - ".github/workflows/preview-v15.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-v15-preview
+  cancel-in-progress: true
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install dependencies
+        working-directory: projeto
+        run: npm ci
+      - name: Build and validate scientific data, selection, and migrations
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/science.mjs
+          node tests/v14-analysis.mjs
+          node tests/v15-model.mjs
+      - name: Install Chromium
+        working-directory: projeto
+        run: |
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Browser end-to-end regressions
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-v15-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://localhost:5176/ > /dev/null; then break; fi; sleep 1; done
+          node tests/science-browser.mjs
+          node tests/v14-browser.mjs
+          node tests/v15-browser.mjs
+          npm run test:herbarium
+      - name: Publish V15 preview (keep main GitHub Pages untouched)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v15
+          keep_files: true
+          commit_message: "Preview CONFLORA V15: ${{ github.sha }}"
