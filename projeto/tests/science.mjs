@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {plants} from '../src/core/knowledge.js';
 import {selectPlants} from '../src/core/selection.js';
 
-assert.equal(plants.length,15);
+assert.equal(plants.length,18);
 assert.equal(new Set(plants.map(p=>p.id)).size,plants.length);
 const researchOnly=plants.find(p=>p.id==='cyperus-giganteus');
 assert(researchOnly?.region==='BR'&&researchOnly.evidence==='ecology'&&researchOnly.moisture.includes('seasonal')&&researchOnly.sun.length===0);
