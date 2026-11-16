@@ -52,7 +52,7 @@ jobs:
         working-directory: projeto
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y poppler-utils
+          sudo apt-get install -y poppler-utils ffmpeg
           npx playwright install --with-deps chromium
           sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
       - name: Browser test the actual rotating 16-image gallery and existing features
@@ -79,6 +79,10 @@ jobs:
         run: |
           mkdir -p dist/review
           cp work/globe-orbit-review/*jpg work/globe-orbit-review/results.json dist/review/
+          video_file="$(find work/globe-orbit-review -maxdepth 1 -name '*.webm' -print -quit)"
+          test -n "$video_file"
+          ffmpeg -y -hide_banner -loglevel warning -ss 5 -t 12 -i "$video_file" -vf "scale=960:-2,fps=24" -c:v libx264 -preset veryfast -crf 29 -movflags +faststart -an dist/review/globe-motion.mp4
+          test "$(stat -c %s dist/review/globe-motion.mp4)" -gt 20000
           python3 - <<'PY'
           import base64,pathlib
           for name in ['desktop-0.jpg','desktop-2.jpg','mobile-390.jpg']:
