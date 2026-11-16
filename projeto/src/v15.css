@@ -1,0 +1,26 @@
+.evidence-inspector{margin:1.3rem 0;border:1px solid rgba(13,49,38,.22);border-radius:12px;padding:1.1rem;background:#f4f3eb;color:#12362a}
+.evidence-inspector>summary{cursor:pointer;font-weight:700;line-height:1.4;outline-offset:5px}
+.evidence-inspector>p{margin:.9rem 0;color:#3f6155}
+.evidence-inspector__group{margin:1.2rem 0}
+.evidence-inspector__group h4{font-size:1rem;margin:.8rem 0}
+.evidence-inspector__group h4 span{color:#567367}
+.evidence-inspector__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:12px}
+.evidence-inspector__grid article{border:1px solid rgba(13,49,38,.16);padding:15px;background:#fffdf5;border-radius:9px}
+.evidence-inspector__grid h5{font-size:1rem;font-weight:600;margin:0 0 8px;line-height:1.35}
+.evidence-inspector__grid p{font-size:.86rem;margin:8px 0;line-height:1.5}
+.evidence-inspector__grid .text-action{margin-top:8px}
+.scenario-studio{padding:clamp(16px,2.8vw,30px);background:#f6f5ed;color:#14352b;border:1px solid rgba(13,49,38,.17);border-radius:14px;margin:24px 0}
+.scenario-studio>header h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.1;margin:.5rem 0}
+.scenario-studio>header p{max-width:72ch}
+.scenario-studio__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.scenario-studio__grid>article{min-width:0;border:1px solid rgba(13,49,38,.17);border-radius:10px;padding:12px;background:#fffef6;display:flex;flex-direction:column;gap:10px}
+.scenario-studio__label{display:flex;justify-content:space-between;align-items:start;gap:8px;flex-wrap:wrap}
+.scenario-studio__label small{color:#567367}
+.scenario-studio__grid img{display:block;width:100%;aspect-ratio:1000/650;object-fit:contain;background:#e9ebdc;border-radius:6px}
+.scenario-studio__placeholder{aspect-ratio:1000/650;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;font-size:.85rem;color:#527064;background:#eceee5;border-radius:6px}
+.scenario-studio__grid .btn{margin-top:auto;white-space:normal}
+.scenario-studio__actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px}
+.scenario-studio__actions p{font-size:.87rem;margin:0}
+@media(max-width:900px){.scenario-studio__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.scenario-studio__grid{grid-template-columns:minmax(0,1fr)}.scenario-studio{padding:15px}}
+@media print{.scenario-studio button,.scenario-studio__actions{display:none!important}.scenario-studio,.scenario-studio__grid>article{break-inside:avoid;border:1px solid #ddd!important}.scenario-studio__grid{grid-template-columns:repeat(3,1fr)}}
