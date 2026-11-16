@@ -1,0 +1,84 @@
+name: CONFLORA V20 — Planning journey preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/conflora-v20-planning-journey
+    paths:
+      - 'projeto/src/**'
+      - 'projeto/tests/v20-*'
+      - 'projeto/docs/v20/**'
+      - '.github/workflows/preview-v20.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-v20-planning-journey
+  cancel-in-progress: true
+
+jobs:
+  test-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install exact dependencies
+        working-directory: projeto
+        run: npm ci --no-audit --no-fund
+      - name: Validate original React Bits, production build, old models and new V20 model
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/v19-model.mjs
+          node tests/herbarium-complete.mjs
+          node tests/v20-model.mjs
+      - name: Install real Chromium and PDF inspection tools
+        working-directory: projeto
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Browser test V20 and original V19.1 features
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-v20-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://127.0.0.1:5176/ >/dev/null; then break; fi; sleep 1; done
+          node tests/v20-browser.mjs
+          node tests/v19-browser.mjs
+          node tests/v19-visual-regressions.mjs
+          node tests/herbarium-complete-browser.mjs
+          npm run test:six
+      - name: Copy validated screenshots and write preview metadata
+        working-directory: projeto
+        run: |
+          mkdir -p dist/review
+          cp work/v20/*.png work/v20/validation.json dist/review/
+          node -e "const fs=require('fs');const p='dist/version.json';const old=JSON.parse(fs.readFileSync(p));fs.writeFileSync(p,JSON.stringify({...old,version:'20.0.0-preview',edition:'Jornada integrada e análise preliminar',deployment:'preview',sourceBranch:'feat/conflora-v20-planning-journey',sourceCommit:process.env.GITHUB_SHA,previewPath:'/CONFLORA/previews/conflora-v20/'},null,2))"
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflora-v20-validation
+          path: |
+            projeto/work/v20/
+            projeto/work/v19/
+          retention-days: 14
+      - name: Publish V20 preview in isolated directory
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v20
+          keep_files: true
+          commit_message: 'CONFLORA V20 preview only: ${{ github.sha }}'
