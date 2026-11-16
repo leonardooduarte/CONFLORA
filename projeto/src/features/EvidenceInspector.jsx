@@ -4,11 +4,12 @@ import {say} from '../core/knowledge.js';
 const order=['documented','investigate','insufficient','contradiction','research'];
 const title={pt:{documented:'Correspondências documentadas',investigate:'Possibilidades a investigar',insufficient:'Dados insuficientes',contradiction:'Contradições documentadas',research:'Fichas para pesquisa (não são sugestões de plantio)'},en:{documented:'Documented matches',investigate:'Possibilities to investigate',insufficient:'Insufficient data',contradiction:'Documented contradictions',research:'Research records (not planting suggestions)'}};
 export default function EvidenceInspector({context,lang='pt',onRead}){
- const pt=lang==='pt',rows=evaluateAllEvidence(context,lang);
+ const pt=lang==='pt',hasContext=['BR','IA'].includes(context?.regionCode),rows=hasContext?evaluateAllEvidence(context,lang):[];
  return <details className="evidence-inspector">
   <summary>{pt?'Entenda as evidências e por que outras espécies não foram indicadas':'Inspect supporting evidence and why other species were not selected'}</summary>
   <p>{pt?'As categorias organizam o que está documentado. Não classificam eficiência de absorção de água nem garantem plantio.':'Categories organize documented information. They do not rank water absorption or guarantee planting suitability.'}</p>
-  {order.map(status=>{
+  {!hasContext&&<p>{pt?'Para examinar correspondências, escolha Brasil ou Iowa no campo Contexto regional das condições do terreno.':'To inspect plant matches, choose Brazil or Iowa in the site conditions regional context.'}</p>}
+  {hasContext&&order.map(status=>{
    const group=rows.filter(x=>x.status===status);
    return group.length>0&&<section className="evidence-inspector__group" key={status}>
      <h4>{title[lang][status]} <span>({group.length})</span></h4>
