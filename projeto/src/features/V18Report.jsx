@@ -5,7 +5,7 @@ import V18Proposal from './V18Proposal.jsx';
 /** Dedicated A4 report composition; intentionally omits empty A/B blocks and
  * repeated filter screens, and respects project-specific source evidence.
  */
-export default function V18Report({project,lang='pt',reportImage,proposalData,ProposalComponent=V18Proposal,referenceNumbers,bibliography,closingChecks}){
+export default function V18Report({project,lang='pt',reportImage,proposalData,ProposalComponent=V18Proposal,referenceNumbers,bibliography,closingChecks,summaryExtra}){
  const pt=lang==='pt',proposal=proposalData||buildV18Proposal(project,lang);
  const types={pool:pt?'Pontos de água acumulada':'Pooling points',roof:pt?'Saídas do telhado':'Roof outlets',paved:pt?'Superfície pavimentada':'Paved areas',space:pt?'Áreas livres':'Open areas',garden:pt?'Intervenções exploradas':'Proposed gardens',plants:pt?'Marcações vegetais':'Plant marks'};
  const observed=(project.annotations||[]).filter(a=>a.type!=='plants'&&a.type!=='garden');
@@ -33,6 +33,7 @@ export default function V18Report({project,lang='pt',reportImage,proposalData,Pr
    {project.context.notes&&<p>{project.context.notes}</p>}
    {groups.length>0&&<p className="v18-report__observations">{groups.map(g=>g.n+' '+g.label.toLowerCase()).join(' · ')}.</p>}
   </section>
+  {summaryExtra}
   {reportImage&&<section className="v18-report__annotations">
     <h2>{pt?'Áreas registradas':'Observed areas'}</h2>
     <img src={reportImage} alt={pt?'Foto com marcações e numeração das observações':'Annotated photograph with numbered observations'}/>
