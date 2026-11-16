@@ -6,9 +6,9 @@ import {Store} from '../src/core/store.js';
 import {normalizeProject} from '../src/core/project.js';
 import {Ed} from '../src/core/editor.js';
 
-assert.equal(plants.length,18);
-assert.equal(Object.keys(evidenceClaims.species).length,18);
-assert.equal(new Set(plants.map(p=>p.id)).size,18);
+assert.equal(plants.length,19);
+assert.equal(Object.keys(evidenceClaims.species).length,19);
+assert.equal(new Set(plants.map(p=>p.id)).size,19);
 for(const p of plants){
  const claims=evidenceClaims.species[p.id];assert(claims?.taxonomy?.sourceUrl===p.taxonomyUrl);
  assert(claims.region.value===p.region);
