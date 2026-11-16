@@ -1,3 +1,4 @@
+import {plants} from './knowledge.js';
 /* SVG image workspace: normalized coordinates, no automatic inference from uploaded photos. */
 export const Ed = (()=>{
  const W=1000,H=650;
@@ -29,17 +30,17 @@ export const Ed = (()=>{
    if(a.kind==='polygon')art=`<polygon points="${pts}" fill="${c}" fill-opacity=".22" stroke="${c}" stroke-width="3"/>`;
    else art=`<defs><marker id="arrow-${esc(a.id)}" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0 0L7 3L0 6Z" fill="#237B8A"/></marker></defs><polyline points="${pts}" fill="none" stroke="#237B8A" stroke-width="5" marker-end="url(#arrow-${esc(a.id)})"/>`;
   }
-  const label=esc(a.kind==='path'?(labels.waterPath||'Caminho de água / Water path'):(labels?.[a.type]??a.type)),sel=selected?`<circle r="${a.type==='garden'?145*scale:86*scale}" fill="none" stroke="#D8F9A0" stroke-width="3" stroke-dasharray="9 6"/>`:'';
+  const label=esc(a.speciesId?(plants.find(p=>p.id===a.speciesId)?.scientific||'Espécie / Species'):a.kind==='path'?(labels.waterPath||'Caminho de água / Water path'):(labels?.[a.type]??a.type)),sel=selected?`<circle r="${a.type==='garden'?145*scale:86*scale}" fill="none" stroke="#D8F9A0" stroke-width="3" stroke-dasharray="9 6"/>`:'';
   const badge=mode==='numbers'?`<g class="marker-number" transform="translate(25 -30)"><circle r="17" fill="#0B2C23" stroke="#FFFFFF" stroke-width="2"/><text text-anchor="middle" y="5" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">${number}</text></g>`:'';
   const labelArt=`<g class="marker-name" transform="translate(0 ${a.type==='garden'?90*scale:65*scale})"><rect x="-${Math.max(65,(label.length+4)*4.5)}" y="-17" width="${Math.max(130,(label.length+4)*9)}" height="30" rx="15" fill="#0B2C23"/><text text-anchor="middle" y="3" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#F8F7ED">${number}. ${label}</text></g>`;
-  return `<g data-marker-id="${esc(a.id)}" data-selected="${selected}" tabindex="-1" role="img" aria-label="${label}" style="cursor:grab"><title>${number}. ${label}</title><g transform="translate(${x} ${y})">${sel}<g transform="scale(${scale})">${art}</g>${badge}${mode==='full'||selected?labelArt:''}</g></g>`;
+  return `<g data-marker-id="${esc(a.id)}" data-selected="${selected}" tabindex="-1" role="img" aria-label="${label}" style="cursor:grab"><title>${number}. ${label}</title><g transform="translate(${x} ${y})">${sel}<g transform="scale(${scale})">${art}</g>${badge}${mode==='full'||selected||a.speciesId?labelArt:''}</g></g>`;
  }
  function svgContent(project,opts={}){
   const labels=opts.labels||{}; const selected=opts.selected; const compare=!!opts.compare; const fraction=clamp(Number(opts.fraction??50),0,100)/100;
   const photo=project.image&&/^data:image\/(jpeg|png|webp);base64,/.test(project.image)?`<image href="${project.image}" x="0" y="0" width="1000" height="650" preserveAspectRatio="xMidYMid meet"/>`:baseDrawing();
   const visible=(project.annotations||[]).filter(a=>opts.includeHidden||!a.hidden);
-  const existing=visible.filter(a=>!compare||a.type!=='garden').sort((a,b)=>(a.id===selected)-(b.id===selected)).map(a=>marker(a,labels,a.id===selected,project.annotations.indexOf(a)+1,opts.labelMode)).join('');
-  const future=visible.filter(a=>compare&&a.type==='garden').sort((a,b)=>(a.id===selected)-(b.id===selected)).map(a=>marker(a,labels,a.id===selected,project.annotations.indexOf(a)+1,opts.labelMode)).join('');
+  const existing=visible.filter(a=>!compare||a.type!=='garden'&&!a.speciesId).sort((a,b)=>(a.id===selected)-(b.id===selected)).map(a=>marker(a,labels,a.id===selected,project.annotations.indexOf(a)+1,opts.labelMode)).join('');
+  const future=visible.filter(a=>compare&&(a.type==='garden'||a.speciesId)).sort((a,b)=>(a.id===selected)-(b.id===selected)).map(a=>marker(a,labels,a.id===selected,project.annotations.indexOf(a)+1,opts.labelMode)).join('');
   const clipped=compare?`<defs><clipPath id="cfl-after"><rect x="0" y="0" width="${fraction*1000}" height="650"/></clipPath></defs><g clip-path="url(#cfl-after)">${future}</g><g pointer-events="none"><line x1="${fraction*1000}" y1="0" x2="${fraction*1000}" y2="650" stroke="#FFFFFF" stroke-width="7"/><line x1="${fraction*1000}" y1="0" x2="${fraction*1000}" y2="650" stroke="#0B2C23" stroke-width="2"/><rect x="${fraction*1000-68}" y="25" width="136" height="32" rx="16" fill="#0B2C23"/><text x="${fraction*1000}" y="47" text-anchor="middle" font-size="15" font-family="Arial" fill="#FFFFFF">◀  |  ▶</text></g>`:future;
   const topLabels=compare?`<g pointer-events="none" font-family="Arial,sans-serif" font-size="15" font-weight="700"><rect x="16" y="15" width="135" height="36" rx="18" fill="#102E28"/><text x="83" y="39" text-anchor="middle" fill="#FFFFFF">${esc(opts.afterText||'Depois')}</text><rect x="838" y="15" width="146" height="36" rx="18" fill="#102E28"/><text x="910" y="39" text-anchor="middle" fill="#FFFFFF">${esc(opts.beforeText||'Antes')}</text></g>`:'';
   const draft=opts.draft?.length?`<polyline points="${opts.draft.map(p=>`${p.x},${p.y}`).join(' ')}" fill="none" stroke="#0B241D" stroke-width="4" stroke-dasharray="8 5" pointer-events="none"/>${opts.draft.map(p=>`<circle cx="${p.x}" cy="${p.y}" r="8" fill="#D9FA90" stroke="#0B241D" pointer-events="none"/>`).join('')}`:'';

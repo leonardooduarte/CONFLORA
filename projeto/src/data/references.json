@@ -16,12 +16,13 @@
     }
   },
   "isu": {
-    "title": "Iowa State University Extension (2013). RG 605: Rain Gardens.",
-    "url": "https://naturalresources.extension.iastate.edu/files/inline-files/rg605.pdf",
+    "title": "Iowa State University Extension — Natural Resource Stewardship (RG 605: link original indisponível)",
+    "url": "https://naturalresources.extension.iastate.edu/",
     "scope": {
-      "pt": "Orientação educativa regional; verificar atualizações locais.",
-      "en": "Regional educational guidance; check local updates."
-    }
+      "pt": "O PDF RG 605 retornou HTTP 404 em 16/11/2026. Link direciona ao portal institucional, não ao folheto. Para regras atuais, consultar o guia ISWEP documentado.",
+      "en": "RG 605 PDF returned HTTP 404 on 2026-11-16. Link opens the institutional portal, not the leaflet. Consult the documented ISWEP guide for current rules."
+    },
+    "originalUrl": "https://naturalresources.extension.iastate.edu/files/inline-files/rg605.pdf"
   },
   "epa": {
     "title": "US EPA. Soak Up the Rain: Rain Gardens.",

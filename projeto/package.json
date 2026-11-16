@@ -18,7 +18,9 @@
     "test:accessibility": "node tests/v12-accessibility.mjs",
     "test:atelier": "node tests/atelier.mjs",
     "test:six": "node tests/six.mjs",
-    "test:premium": "node tests/premium.mjs"
+    "test:premium": "node tests/premium.mjs",
+    "test:selection": "node tests/selection.mjs",
+    "test:herbarium": "node tests/herbarium.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
