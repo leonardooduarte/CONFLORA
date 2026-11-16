@@ -21,7 +21,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Blue_Pair.JPG",
     "kind": "study",
     "rotate": -6,
-    "meaning": "Contexto do estudo de Bauru; não localização da foto."
+    "meaning": "Contexto do estudo de Bauru; não localização da foto.",
+    "labelEn": "Dayflower"
   },
   {
     "id": "iowa-field",
@@ -39,7 +40,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Monarda_fistulosa_Arkansas.jpg",
     "kind": "guide",
     "rotate": 5,
-    "meaning": "Referência ao guia regional de Iowa; a fotografia não foi tirada nesse ponto."
+    "meaning": "Referência ao guia regional de Iowa; a fotografia não foi tirada nesse ponto.",
+    "labelEn": "Wild Bergamot"
   },
   {
     "id": "jacaranda",
@@ -58,7 +60,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Jacaranda_mimosifolia,_Buenos_Aires.jpg",
     "kind": "photo",
     "rotate": -4,
-    "meaning": "Registro fotográfico em Buenos Aires."
+    "meaning": "Registro fotográfico em Buenos Aires.",
+    "labelEn": "Jacaranda"
   },
   {
     "id": "rafflesia",
@@ -77,7 +80,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Rafflesia_arnoldii,_Sumatra.jpg",
     "kind": "photo",
     "rotate": 6,
-    "meaning": "Registro fotográfico na Reserva Batang Palupuh, Sumatra, com coordenadas registradas."
+    "meaning": "Registro fotográfico na Reserva Batang Palupuh, Sumatra, com coordenadas registradas.",
+    "labelEn": "Rafflesia"
   },
   {
     "id": "rhododendron",
@@ -96,7 +100,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Rhododendron_arboreum_at_Phoolbari,_Nepal.jpg",
     "kind": "photo_region",
     "rotate": -5,
-    "meaning": "Região aproximada da fotografia indicada como Phoolbari, Nepal; não coordenadas do exemplar."
+    "meaning": "Região aproximada da fotografia indicada como Phoolbari, Nepal; não coordenadas do exemplar.",
+    "labelEn": "Rhododendron"
   },
   {
     "id": "protea",
@@ -115,7 +120,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Protea_cynaroides_MS_9113.jpg",
     "kind": "photo_region",
     "rotate": 7,
-    "meaning": "Registro fotográfico no Jardim Botânico de Stellenbosch."
+    "meaning": "Registro fotográfico no Jardim Botânico de Stellenbosch.",
+    "labelEn": "King Protea"
   },
   {
     "id": "victoria",
@@ -134,7 +140,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Victoria_amazonica_Manaus_10_2006_195.jpg",
     "kind": "photo_region",
     "rotate": 4,
-    "meaning": "Fotografia de natureza feita perto de Manaus."
+    "meaning": "Fotografia de natureza feita perto de Manaus.",
+    "labelEn": "Giant Water Lily"
   },
   {
     "id": "saguaro",
@@ -153,7 +160,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Carnegiea_gigantea_(1).jpg",
     "kind": "photo_region",
     "rotate": -3,
-    "meaning": "Fotografia em Sabino Canyon, Tucson, Arizona."
+    "meaning": "Fotografia em Sabino Canyon, Tucson, Arizona.",
+    "labelEn": "Saguaro"
   },
   {
     "id": "edelweiss",
@@ -172,7 +180,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Leontopodium_alpinum_detail.jpg",
     "kind": "photo_region",
     "rotate": 5,
-    "meaning": "Fotografia na Raxalpe, Baixa Áustria, ~1600m."
+    "meaning": "Fotografia na Raxalpe, Baixa Áustria, ~1600m.",
+    "labelEn": "Edelweiss"
   },
   {
     "id": "heliconia",
@@ -191,7 +200,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Heliconia_rostrata_2.jpg",
     "kind": "photo_region",
     "rotate": -6,
-    "meaning": "Fotografia na Estação Biológica La Gamba, Costa Rica."
+    "meaning": "Fotografia na Estação Biológica La Gamba, Costa Rica.",
+    "labelEn": "Heliconia"
   },
   {
     "id": "puya",
@@ -210,7 +220,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:La_Puya_Raimondi.jpg",
     "kind": "photo_region",
     "rotate": 4,
-    "meaning": "Fotografia na província de Huaraz, Peru."
+    "meaning": "Fotografia na província de Huaraz, Peru.",
+    "labelEn": "Giant Puya"
   },
   {
     "id": "sakura",
@@ -229,7 +240,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Cherry_Blossoms_-_Kyoto_(33142637823).jpg",
     "kind": "photo",
     "rotate": -4,
-    "meaning": "Fotografia de cerejeiras em Kyoto com coordenadas registradas; espécie não identificada até nível específico."
+    "meaning": "Fotografia de cerejeiras em Kyoto com coordenadas registradas; espécie não identificada até nível específico.",
+    "labelEn": "Cherry Blossoms"
   },
   {
     "id": "nymphaea",
@@ -248,7 +260,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Water_lily_flower_close_capture.jpg",
     "kind": "photo_region",
     "rotate": 5,
-    "meaning": "Fotografia de Nymphaea nouchali em Pilikuththuwa, Sri Lanka."
+    "meaning": "Fotografia de Nymphaea nouchali em Pilikuththuwa, Sri Lanka.",
+    "labelEn": "Water Lily"
   },
   {
     "id": "tulipa",
@@ -267,7 +280,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Red_tulips_from_Keukenhof,_The_Netherlands.jpg",
     "kind": "photo_region",
     "rotate": -7,
-    "meaning": "Flor cultivada no jardim Keukenhof; espécie não verificada."
+    "meaning": "Flor cultivada no jardim Keukenhof; espécie não verificada.",
+    "labelEn": "Tulip"
   },
   {
     "id": "strelitzia",
@@ -286,7 +300,8 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:20260411_Strelitzia_reginae.jpg",
     "kind": "photo_region",
     "rotate": 6,
-    "meaning": "Fotografia no Jardim Botânico da Universidade de Viena."
+    "meaning": "Fotografia no Jardim Botânico da Universidade de Viena.",
+    "labelEn": "Bird of Paradise"
   },
   {
     "id": "banksia",
@@ -305,6 +320,7 @@ export const globeGallery = [
     "source": "https://commons.wikimedia.org/wiki/File:Banksia_serrata_(50723546127).jpg",
     "kind": "photo",
     "rotate": -3,
-    "meaning": "Fotografia com coordenadas registradas nos arredores de Sydney."
+    "meaning": "Fotografia com coordenadas registradas nos arredores de Sydney.",
+    "labelEn": "Banksia"
   }
 ];
