@@ -1,1 +1,9 @@
-{"source": "49a16db", "branch": "feat/reactbits-six", "components": 14}
+{
+  "version": "19.1.0-preview.1",
+  "edition": "Da análise à proposta visual · Herbário ampliado",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-v19/",
+  "sourceCommit": "ea79ff3bb864e5be659f5dde77d0cea1cca8cee3",
+  "deployment": "official",
+  "officialPath": "/CONFLORA/"
+}
