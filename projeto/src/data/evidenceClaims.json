@@ -1,0 +1,833 @@
+{
+  "version": 1,
+  "updated": "2026-11-16",
+  "species": {
+    "commelina": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Commelina erecta L.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172048-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:172048-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "studied",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Bauru pot prototypes; not field scale",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "seasonal"
+        ],
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "prototype-only",
+        "matching": false
+      }
+    },
+    "distimake": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Distimake dissectus (Jacq.) A.R.Simões & Staples",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77163242-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77163242-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "studied",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Bauru pot prototypes; not field scale",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "seasonal"
+        ],
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "prototype-only",
+        "matching": false
+      }
+    },
+    "trimezia": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Trimezia coerulea (G.Lodd.) Ravenna",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:441647-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:441647-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "studied",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Bauru pot prototypes; not field scale",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "seasonal"
+        ],
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "prototype-only",
+        "matching": false
+      }
+    },
+    "syngonium": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Syngonium angustatum Schott",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:89127-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:89127-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "studied",
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Bauru pot prototypes; not field scale",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "seasonal"
+        ],
+        "sourceId": "br",
+        "evidenceType": "pot-prototype",
+        "scope": "Episodic wetting in experimental pot conditions, not persistent saturation",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "prototype-only",
+        "matching": false
+      }
+    },
+    "monarda": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Monarda fistulosa L.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:452042-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:452042-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "sun": {
+        "field": "sun",
+        "values": [
+          "full",
+          "mixed"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Guide exposure labels; verify local microclimate",
+        "matching": true
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "mesic"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "echinacea": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Echinacea pallida (Nutt.) Nutt.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:202374-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:202374-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "sun": {
+        "field": "sun",
+        "values": [
+          "full"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Guide exposure labels; verify local microclimate",
+        "matching": true
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "moist",
+          "mesic"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "rudbeckia": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Rudbeckia hirta L.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:223740-2",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:223740-2",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "sun": {
+        "field": "sun",
+        "values": [
+          "full",
+          "mixed"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Guide exposure labels; verify local microclimate",
+        "matching": true
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "mesic",
+          "dry"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "lobelia": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Lobelia siphilitica L.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:143861-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:143861-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "sun": {
+        "field": "sun",
+        "values": [
+          "full",
+          "mixed"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Guide exposure labels; verify local microclimate",
+        "matching": true
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "wet",
+          "moist",
+          "mesic"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "carex": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Carex vulpinoidea Michx.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:324494-2",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:324494-2",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "sun": {
+        "field": "sun",
+        "values": [
+          "full",
+          "mixed"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Guide exposure labels; verify local microclimate",
+        "matching": true
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "wet",
+          "moist",
+          "mesic"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "asclepias": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Asclepias tuberosa L.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:94704-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:94704-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "sun": {
+        "field": "sun",
+        "values": [
+          "full",
+          "mixed"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Guide exposure labels; verify local microclimate",
+        "matching": true
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "mesic",
+          "dry"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "penstemon-digitalis": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Penstemon digitalis Nutt. ex Sims",
+        "sourceUrl": "https://powo.science.kew.org/taxon/808077-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/808077-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "sun": {
+        "field": "sun",
+        "values": [
+          "full",
+          "mixed"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Guide exposure labels; verify local microclimate",
+        "matching": true
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "moist",
+          "mesic"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "zizia-aurea": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Zizia aurea (L.) W.D.J.Koch",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:850044-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:850044-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "moist",
+          "mesic"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "mertensia-virginica": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Mertensia virginica (L.) Pers. ex Link",
+        "sourceUrl": "https://powo.science.kew.org/taxon/118695-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/118695-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "wet",
+          "moist"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "panicum-virgatum": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Panicum virgatum L.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "IA",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:413537-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "guide",
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Iowa guide context only",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "moist",
+          "mesic",
+          "dry"
+        ],
+        "sourceId": "ia",
+        "evidenceType": "regional-guide",
+        "scope": "Wetness indicated by regional garden guide, not uptake rate",
+        "matching": true
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "documented-guide",
+        "matching": false
+      }
+    },
+    "cyperus-giganteus": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Cyperus giganteus Vahl",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "ecology",
+        "sourceId": "cyperus2011",
+        "evidenceType": "primary-ecology",
+        "scope": "Research-only; not a hydrological performance trial",
+        "matching": false
+      },
+      "moisture": {
+        "field": "moisture",
+        "values": [
+          "seasonal"
+        ],
+        "sourceId": "cyperus2011",
+        "evidenceType": "morphological-habitat",
+        "scope": "Natural marginal wet-site occurrence; not flood-performance tolerance",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "research-only",
+        "matching": false
+      },
+      "ecology": {
+        "field": "ecology",
+        "sourceId": "cyperus2011",
+        "evidenceType": "plant-morphoanatomy",
+        "scope": "Wet margin anatomical adaptation; not runoff uptake",
+        "matching": false
+      }
+    },
+    "alternanthera-brasiliana": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Alternanthera brasiliana (L.) Kuntze",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:10294-2",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:10294-2",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "ecology",
+        "sourceId": "alternanthera2014",
+        "evidenceType": "primary-ecology",
+        "scope": "Research-only; not a hydrological performance trial",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "research-only",
+        "matching": false
+      },
+      "ecology": {
+        "field": "ecology",
+        "value": "Pesquisa experimental tratou do enraizamento de estacas, não de redução de escoamento ou eficiência de drenagem.",
+        "sourceId": "alternanthera2014",
+        "evidenceType": "ecology-or-propagation",
+        "scope": "Habitat/propagation observation, no hydraulic tests",
+        "matching": false
+      }
+    },
+    "rhynchanthera-grandiflora": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Rhynchanthera grandiflora (Aubl.) DC.",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:575460-1",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "ecology",
+        "sourceId": "rhynchanthera2016",
+        "evidenceType": "primary-ecology",
+        "scope": "Research-only; not a hydrological performance trial",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "research-only",
+        "matching": false
+      },
+      "ecology": {
+        "field": "ecology",
+        "value": "Ocorrência em locais úmidos observada em estudo florístico, sem avaliação de saturação permanente ou evapotranspiração.",
+        "sourceId": "rhynchanthera2016",
+        "evidenceType": "ecology-or-propagation",
+        "scope": "Habitat/propagation observation, no hydraulic tests",
+        "matching": false
+      }
+    },
+    "arachis-repens": {
+      "taxonomy": {
+        "field": "taxon",
+        "value": "Arachis repens Handro",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17315-2",
+        "evidenceType": "taxonomic",
+        "scope": "Taxonomic status and broad distribution, not site suitability",
+        "matching": false
+      },
+      "region": {
+        "field": "region",
+        "value": "BR",
+        "sourceUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:17315-2",
+        "evidenceType": "distribution",
+        "scope": "Broad regional distribution; not a local planting endorsement",
+        "matching": false
+      },
+      "sourceContext": {
+        "field": "context",
+        "value": "ecology",
+        "sourceId": "arachis2026",
+        "evidenceType": "primary-ecology",
+        "scope": "Research-only; not a hydrological performance trial",
+        "matching": false
+      },
+      "status": {
+        "field": "eligibility",
+        "value": "research-only",
+        "matching": false
+      },
+      "ecology": {
+        "field": "ecology",
+        "value": "Stein et al. (2026) avaliaram 24 parcelas de taludes e mediram erosão, escoamento e sobrevivência vegetal. Não é evidência de absorção de água por planta ou solução de quintal.",
+        "sourceId": "arachis2026",
+        "evidenceType": "erosion-field-study",
+        "scope": "Erosion on mined sand slopes, not rain-garden infiltration",
+        "matching": false
+      }
+    }
+  }
+}
