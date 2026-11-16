@@ -1,0 +1,35 @@
+import {chromium,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1280,height:900}});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+try{
+ await page.goto('http://localhost:5176/');
+ await page.getByRole('button',{name:'Analisar meu terreno'}).first().click();
+ await page.locator('input[type=file]').first().setInputFiles('public/scene-garden.png');
+ await page.locator('.studio-journey').getByRole('button',{name:/Informar condições/}).click();
+ const journey=page.locator('.studio-journey');
+ await journey.getByLabel('Contexto regional').selectOption('BR');
+ await journey.getByLabel('Luz observada').selectOption('full');
+ await journey.getByLabel('Umidade observada').selectOption('wet');
+ await journey.getByLabel('Drenagem observada do solo').selectOption('slow');
+ await page.locator('.studio-journey').getByRole('button',{name:/Organizar meu plano/}).click();
+ await expect(page.locator('.plan-extras .v18-proposal')).toBeVisible();
+ await expect(page.locator('.v18-botanical')).toContainText('Somente pesquisa');
+ assert(await page.locator('.plan-extras .v18-plant-card__photo').count()>=3);
+ await page.locator('.plan-extras .v18-actions').getByRole('button',{name:'Gerar composição A'}).click();
+ await expect(page.getByRole('status').first()).toContainText('composição automática exige');
+ assert.equal(await page.locator('.plan-extras .v18-visual-list .v18-proposal-visual').count(),0);
+ await page.locator('.plan-extras').getByRole('button',{name:/Abrir relatório/}).last().click();
+ const modal=page.locator('.report-modal');
+ await expect(modal.locator('.v18-report')).toBeVisible();
+ assert(await modal.locator('.v18-plant-card__photo').count()>=3);
+ assert.equal(await modal.locator('.scenario-studio__placeholder').count(),0);
+ assert.equal(await modal.locator('.v18-report__hero').count(),1);
+ const pdf=await page.pdf({format:'A4',printBackground:true});
+ assert(pdf.length>14000,'Printed PDF must have actual content');
+ await page.setViewportSize({width:390,height:844});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390,'Mobile viewport should not overflow');
+ assert.deepEqual(errors,[]);
+ console.log('PASS V18 browser: Brazil evidence cards, safe blocked planting, compact report, A4 PDF, mobile');
+}finally{await browser.close();}
