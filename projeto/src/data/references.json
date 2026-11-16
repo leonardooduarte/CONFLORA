@@ -95,5 +95,21 @@
       "pt": "Experimento de campo em 24 parcelas de taludes de mineração, acompanhando erosão, escoamento e sobrevivência de Arachis repens; o artigo registra resultados variáveis. Não avalia jardim de chuva ou absorção individual da espécie em quintal.",
       "en": "Field trial in 24 restored-sand-pit slope plots tracking erosion, runoff and Arachis repens survival; results varied by sampling. Not a rain-garden or individual uptake trial."
     }
+  },
+  "inga-flood-2026": {
+    "title": "Feitosa, R. M. P.; Ximenez, G. R.; Pastorini, L. H.; Romagnolo, M. B. (2026). Adaptive strategies in young Inga vera subsp. affinis plants under flooding. Brazilian Journal of Biology 86, e301423. DOI 10.1590/1519-6984.301423.",
+    "url": "https://doi.org/10.1590/1519-6984.301423",
+    "scope": {
+      "pt": "Ensaio experimental brasileiro com mudas sob 44 dias de alagamento; alterações de crescimento, pigmentos e açúcares; não mede absorção de água ou desempenho de um jardim de chuva.",
+      "en": "Brazilian 44-day flooded seedling trial, with growth, pigment and sugar responses; no uptake rate or rain-garden performance."
+    }
+  },
+  "inga-kew-2026": {
+    "title": "Royal Botanic Gardens, Kew — Plants of the World Online: Inga affinis DC. (nome aceito; Inga vera subsp. affinis é sinônimo).",
+    "url": "https://powo.science.kew.org/taxon/128358-2",
+    "scope": {
+      "pt": "Nomenclatura taxonômica aceita e distribuição ampla, não adequação a jardins de chuva ou presença em Itapeva.",
+      "en": "Accepted name and broad distribution, not suitability for rain gardens or occurrence in Itapeva."
+    }
   }
 }
