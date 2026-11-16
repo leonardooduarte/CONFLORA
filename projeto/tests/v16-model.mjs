@@ -9,7 +9,7 @@ import {assessSite} from '../src/core/siteAnalysis.js';
 assert.equal(plants.length,19);
 const inga=plants.find(p=>p.id==='inga-affinis');
 assert(inga&&inga.scientific==='Inga affinis DC.'&&inga.region==='BR');
-assert.equal(inga.image,null);
+assert(inga.image?.observation==='https://www.inaturalist.org/observations/410985562'&&inga.image.license==='CC BY-SA 4.0');
 assert.equal(inga.evidence,'ecology');
 assert.deepEqual(inga.moisture,[]);
 assert(inga.sourceIds.every(id=>references[id]?.url));

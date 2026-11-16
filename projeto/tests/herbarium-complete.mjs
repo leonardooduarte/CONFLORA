@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import crypto from 'node:crypto';import {plants,references} from '../src/core/knowledge.js';
-assert.equal(plants.length,19);assert.equal(plants.filter(p=>p.image).length,18);
+assert.equal(plants.length,19);assert.equal(plants.filter(p=>p.image).length,19);
 for(const p of plants){assert(p.ecology.pt&&p.limits.pt);if(!p.image)continue;assert(p.image.author&&p.image.license&&p.image.source&&p.image.licenseUrl);const data=fs.readFileSync(new URL('../public/botanical/'+p.image.file,import.meta.url));assert.equal(crypto.createHash('sha256').update(data).digest('hex'),p.image.sha256);}
 for(const id of ['penstemon-digitalis','zizia-aurea','mertensia-virginica','panicum-virgatum']){const p=plants.find(x=>x.id===id);assert(p.profile.description.pt&&p.profile.description.en);assert(references[p.profile.sourceId].url.startsWith('https://plants.ces.ncsu.edu/'));}
-assert.equal(plants.find(p=>p.id==='inga-affinis').image,null);assert.equal(plants.find(p=>p.id==='syngonium').native,'introduced');
+assert.equal(plants.find(p=>p.id==='inga-affinis').image.observation,'https://www.inaturalist.org/observations/410985562');assert.equal(plants.find(p=>p.id==='syngonium').native,'introduced');
 const {buildV19Proposal}=await import('../src/core/v19Proposal.js');const {site}=await import('./v19-fixtures.mjs');assert(!buildV19Proposal(site()).cards.some(c=>c.plant.id==='syngonium'),'Adding a photograph must not promote an introduced species into the native research board');
-console.log('PASS herbarium completeness: 18 licensed local photographs, hashes, 19 useful records, 4 sourced PT/EN profiles, no false Inga substitution');
+console.log('PASS herbarium completeness: 19 licensed local photographs, hashes, 19 useful records, 4 sourced PT/EN profiles, no false Inga substitution');

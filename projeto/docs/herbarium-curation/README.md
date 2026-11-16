@@ -1,14 +1,14 @@
 # Herbário — curadoria e completude (16/11/2026)
 
-Base: V19 `6ef6c77a7439f42da5199884ea06d48ce025c335`. Branch separada `feat/conflora-herbarium-completeness`. Mantidas 19 espécies; fotografias passam de nove para dezoito. Não foram criadas recomendações ou faixas de compatibilidade para preencher lacunas.
+Base: V19 `6ef6c77a7439f42da5199884ea06d48ce025c335`. Branch separada `feat/conflora-herbarium-completeness`. Mantidas 19 espécies; fotografias passam de nove para dezenove. Não foram criadas recomendações ou faixas de compatibilidade para preencher lacunas.
 
 ## Fotografias
 
-Nove arquivos locais acrescentados, com espécie, autoria, licença, URL de origem e hash SHA-256. Metadados consultados pela API Wikimedia Commons; arquivos inspecionados visualmente. Essa verificação documental/visual não é autenticação por especialista botânico. Ver `photo-provenance.json` e registros em `src/data/plants.json`.
+Dez arquivos locais acrescentados, com espécie, autoria, licença, URL de origem e hash SHA-256. Metadados consultados pela API Wikimedia Commons; arquivos inspecionados visualmente. Essa verificação documental/visual não é autenticação por especialista botânico. Ver `photo-provenance.json` e registros em `src/data/plants.json`.
 
-Novas fotos: Syngonium angustatum, Penstemon digitalis, Zizia aurea, Mertensia virginica, Panicum virgatum, Cyperus giganteus, Rhynchanthera grandiflora, Arachis repens e Alternanthera brasiliana. Arquivos de domínio público/CC0/CC BY/CC BY-SA; imagens do Plant Toolbox não foram reutilizadas.
+Novas fotos: Syngonium angustatum, Penstemon digitalis, Zizia aurea, Mertensia virginica, Panicum virgatum, Cyperus giganteus, Rhynchanthera grandiflora, Arachis repens Alternanthera brasiliana e Inga affinis. Arquivos de domínio público/CC0/CC BY/CC BY-SA; imagens do Plant Toolbox não foram reutilizadas.
 
-Foram rejeitados: uma imagem rotulada Arachis repens com flores visualmente incompatíveis; a exsicata de raízes de Cyperus para a apresentação imersiva; ilustrações históricas quando se procurava fotografia; fotografias de madeira com Inga feuilleei e sinônimos conflitantes. A fotografia de Inga affinis continua pendente. Não foi substituída por Inga edulis, Inga vera em sentido amplo ou outro táxon.
+Foram rejeitados: uma imagem rotulada Arachis repens com flores visualmente incompatíveis; a exsicata de raízes de Cyperus para a apresentação imersiva; ilustrações históricas quando se procurava fotografia; fotografias de madeira com Inga feuilleei e sinônimos conflitantes. A busca posterior no iNaturalist encontrou a observação 410985562, research grade, taxon 287893 (Inga affinis), duas identificações, de 26/10/2026, em Maia/PB. Foi utilizada a foto 755975670 de cristianol1456, com CC BY-SA 4.0 confirmada na própria página da fotografia. Isso não é autenticação por especialista, ocorrência em Itapeva ou recomendação de plantio. Nenhuma foto de Inga edulis ou Inga vera em sentido amplo foi usada.
 
 ## Informações aprofundadas
 
@@ -31,4 +31,4 @@ O novo retrato de Syngonium não muda sua classificação: registro de pesquisa 
 
 Build, npm test, seleção, ciência, modelos V15/V19 e teste novo `tests/herbarium-complete.mjs`. Testes históricos que pressupunham ausência permanente de foto foram substituídos por verificações positivas de autoria/licença/procedência; a exigência de pesquisa sem indicação de plantio permanece.
 
-Chromium: todas as 18 fotografias carregadas, 19 fichas, perfil Mertensia PT/EN, 360 px sem overflow. Jornada V19 A/B, persistência, PNG e PDFs: Itapeva e Iowa são verificados por exportação real, sem forçar contagem de páginas. O workflow mantém as regressões anteriores e publica apenas a prévia V19; main e raiz oficial não são destinos.
+Chromium: todas as 19 fotografias carregadas, 19 fichas, perfil Mertensia PT/EN, 360 px sem overflow. Jornada V19 A/B, persistência, PNG e PDFs: Itapeva e Iowa são verificados por exportação real, sem forçar contagem de páginas. O workflow mantém as regressões anteriores e publica apenas a prévia V19; main e raiz oficial não são destinos.

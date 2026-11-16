@@ -1079,7 +1079,18 @@
       "pt": "Evidência experimental direta sobre resposta de mudas ao alagamento, mas sem dados de luz, solo, porte urbano e desempenho de biorretenção; excluída da seleção de plantio.",
       "en": "Direct experimental seedling flood response, but lacking sun, urban soil, suitable planting size and bioretention performance; not eligible for site-matching."
     },
-    "image": null,
+    "image": {
+      "name": "Inga affinis",
+      "file": "inga-affinis-inaturalist.jpg",
+      "author": "cristianol1456",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://www.inaturalist.org/photos/755975670",
+      "observation": "https://www.inaturalist.org/observations/410985562",
+      "changes": "Downloaded large rendition; responsive crop in interface only.",
+      "sha256": "a5f4b45af1cb0f2c0b5b6802a3bc5469b3d71b70e12c65630ea1d231191dd819",
+      "verification": "iNaturalist research-grade observation, exact taxon 287893; documentary and visual review, not an expert determination"
+    },
     "verifiedAt": "2026-11-16"
   }
 ]
