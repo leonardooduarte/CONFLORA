@@ -1,0 +1,9 @@
+{
+  "version": "21.0.0-preview",
+  "edition": "Investigação botânica com evidências por área",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-v21/",
+  "deployment": "preview",
+  "sourceBranch": "feat/conflora-v21-botanical-intelligence",
+  "sourceCommit": "1e4c665f2d4893db594c2b1e20ef54026eeb5a91"
+}

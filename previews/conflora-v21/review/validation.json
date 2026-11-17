@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "globe canvas and 16 polaroids",
+    "pause control",
+    "Itapeva inconclusive",
+    "Iowa evidence",
+    "responsive 1440/768/390/320",
+    "no page errors"
+  ],
+  "errors": []
+}
