@@ -13,8 +13,8 @@
     "no page errors"
   ],
   "labNavigationOnly": {
-    "domContentLoadedMs": 24,
-    "loadEventMs": 25
+    "domContentLoadedMs": 29,
+    "loadEventMs": 29
   },
   "errors": []
 }

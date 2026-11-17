@@ -38,6 +38,9 @@ Explore as fotografias das espécies.
 Arraste a esfera ou use as setas do teclado. Abra uma espécie para investigar suas fontes.
 
 Pausar movimento
+
+Carregando fotografias do herbário…
+
 Commelina erecta L.
 
 Trapoeraba (nome regional)

@@ -2,7 +2,7 @@
   "passed": true,
   "base": "http://127.0.0.1:5176/",
   "checks": [
-    "intro lifetime 1925 ms",
+    "intro lifetime 1918 ms",
     "original logo, application mounts in parallel, automatic removal, once per session",
     "skip with mouse, Escape, Enter and Space",
     "reduced motion, original COBE canvas, 16 records, keyboard rotation and 16 credits",
@@ -51,7 +51,7 @@
     {
       "screen": "plants",
       "language": "pt",
-      "characters": 10697,
+      "characters": 10735,
       "reviewed": true
     },
     {
