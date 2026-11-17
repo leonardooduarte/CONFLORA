@@ -63,7 +63,7 @@ try{
  await expect(page.locator('.plan-extras .v21-botanical')).toBeVisible();
  await results.getByRole('button',{name:'Área 02'}).click();
  await expect(results.getByRole('button',{name:'Área 02'})).toHaveAttribute('aria-pressed','true');
- await expect(results.locator('.v212-result__area-content h4')).toHaveText('Área 02');
+ await expect(results.locator('.v212-result__area-context h4')).toHaveText('Área 02');
  await expect(results.locator('.v212-result__shared')).toContainText('área 01');
  await results.scrollIntoViewIfNeeded();
  await page.screenshot({path:out+'/itapeva-1440.png'});
@@ -92,9 +92,9 @@ try{
  await page.locator('.studio-journey').getByRole('button',{name:'Consultar síntese do terreno'}).click();
  const iowa=page.locator('.plan-extras .v212-result');
  await expect(iowa).toContainText('Correspondências documentais para investigar');
+ await expect(iowa.locator('.v212-result__plant')).not.toHaveCount(0);
  await iowa.getByRole('button',{name:'Área 02'}).click();
  await expect(iowa.locator('.v212-result__area-context')).toContainText('Desta marcação');
- await expect(iowa.locator('.v212-result__plant')).not.toHaveCount(0);
  await iowa.scrollIntoViewIfNeeded();
  await page.screenshot({path:out+'/iowa-1440.png'});
  // Unknown conditions and legacy JSON maintain their absence; no inferred values.
