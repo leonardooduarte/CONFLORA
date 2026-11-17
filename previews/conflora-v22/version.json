@@ -1,0 +1,9 @@
+{
+  "version": "22.0.0-rc.1",
+  "edition": "Revisão editorial integral e abertura refinada",
+  "baseCommit": "30aa2c21b74d77aa4633a63d40ba215d4f5f8279",
+  "deployment": "preview",
+  "sourceBranch": "feat/conflora-v22-release-candidate",
+  "previewPath": "/CONFLORA/previews/conflora-v22/",
+  "sourceCommit": "c8d3a11ae6a4f091d8c84755bc09ed3c5b7f06ed"
+}

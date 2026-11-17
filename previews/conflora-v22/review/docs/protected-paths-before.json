@@ -1,0 +1,292 @@
+{
+  "main": "f0c311f852db2e78bc877089359f6eded9744402",
+  "pagesTree": "eb6006c7c77de342b5802ec0306321e5cb6ab72c",
+  "root": [
+    {
+      "path": ".nojekyll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5238751ec3c6586f7f20c13686df7fc97d064648",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/5238751ec3c6586f7f20c13686df7fc97d064648"
+    },
+    {
+      "path": "botanical",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e0cc5e2c2eda66fceda77d6de3f3c8d3135915ca",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/e0cc5e2c2eda66fceda77d6de3f3c8d3135915ca"
+    },
+    {
+      "path": "conflora-courtyard.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c81c0cb8476dfca2729520179aaa9c45b3c25ec4",
+      "size": 642702,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/c81c0cb8476dfca2729520179aaa9c45b3c25ec4"
+    },
+    {
+      "path": "conflora-groundcover.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3099248fade719ff1f2516097ede99e40408dd9",
+      "size": 229782,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/b3099248fade719ff1f2516097ede99e40408dd9"
+    },
+    {
+      "path": "conflora-mark.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c85595c004a12bd16717b93b8da58d055cef05",
+      "size": 45067,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/09c85595c004a12bd16717b93b8da58d055cef05"
+    },
+    {
+      "path": "conflora-observe.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eece4e6522fed56c70cc96ceaf6b34b2c4f5c597",
+      "size": 195652,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/eece4e6522fed56c70cc96ceaf6b34b2c4f5c597"
+    },
+    {
+      "path": "conflora-paving.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1c14afb7071e8e7d9b5dd66cc4b98a50a94021b",
+      "size": 211024,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/e1c14afb7071e8e7d9b5dd66cc4b98a50a94021b"
+    },
+    {
+      "path": "conflora-water-roots.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "481282087be4a6a6219ac9f48ff26c1d9f45994a",
+      "size": 673268,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/481282087be4a6a6219ac9f48ff26c1d9f45994a"
+    },
+    {
+      "path": "index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0daba36008a7afc88d1de412d836fdb1bd32d828",
+      "size": 1393,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/0daba36008a7afc88d1de412d836fdb1bd32d828"
+    },
+    {
+      "path": "licenses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5065b35703431438c8ab1c0953fd88f7f66760fe",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/5065b35703431438c8ab1c0953fd88f7f66760fe"
+    },
+    {
+      "path": "previews",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2440430626e07b1d17a9ea88ab988787e049ead2",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/2440430626e07b1d17a9ea88ab988787e049ead2"
+    },
+    {
+      "path": "rain-garden.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f04e4e0cc6d60d2f213ca28aa81fef031c2d5c0",
+      "size": 566400,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/5f04e4e0cc6d60d2f213ca28aa81fef031c2d5c0"
+    },
+    {
+      "path": "referencia-terreno.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d5e5311e150fd83f0059287fbd5088417d29a05",
+      "size": 352654,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/1d5e5311e150fd83f0059287fbd5088417d29a05"
+    },
+    {
+      "path": "scene-garden.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90b6bb296e9c131d142608d5fc4fd23098a3e995",
+      "size": 130066,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/90b6bb296e9c131d142608d5fc4fd23098a3e995"
+    },
+    {
+      "path": "scene-garden.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4c3f37693d90a54fbf8f8055b468620369b74de",
+      "size": 4695,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/e4c3f37693d90a54fbf8f8055b468620369b74de"
+    },
+    {
+      "path": "scene-observations.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e01b2186340142595da04aaf85180448cea79f7",
+      "size": 109531,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/8e01b2186340142595da04aaf85180448cea79f7"
+    },
+    {
+      "path": "scene-observations.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60dd05818a98f600a864719a6b974adb0360f945",
+      "size": 3496,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/60dd05818a98f600a864719a6b974adb0360f945"
+    },
+    {
+      "path": "scene-plan.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bee71eec6ab23c49022b7606e2dcf8c61d76fb9",
+      "size": 131705,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/7bee71eec6ab23c49022b7606e2dcf8c61d76fb9"
+    },
+    {
+      "path": "scene-plan.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6b4d944977036ee1f17f530781b4834527de50",
+      "size": 4776,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/7d6b4d944977036ee1f17f530781b4834527de50"
+    },
+    {
+      "path": "version.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87d37b097a921bbc42b54a7d8d6cfccc7dc20b03",
+      "size": 340,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/87d37b097a921bbc42b54a7d8d6cfccc7dc20b03"
+    },
+    {
+      "path": "water-surface.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6246a4d1c73ffa1aa92785b29aba95f6901ab364",
+      "size": 109060,
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/blobs/6246a4d1c73ffa1aa92785b29aba95f6901ab364"
+    }
+  ],
+  "previews": [
+    {
+      "path": "conflora-botanical-orbit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1693d9936c08a5c4a0a6db368204919f7ff529a6",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/1693d9936c08a5c4a0a6db368204919f7ff529a6"
+    },
+    {
+      "path": "conflora-globe-fidelity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9631f4d351756aa07375acbad6340409c08dbecd",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/9631f4d351756aa07375acbad6340409c08dbecd"
+    },
+    {
+      "path": "conflora-science-v13",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f7b79d896eaf1dda034a98a16ded8cce5aaf48a2",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/f7b79d896eaf1dda034a98a16ded8cce5aaf48a2"
+    },
+    {
+      "path": "conflora-v14",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89c2c63f086697ab26019635cb2dc0b1588348b7",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/89c2c63f086697ab26019635cb2dc0b1588348b7"
+    },
+    {
+      "path": "conflora-v15",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2a65fd762fd63be856281611ea46525238936873",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/2a65fd762fd63be856281611ea46525238936873"
+    },
+    {
+      "path": "conflora-v16",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b29baae2f143af072c629ae4bc721515c11a2f58",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/b29baae2f143af072c629ae4bc721515c11a2f58"
+    },
+    {
+      "path": "conflora-v17",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f8e914b09f2681e9a18c8db5b7a3c6424d58d23",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/8f8e914b09f2681e9a18c8db5b7a3c6424d58d23"
+    },
+    {
+      "path": "conflora-v18",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "66bbf75446b189fd857435943eec57b3f85a43c7",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/66bbf75446b189fd857435943eec57b3f85a43c7"
+    },
+    {
+      "path": "conflora-v19-2-globe",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b9ef2c72e6b7f61116905b56670057a328f540f",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/3b9ef2c72e6b7f61116905b56670057a328f540f"
+    },
+    {
+      "path": "conflora-v19",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "113c6a22cae92b2dc328b3db8e78091a5b218030",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/113c6a22cae92b2dc328b3db8e78091a5b218030"
+    },
+    {
+      "path": "conflora-v20",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f85d86056224e91fd84d77d1ec129e087ef1c7a1",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/f85d86056224e91fd84d77d1ec129e087ef1c7a1"
+    },
+    {
+      "path": "conflora-v21-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37d3b6ea5db3ea0270f1a80d431d1939375b3da2",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/37d3b6ea5db3ea0270f1a80d431d1939375b3da2"
+    },
+    {
+      "path": "conflora-v21-2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d557da0c02a7dc7ea111e6924b493e2aca14e3ee",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/d557da0c02a7dc7ea111e6924b493e2aca14e3ee"
+    },
+    {
+      "path": "conflora-v21",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84afa5f22e29da8eb5d9b6abedb0a4368a9e0669",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/84afa5f22e29da8eb5d9b6abedb0a4368a9e0669"
+    },
+    {
+      "path": "herbarium-20261116",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "166ac7cd0f7e20d0cb4dd71da566fda7f1fd06bb",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/166ac7cd0f7e20d0cb4dd71da566fda7f1fd06bb"
+    },
+    {
+      "path": "official-before-v19",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "665fe41a37d8e331920a1f905c73d6f52f3ddcef",
+      "url": "https://api.github.com/repos/leonardooduarte/CONFLORA/git/trees/665fe41a37d8e331920a1f905c73d6f52f3ddcef"
+    }
+  ]
+}

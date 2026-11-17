@@ -1,0 +1,557 @@
+CONFLORA
+My space
+Herbarium
+Explore
+My kit
+My garden
+Rain to roots
+Projects
+PT
+Save ›
+OPEN NOTEBOOK
+Itapeva · estudo 20 m²
+01
+Space
+02
+Herbarium
+03
+Plan
+04
+Records
+Project imported.
+03 / MY PLAN
+From your yard to your plan
+CONFLORA V22 / FROM OBSERVATION TO VISUAL PROPOSAL
+Itapeva · estudo 20 m²
+
+Itapeva, São Paulo, Brasil · 20 m² · Full sun · Wet
+
+Choose a botanical composition when evidence and conditions suffice, or a spatial study without species recommendations.
+
+Open report ↗
+CONFLORA / INTEGRATED READING
+Your site observations, brought together.
+
+Your observations, documentary evidence and next steps together in one place.
+
+PRELIMINARY STUDY
+User-supplied image · not automatically interpreted
+SITE SUMMARY
+Itapeva, São Paulo, Brasil
+
+Reported area: 20 m² · reported, not measured
+
+7
+observations
+3
+areas reviewed
+0
+documentary matches
+3 Pooling water
+3 Roof outlets
+1 Paved surfaces
+Review observations in editor ↗
+INVESTIGATION STATUS
+Research references; planting suitability not established
+
+Research records exist; no planting has been validated for this site.
+
+Some conditions remain unreported.
+Some reported conditions require local assessment before intervention.
+No documentary match is planting approval.
+BY OBSERVATION
+Review the conditions for each area.
+
+Select an observation for inherited conditions, local differences and relevant sources.
+
+Area 01
+Area 02
+Area 03
+Area 01
+Region
+Brasil
+Inherited from site
+Sun
+Full sun
+Inherited from site
+Moisture
+Wet
+Inherited from site
+Reported drainage
+Apparently slow
+Inherited from site
+Pooling duration
+Not verified
+Not reported
+Buildings
+Not verified
+Not reported
+Edit observation and conditions ↗
+What the documentation helps investigate
+RESEARCH ONLY
+Alternanthera brasiliana (L.) Kuntze
+Brazilian joyweed
+
+Cited in a rain-garden species review; the source does not demonstrate tolerance to the reported pooling duration.
+
+Sources and limits
+Arachis repens Handro
+Groundnut groundcover
+
+The Brazilian review includes this investigated species; slope studies do not prove rain-garden performance.
+
+Sources and limits
+Checks and unknowns for this observation (3)
+Explore the Herbarium and all sources ↗
+WHAT TO CHECK NEXT
+Record pooling duration
+
+Observe from a safe place after rain and record the duration in the site or area conditions.
+
+Check buildings and underground services
+
+Record building proximity without digging; seek appropriate assessment when needed.
+
+Investigate soil drainage
+
+Record observations; consider suitable local testing or professional assessment.
+
+Observe where water travels
+
+Observe safely and draw only actually observed paths in the editor.
+
+ORGANIZE YOUR PLAN
+
+Compare exploratory concepts and export your report. Drawings do not prove drainage performance.
+
+Open preliminary report ↗
+View visual comparison ↗
+A: not created · B: not created
+
+This reading uses your reported conditions and documentary sources. It does not measure infiltration, runoff, excavation safety or plant performance.
+
+Detailed environmental review
+Full botanical evidence
+Alternatives and visual studies
+ENVIRONMENTAL DETAIL
+CONFLORA / SITE INSIGHT
+What we know about your space
+
+A summary of your own observations — without measuring the site or interpreting the photo automatically.
+
+Your observations
+3 pooling marks
+3 roof outlets
+1 paved surface
+Reported location: Itapeva, São Paulo, Brasil
+Reported area: 20 m²
+Soil described as slow-draining, without an infiltration test.
+Full sun, as reported by the user.
+The soil was reported as wet.
+What this helps investigate
+Pooling observations exist; duration and causes were not measured automatically.
+Roof outlets were marked; the flow paths still need direct observation.
+Paved areas were marked, without quantified runoff effects.
+Apparently slow drainage means rain-garden infiltration cannot be presumed.
+Apparently slow drainage means rain garden infiltration cannot be presumed.
+Botanical evidence status
+
+Research records exist; no planting has been validated for this site.
+
+Research is not a planting recommendation. Photographs do not measure infiltration.
+What to check next
+4 checks
+01
+Record pooling duration
+Priority
+
+Why? Pooling duration helps establish which checks are needed.
+
+How to record? Observe from a safe place after rain and record the duration in the site or area conditions.
+
+Update the record and revisit the review to reassess the concepts.
+
+02
+Check buildings and underground services
+Priority
+
+Why? Foundations and utilities must be considered before any infiltration concept.
+
+How to record? Record building proximity without digging; seek appropriate assessment when needed.
+
+Update the record and revisit the review to reassess the concepts.
+
+03
+Investigate soil drainage
+Priority
+
+Why? Soil appearance does not establish infiltration capacity.
+
+How to record? Record observations; consider suitable local testing or professional assessment.
+
+Update the record and revisit the review to reassess the concepts.
+
+04
+Observe where water travels
+
+Why? Actual runoff cannot be inferred from a photograph alone.
+
+How to record? Observe safely and draw only actually observed paths in the editor.
+
+Update the record and revisit the review to reassess the concepts.
+
+Where do area conditions come from?
+Review my observations ↗
+Open report ↗
+ALTERNATIVES AND DOCUMENTATION
+CONFLORA / PRELIMINARY PROPOSAL
+My CONFLORA proposal
+
+The options below are based only on your observations and the documented evidence. Being studied in a pot does not make a species an installation recommendation.
+
+3
+Areas reviewed
+0
+Documented matches
+0
+Saved compositions
+What each area allows us to explore
+Areas 01, 02, 03
+D · Professional review priority
+
+Area marked by the user.
+
+Apparently slow drainage means rain garden infiltration cannot be presumed.
+
+No species is validated for planting in this area from the current data. The botanical records below are for research only.
+
+Possibilities to investigate
+
+Next check: Record how long water remains after rainfall.
+
+Plants to explore and research
+
+No planting recommendation was generated. The records below were studied in Brazil but have not been shown to fit your site.
+
+RESEARCH ONLY
+Commelina erecta L.
+
+Erect dayflower
+
+Vegetation cover monitored in irrigated pots. Verify care and spread; the source establishes no comparable waterlogging range for this site.
+
+Areas: 1, 2, 3
+
+Scientific source
+Photo: Assaf Shtilman · CC BY-SA 3.0
+RESEARCH ONLY
+Distimake dissectus (Jacq.) A.R.Simões & Staples
+
+Alamo vine
+
+Climber requiring vine training in the trial. Investigate support and spread; pot irrigation does not validate local installation.
+
+Areas: 1, 2, 3
+
+Scientific source
+Photo: Jessica Spengler from Hove, United Kingdom · CC BY 2.0
+RESEARCH ONLY
+Trimezia coerulea (G.Lodd.) Ravenna
+
+Blue walking iris
+
+Published as Neomarica caerulea, a synonym of the accepted name used here. Confirm identification; no comparable moisture range for planting selection.
+
+Areas: 1, 2, 3
+
+Scientific source
+Photo: Vitorperrut555 · CC BY-SA 4.0
+
+Attention: plants marked “Research only” are not installation proposals, even when photographs are shown.
+
+How the space might look
+Exploratory visual study
+
+Available even with inconclusive selection. Amber zones need investigation; red zones remain undisturbed before assessment.
+
+Create exploratory study A
+Create exploratory study B
+Documented botanical composition
+
+Current evidence does not support a botanical composition. You can review the records or create an exploratory spatial study.
+
+No alternative is saved yet. You can create an exploratory spatial study. A botanical composition also requires documented plant matches and sufficient site conditions.
+
+Generate my site proposal
+Create alternative B
+Edit in atelier
+
+Preliminary decision-support tool. Photos do not measure infiltration, runoff, slope or installation safety. Pot studies do not prove residential rain-garden performance.
+
+BOTANICAL DETAIL
+CONFLORA / BOTANICAL EVIDENCE
+What can the evidence help us investigate?
+
+Matches describe the relationship between reported conditions and sources, not infiltration, installation safety or hydraulic performance.
+
+3
+areas reviewed
+0
+species with documentary matches
+4
+research records
+AT A GLANCE
+Relevant literature, without planting validation
+
+3 observations, 1 different sets of conditions. Shared photos and sources are shown once.
+
+BEFORE PROCEEDING
+Record pooling duration after safely observing rain.
+Check buildings and underground utilities.
+Reported drainage does not replace infiltration assessment.
+01
+Observed area 01
+Relevant botanical literature exists, but comparable environmental ranges are missing for planting selection.
+0 matches
+Conditions used
+Region
+Brasil · inherited from site
+Sun
+Full sun · inherited from site
+Moisture
+Wet · inherited from site
+Reported drainage
+Apparently slow · inherited from site
+Pooling duration
+Not verified · not reported
+Buildings
+Not verified · not reported
+
+Site conditions require local assessment (reported drainage, pooling duration, or nearby buildings). No installation safety is inferred.
+
+Literature for research — not planting advice
+Photo: CostaPPPR · CC BY-SA 3.0
+RESEARCH ONLY
+Alternanthera brasiliana (L.) Kuntze
+
+Brazilian joyweed · Amaranthaceae
+
+Additional evidence: Cited in a rain-garden species review; the source does not demonstrate tolerance to the reported pooling duration.
+
+Unknowns: Comparable sunlight range not established. Comparable moisture range not established.
+
+Research record, not planting advice or evidence of hydraulic efficiency.
+
+Sources and limits
+Photo: Vitor dos Santos · CC BY 4.0
+RESEARCH ONLY
+Arachis repens Handro
+
+Groundnut groundcover · Fabaceae
+
+Additional evidence: The Brazilian review includes this investigated species; slope studies do not prove rain-garden performance.
+
+Unknowns: Comparable sunlight range not established. Comparable moisture range not established.
+
+Research record, not planting advice or evidence of hydraulic efficiency.
+
+Sources and limits
+Photo: Andrés González · CC BY-SA 4.0
+RESEARCH ONLY
+Cyperus giganteus Vahl
+
+Piri (regional name) · Cyperaceae
+
+Additional evidence: A Brazilian review lists the species among possibilities for seasonally wet spaces; no site performance is measured.
+
+Unknowns: Comparable sunlight range not established. Comparable moisture range not established.
+
+Research record, not planting advice or evidence of hydraulic efficiency.
+
+Sources and limits
+Photo: João Medeiros · CC BY 2.0
+RESEARCH ONLY
+Rhynchanthera grandiflora (Aubl.) DC.
+
+Rhynchanthera · Melastomataceae
+
+Additional evidence: Appears in a Brazilian review of plants for wet settings; identity, size and local conditions still need checking.
+
+Unknowns: Comparable sunlight range not established. Comparable moisture range not established.
+
+Research record, not planting advice or evidence of hydraulic efficiency.
+
+Sources and limits
+What to verify next
+Record pooling duration after safely observing rain.
+Check buildings and underground utilities.
+Reported drainage does not replace infiltration assessment.
+02
+Observed area 02
+Relevant botanical literature exists, but comparable environmental ranges are missing for planting selection.
+0 matches
+03
+Observed area 03
+Relevant botanical literature exists, but comparable environmental ranges are missing for planting selection.
+0 matches
+
+Literature guides questions; appropriate local assessment is necessary before an intervention. Photos and markers do not measure infiltration.
+
+1
+Show your space
+2
+Record observations
+3
+Explore
+4
+Build your plan
+Show your space
+
+You can continue with a conceptual drawing if you do not have a photo.
+
+Space name
+Upload photo
+Continue
+CONFLORA / VISUAL SCENARIOS
+One photograph. Two editable alternatives.
+
+Create garden or plant marks in the editor, save A and B, and load either composition to keep editing. The original photograph is never changed.
+
+Observed site
+Composition A
+Not saved
+Create a proposal in the editor and save here.
+Save composition A
+Composition B
+Not saved
+Create a proposal in the editor and save here.
+Save composition B
+Back to site editor ↗
+
+After saving A/B, also save the project to keep both when reopening the browser.
+
+Add a garden or identified plant marker before saving a proposal.
+
+Conceptual comparison without physical scale, simulated growth or predicted flood reduction.
+
+CONFLORA / MY SITE REVIEW
+What your observations allow us to explore
+
+This summary connects your reported observations with documented plant records. It is not a technical diagnosis or a promise of flood reduction.
+
+7
+Site annotations
+3
+Areas reviewed
+0
+Saved A/B proposals
+By area
+Area 01
+Approaches worth exploring
+User-marked area
+
+Reported conditions: Sun: Full sun · Moisture: Wet · Soil: apparently slow
+
+Apparently slow drainage means rain garden infiltration cannot be presumed.
+
+Plant evidence: The herbarium did not find species with sufficient documented matches for these conditions.
+
+Approaches: Vegetated cover to explore
+
+Next check: Record how long water remains after rainfall.
+
+Area 02
+Approaches worth exploring
+User-marked area
+
+Reported conditions: Sun: Full sun · Moisture: Wet · Soil: apparently slow
+
+Apparently slow drainage means rain garden infiltration cannot be presumed.
+
+Plant evidence: The herbarium did not find species with sufficient documented matches for these conditions.
+
+Approaches: Vegetated cover to explore
+
+Next check: Record how long water remains after rainfall.
+
+Area 03
+Approaches worth exploring
+User-marked area
+
+Reported conditions: Sun: Full sun · Moisture: Wet · Soil: apparently slow
+
+Apparently slow drainage means rain garden infiltration cannot be presumed.
+
+Plant evidence: The herbarium did not find species with sufficient documented matches for these conditions.
+
+Approaches: Vegetated cover to explore
+
+Next check: Record how long water remains after rainfall.
+
+Species you saved for research
+
+No plant has been saved as an interest. CONFLORA does not assume any planting decision.
+
+Sources and next steps
+
+Check soil conditions, actual water paths, buried utilities, setbacks and safe overflow before any intervention.
+
+A/B visuals are not to scale and are not construction-ready designs.
+
+What to check based on your records
+OBSERVATION → CHECK
+You recorded standing water.
+
+Record duration and frequency; do not assume the pooling location is suitable for infiltration.
+
+Iowa State University Extension — Natural Resource Stewardship (RG 605: link original indisponível)
+OBSERVATION → CHECK
+A paved surface is marked.
+
+Investigate material, compaction and runoff destination; the image does not measure permeability.
+
+US EPA. Soak Up the Rain: Rain Gardens.
+PRELIMINARY EVIDENCE REVIEW
+Species to investigate
+
+Regional context: Brazil · Observed soil drainage: Seems slow · Observed light: Full sun · Observed moisture: Wet
+
+Still to verify: How long does water remain?, Buildings nearby, Space for intervention, Care availability
+
+The available Brazilian sources do not yet link light and moisture ranges to your reported conditions. Review the Brazilian records for further research; Iowa data apply to a different regional context.
+
+How does selection work?
+Alternatives and next steps
+
+Investigate ground cover and rain garden location with local support. Verify infiltration, utilities, foundations and overflow. This selection does not size drainage.
+
+Iowa Rain Garden Guide
+Reported water paths
+Solutions investigated
+
+No solutions saved.
+
+Species of interest — not planting decisions
+Plantings reported in journal (not inferred from interests)
+Still unknown
+
+Fields are filled; this is not technical verification.
+
+Next step
+
+Record an observation after rain, fill unknown data and take hypotheses to a local assessment.
+
+Rules organize what you reported; they do not analyze the photograph or calculate drainage.
+
+What to verify before making changes
+Observe where water runs during a rain event, when safe.
+Check underground utilities, foundations, and safe distances before digging.
+Assess soil conditions and whether infiltration is appropriate.
+Plan for excess water during intense rain.
+Consult local advice for plants and installation.
+Open report ›
+CONFLORA
+
+Educational project for BRaVE 2026 — UNESP × Kirkwood Community College
+
+An observation and conceptual-planning tool, not an engineering design.

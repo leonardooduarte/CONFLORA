@@ -1,0 +1,46 @@
+04 / BRAZIL / STUDIED IN PROTOTYPES
+Syngonium angustatum Schott
+
+Fivefingers · Araceae
+
+Climber
+
+Vegetation cover studied; no infiltration rate attributed to the species.
+
+Why investigate: Matches the selected regional context. Local validation and identification are still needed.
+
+Compare species
+Preview in my space
+Read record and sources
+Save interest
+Scientific reading · sources and limits
+ACCEPTED SCIENTIFIC NAME
+Syngonium angustatum Schott
+FAMILY
+Araceae
+ORIGIN IN CONTEXT
+Non-native in context
+OCCURRENCE
+Documented context: experiment in Bauru, São Paulo. Local occurrence is not guaranteed.
+DOCUMENTED LIGHT
+Not verified
+DOCUMENTED MOISTURE
+The sources for this record do not establish a comparable range.
+HEIGHT
+Not verified
+CARE
+Maintenance observed in the experiment; verify local cultivation care.
+POTENTIAL POSITION
+Not established by the pot trial.
+DOCUMENTED ROLE
+Vegetation cover studied; no infiltration rate attributed to the species.
+LIMITS AND CAUTIONS
+Important conflict: the paper calls the species Brazilian natives, but POWO places this species from Mexico to Panama. Treated here as non-native to Brazil; not proposed for planting. Controlled trial irrigation does not establish local waterlogging tolerance.
+Sources and verification
+
+2026-11-16 · POWO · Kew
+
+Santos, M. F. N.; Fontes, M. S. G. C.; Oliveira, J. R. (2024). Jardins de chuva: estudo experimental com espécies nativas do Brasil. PLURIS 2024.
+Vegetation-cover study in twenty 55 L pots irrigated twice daily in Bauru (pp. 4–5). No comparative moisture ranges, local flooding tolerance or hydraulic efficacy. Internal date inconsistencies remain.
+
+Raquel Patro · CC BY-SA 3.0 · Resized and cropped in display.

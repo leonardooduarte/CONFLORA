@@ -1,0 +1,46 @@
+17 / BRAZIL / DOCUMENTED ECOLOGICAL STUDY
+Rhynchanthera grandiflora (Aubl.) DC.
+
+Rhynchanthera · Melastomataceae
+
+Shrub · 0.7–2.0 m (floristic survey)
+
+Observed wet-site habitat in floristic research; no measured permanent saturation tolerance or evapotranspiration.
+
+Why investigate: Matches the selected regional context. Local validation and identification are still needed.
+
+Compare species
+Preview in my space
+Read record and sources
+Save interest
+Scientific reading · sources and limits
+ACCEPTED SCIENTIFIC NAME
+Rhynchanthera grandiflora (Aubl.) DC.
+FAMILY
+Melastomataceae
+ORIGIN IN CONTEXT
+Native in context
+OCCURRENCE
+Kew lists native distribution in southeastern Brazil. Bacci and colleagues documented the species in wet habitats of a Minas Gerais reserve; not evidence of occurrence in Itapeva.
+DOCUMENTED LIGHT
+Not verified
+DOCUMENTED MOISTURE
+The sources for this record do not establish a comparable range.
+HEIGHT
+0.7–2.0 m (floristic survey)
+CARE
+Bioretention planting and care are not studied in the source.
+POTENTIAL POSITION
+A subshrub/shrub; no documented rain-garden bottom-zone recommendation.
+DOCUMENTED ROLE
+Observed wet-site habitat in floristic research; no measured permanent saturation tolerance or evapotranspiration.
+LIMITS AND CAUTIONS
+Wet habitats do not prove urban-flood tolerance or hydraulic effectiveness. Mature size and site conditions need review.
+Sources and verification
+
+2026-11-16 · POWO · Kew
+
+Bacci, L. F.; Versiane, A. F. A.; Oliveira, A. L. F.; Romero, R. (2016). Melastomataceae na RPPN do Clube Caça e Pesca Itororó, Uberlândia, MG, Brasil. Hoehnea 43(4). DOI 10.1590/2236-8906-27/2016.
+Floristic survey with a R. grandiflora voucher, height range (0.7–2 m), and wet-site habitat; not a bioretention experiment.
+
+João Medeiros · CC BY 2.0 · Resized and cropped in display.

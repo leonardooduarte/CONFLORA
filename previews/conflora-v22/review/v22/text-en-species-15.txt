@@ -1,0 +1,46 @@
+16 / BRAZIL / DOCUMENTED ECOLOGICAL STUDY
+Alternanthera brasiliana (L.) Kuntze
+
+Brazilian joyweed · Amaranthaceae
+
+Herbaceous
+
+The experiment measured rooting of cuttings, not runoff reduction or drainage efficiency.
+
+Why investigate: Matches the selected regional context. Local validation and identification are still needed.
+
+Compare species
+Preview in my space
+Read record and sources
+Save interest
+Scientific reading · sources and limits
+ACCEPTED SCIENTIFIC NAME
+Alternanthera brasiliana (L.) Kuntze
+FAMILY
+Amaranthaceae
+ORIGIN IN CONTEXT
+Native in context
+OCCURRENCE
+Native to southeastern Brazil per POWO. Cutting propagation study in Brazil; secondary background mentioning drained and wet soils does not prove rain-garden performance.
+DOCUMENTED LIGHT
+Not verified
+DOCUMENTED MOISTURE
+The sources for this record do not establish a comparable range.
+HEIGHT
+Not verified
+CARE
+Propagation through cuttings has been studied; local rain-garden care is not established.
+POTENTIAL POSITION
+No verified rain-garden planting zone.
+DOCUMENTED ROLE
+The experiment measured rooting of cuttings, not runoff reduction or drainage efficiency.
+LIMITS AND CAUTIONS
+No quantitative flooding duration, sun exposure or local Itapeva evidence. Not eligible for operational plant matching.
+Sources and verification
+
+2026-11-16 · POWO · Kew
+
+Tracz, V.; Cruz-Silva, C. T. A.; Luz, M. Z. (2014). Produção de mudas de penicilina (Alternanthera brasiliana) via estaquia. Revista Brasileira de Plantas Medicinais 16(3 supl. 1). DOI 10.1590/1983-084x/12_098.
+Original cutting propagation experiment; wet and drained soil habitats are mentioned as secondary background, not experimentally tested rain-garden tolerance.
+
+CostaPPPR · CC BY-SA 3.0 · Resized and cropped in display.

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:5176/",
+  "checks": [
+    "pt: empty projects, invalid photo, PDF font failure and button recovery",
+    "pt: storage unavailable",
+    "pt: no WebGL, globe fallback, gallery failure, retry re-evaluated",
+    "en: empty projects, invalid photo, PDF font failure and button recovery",
+    "en: storage unavailable",
+    "en: no WebGL, globe fallback, gallery failure, retry re-evaluated"
+  ],
+  "errors": []
+}

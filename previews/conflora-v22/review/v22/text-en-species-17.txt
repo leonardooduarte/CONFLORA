@@ -1,0 +1,46 @@
+18 / BRAZIL / DOCUMENTED ECOLOGICAL STUDY
+Arachis repens Handro
+
+Groundnut groundcover · Fabaceae
+
+Herbaceous
+
+Stein et al. (2026) measured erosion, runoff and survival in 24 slope plots. This does not establish individual water uptake or home rain-garden performance.
+
+Why investigate: Matches the selected regional context. Local validation and identification are still needed.
+
+Compare species
+Preview in my space
+Read record and sources
+Save interest
+Scientific reading · sources and limits
+ACCEPTED SCIENTIFIC NAME
+Arachis repens Handro
+FAMILY
+Fabaceae
+ORIGIN IN CONTEXT
+Native in context
+OCCURRENCE
+Native to southeastern Brazil per POWO. A Brazilian field trial planted this species on sand-mining slopes, not in rain gardens.
+DOCUMENTED LIGHT
+Not verified
+DOCUMENTED MOISTURE
+The sources for this record do not establish a comparable range.
+HEIGHT
+Not verified
+CARE
+Study reports seasonal changes in vegetative cover in cool weather; home-garden maintenance not established.
+POTENTIAL POSITION
+Tested on erosive slopes; rain-garden planting position was not investigated.
+DOCUMENTED ROLE
+Stein et al. (2026) measured erosion, runoff and survival in 24 slope plots. This does not establish individual water uptake or home rain-garden performance.
+LIMITS AND CAUTIONS
+Flooding and rain-garden sun conditions unvalidated; mining-slope erosion results cannot be transferred automatically.
+Sources and verification
+
+2026-11-16 · POWO · Kew
+
+Stein, M.; Bressani, L. A.; Overbeck, G. E. (2026). Experimental field measurements of soil erosion on newly planted slopes of an excavated sand pit. REM International Engineering Journal 79(1). DOI 10.1590/0370-44672023790062.
+Field trial in 24 restored-sand-pit slope plots tracking erosion, runoff and Arachis repens survival; results varied by sampling. Not a rain-garden or individual uptake trial.
+
+Vitor dos Santos · CC BY 4.0 · Resized and cropped in display.

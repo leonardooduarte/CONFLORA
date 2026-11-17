@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "COBE globe and 16 Polaroids",
+    "nine unique credited botanical gallery photos",
+    "solutions and herbarium navigation",
+    "editor controls",
+    "Itapeva duplicate evidence reduced, all area rows preserved",
+    "contiguous display numbers",
+    "different Iowa area retains separate results",
+    "PT/EN",
+    "responsive 1440/1024/768/390/320",
+    "no page errors"
+  ],
+  "labNavigationOnly": {
+    "domContentLoadedMs": 34,
+    "loadEventMs": 34
+  },
+  "errors": []
+}

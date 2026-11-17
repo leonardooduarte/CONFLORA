@@ -1,0 +1,49 @@
+15 / BRAZIL / DOCUMENTED ECOLOGICAL STUDY
+Cyperus giganteus Vahl
+
+Piri (regional name) · Cyperaceae
+
+Sedge
+
+Rocha & Martins (2011) studied morphoanatomical adaptations across a moisture gradient. Rodrigues & Estelita (2005) examined root anatomy; neither measured plant-specific runoff reduction.
+
+Why investigate: Matches the selected regional context. Local validation and identification are still needed.
+
+Compare species
+Preview in my space
+Read record and sources
+Save interest
+Scientific reading · sources and limits
+ACCEPTED SCIENTIFIC NAME
+Cyperus giganteus Vahl
+FAMILY
+Cyperaceae
+ORIGIN IN CONTEXT
+Native in context
+OCCURRENCE
+Native to southeastern Brazil according to POWO; studied near Alagados Reservoir (Paraná) and reported in Pantanal communities. Occurrence or suitability in Itapeva is not established.
+DOCUMENTED LIGHT
+Not verified
+DOCUMENTED MOISTURE
+Documented seasonal moisture
+HEIGHT
+Not verified
+CARE
+Residential rain garden care not verified in these sources; consider rhizomatous habit and mature size before investigating.
+POTENTIAL POSITION
+A 2011 study observed larger plants in marginal zones without complete submersion and with seasonal moisture. It does not establish rain-garden planting position.
+DOCUMENTED ROLE
+Rocha & Martins (2011) studied morphoanatomical adaptations across a moisture gradient. Rodrigues & Estelita (2005) examined root anatomy; neither measured plant-specific runoff reduction.
+LIMITS AND CAUTIONS
+Research-only record, not eligible for preliminary matching: no transferable light, hydrological performance or user-site validation. Permanent submersion tolerance is not established.
+Sources and verification
+
+2026-11-16 · POWO · Kew
+
+Rocha, D. C.; Martins, D. (2011). Adaptações morfoanatômicas de Cyperaceae ao ambiente aquático. Planta Daninha 29(1).
+Primary anatomical study across moisture zones in Paraná; no rain-garden field test or drainage performance.
+
+Rodrigues, A. C.; Estelita, M. E. M. (2005). Anatomia da raiz de Cyperus giganteus Vahl (Cyperaceae) em desenvolvimento. Revista Brasileira de Botânica.
+Primary root anatomy study; describes structures, not infiltration, water uptake or flooding reduction rates.
+
+Andrés González · CC BY-SA 4.0 · Resized and cropped in display.
