@@ -1,0 +1,31 @@
+/* CONFLORA V21.1 — a finishing layer, not a redesign. */
+:root{--v211-rule:#c8d0c4;--v211-copper:#a47952;--v211-wash:#f4f0e6}
+.site-header .desktop-navigation{min-width:0;gap:clamp(8px,1vw,16px)}
+.site-header .nav-primary,.site-header .nav-secondary{display:flex;align-items:center;gap:2px}
+.site-header .nav-secondary{border-left:1px solid #ffffff32;padding-left:clamp(8px,1vw,16px)}
+.site-header .nav-primary button{color:#f2f1e6;font-weight:600}
+.site-header .nav-secondary button{color:#bdcbbf}
+.site-header .desktop-navigation button[aria-current="page"]{box-shadow:inset 0 -2px 0 #c4a77d}
+.site-header .desktop-navigation button{padding:10px clamp(6px,.7vw,12px);border-radius:5px}
+.site-header .desktop-navigation button:hover{background:#234a39}
+.living-story .living-card figure{min-width:0;margin:0;position:relative}
+.living-story .living-card figure img{display:block;width:100%;height:100%;max-height:315px;object-fit:cover;border-radius:5px}
+.living-story .living-card figure figcaption{font:11px/1.5 var(--sans);color:#586d5a;margin-top:8px;overflow-wrap:anywhere}
+.studio-journey{max-width:1600px}
+.studio-journey-steps button:focus-visible,.v20-quick-tools button:focus-visible{outline:3px solid #a8794d;outline-offset:3px}
+.studio-journey-steps button{min-height:36px}
+.terrarium-conditions label,.studio-journey-conditions label{font-size:14px;line-height:1.5}
+.atelier-workspace .drawing-top .label-toggle{display:flex;align-items:center;gap:8px;min-height:40px;letter-spacing:0;text-transform:none;cursor:pointer;font:600 12px var(--sans)}
+.atelier-workspace .drawing-top .label-toggle input{width:17px;height:17px;accent-color:#285d49}
+.atelier-workspace .drawing-top .mini-actions button{min-height:40px;min-width:40px}
+.atelier-workspace .inspector label,.atelier-workspace .inspector p{line-height:1.55}
+.atelier-workspace .inspector input,.atelier-workspace .inspector select,.atelier-workspace .inspector textarea{font-size:15px}
+.atelier-workspace .studio-save-state{font-size:12px;letter-spacing:.01em}
+.atelier-workspace [data-panel] .tool-group-label{letter-spacing:.12em}
+.knowledge-page .botanic-row .btn{min-height:44px}
+.knowledge-page .botanic-details{max-width:78ch}
+.knowledge-page .botanic-details a{overflow-wrap:anywhere}
+.knowledge-page .botanic-row .botanic-overview{max-width:68ch}
+@media(max-width:1200px) and (min-width:761px){.site-header .desktop-navigation button{font-size:12px;padding:10px 6px}.site-header{gap:10px;padding-inline:16px}.site-header .nav-secondary{padding-left:8px}}
+@media(max-width:760px){.site-header .desktop-navigation{display:none}.studio-journey-steps button{min-height:44px}.atelier-workspace .drawing-top .mini-actions{flex-wrap:wrap;justify-content:flex-end}.atelier-workspace .drawing-top{gap:8px}.atelier-workspace .drawing-top .label-toggle{min-height:44px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.living-story .living-card figure img{transition:none}}

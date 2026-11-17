@@ -1,5 +1,6 @@
 import {buildV20Insight} from './v20Insight.js';
 import {reviewBotanicalV21} from './v21Botanical.js';
+import {presentV211Regions} from './v21Presentation.js';
 import {jsPDF} from 'jspdf';
 import {plants,asset,references,say,labels} from './knowledge.js';
 import {buildV19Proposal,sourceBibliography,scenarioMode,exploratoryNotice,scenarioEvidenceCurrent} from './v19Proposal.js';
@@ -45,9 +46,10 @@ export async function createV19PDF(project,lang='pt',reportImage){
  const v21=reviewBotanicalV21(project,lang);
  heading(pt?'Investigação botânica personalizada — V21':'Personalized botanical investigation — V21');
  text(v21.explanation,9);
- for(const r of v21.regions){
-  text((r.number===null?(pt?'Terreno inteiro':'Whole site'):(pt?'Área ':'Area ')+String(r.number).padStart(2,'0'))+': '+r.message,11,'bold');
+ for(const r of presentV211Regions(v21.regions)){
+  text((r.number===null?(pt?'Terreno inteiro':'Whole site'):(pt?'Área ':'Area ')+String(r.displayNumber).padStart(2,'0'))+': '+r.message,11,'bold');
   text(r.conditions.filter(c=>c.value!=='unknown').map(c=>c.label+': '+c.display+' ('+c.origin+')').join(' · ')|| (pt?'Condições insuficientes.':'Insufficient conditions.'),8);
+  if(r.duplicateOf){text((pt?'Mesmas evidências documentais da área ':'Same documentary evidence as area ')+String(r.duplicateOf.displayNumber).padStart(2,'0')+'.',9);continue;}
   for(const match of r.investigate.slice(0,3)){
    text('• '+match.plant.scientific+' — '+(pt?'correspondência documental':'documentary match'),9,'bold');
    text(match.agree.map(a=>a.field+(a.source?' — '+a.source:'')).join('; '),8);

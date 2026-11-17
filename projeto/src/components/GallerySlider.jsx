@@ -42,7 +42,7 @@ export default function GallerySlider({items,lang}){
   return()=>{active=false;cancelAnimationFrame(raf);clearTimeout(timer);detach();images.forEach(img=>{img.onload=null;img.onerror=null})};
  },[items,attempt]);
  return <div ref={root} className="morph-wrapper" data-status={status} aria-busy={status==='loading'}>
-  {loaded&&<SliderBoundary key={attempt} onError={()=>setStatus('error')}><MorphSlider items={items} transition="melt" intensity={0.55} aberration={0.35} drift={0.4} autoplay={false}/></SliderBoundary>}
+  {loaded&&<SliderBoundary key={attempt} onError={()=>setStatus('error')}><MorphSlider items={items} transition="melt" intensity={0.18} aberration={0.075} drift={0.1} autoplay={false}/></SliderBoundary>}
   {status!=='ready'&&<div className="gallery-cover"><img src={items[0].image} alt={lang==='pt'?'Prévia ilustrativa':'Illustrative preview'}/><div role="status"><p>{status==='error'?(lang==='pt'?'Não foi possível iniciar a galeria animada.':'The animated gallery could not start.'):(lang==='pt'?'Carregando possibilidades…':'Loading possibilities…')}</p>{status==='error'&&<button className="btn" onClick={()=>setAttempt(n=>n+1)}>{lang==='pt'?'Tentar novamente':'Try again'}</button>}</div></div>}
  </div>;
 }

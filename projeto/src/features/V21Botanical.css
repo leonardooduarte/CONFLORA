@@ -42,3 +42,35 @@
 .v21-botanical--compact{padding:18px 22px}
 .v21-botanical--compact .v21-botanical__intro h2{font-size:2rem}
 @media(max-width:700px){.v21-botanical{padding:20px 16px;margin:28px auto}.v21-botanical__conditions,.v21-botanical__cards{grid-template-columns:1fr}.v21-botanical__area>summary{gap:10px}.v21-botanical__number{min-width:30px;font-size:1.6rem}.v21-botanical__count{white-space:normal;text-align:right}.v21-botanical__figures{gap:18px}.v21-botanical__card-image img{height:185px}}
+
+/* V21.1 premium evidence presentation: unique source grouping, progressive disclosure */
+.v21-botanical{border-color:#c3cbc0;background:#f6f3ec;border-radius:5px}
+.v21-botanical__overview{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(14px,3vw,34px);margin:4px 0 31px;padding:clamp(16px,2.3vw,26px);background:#e5ebe2;border-left:3px solid #a77f53}
+.v21-botanical__overview .eyebrow{color:#527061}
+.v21-botanical__overview strong{display:block;margin:7px 0 8px;font:400 clamp(24px,2.8vw,35px)/1.15 'Instrument Serif',Georgia,serif}
+.v21-botanical__overview p,.v21-botanical__overview li{font:14px/1.65 'DM Sans',sans-serif;color:#43574c}
+.v21-botanical__overview p{margin:0}
+.v21-botanical__overview ul{margin:10px 0 0;padding-left:19px}
+.v21-botanical__overview li{margin:4px 0}
+.v21-botanical__area{scroll-margin-top:22px}
+.v21-botanical__area>summary{padding:14px 6px;min-height:62px}
+.v21-botanical__area>summary strong{font-size:16px}
+.v21-botanical__area>summary small{font-size:13px}
+.v21-botanical__count{font-size:12px}
+.v21-botanical__conditions dt{font-size:12px}
+.v21-botanical__conditions dd{font-size:14px}
+.v21-botanical__conditions dd span{font-size:12px}
+.v21-botanical__card-copy{padding:18px 21px 21px;font-size:14px}
+.v21-botanical__card-image img{height:185px}
+.v21-botanical__card-copy h4{font-size:clamp(24px,2.6vw,31px);overflow-wrap:break-word}
+.v21-botanical__card-image>small{font-size:11px}
+.v21-botanical__card{border-radius:4px}
+.v21-botanical__shared{background:#e9eee6;padding:18px 22px;border-left:2px solid #8a9f87}
+.v21-botanical__shared>strong{font:400 24px/1.2 'Instrument Serif',Georgia,serif}
+.v21-botanical__shared p{font-size:14px;line-height:1.7;max-width:72ch}
+.v21-botanical__shared a{font-size:14px;font-weight:600}
+.v21-botanical__shared details{border-top:1px solid #c7d2c8;margin-top:16px;padding-top:12px}
+.v21-botanical__shared details summary{cursor:pointer;font-size:14px;min-height:35px}
+.v21-botanical__shared .v21-botanical__conditions{margin-top:15px}
+.v21-botanical__footer{font-size:14px}
+@media(max-width:760px){.v21-botanical__overview{grid-template-columns:1fr}.v21-botanical__card-copy{padding:15px}.v21-botanical__area>summary{flex-wrap:wrap}.v21-botanical__count{margin-left:38px}.v21-botanical__shared{padding:14px}}

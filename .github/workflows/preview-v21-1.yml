@@ -1,0 +1,97 @@
+name: CONFLORA V21.1 — Premium refinement preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/conflora-v21-1-premium-refinement
+    paths:
+      - 'projeto/src/**'
+      - 'projeto/scripts/v21-1-*'
+      - 'projeto/tests/v21-1-*'
+      - 'projeto/docs/v21-1/**'
+      - '.github/workflows/preview-v21-1.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conflora-v21-1-premium-refinement
+  cancel-in-progress: true
+
+jobs:
+  test-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install dependencies
+        working-directory: projeto
+        run: npm ci --no-audit --no-fund
+      - name: Build, evidence regression and image provenance inventory
+        working-directory: projeto
+        run: |
+          npm run build
+          npm test
+          npm run test:selection
+          node tests/v19-model.mjs
+          node tests/herbarium-complete.mjs
+          node tests/v20-model.mjs
+          node tests/v21-model.mjs
+          node tests/v21-1-model.mjs
+          node scripts/v21-1-media-audit.mjs
+      - name: Install Chromium and PDF inspection
+        working-directory: projeto
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Visual, mobile and previous-version browser regression
+        working-directory: projeto
+        run: |
+          npm run dev -- --port 5176 > /tmp/conflora-v21-1-vite.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://127.0.0.1:5176/ >/dev/null; then break; fi; sleep 1; done
+          node tests/v21-1-browser.mjs
+          node tests/v21-browser.mjs
+          node tests/v20-browser.mjs
+          node tests/v19-browser.mjs
+          node tests/v19-visual-regressions.mjs
+          node tests/herbarium-complete-browser.mjs
+          npm run test:six
+      - name: Gather before/after screenshots and metadata
+        working-directory: projeto
+        run: |
+          mkdir -p dist/review/after dist/review/before
+          cp work/v21-1/*.png dist/review/after/
+          cp work/v21-1/validation.json work/v21-1/media-inventory.json work/v21-1/media-summary.md dist/review/
+          git fetch -q origin gh-pages:refs/remotes/origin/gh-pages
+          for file in globe-1440.png itapeva-1440.png iowa-1440.png; do
+            git show origin/gh-pages:previews/conflora-v21/review/$file > dist/review/before/$file || rm -f dist/review/before/$file
+          done
+          node -e "const fs=require('fs');const p='dist/version.json';const old=JSON.parse(fs.readFileSync(p));fs.writeFileSync(p,JSON.stringify({...old,version:'21.1.0-preview',edition:'Curadoria visual e refinamento UX/UI',deployment:'preview',sourceBranch:'feat/conflora-v21-1-premium-refinement',sourceCommit:process.env.GITHUB_SHA,previewPath:'/CONFLORA/previews/conflora-v21-1/'},null,2))"
+      - name: Upload tests and visual evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflora-v21-1-validation
+          path: |
+            projeto/work/v21-1/
+            projeto/work/v21/
+            projeto/work/v20/
+            projeto/work/v19/
+          retention-days: 14
+      - name: Publish isolated V21.1 preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v21-1
+          keep_files: true
+          commit_message: 'CONFLORA V21.1 preview only: ${{ github.sha }}'
