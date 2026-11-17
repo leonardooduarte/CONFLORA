@@ -111,7 +111,7 @@
     },
     {
       "file": "src/core/v21Botanical.js",
-      "occurrences": 67,
+      "occurrences": 68,
       "editorialStatus": "avaliado",
       "scope": "PT/EN, conteúdo condicional, rótulos e mensagens; referências e dados internos distinguidos"
     },
@@ -189,7 +189,7 @@
     },
     {
       "file": "src/features/ConfloraMenu.jsx",
-      "occurrences": 29,
+      "occurrences": 31,
       "editorialStatus": "avaliado",
       "scope": "PT/EN, conteúdo condicional, rótulos e mensagens; referências e dados internos distinguidos"
     },
@@ -14171,6 +14171,15 @@
       "line": 12,
       "key": null,
       "text": "Brasil",
+      "kind": "StringLiteral",
+      "classification": "Texto da interface avaliado",
+      "editorialStatus": "avaliado"
+    },
+    {
+      "file": "src/core/v21Botanical.js",
+      "line": 12,
+      "key": null,
+      "text": "Brazil",
       "kind": "StringLiteral",
       "classification": "Texto da interface avaliado",
       "editorialStatus": "avaliado"
@@ -28688,6 +28697,24 @@
       "line": 14,
       "key": null,
       "text": "Fechar",
+      "kind": "StringLiteral",
+      "classification": "Texto da interface avaliado",
+      "editorialStatus": "avaliado"
+    },
+    {
+      "file": "src/features/ConfloraMenu.jsx",
+      "line": 14,
+      "key": null,
+      "text": "Fechar",
+      "kind": "StringLiteral",
+      "classification": "Texto da interface avaliado",
+      "editorialStatus": "avaliado"
+    },
+    {
+      "file": "src/features/ConfloraMenu.jsx",
+      "line": 14,
+      "key": null,
+      "text": "Close",
       "kind": "StringLiteral",
       "classification": "Texto da interface avaliado",
       "editorialStatus": "avaliado"

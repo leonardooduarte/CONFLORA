@@ -69,7 +69,7 @@ Area 02
 Area 03
 Area 01
 Region
-Brasil
+Brazil
 Inherited from site
 Sun
 Full sun
@@ -315,7 +315,7 @@ Relevant botanical literature exists, but comparable environmental ranges are mi
 0 matches
 Conditions used
 Region
-Brasil · inherited from site
+Brazil · inherited from site
 Sun
 Full sun · inherited from site
 Moisture
