@@ -20,8 +20,10 @@ try{
  await page.goto(url);
  await expect(page.locator('.globe-orbit__scene canvas')).toBeVisible();
  await expect(page.locator('.globe-orbit__polaroid')).toHaveCount(16);
+ await page.locator('.v212-product-proof__screen img').scrollIntoViewIfNeeded();
  await expect(page.locator('.v212-product-proof__screen img')).toHaveJSProperty('complete',true);
  assert(await page.locator('.v212-product-proof__screen img').evaluate(el=>el.naturalWidth>600),'Real product screenshot did not load');
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
  for(const width of [1440,1024,768,390,320]){
   await page.setViewportSize({width,height:940});
   await overflow(width,'Home');
