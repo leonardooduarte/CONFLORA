@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "5-stage guided journey",
+    "global/area condition scope",
+    "clean preview without mutating marks",
+    "integrated summary and area tabs",
+    "Itapeva inconclusive",
+    "Iowa documented local context",
+    "incomplete conditions",
+    "actual PDF",
+    "touch add marker",
+    "globe and 16 Polaroids",
+    "home real product screenshot",
+    "PT/EN",
+    "1440/1024/768/390/320 responsive"
+  ],
+  "pageErrors": [],
+  "pdfBytes": 503594
+}

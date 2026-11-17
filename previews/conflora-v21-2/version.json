@@ -1,0 +1,9 @@
+{
+  "version": "21.2.0-preview",
+  "edition": "Jornada e resultados integrados",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-v21-2/",
+  "deployment": "preview",
+  "sourceBranch": "feat/conflora-v21-2-integrated-experience",
+  "sourceCommit": "599971f3b3c6681ff16f515d45865ffdcb3eee7c"
+}

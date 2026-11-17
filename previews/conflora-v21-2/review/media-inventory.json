@@ -1,0 +1,733 @@
+{
+  "version": "21.1",
+  "base": "V21",
+  "generatedAt": "2026-11-17T01:05:34.988Z",
+  "notes": [
+    "Counts refer to explicit filenames in selected React source files. Dynamic references built from plants.json and globeGallery.js are indexed by provenance instead.",
+    "Repeated botanical photos inside a species record are functional and are not indiscriminately removed.",
+    "Conceptual art is not evidence of construction, species suitability or hydraulic efficacy.",
+    "No unverified new external photo or license is introduced."
+  ],
+  "totalFiles": 49,
+  "totalBytes": 6915580,
+  "assets": [
+    {
+      "file": "botanical/alternanthera-brasiliana-commons.jpg",
+      "width": 960,
+      "height": 638,
+      "bytes": 104358,
+      "directReferences": [],
+      "provenance": {
+        "author": "CostaPPPR",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Alternanthera-brasiliana2.jpg",
+        "kind": "botanical",
+        "species": "Alternanthera brasiliana (L.) Kuntze"
+      }
+    },
+    {
+      "file": "botanical/arachis-repens-commons.jpg",
+      "width": 960,
+      "height": 1279,
+      "bytes": 117285,
+      "directReferences": [],
+      "provenance": {
+        "author": "Vitor dos Santos",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Arachis_repens_-_Vitor_dos_Santos_-_349258280.jpeg",
+        "kind": "botanical",
+        "species": "Arachis repens Handro"
+      }
+    },
+    {
+      "file": "botanical/asclepias-tuberosa.webp",
+      "width": 640,
+      "height": 426,
+      "bytes": 47246,
+      "directReferences": [
+        {
+          "file": "src/features/PremiumExperience.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "author": "Eric Hunt",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Asclepias_tuberosa_interior.jpg",
+        "kind": "botanical",
+        "species": "Asclepias tuberosa L."
+      }
+    },
+    {
+      "file": "botanical/carex-vulpinoidea.webp",
+      "width": 427,
+      "height": 640,
+      "bytes": 24604,
+      "directReferences": [],
+      "provenance": {
+        "author": "Robert H. Mohlenbrock",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Carex_vulpinoidea_NRCS-3.jpg",
+        "kind": "botanical",
+        "species": "Carex vulpinoidea Michx."
+      }
+    },
+    {
+      "file": "botanical/commelina-erecta.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 25132,
+      "directReferences": [],
+      "provenance": {
+        "author": "Assaf Shtilman",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Blue_Pair.JPG",
+        "kind": "global-gallery",
+        "species": "Commelina erecta"
+      }
+    },
+    {
+      "file": "botanical/cyperus-giganteus-commons.jpg",
+      "width": 960,
+      "height": 1434,
+      "bytes": 248531,
+      "directReferences": [],
+      "provenance": {
+        "author": "Andrés González",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cyperus_giganteus-_Soriano,_Palmar,_Suelo_arenoso_h%C3%BAmedo_al_margen_de_peque%C3%B1a_ca%C3%B1ada_afluente_de_la_Ca%C3%B1ada_de_las_Pajas_5.jpg",
+        "kind": "botanical",
+        "species": "Cyperus giganteus Vahl"
+      }
+    },
+    {
+      "file": "botanical/distimake-dissectus.webp",
+      "width": 640,
+      "height": 481,
+      "bytes": 26406,
+      "directReferences": [],
+      "provenance": {
+        "author": "Jessica Spengler from Hove, United Kingdom",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Merremia_dissecta.jpg",
+        "kind": "botanical",
+        "species": "Distimake dissectus (Jacq.) A.R.Simões & Staples"
+      }
+    },
+    {
+      "file": "botanical/echinacea-pallida.webp",
+      "width": 512,
+      "height": 640,
+      "bytes": 40236,
+      "directReferences": [],
+      "provenance": {
+        "author": "Eric Hunt",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Echinacea_pallida_(8).jpg",
+        "kind": "botanical",
+        "species": "Echinacea pallida (Nutt.) Nutt."
+      }
+    },
+    {
+      "file": "botanical/inga-affinis-inaturalist.jpg",
+      "width": 576,
+      "height": 1024,
+      "bytes": 541430,
+      "directReferences": [],
+      "provenance": {
+        "author": "cristianol1456",
+        "license": "CC BY-SA 4.0",
+        "source": "https://www.inaturalist.org/photos/755975670",
+        "kind": "botanical",
+        "species": "Inga affinis DC."
+      }
+    },
+    {
+      "file": "botanical/lobelia-siphilitica.webp",
+      "width": 426,
+      "height": 640,
+      "bytes": 23212,
+      "directReferences": [],
+      "provenance": {
+        "author": "Eric Hunt",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lobelia_siphilitica.jpg",
+        "kind": "botanical",
+        "species": "Lobelia siphilitica L."
+      }
+    },
+    {
+      "file": "botanical/mertensia-virginica-commons.jpg",
+      "width": 960,
+      "height": 720,
+      "bytes": 139535,
+      "directReferences": [],
+      "provenance": {
+        "author": "Khan \"Sadh\" N. Mostafa",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mertensia_virginica.bbg.jpg",
+        "kind": "botanical",
+        "species": "Mertensia virginica (L.) Pers. ex Link"
+      }
+    },
+    {
+      "file": "botanical/monarda-fistulosa.webp",
+      "width": 427,
+      "height": 640,
+      "bytes": 109248,
+      "directReferences": [],
+      "provenance": {
+        "author": "Eric Hunt",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Monarda_fistulosa_Arkansas.jpg",
+        "kind": "global-gallery",
+        "species": "Monarda fistulosa"
+      }
+    },
+    {
+      "file": "botanical/neomarica-caerulea.webp",
+      "width": 640,
+      "height": 360,
+      "bytes": 79488,
+      "directReferences": [],
+      "provenance": {
+        "author": "Vitorperrut555",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Neomarica_caerulea_in_Nova_Friburgo.jpg",
+        "kind": "botanical",
+        "species": "Trimezia coerulea (G.Lodd.) Ravenna"
+      }
+    },
+    {
+      "file": "botanical/panicum-virgatum-commons.jpg",
+      "width": 400,
+      "height": 500,
+      "bytes": 66806,
+      "directReferences": [],
+      "provenance": {
+        "author": "Warren Gretz, DOE/NREL",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Panicum_virgatum.jpg",
+        "kind": "botanical",
+        "species": "Panicum virgatum L."
+      }
+    },
+    {
+      "file": "botanical/penstemon-digitalis-commons.jpg",
+      "width": 960,
+      "height": 1280,
+      "bytes": 231820,
+      "directReferences": [],
+      "provenance": {
+        "author": "Cbaile19",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Penstemon_digitalis,_2023-06-10,_South_Side,_02.jpg",
+        "kind": "botanical",
+        "species": "Penstemon digitalis Nutt. ex Sims"
+      }
+    },
+    {
+      "file": "botanical/rhynchanthera-grandiflora-commons.jpg",
+      "width": 890,
+      "height": 768,
+      "bytes": 179344,
+      "directReferences": [],
+      "provenance": {
+        "author": "João Medeiros",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Flickr_-_Jo%C3%A3o_de_Deus_Medeiros_-_Rhynchanthera_grandiflora.jpg",
+        "kind": "botanical",
+        "species": "Rhynchanthera grandiflora (Aubl.) DC."
+      }
+    },
+    {
+      "file": "botanical/rudbeckia-hirta.webp",
+      "width": 640,
+      "height": 457,
+      "bytes": 28252,
+      "directReferences": [],
+      "provenance": {
+        "author": "Krzysztof Ziarnek, Kenraiz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rudbeckia_hirta_kz03.jpg",
+        "kind": "botanical",
+        "species": "Rudbeckia hirta L."
+      }
+    },
+    {
+      "file": "botanical/syngonium-commons.jpg",
+      "width": 267,
+      "height": 200,
+      "bytes": 36774,
+      "directReferences": [],
+      "provenance": {
+        "author": "Raquel Patro",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Syngonium_angustatum.jpg",
+        "kind": "botanical",
+        "species": "Syngonium angustatum Schott"
+      }
+    },
+    {
+      "file": "botanical/zizia-aurea-commons.jpg",
+      "width": 960,
+      "height": 686,
+      "bytes": 263861,
+      "directReferences": [],
+      "provenance": {
+        "author": "Krzysztof Ziarnek, Kenraiz",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Zizia_aurea_kz03.jpg",
+        "kind": "botanical",
+        "species": "Zizia aurea (L.) W.D.J.Koch"
+      }
+    },
+    {
+      "file": "conflora-courtyard.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 642702,
+      "directReferences": [
+        {
+          "file": "src/App.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "conflora-groundcover.webp",
+      "width": 724,
+      "height": 724,
+      "bytes": 229782,
+      "directReferences": [
+        {
+          "file": "src/features/PremiumExperience.jsx",
+          "occurrences": 1
+        },
+        {
+          "file": "src/features/Solutions.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "conflora-mark.png",
+      "width": 198,
+      "height": 194,
+      "bytes": 45067,
+      "directReferences": [
+        {
+          "file": "src/App.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "conflora-observe.webp",
+      "width": 724,
+      "height": 724,
+      "bytes": 195652,
+      "directReferences": [
+        {
+          "file": "src/features/PremiumExperience.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "conflora-paving.webp",
+      "width": 724,
+      "height": 724,
+      "bytes": 211024,
+      "directReferences": [
+        {
+          "file": "src/features/Solutions.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "conflora-water-roots.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 673268,
+      "directReferences": [
+        {
+          "file": "src/features/WaterStory.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "demo/editor-v21-1.png",
+      "width": 1440,
+      "height": 940,
+      "bytes": 115564,
+      "directReferences": [
+        {
+          "file": "src/App.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "globe/banksia.jpg",
+      "width": 500,
+      "height": 667,
+      "bytes": 109264,
+      "directReferences": [],
+      "provenance": {
+        "author": "Dushan Hanuska",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Banksia_serrata_(50723546127).jpg",
+        "kind": "global-gallery",
+        "species": "Banksia serrata"
+      }
+    },
+    {
+      "file": "globe/edelweiss.jpg",
+      "width": 500,
+      "height": 375,
+      "bytes": 41658,
+      "directReferences": [],
+      "provenance": {
+        "author": "Michael Schmid",
+        "license": "CC BY-SA 2.0 AT",
+        "source": "https://commons.wikimedia.org/wiki/File:Leontopodium_alpinum_detail.jpg",
+        "kind": "global-gallery",
+        "species": "Leontopodium alpinum"
+      }
+    },
+    {
+      "file": "globe/heliconia.jpg",
+      "width": 500,
+      "height": 375,
+      "bytes": 85925,
+      "directReferences": [],
+      "provenance": {
+        "author": "Franz Xaver",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Heliconia_rostrata_2.jpg",
+        "kind": "global-gallery",
+        "species": "Heliconia rostrata"
+      }
+    },
+    {
+      "file": "globe/jacaranda.jpg",
+      "width": 500,
+      "height": 375,
+      "bytes": 117533,
+      "directReferences": [],
+      "provenance": {
+        "author": "Raf24~commonswiki",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Jacaranda_mimosifolia,_Buenos_Aires.jpg",
+        "kind": "global-gallery",
+        "species": "Jacaranda mimosifolia"
+      }
+    },
+    {
+      "file": "globe/nymphaea.jpg",
+      "width": 500,
+      "height": 333,
+      "bytes": 25091,
+      "directReferences": [],
+      "provenance": {
+        "author": "Thimuth",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Water_lily_flower_close_capture.jpg",
+        "kind": "global-gallery",
+        "species": "Nymphaea nouchali"
+      }
+    },
+    {
+      "file": "globe/protea.jpg",
+      "width": 500,
+      "height": 333,
+      "bytes": 49706,
+      "directReferences": [],
+      "provenance": {
+        "author": "Marco Schmidt",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Protea_cynaroides_MS_9113.jpg",
+        "kind": "global-gallery",
+        "species": "Protea cynaroides"
+      }
+    },
+    {
+      "file": "globe/puya.jpg",
+      "width": 500,
+      "height": 667,
+      "bytes": 113197,
+      "directReferences": [],
+      "provenance": {
+        "author": "Vane59",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:La_Puya_Raimondi.jpg",
+        "kind": "global-gallery",
+        "species": "Puya raimondii"
+      }
+    },
+    {
+      "file": "globe/rafflesia.jpg",
+      "width": 500,
+      "height": 514,
+      "bytes": 169468,
+      "directReferences": [],
+      "provenance": {
+        "author": "LukeTriton",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rafflesia_arnoldii,_Sumatra.jpg",
+        "kind": "global-gallery",
+        "species": "Rafflesia arnoldii"
+      }
+    },
+    {
+      "file": "globe/rhododendron.jpg",
+      "width": 500,
+      "height": 333,
+      "bytes": 65459,
+      "directReferences": [],
+      "provenance": {
+        "author": "Nirmal Dulal",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rhododendron_arboreum_at_Phoolbari,_Nepal.jpg",
+        "kind": "global-gallery",
+        "species": "Rhododendron arboreum"
+      }
+    },
+    {
+      "file": "globe/saguaro.jpg",
+      "width": 500,
+      "height": 500,
+      "bytes": 62961,
+      "directReferences": [],
+      "provenance": {
+        "author": "Diane AZ",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Carnegiea_gigantea_(1).jpg",
+        "kind": "global-gallery",
+        "species": "Carnegiea gigantea"
+      }
+    },
+    {
+      "file": "globe/sakura.jpg",
+      "width": 500,
+      "height": 335,
+      "bytes": 80197,
+      "directReferences": [],
+      "provenance": {
+        "author": "白士 李",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cherry_Blossoms_-_Kyoto_(33142637823).jpg",
+        "kind": "global-gallery",
+        "species": "Cerejeiras em flor"
+      }
+    },
+    {
+      "file": "globe/strelitzia.jpg",
+      "width": 500,
+      "height": 400,
+      "bytes": 55030,
+      "directReferences": [],
+      "provenance": {
+        "author": "Flocci Nivis",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:20260411_Strelitzia_reginae.jpg",
+        "kind": "global-gallery",
+        "species": "Strelitzia reginae"
+      }
+    },
+    {
+      "file": "globe/tulipa.jpg",
+      "width": 500,
+      "height": 334,
+      "bytes": 26876,
+      "directReferences": [],
+      "provenance": {
+        "author": "Dira0101",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Red_tulips_from_Keukenhof,_The_Netherlands.jpg",
+        "kind": "global-gallery",
+        "species": "Tulipa sp."
+      }
+    },
+    {
+      "file": "globe/victoria.jpg",
+      "width": 500,
+      "height": 259,
+      "bytes": 54205,
+      "directReferences": [],
+      "provenance": {
+        "author": "Mariordo",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Victoria_amazonica_Manaus_10_2006_195.jpg",
+        "kind": "global-gallery",
+        "species": "Victoria amazonica"
+      }
+    },
+    {
+      "file": "rain-garden.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 566400,
+      "directReferences": [
+        {
+          "file": "src/features/Solutions.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "referencia-terreno.png",
+      "width": 1440,
+      "height": 1266,
+      "bytes": 352654,
+      "directReferences": [],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "scene-garden.png",
+      "width": 1550,
+      "height": 1008,
+      "bytes": 130066,
+      "directReferences": [
+        {
+          "file": "src/App.jsx",
+          "occurrences": 1
+        },
+        {
+          "file": "src/features/Solutions.jsx",
+          "occurrences": 2
+        }
+      ],
+      "provenance": {
+        "kind": "illustrative-study",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "scene-garden.svg",
+      "width": null,
+      "height": null,
+      "bytes": 4695,
+      "directReferences": [],
+      "provenance": {
+        "kind": "illustrative-study",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "scene-observations.png",
+      "width": 1550,
+      "height": 1008,
+      "bytes": 109531,
+      "directReferences": [
+        {
+          "file": "src/App.jsx",
+          "occurrences": 2
+        },
+        {
+          "file": "src/features/Solutions.jsx",
+          "occurrences": 2
+        },
+        {
+          "file": "src/features/AtelierPreview.jsx",
+          "occurrences": 1
+        }
+      ],
+      "provenance": {
+        "kind": "illustrative-study",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "scene-observations.svg",
+      "width": null,
+      "height": null,
+      "bytes": 3496,
+      "directReferences": [],
+      "provenance": {
+        "kind": "illustrative-study",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "scene-plan.png",
+      "width": 1550,
+      "height": 1008,
+      "bytes": 131705,
+      "directReferences": [
+        {
+          "file": "src/App.jsx",
+          "occurrences": 1
+        },
+        {
+          "file": "src/features/Solutions.jsx",
+          "occurrences": 2
+        }
+      ],
+      "provenance": {
+        "kind": "illustrative-study",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "scene-plan.svg",
+      "width": null,
+      "height": null,
+      "bytes": 4776,
+      "directReferences": [],
+      "provenance": {
+        "kind": "illustrative-study",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    },
+    {
+      "file": "water-surface.png",
+      "width": 1400,
+      "height": 920,
+      "bytes": 109060,
+      "directReferences": [],
+      "provenance": {
+        "kind": "CONFLORA-conceptual-or-ui",
+        "attributionNote": "Check original project asset provenance before external redistribution; no new license is asserted."
+      }
+    }
+  ]
+}

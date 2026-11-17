@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <meta name="theme-color" content="#0B241D" />
+ <meta name="description" content="CONFLORA — observe seu espaço, explore possibilidades e organize um plano inicial." />
+ <link rel="icon" type="image/png" href="./conflora-mark.png" />
+ <title>CONFLORA — Meu espaço</title>
+ <script>
+  // Attribution query strings may be appended by external chat/share clients.
+  // Keep the public CONFLORA URL clean without a redirect or losing the project route.
+  (() => {
+   const url = new URL(window.location.href);
+   let changed = false;
+   for (const key of [...url.searchParams.keys()]) {
+    if (/^utm_/i.test(key)) { url.searchParams.delete(key); changed = true; }
+   }
+   if (changed) window.history.replaceState(window.history.state, '', url.pathname + url.search + url.hash);
+  })();
+ </script>
+
+  <script type="module" crossorigin src="./assets/index-C7okp7gA.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/gsap-vendor-CayXo8le.js">
+  <link rel="modulepreload" crossorigin href="./assets/react-vendor-8Znzgoit.js">
+  <link rel="modulepreload" crossorigin href="./assets/motion-vendor-BLqCZl72.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-B67Kk9jT.css">
+</head>
+<body>
+ <div id="root"></div>
+</body>
+</html>
