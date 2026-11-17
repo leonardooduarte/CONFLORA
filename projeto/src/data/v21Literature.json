@@ -1,0 +1,62 @@
+{
+  "version": 21,
+  "reviewedAt": "2026-11-16",
+  "species": {
+    "cyperus-giganteus": {
+      "reference": "br-rain-review-2026",
+      "evidenceType": "literature-review",
+      "context": "BR",
+      "scope": "Listed in Brazilian rain-garden literature synthesis; not a site experiment or proof for Itapeva.",
+      "claimPt": "Uma revisão brasileira cita a espécie entre possibilidades para áreas sujeitas a inundação sazonal; não mede seu desempenho neste terreno.",
+      "claimEn": "A Brazilian review lists the species among possibilities for seasonally wet spaces; no site performance is measured."
+    },
+    "alternanthera-brasiliana": {
+      "reference": "br-rain-review-2026",
+      "evidenceType": "literature-review",
+      "context": "BR",
+      "scope": "A literature-based candidate, not a verified local tolerance range.",
+      "claimPt": "Citada em revisão de espécies para soluções vegetadas; a fonte não demonstra tolerância específica à duração do acúmulo observado.",
+      "claimEn": "Cited in a rain-garden species review; the source does not demonstrate tolerance to the reported pooling duration."
+    },
+    "rhynchanthera-grandiflora": {
+      "reference": "br-rain-review-2026",
+      "evidenceType": "literature-review",
+      "context": "BR",
+      "scope": "Plant list in a Brazilian literature synthesis, not verified local performance.",
+      "claimPt": "Aparece em levantamento bibliográfico de vegetação para áreas úmidas; verificar identificação, porte e ambiente local.",
+      "claimEn": "Appears in a Brazilian review of plants for wet settings; identity, size and local conditions still need checking."
+    },
+    "arachis-repens": {
+      "reference": "br-rain-review-2026",
+      "evidenceType": "literature-review",
+      "context": "BR",
+      "scope": "Review mention does not replace slope-study scope or demonstrate bioretention suitability.",
+      "claimPt": "Revisão brasileira a inclui entre espécies investigadas; estudos em taludes não comprovam desempenho em jardim de chuva.",
+      "claimEn": "The Brazilian review includes this investigated species; slope studies do not prove rain-garden performance."
+    },
+    "carex": {
+      "reference": "isu-moist-2026",
+      "evidenceType": "extension-guidance",
+      "context": "IA",
+      "scope": "Iowa State describes fox sedge as performing well in moist soils with part-to-full sun; not a flood-duration trial.",
+      "claimPt": "Orientação da Iowa State documenta uso de Carex vulpinoidea em solo úmido, sem quantificar duração de alagamento.",
+      "claimEn": "Iowa State guidance documents Carex vulpinoidea in moist soils, without quantifying flood duration."
+    },
+    "panicum-virgatum": {
+      "reference": "isu-moist-2026",
+      "evidenceType": "extension-guidance",
+      "context": "IA",
+      "scope": "Iowa State lists switchgrass for moist soils; the existing guide values remain controlling.",
+      "claimPt": "Orientação da Iowa State associa Panicum virgatum a solos úmidos; não comprova absorção individual de água.",
+      "claimEn": "Iowa State associates Panicum virgatum with moist soils, not a measured plant-specific water uptake."
+    },
+    "mertensia-virginica": {
+      "reference": "isu-wet-shade-2026",
+      "evidenceType": "extension-guidance",
+      "context": "IA",
+      "scope": "Wet-shade landscape FAQ, not a bioretention performance experiment.",
+      "claimPt": "A Iowa State a cita para locais úmidos e sombreados; isso não comprova tolerância a alagamento persistente.",
+      "claimEn": "Iowa State lists it for moist shady locations; persistent inundation is not established."
+    }
+  }
+}

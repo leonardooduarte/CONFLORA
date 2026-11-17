@@ -1,0 +1,44 @@
+.v21-botanical{margin:clamp(30px,5vw,76px) auto;max-width:1220px;padding:clamp(22px,3vw,45px);background:#f4f0e7;color:#193a2f;border:1px solid #d2d3c6;border-radius:9px}
+.v21-botanical__intro h2{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2rem,4.2vw,3.3rem);line-height:1.08;margin:.55rem 0 1rem}
+.v21-botanical__intro>p{max-width:75ch;line-height:1.65;color:#3f5148}
+.v21-botanical__figures{display:flex;gap:clamp(20px,4vw,54px);flex-wrap:wrap;margin:25px 0 32px;padding:19px 0;border-top:1px solid #c6cbc0;border-bottom:1px solid #c6cbc0}
+.v21-botanical__figures>div{display:flex;align-items:baseline;gap:12px;max-width:220px}
+.v21-botanical__figures strong{font:400 2.1rem 'Instrument Serif',Georgia,serif}
+.v21-botanical__figures span{font-size:.82rem;color:#52635b}
+.v21-botanical__regions{display:grid;gap:14px}
+.v21-botanical__area{border-bottom:1px solid #bfc9bb;padding:3px 0 14px}
+.v21-botanical__area>summary{display:flex;align-items:center;gap:18px;cursor:pointer;padding:12px 4px;list-style:none}
+.v21-botanical__area>summary::-webkit-details-marker{display:none}
+.v21-botanical__area>summary>span:nth-child(2){flex:1;min-width:0}
+.v21-botanical__area>summary strong{display:block;font-size:1.08rem}
+.v21-botanical__area>summary small{display:block;margin-top:4px;color:#54645a;line-height:1.4}
+.v21-botanical__number{font:italic 2rem 'Instrument Serif',Georgia,serif;color:#a27350;min-width:44px}
+.v21-botanical__count{font-size:.75rem;color:#50665b;white-space:nowrap}
+.v21-botanical__body{padding:10px 3px 26px}
+.v21-botanical__body h3{font-size:1rem;font-weight:650;margin:22px 0 12px}
+.v21-botanical__notes{font-style:italic;color:#556158}
+.v21-botanical__conditions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0}
+.v21-botanical__conditions>div{border-top:1px solid #c7cec4;padding:9px 0}
+.v21-botanical__conditions dt{font-size:.75rem;color:#69776c;margin-bottom:4px}
+.v21-botanical__conditions dd{margin:0;font-size:.87rem}
+.v21-botanical__conditions dd span{color:#7a7468;font-size:.75rem}
+.v21-botanical__warning{padding:12px 15px;border-left:3px solid #a77451;background:#ebe6d9;line-height:1.5}
+.v21-botanical__cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.v21-botanical__card{overflow:hidden;border:1px solid #cdd0c2;border-radius:7px;background:#fcfaf5;min-width:0}
+.v21-botanical__card-image img{display:block;width:100%;height:160px;object-fit:cover}
+.v21-botanical__card-image>small{display:block;padding:7px 12px;font-size:.67rem;color:#57665d}
+.v21-botanical__card-image>p{padding:18px;color:#5c665f}
+.v21-botanical__card-copy{padding:14px 17px 19px;font-size:.84rem;line-height:1.55}
+.v21-botanical__card-copy h4{font:italic 1.65rem 'Instrument Serif',Georgia,serif;margin:9px 0 4px}
+.v21-botanical__card-copy p{margin:9px 0}
+.v21-botanical__caution{color:#7d5238}
+.v21-botanical__card-copy details{margin-top:12px;border-top:1px solid #e1e3db;padding-top:9px}
+.v21-botanical__card-copy summary,.v21-botanical__excluded summary{cursor:pointer;font-weight:650}
+.v21-botanical a{color:#2d5947;text-underline-offset:3px;overflow-wrap:anywhere}
+.v21-botanical__next{margin-top:20px;padding:12px 16px;background:#e7ede4;border-radius:5px}
+.v21-botanical__next ul{padding-left:23px;line-height:1.65}
+.v21-botanical__footer{margin:26px 0 0;border-top:1px solid #bac8bd;padding-top:14px;font-size:.82rem;line-height:1.6;color:#5c665e}
+.v21-botanical__excluded{margin:15px 0}
+.v21-botanical--compact{padding:18px 22px}
+.v21-botanical--compact .v21-botanical__intro h2{font-size:2rem}
+@media(max-width:700px){.v21-botanical{padding:20px 16px;margin:28px auto}.v21-botanical__conditions,.v21-botanical__cards{grid-template-columns:1fr}.v21-botanical__area>summary{gap:10px}.v21-botanical__number{min-width:30px;font-size:1.6rem}.v21-botanical__count{white-space:normal;text-align:right}.v21-botanical__figures{gap:18px}.v21-botanical__card-image img{height:185px}}

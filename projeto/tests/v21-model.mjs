@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {site} from './v19-fixtures.mjs';
+import {reviewBotanicalV21} from '../src/core/v21Botanical.js';
+import {plants,references} from '../src/core/knowledge.js';
+import literature from '../src/data/v21Literature.json' with {type:'json'};
+import claims from '../src/data/evidenceClaims.json' with {type:'json'};
+const br=site(),original=JSON.stringify(br),b=reviewBotanicalV21(br);
+assert.equal(b.regions.length,3);assert.equal(b.plantTotal,19);
+assert.equal(b.matchCount,0,'Itapeva must not be converted into a planting match');
+assert(b.regions.every(r=>r.research.some(x=>x.literature)&&r.message.includes('literatura')));
+assert(b.regions.every(r=>r.needs.length>0&&!r.canPlan));
+assert.equal(JSON.stringify(br),original,'V21 should not mutate project');
+const ia=reviewBotanicalV21(site('IA'),'en');
+assert(ia.matchCount>0,'Iowa should have guide-backed contextual matches');
+assert(ia.regions.some(r=>r.investigate.some(x=>x.citations.length>0)));
+assert(ia.regions.every(r=>r.investigate.every(x=>x.agree.length>0&&!x.outside.length)));
+const scoped=site('IA');scoped.annotations[0].conditions={sun:'shade',moisture:'wet'};
+const byArea=reviewBotanicalV21(scoped);
+assert.equal(byArea.regions[0].conditions.find(x=>x.key==='sun').origin,'area');
+assert.equal(byArea.regions[1].conditions.find(x=>x.key==='sun').origin,'site');
+assert.equal(byArea.regions[0].conditions.find(x=>x.key==='sun').value,'shade');
+assert.equal(byArea.regions[1].conditions.find(x=>x.key==='sun').value,'full');
+const empty=site();empty.context.regionCode='unknown';
+assert(reviewBotanicalV21(empty).regions.every(r=>!r.investigate.length&&!r.research.length));
+const persist=site('IA');persist.context.duration='persistent';persist.context.building='near';
+assert(reviewBotanicalV21(persist).regions.every(r=>r.constraints&&!r.canPlan));
+for(const [id,item]of Object.entries(literature.species)){
+ assert(plants.some(p=>p.id===id),'Unknown species '+id);
+ assert(references[item.reference]?.url?.startsWith('https://'),'Missing reference '+id);
+ assert(item.scope&&item.claimPt&&item.claimEn);
+}
+for(const p of plants)assert(claims.species[p.id], 'Untraced species '+p.id);
+console.log('PASS V21 evidence: Itapeva inconclusive, Iowa sourced matches, area inheritance, unknowns, no mutation, source integrity');

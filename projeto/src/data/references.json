@@ -161,5 +161,38 @@
       "en": "Botanical description and cultivation in North America. Supplemental information, not a hydraulic trial or approval for Brazil."
     },
     "reviewedAt": "2026-11-16"
+  },
+  "br-rain-review-2026": {
+    "title": "Rain gardens as sustainable solutions: advances in research in the world and the state of technology in Brazil (2026), Engenharia Sanitária e Ambiental / SciELO.",
+    "url": "https://www.scielo.br/j/esa/a/wgZfB4CMmJGhsYRycNMhJFk/?lang=en",
+    "scope": {
+      "pt": "Revisão de literatura de biorretenção brasileira; cita espécies exploradas para áreas sazonalmente inundáveis, sem ensaio específico para Itapeva.",
+      "en": "Brazilian bioretention literature review listing potential vegetation for seasonally wet areas; not a site-specific test."
+    },
+    "reviewedAt": "2026-11-16",
+    "reviewStatus": "article-page-reviewed",
+    "referenceType": "literature-review"
+  },
+  "isu-moist-2026": {
+    "title": "Iowa State University Extension (2026). Native Perennials for Moist to Wet Soils.",
+    "url": "https://yardandgarden.extension.iastate.edu/how-to/native-perennials-moist-wet-soils",
+    "scope": {
+      "pt": "Orientação estadual sobre plantas em solo úmido e luz; não mede vazão, retenção nem tolerância a inundação prolongada.",
+      "en": "Extension guidance on wet-site perennial growth, not a runoff or prolonged inundation experiment."
+    },
+    "reviewedAt": "2026-11-16",
+    "reviewStatus": "webpage-reviewed",
+    "referenceType": "extension-guidance"
+  },
+  "isu-wet-shade-2026": {
+    "title": "Iowa State University Extension (2026). What perennials tolerate wet, shady locations?",
+    "url": "https://yardandgarden.extension.iastate.edu/faq/what-perennials-tolerate-wet-shady-locations",
+    "scope": {
+      "pt": "Lista horticultural de espécies para locais úmidos e sombreados; não representa desempenho de drenagem.",
+      "en": "Landscape list for moist shaded sites, not hydraulic performance evidence."
+    },
+    "reviewedAt": "2026-11-16",
+    "reviewStatus": "webpage-reviewed",
+    "referenceType": "extension-guidance"
   }
 }

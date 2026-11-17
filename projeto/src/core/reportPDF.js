@@ -1,4 +1,5 @@
 import {buildV20Insight} from './v20Insight.js';
+import {reviewBotanicalV21} from './v21Botanical.js';
 import {jsPDF} from 'jspdf';
 import {plants,asset,references,say,labels} from './knowledge.js';
 import {buildV19Proposal,sourceBibliography,scenarioMode,exploratoryNotice,scenarioEvidenceCurrent} from './v19Proposal.js';
@@ -11,7 +12,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  const pt=lang==='pt',plan=buildV19Proposal(project,lang),doc=new jsPDF({unit:'mm',format:'a4',compress:true});
  for(const [style,url]of Object.entries(fonts)){const base64=(await dataImage(url)).split(',')[1];doc.addFileToVFS(style+'.ttf',base64);doc.addFont(style+'.ttf',style==='italic'?'Instrument':'DM',style==='regular'?'normal':style);}
  const M=15,W=180,BOTTOM=278;let y=17;
- doc.setProperties({title:'CONFLORA V20 — '+project.name,subject:pt?'Estudo preliminar do terreno':'Preliminary site study',author:'CONFLORA · BRaVE 2026',creator:'CONFLORA V20'});
+ doc.setProperties({title:'CONFLORA V21 — '+project.name,subject:pt?'Estudo preliminar do terreno':'Preliminary site study',author:'CONFLORA · BRaVE 2026',creator:'CONFLORA V21'});
  const font=(size=10,style='normal')=>{doc.setFont(style==='italic'?'Instrument':'DM',style);doc.setFontSize(size);doc.setTextColor('#173c30')};
  const ensure=h=>{if(y+h>BOTTOM){doc.addPage();y=18;}};
  const lines=(text,width=W,size=10,style='normal')=>{font(size,style);return doc.splitTextToSize(String(text||''),width)};
@@ -19,7 +20,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  const heading=value=>{ensure(22);y+=3;text(value,17,'bold',4)};
  const photo=async(url,label,height=61)=>{if(!url)return;const r=await raster(url);ensure(height+13);font(9,'bold');doc.text(label,M,y);y+=5;const w=Math.min(W,height*r.width/r.height),h=Math.min(height,W*r.height/r.width);doc.addImage(r.data,'JPEG',M+(W-w)/2,y,w,h);y+=h+4;};
  const logo=await raster(asset('conflora-mark.png'));doc.addImage(logo.data,'JPEG',M,y-6,10,10);font(19,'bold');doc.text('CONFLORA',M+14,y+1);y+=12;
- text('V19 · '+(pt?'DA ANÁLISE À PROPOSTA VISUAL':'FROM OBSERVATION TO VISUAL PROPOSAL'),9,'bold');
+ text('V21 · '+(pt?'DA ANÁLISE À PROPOSTA VISUAL':'FROM OBSERVATION TO VISUAL PROPOSAL'),9,'bold');
  text(project.name||'CONFLORA',23,'italic',3);text([project.context.region,project.context.regionCode,project.context.area?project.context.area+' m²':'',new Date().toLocaleDateString(pt?'pt-BR':'en-US')].filter(Boolean).join(' · '),10);
  await photo(project.image,pt?'Fotografia original preservada':'Preserved original photograph');
  heading(pt?'Condições e observações':'Conditions and observations');
@@ -40,6 +41,26 @@ export async function createV19PDF(project,lang='pt',reportImage){
   text(step.why+' '+step.how,9);
  }
  text(pt?'A análise considera observações declaradas, não medição, inferência da fotografia ou previsão hidráulica.':'This review uses reported observations, not measurement, automatic image analysis or hydraulic performance predictions.',8);
+
+ const v21=reviewBotanicalV21(project,lang);
+ heading(pt?'Investigação botânica personalizada — V21':'Personalized botanical investigation — V21');
+ text(v21.explanation,9);
+ for(const r of v21.regions){
+  text((r.number===null?(pt?'Terreno inteiro':'Whole site'):(pt?'Área ':'Area ')+String(r.number).padStart(2,'0'))+': '+r.message,11,'bold');
+  text(r.conditions.filter(c=>c.value!=='unknown').map(c=>c.label+': '+c.display+' ('+c.origin+')').join(' · ')|| (pt?'Condições insuficientes.':'Insufficient conditions.'),8);
+  for(const match of r.investigate.slice(0,3)){
+   text('• '+match.plant.scientific+' — '+(pt?'correspondência documental':'documentary match'),9,'bold');
+   text(match.agree.map(a=>a.field+(a.source?' — '+a.source:'')).join('; '),8);
+   text(match.caution,8);
+   for(const src of match.citations.slice(0,2))text(src.title+' — '+src.url,7);
+  }
+  for(const item of r.research.slice(0,3)){
+   text('• '+item.plant.scientific+' — '+(pt?'somente pesquisa':'research only'),9,'bold');
+   if(item.literature)text(item.literature.claim,8);
+   for(const src of item.citations.slice(0,2))text(src.title+' — '+src.url,7);
+  }
+  if(r.needs.length)text((pt?'Verificar: ':'Verify: ')+r.needs.join(' '),8);
+ }
 
  heading(pt?'Análise ambiental preliminar':'Preliminary environmental review');
  for(const a of plan.groups){
@@ -75,9 +96,9 @@ export async function createV19PDF(project,lang='pt',reportImage){
  heading(pt?'Próximos passos para este terreno':'Next steps for this site');
  const checks=[...new Set(plan.regions.flatMap(a=>a.review.checks))];for(const c of checks)text('• '+c,10);text(plan.caveats,9);
  heading(pt?'Referências e créditos':'References and credits');
- const ids=sourceBibliography(project,plan);for(const [i,id]of ids.entries()){const r=references[id];text('['+(i+1)+'] '+r.title,9,'bold');text(say(r.scope,lang),9);text(r.url,8);}
+ const ids=[...new Set([...sourceBibliography(project,plan),...v21.regions.flatMap(r=>[...r.investigate,...r.research].flatMap(x=>x.citations.map(s=>s.id)))])];for(const [i,id]of ids.entries()){const r=references[id];text('['+(i+1)+'] '+r.title,9,'bold');text(say(r.scope,lang),9);text(r.url,8);}
  for(const c of plan.cards){const p=c.plant;text(p.scientific+' · '+(pt?'Taxonomia: ':'Taxonomy: ')+p.taxonomyUrl,8);text((pt?'Fotografia: ':'Photograph: ')+p.image.author+' · '+p.image.license+' · '+p.image.source,8);}
- const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);font(8);doc.text('CONFLORA V20 · '+(pt?'Estudo preliminar':'Preliminary study'),M,288);doc.text(n+' / '+total,195,288,{align:'right'});}
+ const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);font(8);doc.text('CONFLORA V21 · '+(pt?'Estudo preliminar':'Preliminary study'),M,288);doc.text(n+' / '+total,195,288,{align:'right'});}
  return doc;
 }
-export async function downloadV19PDF(project,lang,reportImage){const doc=await createV19PDF(project,lang,reportImage);doc.save('conflora-v20-'+project.id.replace(/[^a-z0-9_-]/gi,'')+'.pdf');}
+export async function downloadV19PDF(project,lang,reportImage){const doc=await createV19PDF(project,lang,reportImage);doc.save('conflora-v21-'+project.id.replace(/[^a-z0-9_-]/gi,'')+'.pdf');}
