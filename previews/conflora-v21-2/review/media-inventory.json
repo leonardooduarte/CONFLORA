@@ -1,7 +1,7 @@
 {
   "version": "21.1",
   "base": "V21",
-  "generatedAt": "2026-11-17T01:05:34.988Z",
+  "generatedAt": "2026-11-17T01:12:42.918Z",
   "notes": [
     "Counts refer to explicit filenames in selected React source files. Dynamic references built from plants.json and globeGallery.js are indexed by provenance instead.",
     "Repeated botanical photos inside a species record are functional and are not indiscriminately removed.",

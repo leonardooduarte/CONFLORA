@@ -1,0 +1,20 @@
+{
+  "audit": "production-build",
+  "measurement": "mobile lab simulated",
+  "version": "12.8.2",
+  "fetchTime": "2026-11-17T01:15:46.746Z",
+  "scores": {
+    "performance": 26,
+    "accessibility": 88,
+    "best-practices": 100,
+    "seo": 92
+  },
+  "metrics": {
+    "first-contentful-paint": 4706.1921,
+    "largest-contentful-paint": 11437.086175,
+    "cumulative-layout-shift": 0.02017148639185784,
+    "total-blocking-time": 60081.701975,
+    "speed-index": 24157.84833967831,
+    "interaction-to-next-paint": null
+  }
+}
