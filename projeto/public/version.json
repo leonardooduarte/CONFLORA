@@ -1,6 +1,8 @@
 {
-  "version": "19.1.0-preview.1",
-  "edition": "Da análise à proposta visual · Herbário ampliado",
-  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
-  "previewPath": "/CONFLORA/previews/conflora-v19/"
+  "version": "22.0.0-rc.1",
+  "edition": "Revisão editorial integral e abertura refinada",
+  "baseCommit": "30aa2c21b74d77aa4633a63d40ba215d4f5f8279",
+  "deployment": "preview",
+  "sourceBranch": "feat/conflora-v22-release-candidate",
+  "previewPath": "/CONFLORA/previews/conflora-v22/"
 }

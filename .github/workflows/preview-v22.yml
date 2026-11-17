@@ -1,0 +1,87 @@
+name: CONFLORA V22 — Release candidate preview
+on:
+  workflow_dispatch:
+  push:
+    branches: [feat/conflora-v22-release-candidate]
+    paths: ['projeto/**', '.github/workflows/preview-v22.yml']
+permissions:
+  contents: write
+concurrency:
+  group: conflora-v22-preview
+  cancel-in-progress: true
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: projeto/package-lock.json
+      - name: Install dependencies, build and verify scientific regressions
+        working-directory: projeto
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+          npm test
+          npm run audit:editorial
+          npm run test:selection
+          node tests/v19-model.mjs
+          node tests/herbarium-complete.mjs
+          node tests/v20-model.mjs
+          node tests/v21-model.mjs
+          node tests/v21-1-model.mjs
+          node tests/v21-2-model.mjs
+          node scripts/v21-1-media-audit.mjs
+      - name: Install browser and PDF tools
+        working-directory: projeto
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils
+          npx playwright install --with-deps chromium
+          sudo ln -sf "$(node -e "console.log(require('@playwright/test').chromium.executablePath())")" /usr/bin/chromium
+      - name: Validate production build in browser
+        working-directory: projeto
+        run: |
+          mkdir -p work/v22
+          python3 -m http.server 5176 --bind 127.0.0.1 --directory dist > /tmp/conflora-v22-production.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://127.0.0.1:5176/ >/dev/null; then break; fi; sleep 1; done
+          node tests/v22-browser.mjs
+          node tests/v22-states.mjs
+          node tests/v21-2-browser.mjs
+          node tests/v21-1-browser.mjs
+          node tests/v21-browser.mjs
+          node tests/v20-browser.mjs
+          node tests/v19-browser.mjs
+          node tests/v19-visual-regressions.mjs
+          node tests/herbarium-complete-browser.mjs
+          node tests/six.mjs
+      - name: Package review evidence and source identity
+        working-directory: projeto
+        env:
+          SOURCE_COMMIT: ${{ github.sha }}
+        run: node scripts/v22-package-review.mjs
+      - name: Upload test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: conflora-v22-validation
+          path: |
+            projeto/work/v22/
+            projeto/work/v21-2/
+            projeto/work/v21-1/
+            projeto/work/v21/
+            projeto/work/v20/
+            projeto/work/v19/
+          retention-days: 14
+      - name: Publish only the isolated V22 preview
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./projeto/dist
+          destination_dir: previews/conflora-v22
+          keep_files: true
+          commit_message: 'CONFLORA V22 preview only: ${{ github.sha }}'

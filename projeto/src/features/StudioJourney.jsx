@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {Conditions} from './TerrainSelection.jsx';
+import {Conditions,conditionNames} from './TerrainSelection.jsx';
 import {selectPlants} from '../core/selection.js';
 import {v212Journey} from '../core/v212Experience.js';
 import SiteReview from './SiteReview.jsx';
@@ -28,13 +28,13 @@ export default function StudioJourney({project,lang,selected,onChoose,onPhoto,on
    <p>{pt?'Cinco etapas, um único projeto. Descreva o que observou e consulte o que as fontes permitem investigar.':'Five stages, one project. Report your observations, then review what the sources support.'}</p>
   </header>
   <div className="v212-journey__progress" role="group" aria-label={pt?'Progresso das observações':'Observation progress'}>
-   <span>{progress} / 3 {pt?'registros essenciais preparados':'core records prepared'}</span>
+   <span>{progress} / 3 {pt?'registros essenciais preenchidos':'core records completed'}</span>
    <div className="v212-journey__track" aria-hidden="true"><span style={{width:(progress/3*100)+'%'}}/></div>
    <small>{pt?'Investigação e planejamento não são etapas de aprovação técnica.':'Investigation and planning do not indicate technical approval.'}</small>
   </div>
   <div className="studio-journey-steps">
-   <div data-stage="photo" data-status={journey.statuses[0]}><strong>01</strong><b>{pt?'Conhecer meu espaço':'Know my space'}</b><small>{project.image?(pt?'Imagem adicionada':'Photo added'):(pt?'Foto opcional — continue com o esquema':'Photo optional — use the diagram')}</small><button type="button" className="text-action" onClick={onPhoto}>{pt?(project.image?'Trocar fotografia':'Enviar fotografia'):(project.image?'Change photo':'Upload photo')} ↗</button><em>{status(0)}</em></div>
-   <div data-stage="observations" data-status={journey.statuses[1]}><strong>02</strong><b>{pt?'Observar a água':'Observe the water'}</b><small>{journey.observations} {pt?'marcações registradas':'observations recorded'}</small><button type="button" className="text-action" onClick={onMark}>{pt?'Marcar água na imagem':'Mark water on image'} ↗</button><em>{status(1)}</em></div>
+   <div data-stage="photo" data-status={journey.statuses[0]}><strong>01</strong><b>{pt?'Conhecer meu espaço':'Record my space'}</b><small>{project.image?(pt?'Imagem adicionada':'Photo added'):(pt?'Foto opcional — continue com o esquema':'Photo optional — use the diagram')}</small><button type="button" className="text-action" onClick={onPhoto}>{pt?(project.image?'Trocar fotografia':'Enviar fotografia'):(project.image?'Change photo':'Upload photo')} ↗</button><em>{status(0)}</em></div>
+   <div data-stage="observations" data-status={journey.statuses[1]}><strong>02</strong><b>{pt?'Observar a água':'Observe the water'}</b><small>{journey.observations} {pt?(journey.observations===1?'marcação registrada':'marcações registradas'):(journey.observations===1?'observation recorded':'observations recorded')}</small><button type="button" className="text-action" onClick={onMark}>{pt?'Marcar água na imagem':'Mark water on image'} ↗</button><em>{status(1)}</em></div>
    <div data-stage="conditions" data-status={journey.statuses[2]}><strong>03</strong><b>{pt?'Descrever condições':'Describe conditions'}</b><small>{journey.hasContext?(pt?'Contexto inicial informado':'Initial context recorded'):(pt?'Região, luz e umidade ajudam na consulta':'Region, light and moisture are needed')}</small><button type="button" className="text-action" onClick={()=>setShowConditions(v=>!v)} aria-expanded={showConditions}>{pt?'Informar condições':'Describe conditions'} ↗</button><em>{status(2)}</em></div>
    <div data-stage="investigation" data-status={journey.statuses[3]}><strong>04</strong><b>{pt?'Investigar espécies':'Explore species'}</b><small>{pt?'Comparar informações com as fontes do Herbário':'Compare observations with Herbarium sources'}</small><button type="button" className="text-action" onClick={()=>onPlants(area?.id||'')}>{pt?'Consultar espécies e fontes':'Review plants and sources'} ↗</button><em>{status(3)}</em></div>
    <article className="studio-journey-final" data-stage="results" data-status={journey.statuses[4]}><strong>05</strong><b>{pt?'Organizar meu plano':'Organize my plan'}</b><small>{pt?'Reunir resultados, limites e próximos passos':'Bring findings, limits and next steps together'}</small><button type="button" className="text-action" onClick={onPlan}>{pt?'Consultar síntese do terreno':'Review site summary'} ↗</button><em>{status(4)}</em></article>
@@ -47,10 +47,10 @@ export default function StudioJourney({project,lang,selected,onChoose,onPhoto,on
     <button type="button" aria-pressed={editingArea} onClick={()=>setScope('area')}>{pt?'Esta marcação':'This observation'}</button>
     <button type="button" aria-pressed={!editingArea} onClick={()=>setScope('site')}>{pt?'Terreno inteiro':'Whole site'}</button>
    </div>}
-   <p className="studio-journey-conditions__origin"><strong>{editingArea?(pt?'Condições da marcação selecionada':'Conditions for the selected mark'):(pt?'Condições do terreno inteiro':'Whole-site conditions')}</strong> · {editingArea?(pt?'Campos não definidos nesta área herdam o valor geral.':'Fields not set here inherit the whole-site value.'):(pt?'Valores gerais são usados nas áreas sem informação local.':'Whole-site values apply to areas without specific information.')}</p>
-   {editingArea&&Object.keys(area.conditions||{}).length>0&&<small>{pt?'Campos alterados somente nesta área: ':'Area-specific fields: '}{Object.keys(area.conditions).join(', ')}</small>}
+   <p className="studio-journey-conditions__origin"><strong>{editingArea?(pt?'Condições da marcação selecionada':'Conditions for the selected mark'):(pt?'Condições do terreno inteiro':'Whole-site conditions')}</strong> · {editingArea?(pt?'Os campos sem informação específica usam as condições gerais do terreno.':'Fields without area-specific information use the whole-site conditions.'):(pt?'Valores gerais são usados nas áreas sem informação local.':'Whole-site values apply to areas without specific information.')}</p>
+   {editingArea&&Object.keys(area.conditions||{}).length>0&&<small>{pt?'Campos alterados somente nesta área: ':'Area-specific fields: '}{Object.keys(area.conditions).map(k=>conditionNames[lang][k]||k).join(', ')}</small>}
    <Conditions context={context} lang={lang} onChange={(key,value)=>onCondition(editingArea?area?.id:null,key,value)}/>
-   <p className="fine">{pt?'As respostas ficam associadas ao contexto selecionado. “Não sei” continua sendo uma incerteza.':'Answers are linked to the selected context. Unknown answers remain unknown.'}</p>
+   <p className="fine">{pt?'As respostas valem para a marcação ou o terreno selecionado. Deixe “Não sei” quando não houver informação.':'Answers apply to the selected observation or whole site. Choose “Not sure” when the information is unavailable.'}</p>
   </div>}
   {(area&&(result.sufficient||['hours','day','persistent'].includes(context.duration)||context.building==='near'))&&<SiteReview context={context} lang={lang} markType={area.type} onPlants={()=>onPlants(area.id)} compact/>}
   <div className="v212-journey__next" role="status">

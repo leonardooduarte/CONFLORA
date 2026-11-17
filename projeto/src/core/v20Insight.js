@@ -6,7 +6,7 @@ import {cleanConditions} from './selection.js';
 const known=v=>v!==undefined&&v!==null&&v!==''&&v!=='unknown';
 const choose=(lang,pt,en)=>lang==='pt'?pt:en;
 const taskCopy={
- duration:['Registrar a duração do acúmulo','Record pooling duration','A permanência da água ajuda a definir quais verificações são necessárias.','Pooling duration helps establish which checks are needed.','Observe de local seguro após a chuva e registre nas condições do terreno ou da área.','Observe safely after rainfall and record it in site or area conditions.'],
+ duration:['Registrar a duração do acúmulo','Record pooling duration','A permanência da água ajuda a definir quais verificações são necessárias.','Pooling duration helps establish which checks are needed.','Observe de um local seguro após a chuva e registre a duração nas condições do terreno ou da área.','Observe from a safe place after rain and record the duration in the site or area conditions.'],
  building:['Verificar construções e redes enterradas','Check buildings and underground services','Fundações e instalações precisam ser consideradas antes de qualquer hipótese de infiltração.','Foundations and utilities must be considered before any infiltration concept.','Registre a proximidade de construções sem escavar; procure avaliação técnica quando necessário.','Record building proximity without digging; seek appropriate assessment when needed.'],
  soil:['Investigar a drenagem do solo','Investigate soil drainage','A aparência do solo não comprova capacidade de infiltração.','Soil appearance does not establish infiltration capacity.','Registre as observações; considere avaliação ou ensaio apropriado com orientação local.','Record observations; consider suitable local testing or professional assessment.'],
  path:['Observar para onde a água passa','Observe where water travels','O escoamento real não pode ser inferido somente pela fotografia.','Actual runoff cannot be inferred from a photograph alone.','Observe em situação segura e desenhe no editor apenas caminhos efetivamente observados.','Observe safely and draw only actually observed paths in the editor.'],
@@ -35,7 +35,7 @@ export function buildV20Insight(project,lang='pt'){
  if(known(project.context?.area))details.push(choose(lang,'Área declarada: ','Reported area: ')+project.context.area+' m²');
  if(c.soil==='slow')details.push(choose(lang,'Drenagem descrita como lenta, sem ensaio de infiltração.','Soil described as slow-draining, without an infiltration test.'));
  if(c.sun==='full')details.push(choose(lang,'Muito sol, segundo o usuário.','Full sun, as reported by the user.'));
- if(c.moisture==='wet')details.push(choose(lang,'Umidade molhada, conforme relato.','Wet moisture, as reported by the user.'));
+ if(c.moisture==='wet')details.push(choose(lang,'Solo descrito como molhado.','The soil was reported as wet.'));
  if(!observed.length&&!details.length)details.push(choose(lang,'Ainda não há observações suficientes para caracterizar o terreno.','There are not yet enough observations to describe the site.'));
  const interpretations=[];
  if(count('pool'))interpretations.push(choose(lang,'Existem marcações de água acumulada; a duração e a causa não foram medidas automaticamente.','Pooling observations exist; duration and causes were not measured automatically.'));

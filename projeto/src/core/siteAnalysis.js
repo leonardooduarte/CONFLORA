@@ -12,8 +12,8 @@ export function assessSite(raw={}, lang='pt', markType='') {
  const add=(condition,ptText,enText,arr=observations)=>{if(condition)arr.push(pt?ptText:enText)};
  add(markType==='pool','Ponto de acúmulo registrado pelo usuário.','User marked a pooling observation.');
  add(markType==='paved','Superfície pavimentada observada pelo usuário.','User identified a paved surface.');
- add(markType==='roof','Superfície de cobertura registrada; direção do escoamento não medida.','Roof observation recorded; runoff direction not measured.');
- add(c.duration==='hours','A água foi relatada por algumas horas.','Water was reported to remain for a few hours.');
+ add(markType==='roof','Saída do telhado marcada; a direção do escoamento ainda precisa ser observada.','A roof outlet was marked; the direction of runoff still needs to be observed.');
+ add(c.duration==='hours','Segundo o registro, a água permanece por algumas horas.','Water remains for a few hours, according to the observation.');
  add(c.duration==='day','A água pode permanecer por até um dia, conforme relato.','Water may remain for up to one day, as reported.');
  add(persistent,'Foi relatada permanência recorrente ou superior a um dia.','Persistent or recurrent water was reported.');
  add(slow,'A drenagem do solo foi descrita como lenta, sem ensaio de infiltração.','Soil drainage was described as slow without an infiltration test.');

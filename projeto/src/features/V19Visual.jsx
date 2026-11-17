@@ -14,7 +14,7 @@ export default function V19Visual({project,slot='A',lang='pt',change,compact=fal
  const up=()=>{if(drag&&change)change(p=>updateScenarioMarker(p,slot,drag.id,{x:drag.x,y:drag.y}));origin.current=null;setDrag(null)};
  if(!project.image)return <p>{pt?'Envie a fotografia original para explorar uma proposta.':'Upload the original photo to explore a proposal.'}</p>;
  return <figure className={'v19-visual v18-proposal-visual '+mode}>
- <header><strong>{mode==='exploratory'?(pt?'Estudo exploratório ':'Exploratory study '):(current?(pt?'Proposta botânica documental ':'Documented botanical proposal '):(pt?'Composição salva · reavaliar ':'Saved composition · reassess '))}{slot}</strong><span>{markers.length} {pt?'elementos':'elements'}</span></header>
+ <header><strong>{mode==='exploratory'?(pt?'Estudo exploratório ':'Exploratory study '):(current?(pt?'Proposta botânica documental ':'Documented botanical proposal '):(pt?'Composição salva · reavaliar ':'Saved composition · reassess '))}{slot}</strong><span>{markers.length} {pt?(markers.length===1?'elemento':'elementos'):(markers.length===1?'element':'elements')}</span></header>
  <div className="v19-comparison" ref={ref}>
   <img src={project.image} alt={pt?'Fotografia original preservada':'Preserved original photo'}/>
   <div className="v19-svg" style={{clipPath:`inset(0 ${100-fraction}% 0 0)`}} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} dangerouslySetInnerHTML={{__html:proposalSVG(display,slot,lang)}}/>

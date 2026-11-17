@@ -21,7 +21,7 @@ export default function IntegratedResults({project,lang='pt',onEdit,onArea,onPla
   <header className="v212-result__header">
    <span className="eyebrow">CONFLORA / {pick(pt,'LEITURA INTEGRADA','INTEGRATED READING')}</span>
    <div className="v212-result__header-row">
-    <div><h2>{pick(pt,'Seu terreno, em uma única leitura.','Your site, one clear picture.')}</h2>
+    <div><h2>{pick(pt,'O que você registrou sobre o terreno.','Your site observations, brought together.')}</h2>
      <p>{pick(pt,'Observações do terreno, evidências científicas e próximos passos reunidos para orientar sua investigação.','Your observations, documentary evidence and next steps together in one place.')}</p>
     </div>
     <span className="v212-result__edition">{pick(pt,'ESTUDO PRELIMINAR','PRELIMINARY STUDY')}</span>
@@ -52,7 +52,7 @@ export default function IntegratedResults({project,lang='pt',onEdit,onArea,onPla
    </ul>
   </div>
   <div className="v212-result__area">
-   <div className="v212-result__area-heading"><div><span className="eyebrow">{pick(pt,'POR ÁREA','BY OBSERVATION')}</span><h3>{pick(pt,'Cada ponto tem seu contexto.','Every observation has its own context.')}</h3></div>
+   <div className="v212-result__area-heading"><div><span className="eyebrow">{pick(pt,'POR ÁREA','BY OBSERVATION')}</span><h3>{pick(pt,'Consulte as condições de cada área.','Review the conditions for each area.')}</h3></div>
     <p>{pick(pt,'Selecione uma marcação para ver condições herdadas, diferenças locais e fontes vinculadas.','Select an observation for inherited conditions, local differences and relevant sources.')}</p>
    </div>
    <div className="v212-result__tabs" role="group" aria-label={pick(pt,'Selecionar área','Select observation')}>

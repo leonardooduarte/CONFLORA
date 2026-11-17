@@ -51,7 +51,7 @@ export function v212Results(project,lang='pt'){
  const headline=statuses.documentary
   ?label(lang,'Correspondências documentais para investigar','Documentary matches to investigate')
   :statuses.research
-  ?label(lang,'Literatura para investigar, sem validação de plantio','Literature to investigate, no planting validation')
+  ?label(lang,'Referências para pesquisa; plantio não validado','Research references; planting suitability not established')
   :label(lang,'Evidências insuficientes para selecionar plantas','Insufficient evidence to select plants');
  const markTypes=['pool','roof','paved','space'];
  const counts=Object.fromEntries(markTypes.map(type=>[type,(project.annotations||[]).filter(a=>a.type===type).length]));

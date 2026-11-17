@@ -17,7 +17,7 @@ export default function PersonalizedOutcome({project,lang='pt'}){
  });
  const sourceIds=[...new Set((project.plantInterests||[]).map(x=>plants.find(p=>p.id===x.id)).filter(Boolean).flatMap(p=>p.sourceIds))];
  const saved=['A','B'].filter(slot=>hasScenario(project,slot));
- return <section className="personalized-outcome" aria-label={pt?'Resultado preliminar individualizado':'Individualized preliminary result'}>
+ return <section className="personalized-outcome" aria-label={pt?'Resultado preliminar individualizado':'Site-specific preliminary review'}>
   <span className="eyebrow">CONFLORA / {pt?'RESULTADO DO MEU TERRENO':'MY SITE REVIEW'}</span>
   <h2>{pt?'O que seu terreno nos permite investigar':'What your observations allow us to explore'}</h2>
   <p>{pt?'Este resumo combina apenas as observações registradas com o catálogo e as fontes verificadas. Não é diagnóstico técnico nem promessa de redução de alagamentos.':'This summary connects your reported observations with documented plant records. It is not a technical diagnosis or a promise of flood reduction.'}</p>

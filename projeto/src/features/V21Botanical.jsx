@@ -13,7 +13,7 @@ export default function V21Botanical({project,lang='pt',compact=false}){
  const overview=summarizeV211Regions(result.regions);
  return <section className={'v21-botanical'+(compact?' v21-botanical--compact':'')} aria-label={pick(lang,'Investigação botânica V21','V21 botanical investigation')} data-version="21">
   <header className="v21-botanical__intro">
-   <span className="eyebrow">CONFLORA / V21 · {pick(lang,'INTELIGÊNCIA BOTÂNICA','BOTANICAL EVIDENCE')}</span>
+   <span className="eyebrow">CONFLORA / {pick(lang,'EVIDÊNCIAS BOTÂNICAS','BOTANICAL EVIDENCE')}</span>
    <h2>{pick(lang,'O que a ciência permite investigar aqui?','What can the evidence help us investigate?')}</h2>
    <p>{result.explanation}</p>
    <div className="v21-botanical__figures">
@@ -76,7 +76,7 @@ export default function V21Botanical({project,lang='pt',compact=false}){
       <ul>{area.outOfRange.map(p=><li key={p.id}><i>{p.name}</i> · {p.fields.join(' / ')}</li>)}</ul>
      </details>}
      {area.needs.length>0&&<div className="v21-botanical__next"><h3>{pick(lang,'O que verificar antes de avançar','What to verify next')}</h3><ul>{area.needs.map((n,k)=><li key={k}>{n}</li>)}</ul></div>}
-     {!area.investigate.length&&!area.research.length&&<p>{pick(lang,'Não há espécies suficientemente documentadas para este contexto. Não vamos inventar uma indicação.','No species is sufficiently documented for this context. No planting suggestion is invented.')}</p>}
+     {!area.investigate.length&&!area.research.length&&<p>{pick(lang,'A documentação disponível ainda não permite indicar espécies para este contexto. Revise as condições e consulte as fontes.','The available documentation does not yet support plant selection for this context. Review the conditions and sources.')}</p>}
      </>}
     </div>
    </details>)}

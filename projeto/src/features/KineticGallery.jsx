@@ -36,7 +36,7 @@ export default function KineticGallery({lang='pt',onExplore}){
  const reduced=useReducedMotion();
  return <section ref={section} className="kinetic-gallery" aria-labelledby="kinetic-title">
   <div className="kinetic-gallery__intro">
-   <div><span className="eyebrow">CONFLORA / {pt?'HERBÁRIO EM MOVIMENTO':'HERBARIUM IN MOTION'}</span><h2 id="kinetic-title">{pt?'A natureza não fica parada.':'Nature is never still.'}</h2></div>
+   <div><span className="eyebrow">CONFLORA / {pt?'HERBÁRIO EM MOVIMENTO':'HERBARIUM IN MOTION'}</span><h2 id="kinetic-title">{pt?'Retratos da diversidade vegetal.':'A closer look at plant diversity.'}</h2></div>
    <div className="kinetic-gallery__lede">
     <p>{pt?'Nove retratos botânicos documentados, dois contextos regionais. Conheça a diversidade sem confundir uma fotografia com uma recomendação de plantio.':'Nine documented botanical portraits, two regional contexts. Explore biodiversity without treating a photograph as planting advice.'}</p>
     <button className="btn secondary kinetic-gallery__cta" type="button" onClick={onExplore}>{pt?'Explorar espécies e fontes':'Explore species and sources'} ↗</button>

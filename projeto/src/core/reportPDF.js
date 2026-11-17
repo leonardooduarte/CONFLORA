@@ -13,7 +13,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  const pt=lang==='pt',plan=buildV19Proposal(project,lang),doc=new jsPDF({unit:'mm',format:'a4',compress:true});
  for(const [style,url]of Object.entries(fonts)){const base64=(await dataImage(url)).split(',')[1];doc.addFileToVFS(style+'.ttf',base64);doc.addFont(style+'.ttf',style==='italic'?'Instrument':'DM',style==='regular'?'normal':style);}
  const M=15,W=180,BOTTOM=278;let y=17;
- doc.setProperties({title:'CONFLORA V21 — '+project.name,subject:pt?'Estudo preliminar do terreno':'Preliminary site study',author:'CONFLORA · BRaVE 2026',creator:'CONFLORA V21'});
+ doc.setProperties({title:'CONFLORA V22 — '+project.name,subject:pt?'Estudo preliminar do terreno':'Preliminary site study',author:'CONFLORA · BRaVE 2026',creator:'CONFLORA V22'});
  const font=(size=10,style='normal')=>{doc.setFont(style==='italic'?'Instrument':'DM',style);doc.setFontSize(size);doc.setTextColor('#173c30')};
  const ensure=h=>{if(y+h>BOTTOM){doc.addPage();y=18;}};
  const lines=(text,width=W,size=10,style='normal')=>{font(size,style);return doc.splitTextToSize(String(text||''),width)};
@@ -21,14 +21,14 @@ export async function createV19PDF(project,lang='pt',reportImage){
  const heading=value=>{ensure(22);y+=3;text(value,17,'bold',4)};
  const photo=async(url,label,height=61)=>{if(!url)return;const r=await raster(url);ensure(height+13);font(9,'bold');doc.text(label,M,y);y+=5;const w=Math.min(W,height*r.width/r.height),h=Math.min(height,W*r.height/r.width);doc.addImage(r.data,'JPEG',M+(W-w)/2,y,w,h);y+=h+4;};
  const logo=await raster(asset('conflora-mark.png'));doc.addImage(logo.data,'JPEG',M,y-6,10,10);font(19,'bold');doc.text('CONFLORA',M+14,y+1);y+=12;
- text('V21 · '+(pt?'DA ANÁLISE À PROPOSTA VISUAL':'FROM OBSERVATION TO VISUAL PROPOSAL'),9,'bold');
- text(project.name||'CONFLORA',23,'italic',3);text([project.context.region,project.context.regionCode,project.context.area?project.context.area+' m²':'',new Date().toLocaleDateString(pt?'pt-BR':'en-US')].filter(Boolean).join(' · '),10);
+ text('V22 · '+(pt?'DA ANÁLISE À PROPOSTA VISUAL':'FROM OBSERVATION TO VISUAL PROPOSAL'),9,'bold');
+ text(project.name||'CONFLORA',23,'bold',3);text([project.context.region,project.context.regionCode,project.context.area?project.context.area+' m²':'',new Date().toLocaleDateString(pt?'pt-BR':'en-US')].filter(Boolean).join(' · '),10);
  await photo(project.image,pt?'Fotografia original preservada':'Preserved original photograph');
  heading(pt?'Condições e observações':'Conditions and observations');
  const conditions=[({slow:pt?'Drenagem aparentemente lenta':'Apparently slow drainage',medium:pt?'Drenagem intermediária declarada':'Reported moderate drainage',fast:pt?'Drenagem aparentemente rápida':'Apparently fast drainage'})[project.context.soil],labels[lang][project.context.sun],labels[lang][project.context.moisture],({hours:pt?'Algumas horas':'A few hours',day:pt?'Até um dia':'Up to a day',persistent:pt?'Mais de um dia':'Over one day'})[project.context.duration],({away:pt?'Distante de construções':'Away from structures',near:pt?'Próximo de construções':'Near structures'})[project.context.building]].filter(v=>v&&v!=='unknown');text(conditions.join(' · '));
  const obs=project.annotations.filter(m=>!m.speciesId&&m.type!=='garden');const counts={};for(const m of obs)counts[m.type]=(counts[m.type]||0)+1;
  const typeNames=pt?{pool:'pontos de acúmulo',roof:'saídas de telhado',paved:'superfícies pavimentadas',space:'áreas livres',plants:'observações vegetais'}:{pool:'pooling points',roof:'roof outlets',paved:'paved surfaces',space:'open areas',plants:'vegetation observations'};
- text(Object.entries(counts).map(([k,n])=>n+' '+(typeNames[k]||k)).join(' · '),10);if(project.context.notes)text(project.context.notes,10);
+ text(Object.entries(counts).map(([k,n])=>(typeNames[k]||k)+': '+n).join(' · '),10);if(project.context.notes)text(project.context.notes,10);
  if(reportImage)await photo(reportImage,pt?'Observações numeradas na fotografia':'Numbered observations in the photo',55);
  const insight=buildV20Insight(project,lang);
  heading(pt?'O que já sabemos sobre seu espaço':'What we know about your space');
@@ -44,7 +44,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  text(pt?'A análise considera observações declaradas, não medição, inferência da fotografia ou previsão hidráulica.':'This review uses reported observations, not measurement, automatic image analysis or hydraulic performance predictions.',8);
 
  const v21=reviewBotanicalV21(project,lang);
- heading(pt?'Investigação botânica personalizada — V21':'Personalized botanical investigation — V21');
+ heading(pt?'Evidências botânicas para este terreno':'Botanical evidence for this site');
  text(v21.explanation,9);
  for(const r of presentV211Regions(v21.regions)){
   text((r.number===null?(pt?'Terreno inteiro':'Whole site'):(pt?'Área ':'Area ')+String(r.displayNumber).padStart(2,'0'))+': '+r.message,11,'bold');
@@ -92,7 +92,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  if(slots.length){heading(pt?'Como o espaço poderia ficar':'How the space might look');for(const slot of slots){
   const mode=scenarioMode(project.scenarios[slot]);await photo(await proposalPNG(project,slot,lang),(mode==='exploratory'?(pt?'Estudo exploratório ':'Exploratory study '):(scenarioEvidenceCurrent(project,slot)?(pt?'Proposta botânica documental ':'Documented botanical proposal '):(pt?'Composição salva · reavaliar ':'Saved composition · reassess ')))+slot,70);
   if(mode==='botanical'&&!scenarioEvidenceCurrent(project,slot))text(pt?'As condições atuais não sustentam a correspondência da composição salva. Reavalie as evidências.':'Current conditions do not support the saved matches. Reassess the evidence.',10);
-  text(mode==='exploratory'?exploratoryNotice[lang]:(pt?'Fotocolagem de referências botânicas. Sem escala física, recorte de fundo perfeito ou previsão de crescimento.':'Botanical reference collage. No physical scale, perfect background cutout or growth prediction.'),9);
+  text(mode==='exploratory'?exploratoryNotice[lang]:(pt?'Fotocolagem com imagens de referência. Escala e perspectiva são ilustrativas; não há previsão de crescimento.':'A collage of botanical reference photos. Scale and perspective are illustrative; growth is not predicted.'),9);
   text(project.scenarios[slot].markers.map((m,i)=>(i+1)+'. '+(plants.find(p=>p.id===m.speciesId)?.scientific||m.notes)).join(' · '),9);
  }}
  heading(pt?'Próximos passos para este terreno':'Next steps for this site');
@@ -100,7 +100,7 @@ export async function createV19PDF(project,lang='pt',reportImage){
  heading(pt?'Referências e créditos':'References and credits');
  const ids=[...new Set([...sourceBibliography(project,plan),...v21.regions.flatMap(r=>[...r.investigate,...r.research].flatMap(x=>x.citations.map(s=>s.id)))])];for(const [i,id]of ids.entries()){const r=references[id];text('['+(i+1)+'] '+r.title,9,'bold');text(say(r.scope,lang),9);text(r.url,8);}
  for(const c of plan.cards){const p=c.plant;text(p.scientific+' · '+(pt?'Taxonomia: ':'Taxonomy: ')+p.taxonomyUrl,8);text((pt?'Fotografia: ':'Photograph: ')+p.image.author+' · '+p.image.license+' · '+p.image.source,8);}
- const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);font(8);doc.text('CONFLORA V21 · '+(pt?'Estudo preliminar':'Preliminary study'),M,288);doc.text(n+' / '+total,195,288,{align:'right'});}
+ const total=doc.getNumberOfPages();for(let n=1;n<=total;n++){doc.setPage(n);font(8);doc.text('CONFLORA V22 · '+(pt?'Estudo preliminar':'Preliminary study'),M,288);doc.text(n+' / '+total,195,288,{align:'right'});}
  return doc;
 }
-export async function downloadV19PDF(project,lang,reportImage){const doc=await createV19PDF(project,lang,reportImage);doc.save('conflora-v21-'+project.id.replace(/[^a-z0-9_-]/gi,'')+'.pdf');}
+export async function downloadV19PDF(project,lang,reportImage){const doc=await createV19PDF(project,lang,reportImage);doc.save('conflora-v22-'+project.id.replace(/[^a-z0-9_-]/gi,'')+'.pdf');}

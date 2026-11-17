@@ -22,7 +22,7 @@ try{
  await page.mouse.move(box.x+box.width/2,box.y+box.height/2);await page.mouse.down();await page.mouse.move(box.x+box.width/2+50,box.y+box.height/2+30,{steps:5});await page.mouse.up();
  await page.getByRole('button',{name:'Desfazer',exact:true}).click();
  await page.screenshot({path:out+'/editor.png'});
- await page.getByRole('button',{name:'CONFLORA — início'}).click();
+ await page.locator('.brand').click();
  await expect(page.getByRole('button',{name:'Continuar meu projeto'})).toBeVisible();
  await page.getByRole('button',{name:'Começar sem foto',exact:true}).first().click();
  await expect(page.getByRole('dialog',{name:'Preservar projeto atual'})).toBeVisible();
@@ -69,7 +69,7 @@ try{
  await page.locator('.stepper__button--next').click();await page.getByRole('button',{name:'Fechar',exact:true}).click();
  await page.getByRole('button',{name:'Meu kit',exact:true}).click();
  await page.getByRole('textbox',{name:'Novo registro',exact:true}).fill('Registro ainda no formulário.');
- await page.getByRole('button',{name:'CONFLORA — início'}).click();
+ await page.locator('.brand').click();
  await page.getByRole('button',{name:'Começar sem foto',exact:true}).first().click();
  await page.getByRole('button',{name:'Salvar e continuar',exact:true}).click();
  await expect(page.locator('.scene [data-marker-id]')).toHaveCount(0);
@@ -80,7 +80,7 @@ try{
  await expect(page.locator('.journal-list')).toContainText('Registro ainda no formulário.');
  // Saved project and draft restored, then explicit discard allows replacing.
  await page.getByRole('textbox',{name:'Novo registro',exact:true}).fill('Descartar este rascunho');
- await page.getByRole('button',{name:'CONFLORA — início'}).click();
+ await page.locator('.brand').click();
  await page.getByRole('button',{name:'Começar sem foto',exact:true}).first().click();
  await page.getByRole('button',{name:'Descartar e continuar'}).click();
  await expect(page.locator('.scene [data-marker-id]')).toHaveCount(0);
@@ -97,7 +97,7 @@ try{
  await expect(page.locator('.morph-slider-caption-text.is-active')).toHaveText('02 / Explore');
  await page.screenshot({path:out+'/gallery-ready.png'});
  // Localization and complete responsive flow, not just home.
- await page.getByRole('button',{name:'Switch language'}).click();
+ await page.locator('button.lang').click();
  await page.getByRole('button',{name:'My kit',exact:true}).click();
  await expect(page.locator('.kit-page')).toContainText('Your journal has no entries yet.');
  await page.setViewportSize({width:390,height:844});
@@ -128,7 +128,7 @@ try{
  const blocked=await browser.newPage();await blocked.goto(url);
  await blocked.getByRole('button',{name:'Começar sem foto',exact:true}).first().click();
  await blocked.getByRole('button',{name:'Adicionar no centro',exact:true}).click();
- await blocked.getByRole('button',{name:'CONFLORA — início'}).click();
+ await blocked.locator('.brand').click();
  await blocked.getByRole('button',{name:'Começar sem foto',exact:true}).first().click();
  await blocked.evaluate(()=>{IDBDatabase.prototype.transaction=function(){throw new Error('Storage unavailable for test')}});
  await blocked.getByRole('button',{name:'Salvar e continuar',exact:true}).click();

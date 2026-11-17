@@ -5,7 +5,7 @@ export const Ed = (()=>{
  const colors={pool:'#43B8C2',roof:'#3E899F',paved:'#B78466',plants:'#48805F',space:'#C48B5F',garden:'#5E8E65'};
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
- function baseDrawing(){return `<rect width="1000" height="650" fill="#EAE8DB"/>
+ function baseDrawing(labels={}){const pt=labels.lang!=='en';return `<rect width="1000" height="650" fill="#EAE8DB"/>
  <g opacity=".36" stroke="#B1B6A8" stroke-width=".65">${Array.from({length:20},(_,i)=>`<path d="M${i*50} 0 V650"/>`).join('')}${Array.from({length:13},(_,i)=>`<path d="M0 ${i*50} H1000"/>`).join('')}</g>
  <rect x="29" y="29" width="943" height="592" rx="8" fill="none" stroke="#5D746C" stroke-width="3" stroke-dasharray="8 10"/>
  <path d="M58 86 L345 86 L345 545 L58 545 Z" fill="#DAD3C0" stroke="#7F806F" stroke-width="3"/>
@@ -14,8 +14,8 @@ export const Ed = (()=>{
  <path d="M515 86 L935 86 L935 546 L515 546 Z" fill="#C8D7BA" opacity=".53"/>
  <path d="M545 105 Q690 172 878 123 M545 510 Q730 433 916 510" fill="none" stroke="#7DA184" stroke-width="3" opacity=".45"/>
  <g fill="#729B76" stroke="#4B755C" stroke-width="2"><circle cx="811" cy="230" r="60"/><circle cx="811" cy="230" r="42" fill="#91B295"/><circle cx="611" cy="475" r="42"/><circle cx="611" cy="475" r="24" fill="#96B79A"/></g>
- <g font-family="Arial,sans-serif" fill="#5B675B" font-size="14" font-weight="700" letter-spacing="2"><text x="86" y="120">CASA / ÁREA COBERTA</text><text x="544" y="117">ÁREA EXTERNA</text></g>
- <g font-family="Arial,sans-serif" fill="#64675D" font-size="12" letter-spacing="1"><text x="68" y="587">ESQUEMA ILUSTRATIVO · SEM ESCALA</text></g>`;}
+ <g font-family="Arial,sans-serif" fill="#5B675B" font-size="14" font-weight="700" letter-spacing="2"><text x="86" y="120">${pt?'CASA / ÁREA COBERTA':'HOUSE / COVERED AREA'}</text><text x="544" y="117">${pt?'ÁREA EXTERNA':'OUTDOOR AREA'}</text></g>
+ <g font-family="Arial,sans-serif" fill="#64675D" font-size="12" letter-spacing="1"><text x="68" y="587">${pt?'ESQUEMA ILUSTRATIVO · SEM ESCALA':'ILLUSTRATIVE DIAGRAM · NOT TO SCALE'}</text></g>`;}
  function marker(a,labels,selected=false,number=1,mode='full'){
   const x=clamp(+a.x||0,0,W),y=clamp(+a.y||0,0,H),scale=clamp(+a.size||1,.55,2.4),c=a.studyKind==='exclusion'?'#b55240':a.studyKind==='review'?'#b88945':colors[a.type]||'#527766';
   let art='';
@@ -37,7 +37,7 @@ export const Ed = (()=>{
  }
  function svgContent(project,opts={}){
   const labels=opts.labels||{}; const selected=opts.selected; const compare=!!opts.compare; const fraction=clamp(Number(opts.fraction??50),0,100)/100;
-  const photo=project.image&&/^data:image\/(jpeg|png|webp);base64,/.test(project.image)?`<image href="${project.image}" x="0" y="0" width="1000" height="650" preserveAspectRatio="xMidYMid meet"/>`:baseDrawing();
+  const photo=project.image&&/^data:image\/(jpeg|png|webp);base64,/.test(project.image)?`<image href="${project.image}" x="0" y="0" width="1000" height="650" preserveAspectRatio="xMidYMid meet"/>`:baseDrawing(labels);
   const visible=(project.annotations||[]).filter(a=>opts.includeHidden||!a.hidden);
   const existing=visible.filter(a=>!compare||a.type!=='garden'&&!a.speciesId).sort((a,b)=>(a.id===selected)-(b.id===selected)).map(a=>marker(a,labels,a.id===selected,project.annotations.indexOf(a)+1,opts.labelMode)).join('');
   const future=visible.filter(a=>compare&&(a.type==='garden'||a.speciesId)).sort((a,b)=>(a.id===selected)-(b.id===selected)).map(a=>marker(a,labels,a.id===selected,project.annotations.indexOf(a)+1,opts.labelMode)).join('');

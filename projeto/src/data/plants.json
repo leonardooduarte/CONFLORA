@@ -852,7 +852,7 @@
     "taxonomyUrl": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:304595-1",
     "occurrence": {
       "pt": "Nativa do Sudeste do Brasil segundo POWO; estudo de plantas na represa Alagados (Ponta Grossa, PR) e descrição de comunidades do Pantanal. Não comprova ocorrência ou adequação em Itapeva.",
-      "en": "Native to Brazil Southeast according to POWO; studied near Alagados Reservoir (Paraná) and reported in Pantanal communities. Occurrence or suitability in Itapeva is not established."
+      "en": "Native to southeastern Brazil according to POWO; studied near Alagados Reservoir (Paraná) and reported in Pantanal communities. Occurrence or suitability in Itapeva is not established."
     },
     "care": {
       "pt": "Cuidados específicos para jardins residenciais não verificados nessas fontes; observar hábito rizomatoso e porte antes de considerar uso.",
@@ -915,7 +915,7 @@
     "habit": "herb",
     "occurrence": {
       "pt": "Nativa do Sudeste do Brasil segundo POWO. Estudo de propagação por estaquia realizado no Brasil; menção bibliográfica a solos drenados e encharcados não comprova desempenho em jardins de chuva.",
-      "en": "Native to Brazil Southeast per POWO. Cutting propagation study in Brazil; secondary background mentioning drained and wet soils does not prove rain-garden performance."
+      "en": "Native to southeastern Brazil per POWO. Cutting propagation study in Brazil; secondary background mentioning drained and wet soils does not prove rain-garden performance."
     },
     "care": {
       "pt": "Propagação por estaquia foi investigada; instruções locais de manejo em jardim de chuva não foram verificadas.",
@@ -967,7 +967,7 @@
     "habit": "shrub",
     "occurrence": {
       "pt": "Kew registra distribuição nativa no Sudeste brasileiro. Bacci e colaboradores documentaram a espécie em locais úmidos de uma reserva de Uberlândia, MG; isso não demonstra presença em Itapeva.",
-      "en": "Kew lists native distribution in Brazil Southeast. Bacci and colleagues documented the species in wet habitats of a Minas Gerais reserve; not evidence of occurrence in Itapeva."
+      "en": "Kew lists native distribution in southeastern Brazil. Bacci and colleagues documented the species in wet habitats of a Minas Gerais reserve; not evidence of occurrence in Itapeva."
     },
     "care": {
       "pt": "Manejo em canteiros de biorretenção não estudado na fonte consultada.",
@@ -1019,7 +1019,7 @@
     "habit": "herb",
     "occurrence": {
       "pt": "Nativa do Sudeste brasileiro segundo POWO. Experimento brasileiro utilizou cobertura com esta espécie em taludes de extração de areia, não em jardins de chuva.",
-      "en": "Native to Brazil Southeast per POWO. A Brazilian field trial planted this species on sand-mining slopes, not in rain gardens."
+      "en": "Native to southeastern Brazil per POWO. A Brazilian field trial planted this species on sand-mining slopes, not in rain gardens."
     },
     "care": {
       "pt": "O estudo observou variação sazonal da cobertura, com redução da cobertura foliar em períodos frios; não estabelece manejo residencial.",

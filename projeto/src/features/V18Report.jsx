@@ -10,7 +10,7 @@ export default function V18Report({project,lang='pt',reportImage,proposalData,Pr
  const types={pool:pt?'Pontos de água acumulada':'Pooling points',roof:pt?'Saídas do telhado':'Roof outlets',paved:pt?'Superfície pavimentada':'Paved areas',space:pt?'Áreas livres':'Open areas',garden:pt?'Intervenções exploradas':'Proposed gardens',plants:pt?'Marcações vegetais':'Plant marks'};
  const observed=(project.annotations||[]).filter(a=>a.type!=='plants'&&a.type!=='garden');
  const groups=Object.entries(types).filter(([key])=>observed.some(a=>a.type===key)).map(([key,label])=>({label,n:observed.filter(a=>a.type===key).length}));
- const location=[project.context?.region||'',project.context?.regionCode==='BR'?'Brasil':project.context?.regionCode==='IA'?'Iowa, EUA':''].filter(Boolean).join(' · ');
+ const location=[project.context?.region||'',project.context?.regionCode==='BR'?(pt?'Brasil':'Brazil'):project.context?.regionCode==='IA'?(pt?'Iowa, EUA':'Iowa, USA'):''].filter(Boolean).join(' · ');
  const date=new Intl.DateTimeFormat(pt?'pt-BR':'en-US',{year:'numeric',month:'long',day:'numeric'}).format(new Date());
  return <article className="v18-report" aria-label={pt?'Relatório CONFLORA':'CONFLORA report'}>
   <header className="v18-report__head">
@@ -28,10 +28,10 @@ export default function V18Report({project,lang='pt',reportImage,proposalData,Pr
    <h2>{pt?'Seu terreno em resumo':'Your site at a glance'}</h2>
    <div className="v18-report__metrics"><div><strong>{observed.length}</strong><span>{pt?'Observações registradas':'Recorded observations'}</span></div><div><strong>{proposal.regions.length}</strong><span>{pt?'Áreas avaliadas':'Reviewed areas'}</span></div><div><strong>{proposal.cards.filter(x=>x.status==='candidate').length}</strong><span>{pt?'Correspondências documentadas':'Evidence matches'}</span></div></div>
    <div className="v18-report__conditions">
-    {[[pt?'Região':'Region',project.context?.regionCode==='BR'?'Brasil':project.context?.regionCode==='IA'?'Iowa':null],[pt?'Solo':'Soil',({slow:pt?'Aparentemente lento':'Apparently slow',medium:pt?'Intermediário':'Moderate',fast:pt?'Aparentemente rápido':'Apparently fast'})[project.context?.soil]],[pt?'Luz':'Sun',({full:pt?'Muito sol':'Full sun',mixed:pt?'Sol e sombra':'Sun and shade',shade:pt?'Sombra':'Shade'})[project.context?.sun]],[pt?'Umidade':'Moisture',({wet:pt?'Molhado':'Wet',moist:pt?'Úmido':'Moist',mesic:pt?'Intermediária':'Mesic',dry:pt?'Seco':'Dry'})[project.context?.moisture]]].filter(x=>x[1]).map(([key,value])=><div key={key}><b>{key}</b><span>{value}</span></div>)}
+    {[[pt?'Região':'Region',project.context?.regionCode==='BR'?(pt?'Brasil':'Brazil'):project.context?.regionCode==='IA'?'Iowa':null],[pt?'Solo':'Soil',({slow:pt?'Aparentemente lento':'Apparently slow',medium:pt?'Intermediário':'Moderate',fast:pt?'Aparentemente rápido':'Apparently fast'})[project.context?.soil]],[pt?'Luz':'Sun',({full:pt?'Muito sol':'Full sun',mixed:pt?'Sol e sombra':'Sun and shade',shade:pt?'Sombra':'Shade'})[project.context?.sun]],[pt?'Umidade':'Moisture',({wet:pt?'Molhado':'Wet',moist:pt?'Úmido':'Moist',mesic:pt?'Intermediária':'Moderately moist',dry:pt?'Seco':'Dry'})[project.context?.moisture]]].filter(x=>x[1]).map(([key,value])=><div key={key}><b>{key}</b><span>{value}</span></div>)}
    </div>
    {project.context.notes&&<p>{project.context.notes}</p>}
-   {groups.length>0&&<p className="v18-report__observations">{groups.map(g=>g.n+' '+g.label.toLowerCase()).join(' · ')}.</p>}
+   {groups.length>0&&<p className="v18-report__observations">{groups.map(g=>g.label+': '+g.n).join(' · ')}.</p>}
   </section>
   {summaryExtra}
   {reportImage&&<section className="v18-report__annotations">

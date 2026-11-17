@@ -20,17 +20,17 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
  const pt=lang==='pt',records=useMemo(()=>globeGallery,[]);
  const canvas=useRef(null),root=useRef(null),cardMap=useRef(new Map()),instance=useRef(null);
  const phase=useRef(.32),tilt=useRef(.14),drag=useRef(null),playing=useRef(true);
- const visible=useRef(false),reduce=useRef(false),raf=useRef(0);
+ const visible=useRef(false),reduce=useRef(false),raf=useRef(0),dirty=useRef(true);
  const [credits,setCredits]=useState(false);
  const [paused,setPaused]=useState(false);
  const [supported,setSupported]=useState(true);
  const [anchors,setAnchors]=useState(true);
 
- useEffect(()=>{playing.current=!paused},[paused]);
+ useEffect(()=>{playing.current=!paused;dirty.current=true},[paused]);
  useEffect(()=>{
    setAnchors(canAnchor());
    const query=window.matchMedia('(prefers-reduced-motion: reduce)');
-   const sync=()=>{reduce.current=query.matches};sync();
+   const sync=()=>{reduce.current=query.matches;dirty.current=true};sync();
    query.addEventListener?.('change',sync);
    return()=>query.removeEventListener?.('change',sync);
  },[]);
@@ -38,22 +38,22 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
  useEffect(()=>{
   const surface=canvas.current,host=root.current;
   if(!surface||!host)return;
-  let disposed=false,last=0,lastCheck=0,lastWidth=0;
-  const io=new IntersectionObserver(([entry])=>{visible.current=entry.isIntersecting},{threshold:0,rootMargin:'70px'});
+  let disposed=false,lastCheck=0,lastWidth=0,lastFrame=0;
+  const io=new IntersectionObserver(([entry])=>{visible.current=entry.isIntersecting;dirty.current=true},{threshold:0,rootMargin:'70px'});
   io.observe(host);
   const create=()=>{
-   if(disposed)return;
+   if(disposed||document.getElementById('app-content')?.inert)return;
    const width=Math.round(surface.getBoundingClientRect().width);
    if(width<150||width===lastWidth&&instance.current)return;
-   lastWidth=width;
+   lastWidth=width;dirty.current=true;
    instance.current?.destroy();
    instance.current=null;
-   const pixelRatio=Math.min(window.devicePixelRatio||1,1.7);
+   const pixelRatio=Math.min(window.devicePixelRatio||1,matchMedia('(max-width:600px)').matches?1.25:1.5);
    try{
     instance.current=createGlobe(surface,{
       devicePixelRatio:pixelRatio,
-      width:Math.round(width*pixelRatio),
-      height:Math.round(width*pixelRatio),
+      width,
+      height:width,
       phi:phase.current,theta:tilt.current,
       dark:0,diffuse:1.54,
       mapSamples:17500,mapBrightness:7.5,
@@ -64,12 +64,17 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
       markers:records.map(item=>({id:item.id,location:item.location,size:.021})),
       arcs:[],opacity:.92
     });
+    // COBE 2 returns a no-op instance if WebGL is unavailable; it does not throw.
+    if(!surface.getContext('webgl2')&&!surface.getContext('webgl')){instance.current?.destroy();instance.current=null;setSupported(false);return}
     setSupported(true);
    }catch(err){
     console.warn('CONFLORA globe unavailable:',err);
     setSupported(false);
    }
   };
+  // Mount the app in parallel with the intro, and start GPU work when it releases focus.
+  const app=document.getElementById('app-content');
+  const introduction=new MutationObserver(()=>{if(!app?.inert)create()});if(app)introduction.observe(app,{attributes:true,attributeFilter:['inert']});
   const ro=new ResizeObserver(create);ro.observe(surface);create();
 
   /* COBE itself controls each Polaroid's front/back visibility with its
@@ -116,14 +121,15 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
 
   const tick=time=>{
     if(disposed)return;
-    const dt=last?Math.min(time-last,52):16;last=time;
-    if(instance.current&&visible.current&&!document.hidden){
+    if(instance.current&&visible.current&&!document.hidden&&time-lastFrame>=33&&(dirty.current||playing.current&&!reduce.current)){
+      const dt=lastFrame?Math.min(time-lastFrame,65):33;lastFrame=time;
       if(playing.current&&!reduce.current&&!drag.current){
        // One revolution in ~29 seconds, like the measured reference sequence.
        phase.current+=dt*.000216;
       }
       instance.current.update({phi:phase.current,theta:tilt.current});
-      if(time-lastCheck>155){lastCheck=time;arrange()}
+      if(dirty.current||time-lastCheck>180){lastCheck=time;arrange()}
+      dirty.current=false;
     }
     raf.current=requestAnimationFrame(tick);
   };
@@ -131,7 +137,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
   return()=>{
     disposed=true;
     cancelAnimationFrame(raf.current);
-    ro.disconnect();io.disconnect();
+    ro.disconnect();io.disconnect();introduction.disconnect();
     instance.current?.destroy();instance.current=null;
   };
  },[records]);
@@ -144,7 +150,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
  const move=e=>{
    const last=drag.current;
    if(!last)return;
-   phase.current+=(e.clientX-last.x)/260;
+   dirty.current=true;phase.current+=(e.clientX-last.x)/260;
    tilt.current=clamp(tilt.current+(e.clientY-last.y)/650,-.7,.7);
    drag.current={...last,x:e.clientX,y:e.clientY};
  };
@@ -154,7 +160,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
  };
  return <div className="globe-orbit" ref={root} data-gallery-total={records.length}>
   <div className="globe-orbit__eyebrow">{pt?'FLORA PELO MUNDO':'FLORA AROUND THE WORLD'}</div>
-  <div className="globe-orbit__scene" aria-label={pt?'Globo giratório com fotografias Polaroid de plantas ao redor do planeta':'Rotating globe surrounded by Polaroid photographs of global plants'}>
+  <div className="globe-orbit__scene" tabIndex={0} role="group" onKeyDown={e=>{if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();dirty.current=true;phase.current+=e.key==='ArrowLeft'?-.15:e.key==='ArrowRight'?.15:0;tilt.current=clamp(tilt.current+(e.key==='ArrowUp'?-.1:e.key==='ArrowDown'?.1:0),-.7,.7)}}} aria-label={pt?'Globo giratório com fotografias Polaroid de plantas ao redor do planeta':'Rotating globe surrounded by Polaroid photographs of global plants'}>
    <div className="globe-orbit__ambient" aria-hidden="true"/>
    {!supported&&<div className="globe-orbit__fallback" role="img" aria-label={pt?'Representação do globo':'Globe representation'}/>}
    <canvas className="globe-orbit__canvas" ref={canvas} aria-hidden="true"
@@ -174,7 +180,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
        filter:'blur(calc((1 - var(--cobe-visible-'+item.id+', 0)) * 6px))',
        '--orbit-rotation':item.rotate+'deg'
      }}>
-     <img src={asset(item.file)} alt="" loading={i<9?'eager':'lazy'} draggable="false"/>
+     <img src={asset(item.file)} alt="" loading={i<5?'eager':'lazy'} decoding="async" fetchPriority="low" draggable="false"/>
      <span>{pt?item.namePt:item.labelEn}</span>
    </div>)}
    {!anchors&&<div className="globe-orbit__anchor-fallback" aria-hidden="true">
@@ -184,7 +190,7 @@ export default function GlobalBotanicalGlobe({lang='pt'}){
    </div>}
   </div>
   <div className="globe-orbit__footer">
-    <span>{pt?'Um planeta, muitas formas de vida.':'One planet, many forms of life.'}</span>
+    <span>{pt?'Arraste o globo ou use as setas do teclado.':'Drag the globe or use the arrow keys.'}</span>
     <div>
      <button type="button" onClick={()=>setPaused(p=>!p)} aria-pressed={paused}>
       {paused?(pt?'Continuar':'Resume'):(pt?'Pausar':'Pause')}
