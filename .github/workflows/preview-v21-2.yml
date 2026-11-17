@@ -66,11 +66,15 @@ jobs:
           node tests/v19-visual-regressions.mjs
           node tests/herbarium-complete-browser.mjs
           npm run test:six
-      - name: Synthetic performance audit with Lighthouse, if available
+      - name: Production-build synthetic performance audit (Lighthouse)
         working-directory: projeto
         continue-on-error: true
         run: |
-          npm exec --yes --package=lighthouse@12 -- lighthouse http://127.0.0.1:5176/ --chrome-path=/usr/bin/chromium --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage --enable-unsafe-swiftshader" --output=json --output-path=work/v21-2/lighthouse-home.json --quiet
+          npm run preview -- --port 5180 > /tmp/conflora-v21-2-prod-preview.log 2>&1 &
+          for n in $(seq 1 45); do if curl -fsS http://127.0.0.1:5180/ >/dev/null; then break; fi; sleep 1; done
+          curl -fsS http://127.0.0.1:5180/ >/dev/null
+          npm exec --yes --package=lighthouse@12 -- lighthouse http://127.0.0.1:5180/ --chrome-path=/usr/bin/chromium --chrome-flags="--headless --no-sandbox --disable-dev-shm-usage --enable-unsafe-swiftshader" --output=json --output-path=work/v21-2/lighthouse-home.json --quiet
+          node -e "const fs=require('fs');const j=JSON.parse(fs.readFileSync('work/v21-2/lighthouse-home.json'));const keys=['first-contentful-paint','largest-contentful-paint','cumulative-layout-shift','total-blocking-time','speed-index','interaction-to-next-paint'];const x={audit:'production-build',measurement:'mobile lab simulated',version:j.lighthouseVersion,fetchTime:j.fetchTime,scores:Object.fromEntries(Object.entries(j.categories||{}).map(([k,v])=>[k,Math.round(v.score*100)])),metrics:Object.fromEntries(keys.map(k=>[k,j.audits[k]?.numericValue??null]))};fs.writeFileSync('work/v21-2/lighthouse-summary.json',JSON.stringify(x,null,2));console.log('PRODUCTION LIGHTHOUSE '+JSON.stringify(x));"
       - name: Package screenshots, inventories and version metadata
         working-directory: projeto
         run: |
@@ -80,6 +84,9 @@ jobs:
           cp work/v21-1/media-inventory.json dist/review/media-inventory.json
           if [ -s work/v21-2/lighthouse-home.json ]; then
             cp work/v21-2/lighthouse-home.json dist/review/lighthouse-home.json
+          fi
+          if [ -s work/v21-2/lighthouse-summary.json ]; then
+            cp work/v21-2/lighthouse-summary.json dist/review/lighthouse-summary.json
           fi
           git fetch -q origin gh-pages:refs/remotes/origin/gh-pages
           for file in home-1440.png home-390.png editor-1440.png itapeva-1440.png iowa-1440.png; do
