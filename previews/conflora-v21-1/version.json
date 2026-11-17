@@ -1,0 +1,9 @@
+{
+  "version": "21.1.0-preview",
+  "edition": "Curadoria visual e refinamento UX/UI",
+  "baseCommit": "a361bc4371cdbf4ad9b8da6fce453832ed5a47f4",
+  "previewPath": "/CONFLORA/previews/conflora-v21-1/",
+  "deployment": "preview",
+  "sourceBranch": "feat/conflora-v21-1-premium-refinement",
+  "sourceCommit": "84e7ada122a050f05356582b93fae4faa2051d36"
+}
