@@ -8,7 +8,7 @@ Branch: `feat/conflora-v22-release-candidate`. Base confirmada: `feat/conflora-v
 
 ## Entrega
 
-- Revisão editorial de todos os módulos, estados e mensagens conhecidos em português e inglês. Registro de 171 alterações/contextos; inventário de 67 arquivos, com distinção entre interface, metadados, fontes e textos embutidos.
+- Revisão editorial de todos os módulos, estados e mensagens conhecidos em português e inglês. Registro de 174 alterações/contextos; inventário de 67 arquivos, com distinção entre interface, metadados, fontes e textos embutidos.
 - Título visível imediatamente: “Entenda a chuva no seu terreno.” / “Understand rain on your site.” Texto e globo em proporção aproximada de 42/58 no desktop e composição própria no celular.
 - Apresentação da marca com o PNG original e nome em branco, duração programada de 1,85 s, botão para pular, teclado, preferência por movimento reduzido e controle por sessão.
 - Globo COBE e 16 Polaroids preservados, com teclado, pausa, arraste, renderização limitada a 30 fps, escala de pixels aplicada uma única vez e detecção de WebGL indisponível.

@@ -1,5 +1,7 @@
 # Desempenho — comparação de produção V21.2 → V22
 
+Medições da abertura no commit `c8d3a11ae6a4f091d8c84755bc09ed3c5b7f06ed`. As correções posteriores de rótulos após troca de idioma e da fonte do título do PDF foram testadas, mas não motivaram outra rodada de Lighthouse; não se apresentam novas pontuações para esses ajustes.
+
 ## Método
 
 Duas execuções sequenciais por versão, no mesmo computador, Chromium e servidor HTTP Python na porta 5181. Build V21.2 preservado antes das alterações; build final V22 medido depois dos testes. Lighthouse 12.8.2, perfil móvel simulado de 412 × 823, DPR 1,75, lentidão de CPU 4× e rede móvel simulada. Chromium com SwiftShader, sem aceleração gráfica de hardware. Não houve testes de navegador executando em paralelo com as medições.

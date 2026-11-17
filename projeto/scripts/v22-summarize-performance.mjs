@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import {gzipSync} from 'node:zlib';
 import {execFileSync} from 'node:child_process';
 const keys=['first-contentful-paint','largest-contentful-paint','total-blocking-time','cumulative-layout-shift','speed-index'];
-const summary={method:'Two sequential mobile simulated production Lighthouse runs per version, same host, same Python HTTP server port 5181, same Chromium/flags; no browser tests in parallel. SwiftShader software graphics. Synthetic lab values, not field INP.',chrome:execFileSync('/usr/bin/chromium',['--version'],{encoding:'utf8'}).trim(),before:[],after:[]};
+const summary={afterMeasuredCommit:'c8d3a11ae6a4f091d8c84755bc09ed3c5b7f06ed',method:'Two sequential mobile simulated production Lighthouse runs per version, same host, same Python HTTP server port 5181, same Chromium/flags; no browser tests in parallel. SwiftShader software graphics. Synthetic lab values, not field INP.',chrome:execFileSync('/usr/bin/chromium',['--version'],{encoding:'utf8'}).trim(),before:[],after:[]};
 fs.mkdirSync('docs/v22/lighthouse',{recursive:true});
 for(const phase of ['before','after'])for(const run of [1,2]){
  const file=`work/v22/lighthouse-${phase}-${run}.json`,raw=fs.readFileSync(file),j=JSON.parse(raw);
@@ -16,6 +16,8 @@ fs.writeFileSync('docs/v22/medicoes-locais.json',JSON.stringify(summary,null,2)+
 const before=summary.medians.before,after=summary.medians.after;
 const m=(phase,k)=>k==='cumulative-layout-shift'?phase.metrics[k].toFixed(3):(phase.metrics[k]/1000).toFixed(2)+' s';
 fs.writeFileSync('docs/v22/desempenho.md',`# Desempenho — comparação de produção V21.2 → V22
+
+Medições da abertura no commit c8d3a11ae6a4f091d8c84755bc09ed3c5b7f06ed. As correções posteriores de rótulos após troca de idioma e da fonte do título do PDF foram testadas, mas não motivaram outra rodada de Lighthouse; não se apresentam novas pontuações para esses ajustes.
 
 ## Método
 

@@ -1193,5 +1193,26 @@
     "before": "Field-scale prototype with two plant covers; whole-system monitoring is not a species-specific performance measurement.",
     "after": "Only the thesis record and abstract were reviewed. A field-scale prototype in São Paulo used two plant covers; whole-system monitoring is not a species-specific performance measurement or evidence of suitability in Itapeva.",
     "reason": "Explicita no inglês o mesmo alcance da consulta e o limite de aplicação já informados em português; referência e critérios científicos preservados."
+  },
+  {
+    "file": "src/features/ConfloraMenu.jsx",
+    "language": "EN",
+    "before": "Fechar (persistia após trocar PT → EN)",
+    "after": "Close",
+    "reason": "Sincroniza o texto visível do menu nos dois sentidos da troca de idioma, além do nome acessível."
+  },
+  {
+    "file": "src/core/v21Botanical.js",
+    "language": "EN",
+    "before": "Region: Brasil",
+    "after": "Region: Brazil",
+    "reason": "Localiza o valor calculado do contexto regional em resultados e relatórios; localidades digitadas pelo usuário continuam preservadas."
+  },
+  {
+    "file": "src/core/reportPDF.js",
+    "language": "PT/EN",
+    "before": "Itapeva · estudo 20 m (título do PDF sem o caractere ²)",
+    "after": "Itapeva · estudo 20 m²",
+    "reason": "Usa a fonte DM incorporada para preservar o nome completo do projeto, inclusive o caractere ², no título do PDF; não altera os dados."
   }
 ]

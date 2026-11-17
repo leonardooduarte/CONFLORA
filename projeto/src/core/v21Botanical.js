@@ -9,7 +9,7 @@ const known=v=>v!==undefined&&v!==null&&v!==''&&v!=='unknown';
 const t=(lang,pt,en)=>lang==='pt'?pt:en;
 const keys=['regionCode','sun','moisture','soil','duration','building'];
 const labelsByField={regionCode:['Região','Region'],sun:['Luz','Sun'],moisture:['Umidade','Moisture'],soil:['Drenagem aparente','Reported drainage'],duration:['Duração do acúmulo','Pooling duration'],building:['Construções','Buildings']};
-const display=(k,v,lang)=>labels[lang]?.[v]||({BR:'Brasil',IA:'Iowa',slow:lang==='pt'?'Aparentemente lenta':'Apparently slow',medium:lang==='pt'?'Intermediária':'Moderate',fast:lang==='pt'?'Aparentemente rápida':'Apparently fast',hours:lang==='pt'?'Algumas horas':'A few hours',day:lang==='pt'?'Até um dia':'Up to a day',persistent:lang==='pt'?'Persistente':'Persistent',near:lang==='pt'?'Próximo':'Nearby',away:lang==='pt'?'Afastado':'Away'})[v]||(lang==='pt'?'Não informado':'Not reported');
+const display=(k,v,lang)=>labels[lang]?.[v]||({BR:lang==='pt'?'Brasil':'Brazil',IA:'Iowa',slow:lang==='pt'?'Aparentemente lenta':'Apparently slow',medium:lang==='pt'?'Intermediária':'Moderate',fast:lang==='pt'?'Aparentemente rápida':'Apparently fast',hours:lang==='pt'?'Algumas horas':'A few hours',day:lang==='pt'?'Até um dia':'Up to a day',persistent:lang==='pt'?'Persistente':'Persistent',near:lang==='pt'?'Próximo':'Nearby',away:lang==='pt'?'Afastado':'Away'})[v]||(lang==='pt'?'Não informado':'Not reported');
 const sourceRef=(id)=>id&&references[id]&&/^https:\/\//.test(references[id].url)?{id,title:references[id].title,url:references[id].url,type:references[id].referenceType||'documentary'}:null;
 
 export function reviewBotanicalV21(project,lang='pt'){

@@ -21,6 +21,8 @@ Nenhum bloqueador conhecido de integridade dos projetos, seleção científica o
 | Fundos decorativos continuavam montados depois de sair da tela | Montagem vinculada à visibilidade, largura e preferência de movimento. Componentes originais mantidos. |
 | Inicialização gráfica concorria com o encerramento da marca | Aplicação monta em paralelo; inicialização gráfica é liberada ao remover a sobreposição. |
 
+Na conferência pública, foram corrigidos também o fechamento do menu que mantinha “Fechar” após a troca para inglês, o valor regional “Brasil” no resultado inglês e a perda de “²” no nome do projeto no PDF. Testes de regressão verificam os textos visíveis, o contexto em inglês e o nome completo extraído do PDF.
+
 ## P2 — corrigidos
 
 Título inicial e subtítulo mais claros; composição 42/58; páginas com linguagem mais direta; pluralização em contagens; cidades do experimento separadas do contexto do catálogo; Brasil/Brazil e EUA/USA localizados; porte botânico com notação e notas em inglês; nomes acessíveis de controles originais; texto embutido no esquema editável e nos três SVGs educativos; versão e nome do PDF atualizados. Mensagens de arquivo e armazenamento explicam como retomar a tarefa.
