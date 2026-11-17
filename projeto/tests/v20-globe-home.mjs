@@ -15,7 +15,7 @@ try{
  await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
  const hero=page.locator('.premium-opening');
  await expect(hero).toBeVisible({timeout:25000});
- await expect(hero.locator('h1')).toContainText('Todo lugar');
+ await expect(hero.locator('h1')).toContainText('Entenda a chuva');
  const globe=hero.locator('.globe-orbit');
  await expect(globe).toBeVisible({timeout:25000});
  await expect(globe.locator('.globe-orbit__canvas')).toBeVisible();

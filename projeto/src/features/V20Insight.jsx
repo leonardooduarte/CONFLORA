@@ -4,7 +4,7 @@ import './V20Insight.css';
 
 const pick=(pt,a,b)=>pt?a:b;
 const conditionNames={soil:['Solo','Soil'],sun:['Luz','Sun'],moisture:['Umidade','Moisture'],duration:['Duração da água','Water duration'],building:['Construções','Buildings']};
-const conditionValues={unknown:['Não informado','Unknown'],slow:['Parece drenar devagar','Seems slow-draining'],medium:['Intermediária','Moderate'],fast:['Parece drenar rápido','Seems fast-draining'],full:['Muito sol','Full sun'],mixed:['Sol e sombra','Sun and shade'],shade:['Sombra','Shade'],wet:['Molhado','Wet'],moist:['Úmido','Moist'],mesic:['Intermediária','Mesic'],dry:['Seco','Dry'],hours:['Algumas horas','A few hours'],day:['Até um dia','Up to one day'],persistent:['Mais de um dia ou recorrente','Over one day or recurring'],near:['Próximo de construções','Near buildings'],away:['Afastado de construções','Away from buildings']};
+const conditionValues={unknown:['Não informado','Unknown'],slow:['Parece drenar devagar','Seems slow-draining'],medium:['Intermediária','Moderate'],fast:['Parece drenar rápido','Seems fast-draining'],full:['Muito sol','Full sun'],mixed:['Sol e sombra','Sun and shade'],shade:['Sombra','Shade'],wet:['Molhado','Wet'],moist:['Úmido','Moist'],mesic:['Intermediária','Moderately moist'],dry:['Seco','Dry'],hours:['Algumas horas','A few hours'],day:['Até um dia','Up to one day'],persistent:['Mais de um dia ou recorrente','Over one day or recurring'],near:['Próximo de construções','Near buildings'],away:['Afastado de construções','Away from buildings']};
 const label=(data,pt)=>data?.[pt?0:1]||data?.[0]||'—';
 
 export function V20Comparison({project,lang='pt',report=false}){
@@ -16,7 +16,7 @@ export function V20Comparison({project,lang='pt',report=false}){
   <div className="v20-comparison__grid">
    {d.scenarios.map(s=><article key={s.slot}>
     <strong>{pick(pt,'Alternativa ','Alternative ')}{s.slot}</strong>
-    <span>{s.count?String(s.count)+' '+pick(pt,'elementos visuais','visual elements'):pick(pt,'Ainda não criada','Not created')}</span>
+    <span>{s.count?String(s.count)+' '+pick(pt,s.count===1?'elemento visual':'elementos visuais',s.count===1?'visual element':'visual elements'):pick(pt,'Ainda não criada','Not created')}</span>
     {s.count>0&&<span>{s.mode==='exploratory'?pick(pt,'Estudo espacial exploratório','Exploratory spatial study'):pick(pt,'Composição botânica documental','Documented botanical composition')}</span>}
     {s.notes.length>0?<ul>{s.notes.map((n,i)=><li key={i}>{n}</li>)}</ul>:s.count>0&&<small>{pick(pt,'Elementos sem descrição adicional.','Elements without additional notes.')}</small>}
    </article>)}

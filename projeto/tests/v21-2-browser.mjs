@@ -55,8 +55,8 @@ try{
  await journey.getByRole('button',{name:'Consultar síntese do terreno'}).click();
  const results=page.locator('.plan-extras .v212-result');
  await expect(results).toBeVisible();
- await expect(results).toContainText('Seu terreno, em uma única leitura.');
- await expect(results).toContainText('Literatura para investigar, sem validação de plantio');
+ await expect(results).toContainText('O que você registrou sobre o terreno.');
+ await expect(results).toContainText('Referências para pesquisa; plantio não validado');
  await expect(results.locator('.v212-result__tabs button')).toHaveCount(3);
  await expect(results.locator('.v212-result__stats strong').first()).toHaveText('7');
  await expect(page.locator('.plan-extras .v20-insight')).toBeVisible();
@@ -74,10 +74,10 @@ try{
   await page.screenshot({path:out+'/itapeva-'+width+'.png'});
  }
  await page.setViewportSize({width:1440,height:940});
- await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
- await expect(results).toContainText('Your site, one clear picture.');
- await expect(results).toContainText('Literature to investigate, no planting validation');
- await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
+ await page.locator('.site-header').locator('button.lang').click();
+ await expect(results).toContainText('Your site observations, brought together.');
+ await expect(results).toContainText('Research references; planting suitability not established');
+ await page.locator('.site-header').locator('button.lang').click();
  await results.getByRole('button',{name:'Abrir relatório preliminar'}).click();
  const modal=page.locator('.report-modal');
  await expect(modal).toBeVisible();

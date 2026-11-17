@@ -69,7 +69,7 @@ await page.getByRole('button',{name:'Guardar registro'}).click();await expect(pa
 await page.getByRole('button',{name:'Projetos',exact:true}).click();
 await expect(page.getByRole('dialog',{name:'Projetos',exact:true})).toContainText('Meu espaço');
 await page.getByRole('button',{name:'Fechar',exact:true}).click();
-await page.getByRole('button',{name:'CONFLORA — início'}).click();
+await page.locator('.brand').click();
 await page.setViewportSize({width:390,height:844});await page.waitForTimeout(800);
 expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBe(390);
 await page.screenshot({path:out+'/mobile.png'});

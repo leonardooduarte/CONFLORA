@@ -1,7 +1,7 @@
 {
   "name": "conflora-reactbits-official",
   "private": true,
-  "version": "19.1.0-preview.1",
+  "version": "22.0.0-rc.1",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -22,7 +22,9 @@
     "test:selection": "node tests/selection.mjs",
     "test:herbarium": "node tests/herbarium.mjs",
     "test:v19:model": "node tests/v19-model.mjs",
-    "test:v19:browser": "node tests/v19-browser.mjs"
+    "test:v19:browser": "node tests/v19-browser.mjs",
+    "test:v22": "node tests/v22-browser.mjs",
+    "audit:editorial": "node scripts/v22-editorial-audit.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

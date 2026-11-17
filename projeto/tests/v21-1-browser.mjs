@@ -63,10 +63,10 @@ try{
   await page.screenshot({path:out+'/itapeva-'+width+'.png'});
  }
  await page.setViewportSize({width:1440,height:940});
- await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
+ await page.locator('.site-header').locator('button.lang').click();
  await expect(v21).toContainText('AT A GLANCE');
  await expect(v21).toContainText('Relevant literature, without planting validation');
- await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
+ await page.locator('.site-header').locator('button.lang').click();
  const iowa=site('IA');
  iowa.annotations[1].conditions={sun:'shade',moisture:'wet'};
  await fixture(iowa);

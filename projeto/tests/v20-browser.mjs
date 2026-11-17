@@ -73,10 +73,10 @@ try{
  const pdfBytes=(await stat(out+'/itapeva-v20.pdf')).size;
  assert(pdfBytes>50000);
  await page.keyboard.press('Escape');
- await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
+ await page.locator('.site-header').locator('button.lang').click();
  await expect(page.locator('.plan-extras .v20-insight')).toContainText('What we know about your space');
  await expect(page.locator('.plan-extras .v20-comparison')).toContainText('What differs between A and B?');
- await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
+ await page.locator('.site-header').locator('button.lang').click();
  assert.deepEqual(errors,[]);
  const resultFile={passed:true,checkList:['original V19.1 editor intact','guided fourth step','area inheritance explanation','Itapeva 7 marks','research not recommendation','safe actionable checks','A/B contrast','actual PDF download with V20 content','PT/EN','responsive 1440/768/390/320'],pdfBytes,errors};
  await writeFile(out+'/validation.json',JSON.stringify(resultFile,null,2));
