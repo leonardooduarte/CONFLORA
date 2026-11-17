@@ -1,0 +1,122 @@
+import {chromium,expect} from '@playwright/test';
+import assert from 'node:assert/strict';
+import {mkdir,writeFile,stat} from 'node:fs/promises';
+import {site} from './v19-fixtures.mjs';
+
+const out='work/v21-2',url='http://127.0.0.1:5176/';
+await mkdir(out,{recursive:true});
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox','--enable-unsafe-swiftshader']});
+const context=await browser.newContext({viewport:{width:1440,height:940},reducedMotion:'reduce',acceptDownloads:true});
+const page=await context.newPage();
+page.setDefaultTimeout(30000);
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+async function fixture(p){
+ await page.goto(url);
+ await page.locator('input[accept=".json,application/json"]').setInputFiles({name:'v212-fixture.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(p))});
+ await expect(page.locator('.project-ribbon')).toContainText(p.name);
+}
+const overflow=async(w,kind)=>assert((await page.evaluate(()=>document.documentElement.scrollWidth))<=w+1,kind+' horizontal overflow at '+w);
+try{
+ await page.goto(url);
+ await expect(page.locator('.globe-orbit__scene canvas')).toBeVisible();
+ await expect(page.locator('.globe-orbit__polaroid')).toHaveCount(16);
+ await expect(page.locator('.v212-product-proof__screen img')).toHaveJSProperty('complete',true);
+ assert(await page.locator('.v212-product-proof__screen img').evaluate(el=>el.naturalWidth>600),'Real product screenshot did not load');
+ for(const width of [1440,1024,768,390,320]){
+  await page.setViewportSize({width,height:940});
+  await overflow(width,'Home');
+  await page.screenshot({path:out+'/home-'+width+'.png'});
+ }
+ await page.setViewportSize({width:1440,height:940});
+ await fixture(site());
+ const journey=page.locator('.studio-journey');
+ await expect(journey.locator('.studio-journey-steps>div')).toHaveCount(4);
+ await expect(journey.locator('.studio-journey-final')).toHaveCount(1);
+ await expect(journey.locator('[data-stage=observations]')).toHaveAttribute('data-status','done');
+ await expect(journey.locator('[data-stage=conditions]')).toHaveAttribute('data-status','done');
+ await expect(journey.locator('[data-stage=photo]')).toHaveAttribute('data-status','done');
+ await journey.getByRole('button',{name:'Informar condições'}).click();
+ await expect(journey.locator('.studio-journey-conditions__origin')).toContainText('Condições da marcação selecionada');
+ await journey.getByRole('button',{name:'Terreno inteiro',exact:true}).click();
+ await expect(journey.locator('.studio-journey-conditions__origin')).toContainText('Condições do terreno inteiro');
+ await journey.getByRole('button',{name:'Esta marcação',exact:true}).click();
+ await expect(journey.locator('.studio-journey-conditions__origin')).toContainText('Condições da marcação selecionada');
+ const marked=page.locator('#workspace-svg [data-marker-id]');
+ await expect(marked).toHaveCount(7);
+ await page.locator('.drawing-top .v212-clean-toggle').click();
+ await expect(page.locator('.drawing-top .v212-clean-toggle')).toHaveAttribute('aria-pressed','true');
+ await expect(marked).toHaveCount(0);
+ await page.locator('.drawing-top .v212-clean-toggle').click();
+ await expect(marked).toHaveCount(7);
+ await journey.scrollIntoViewIfNeeded();
+ await page.screenshot({path:out+'/editor-1440.png'});
+ await journey.getByRole('button',{name:'Consultar síntese do terreno'}).click();
+ const results=page.locator('.plan-extras .v212-result');
+ await expect(results).toBeVisible();
+ await expect(results).toContainText('Seu terreno, em uma única leitura.');
+ await expect(results).toContainText('Literatura para investigar, sem validação de plantio');
+ await expect(results.locator('.v212-result__tabs button')).toHaveCount(3);
+ await expect(results.locator('.v212-result__stats strong').first()).toHaveText('7');
+ await expect(page.locator('.plan-extras .v20-insight')).toBeVisible();
+ await expect(page.locator('.plan-extras .v21-botanical')).toBeVisible();
+ await results.getByRole('button',{name:'Área 02'}).click();
+ await expect(results.getByRole('button',{name:'Área 02'})).toHaveAttribute('aria-pressed','true');
+ await expect(results.locator('.v212-result__area-content h4')).toHaveText('Área 02');
+ await expect(results.locator('.v212-result__shared')).toContainText('área 01');
+ await results.scrollIntoViewIfNeeded();
+ await page.screenshot({path:out+'/itapeva-1440.png'});
+ for(const width of [1024,768,390,320]){
+  await page.setViewportSize({width,height:900});
+  await results.scrollIntoViewIfNeeded();
+  await overflow(width,'Results');
+  await page.screenshot({path:out+'/itapeva-'+width+'.png'});
+ }
+ await page.setViewportSize({width:1440,height:940});
+ await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
+ await expect(results).toContainText('Your site, one clear picture.');
+ await expect(results).toContainText('Literature to investigate, no planting validation');
+ await page.locator('.site-header').getByRole('button',{name:'Switch language'}).click();
+ await results.getByRole('button',{name:'Abrir relatório preliminar'}).click();
+ const modal=page.locator('.report-modal');
+ await expect(modal).toBeVisible();
+ const downloading=page.waitForEvent('download',{timeout:100000});
+ await modal.getByRole('button',{name:'Baixar relatório PDF'}).click();
+ const pdf=await downloading;assert.equal(await pdf.failure(),null);
+ await pdf.saveAs(out+'/itapeva-v212.pdf');
+ assert((await stat(out+'/itapeva-v212.pdf')).size>40000);
+ await page.keyboard.press('Escape');
+ const ia=site('IA');ia.annotations[1].conditions={sun:'shade',moisture:'wet'};
+ await fixture(ia);
+ await page.locator('.studio-journey').getByRole('button',{name:'Consultar síntese do terreno'}).click();
+ const iowa=page.locator('.plan-extras .v212-result');
+ await expect(iowa).toContainText('Correspondências documentais para investigar');
+ await iowa.getByRole('button',{name:'Área 02'}).click();
+ await expect(iowa.locator('.v212-result__area-context')).toContainText('Desta marcação');
+ await expect(iowa.locator('.v212-result__plant')).not.toHaveCount(0);
+ await iowa.scrollIntoViewIfNeeded();
+ await page.screenshot({path:out+'/iowa-1440.png'});
+ // Unknown conditions and legacy JSON maintain their absence; no inferred values.
+ const missing=site();missing.annotations=[];missing.context.regionCode='unknown';missing.context.sun='unknown';missing.context.moisture='unknown';missing.image=null;
+ await fixture(missing);
+ await expect(page.locator('.studio-journey [data-stage=photo]')).toHaveAttribute('data-status','optional');
+ await expect(page.locator('.studio-journey [data-stage=observations]')).toHaveAttribute('data-status','todo');
+ await page.locator('.studio-journey').getByRole('button',{name:'Consultar síntese do terreno'}).click();
+ await expect(page.locator('.v212-result')).toContainText('Evidências insuficientes para selecionar plantas');
+ await page.screenshot({path:out+'/incomplete-1440.png'});
+ // Touch-emulated observation flow: tool panel -> canvas -> new marker.
+ const touch=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'});
+ const p=await touch.newPage();p.setDefaultTimeout(30000);
+ await p.goto(url);await p.locator('input[accept=".json,application/json"]').setInputFiles({name:'touch.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(site()))});
+ await p.getByRole('button',{name:'Ferramentas',exact:true}).click();
+ await p.getByRole('button',{name:'Marcar água acumulada'}).click();
+ await p.getByRole('button',{name:'Imagem',exact:true}).click();
+ await expect(p.locator('#workspace-svg [data-marker-id]')).toHaveCount(7);
+ await p.locator('#workspace-svg').tap({position:{x:160,y:150}});
+ await expect(p.locator('#workspace-svg [data-marker-id]')).toHaveCount(8);
+ assert((await p.evaluate(()=>document.documentElement.scrollWidth))<=390,'Touch editor overflow');
+ await p.screenshot({path:out+'/editor-touch-390.png'});
+ await touch.close();
+ assert.deepEqual(errors,[]);
+ await writeFile(out+'/validation.json',JSON.stringify({passed:true,checks:['5-stage guided journey','global/area condition scope','clean preview without mutating marks','integrated summary and area tabs','Itapeva inconclusive','Iowa documented local context','incomplete conditions','actual PDF','touch add marker','globe and 16 Polaroids','home real product screenshot','PT/EN','1440/1024/768/390/320 responsive'],pageErrors:errors,pdfBytes:(await stat(out+'/itapeva-v212.pdf')).size},null,2));
+ console.log('PASS V21.2 browser');
+}catch(err){await page.screenshot({path:out+'/failure.png'}).catch(()=>{});throw err}finally{await browser.close()}

@@ -1,0 +1,28 @@
+/* V21.2: five-stage guidance, one project, no changes to the persistence model */
+.v212-journey{max-width:1800px;margin:0 auto 26px}
+.v212-journey__progress{display:grid;grid-template-columns:auto minmax(80px,1fr);gap:9px 17px;align-items:center;margin:15px 0 18px}
+.v212-journey__progress>span{font:600 12px var(--sans);color:#456351}
+.v212-journey__progress small{grid-column:1/-1;font-size:11px;color:#637463}
+.v212-journey__track{height:5px;background:#d2d9c9;overflow:hidden;max-width:550px}
+.v212-journey__track span{height:100%;display:block;background:#53735c;transition:width .2s ease}
+.v212-journey .studio-journey-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(8px,1.3vw,16px);align-items:stretch}
+.v212-journey .studio-journey-steps>div,.v212-journey .studio-journey-steps>.studio-journey-final{display:flex;flex-direction:column;min-width:0;border:1px solid #c4cfc1;background:#f6f4eb;padding:clamp(12px,1.4vw,20px);position:relative;gap:6px}
+.v212-journey .studio-journey-steps [data-status=done]{border-top:3px solid #426d51}
+.v212-journey .studio-journey-steps [data-status=partial]{border-top:3px solid #bd915f}
+.v212-journey .studio-journey-steps [data-status=ready]{border-top:3px solid #b5a37a}
+.v212-journey .studio-journey-steps strong{font:italic 25px var(--serif);color:#956f4d}
+.v212-journey .studio-journey-steps b{font:600 15px/1.35 var(--sans);min-height:40px}
+.v212-journey .studio-journey-steps small{font:12px/1.55 var(--sans);color:#536958;flex:1}
+.v212-journey .studio-journey-steps .text-action{font-size:12px;line-height:1.4;text-align:left;min-height:44px;display:flex;align-items:center}
+.v212-journey .studio-journey-steps em{font:600 10px/1.3 var(--sans);color:#64765e;margin-top:5px;letter-spacing:.07em;text-transform:uppercase}
+.v212-journey .studio-journey-steps>.studio-journey-final{background:#e0e9dd}
+.v212-journey__scope{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 16px}
+.v212-journey__scope button{min-height:44px;padding:10px 17px;border:1px solid #b4c5b2;background:transparent;color:#315441;font-size:13px}
+.v212-journey__scope button[aria-pressed=true]{background:#193d2e;color:white;border-color:#193d2e}
+.v212-journey__next{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#e8ece3;border-left:3px solid #9f825c;padding:15px 18px;margin:20px 0 12px}
+.v212-journey__next strong{font-size:14px}
+.v212-journey__next p{font-size:13px;line-height:1.55;margin:6px 0 0}
+.v212-journey__next button{white-space:normal;text-align:center}
+@media(max-width:1200px){.v212-journey .studio-journey-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.v212-journey .studio-journey-steps b{min-height:0}}
+@media(max-width:700px){.v212-journey .studio-journey-steps{grid-template-columns:1fr}.v212-journey .studio-journey-steps>div,.v212-journey .studio-journey-steps>.studio-journey-final{padding:13px 17px;display:grid;grid-template-columns:32px minmax(0,1fr);gap:5px 10px;align-items:center}.v212-journey .studio-journey-steps strong{grid-row:1/4}.v212-journey .studio-journey-steps b{grid-column:2;font-size:15px}.v212-journey .studio-journey-steps small{grid-column:2}.v212-journey .studio-journey-steps button{grid-column:2;min-height:37px}.v212-journey .studio-journey-steps em{grid-column:2;display:none}.v212-journey__next{display:block}.v212-journey__next button{margin-top:12px;width:100%}}
+@media(prefers-reduced-motion:reduce){.v212-journey__track span{transition:none}}

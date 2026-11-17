@@ -22,3 +22,6 @@ import './v18.css';
 import './v19.css';
 
 import './premiumRefinement.css';
+
+import './features/StudioJourneyV212.css';
+import './v212Finishing.css';

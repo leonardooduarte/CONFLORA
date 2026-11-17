@@ -1,0 +1,24 @@
+/* Finishing pass: affordances, touch controls and premium reading rhythm. */
+.v212-anchor{scroll-margin-top:22px;border-top:1px solid #c6cec1;padding:19px 0 12px;margin-top:25px}
+.v212-anchor .eyebrow{color:#6c816d}
+.plan-page .plan-extras{max-width:1320px;margin-inline:auto;background:#f5f3ea}
+.plan-page .v19-proposal{max-width:100%}
+.plan-page .v20-insight,.plan-page .v21-botanical{max-width:1150px;margin-inline:auto}
+.plan-page .v19-proposal>.v18-proposal{border-top:1px solid #c4cfc1;padding-top:22px}
+.atelier-workspace .v212-clean-toggle{border:1px solid #98ae9e;background:transparent;color:#245139;padding:8px 12px;min-height:44px;white-space:normal;font-size:12px;letter-spacing:0;text-transform:none}
+.atelier-workspace .v212-clean-toggle[aria-pressed=true]{background:#1b4332;color:#fff}
+.atelier-workspace .drawing-top{min-height:50px}
+.atelier-workspace .mini-actions{flex-wrap:wrap;gap:7px}
+.atelier-workspace .mini-actions>button{min-height:44px;min-width:44px}
+.atelier-workspace .v20-quick-tools button[aria-pressed=true]{background:#214936!important;color:#fff!important}
+.atelier-workspace .studio-commandbar button:focus-visible,.atelier-workspace .v20-quick-tools button:focus-visible,.v212-result a:focus-visible{outline:3px solid #a3734d;outline-offset:2px}
+.atelier-workspace .studio-contextline{font-size:13px}
+@media(max-width:760px){.atelier-workspace .drawing-top{display:block}.atelier-workspace .drawing-top>.mini-actions{margin-top:9px}.atelier-workspace .v212-clean-toggle{min-height:44px}.plan-page .plan-extras{padding:12px}.plan-page .v19-proposal{min-width:0}.studio-commandbar button{min-height:44px}}
+@media(prefers-reduced-motion:reduce){.v212-result a{scroll-behavior:auto}}
+
+/* An actual, verified product screenshot in the observation story — not a constructed UI mock-up. */
+.v212-product-proof{background:#e8ece4;padding:18px;min-width:0}
+.v212-product-proof__screen{margin:18px 0 0;min-width:0}
+.v212-product-proof__screen img{display:block;width:100%;max-height:330px;object-fit:contain;object-position:center top;background:#ecf0e8;border:1px solid #acbcb0;box-shadow:0 9px 24px #193c2c12}
+.v212-product-proof__screen figcaption{font:11px/1.6 var(--sans);margin:8px 0;color:#617262}
+@media(max-width:700px){.v212-product-proof{padding:12px}.v212-product-proof__screen img{max-height:240px}}
