@@ -1,0 +1,557 @@
+CONFLORA
+Meu espaço
+Herbário
+Explorar
+Meu kit
+Meu jardim
+Chuva às raízes
+Projetos
+EN
+Salvar ›
+CADERNO ABERTO
+Itapeva · estudo 20 m²
+01
+Espaço
+02
+Herbário
+03
+Plano
+04
+Registros
+Projeto importado.
+03 / MEU PLANO
+Do seu terreno ao planejamento
+CONFLORA V22 / DA ANÁLISE À PROPOSTA VISUAL
+Itapeva · estudo 20 m²
+
+Itapeva, São Paulo, Brasil · 20 m² · Muito sol · Molhado
+
+Escolha uma composição botânica quando houver evidência e condições suficientes, ou um estudo espacial sem indicação de espécies.
+
+Abrir relatório ↗
+CONFLORA / LEITURA INTEGRADA
+O que você registrou sobre o terreno.
+
+Observações do terreno, evidências científicas e próximos passos reunidos para orientar sua investigação.
+
+ESTUDO PRELIMINAR
+Imagem fornecida pelo usuário · não interpretada automaticamente
+SÍNTESE DO ESPAÇO
+Itapeva, São Paulo, Brasil
+
+Área informada: 20 m² · valor informado, não medido
+
+7
+observações
+3
+áreas examinadas
+0
+correspondências documentais
+3 Água acumulada
+3 Saídas de telhado
+1 Superfícies pavimentadas
+Revisar observações no editor ↗
+SITUAÇÃO DA INVESTIGAÇÃO
+Referências para pesquisa; plantio não validado
+
+Há registros para pesquisa; nenhuma planta foi validada para este terreno.
+
+Algumas condições continuam não informadas.
+Há condições que exigem avaliação local antes de qualquer intervenção.
+Nenhuma correspondência documental é aprovação de plantio.
+POR ÁREA
+Consulte as condições de cada área.
+
+Selecione uma marcação para ver condições herdadas, diferenças locais e fontes vinculadas.
+
+Área 01
+Área 02
+Área 03
+Área 01
+Região
+Brasil
+Herdada do terreno
+Luz
+Muito sol
+Herdada do terreno
+Umidade
+Molhado
+Herdada do terreno
+Drenagem aparente
+Aparentemente lenta
+Herdada do terreno
+Duração do acúmulo
+Não verificado
+Não informada
+Construções
+Não verificado
+Não informada
+Editar condições e marcação ↗
+O que a documentação permite investigar
+SOMENTE PESQUISA
+Alternanthera brasiliana (L.) Kuntze
+Perpétua-do-mato / penicilina
+
+Citada em revisão de espécies para soluções vegetadas; a fonte não demonstra tolerância específica à duração do acúmulo observado.
+
+Fontes e limites
+Arachis repens Handro
+Amendoim-rasteiro
+
+Revisão brasileira a inclui entre espécies investigadas; estudos em taludes não comprovam desempenho em jardim de chuva.
+
+Fontes e limites
+Verificações e lacunas desta área (3)
+Consultar o Herbário e todas as fontes ↗
+O QUE VERIFICAR AGORA
+Registrar a duração do acúmulo
+
+Observe de um local seguro após a chuva e registre a duração nas condições do terreno ou da área.
+
+Verificar construções e redes enterradas
+
+Registre a proximidade de construções sem escavar; procure avaliação técnica quando necessário.
+
+Investigar a drenagem do solo
+
+Registre as observações; considere avaliação ou ensaio apropriado com orientação local.
+
+Observar para onde a água passa
+
+Observe em situação segura e desenhe no editor apenas caminhos efetivamente observados.
+
+ORGANIZAR O PLANO
+
+Compare representações exploratórias e exporte seu relatório. Os desenhos não representam desempenho hidráulico comprovado.
+
+Abrir relatório preliminar ↗
+Ver comparação visual ↗
+A: não criada · B: não criada
+
+Leitura baseada em informações fornecidas por você e fontes científicas. Não mede infiltração, vazão, segurança de escavação ou desempenho de plantas.
+
+Análise ambiental detalhada
+Evidências botânicas completas
+Alternativas e estudos visuais
+DETALHES DA LEITURA AMBIENTAL
+CONFLORA / SÍNTESE DO TERRENO
+O que já sabemos sobre seu espaço
+
+Uma leitura das informações que você registrou — sem medir o terreno ou interpretar automaticamente a fotografia.
+
+Suas observações
+3 pontos de água acumulada
+3 saídas do telhado
+1 superfície pavimentada
+Localidade informada: Itapeva, São Paulo, Brasil
+Área declarada: 20 m²
+Drenagem descrita como lenta, sem ensaio de infiltração.
+Muito sol, segundo o usuário.
+Solo descrito como molhado.
+O que isso permite investigar
+Existem marcações de água acumulada; a duração e a causa não foram medidas automaticamente.
+Foram identificadas saídas de telhado; o caminho da água precisa ser observado.
+Superfícies pavimentadas foram marcadas, sem quantificação de seu efeito no escoamento.
+A drenagem aparentemente lenta impede presumir que um jardim de chuva infiltrará água adequadamente.
+A aparente drenagem lenta impede assumir que um jardim de chuva infiltrará água adequadamente.
+Estado da evidência botânica
+
+Há registros para pesquisa; nenhuma planta foi validada para este terreno.
+
+Pesquisa não equivale a recomendação de plantio. As fotografias não medem infiltração.
+O que verificar agora
+4 verificações
+01
+Registrar a duração do acúmulo
+Prioritária
+
+Por quê? A permanência da água ajuda a definir quais verificações são necessárias.
+
+Como registrar? Observe de um local seguro após a chuva e registre a duração nas condições do terreno ou da área.
+
+Atualize o registro e reabra a análise para reavaliar as hipóteses.
+
+02
+Verificar construções e redes enterradas
+Prioritária
+
+Por quê? Fundações e instalações precisam ser consideradas antes de qualquer hipótese de infiltração.
+
+Como registrar? Registre a proximidade de construções sem escavar; procure avaliação técnica quando necessário.
+
+Atualize o registro e reabra a análise para reavaliar as hipóteses.
+
+03
+Investigar a drenagem do solo
+Prioritária
+
+Por quê? A aparência do solo não comprova capacidade de infiltração.
+
+Como registrar? Registre as observações; considere avaliação ou ensaio apropriado com orientação local.
+
+Atualize o registro e reabra a análise para reavaliar as hipóteses.
+
+04
+Observar para onde a água passa
+
+Por quê? O escoamento real não pode ser inferido somente pela fotografia.
+
+Como registrar? Observe em situação segura e desenhe no editor apenas caminhos efetivamente observados.
+
+Atualize o registro e reabra a análise para reavaliar as hipóteses.
+
+De onde vêm as condições de cada área?
+Revisar minhas observações ↗
+Abrir relatório ↗
+ALTERNATIVAS E DOCUMENTAÇÃO
+CONFLORA / PROPOSTA PRELIMINAR
+Minha proposta CONFLORA
+
+As opções abaixo se baseiam exclusivamente nas suas observações e nas evidências registradas. Uma espécie estudada em vasos não se torna, por isso, uma recomendação de plantio.
+
+3
+Áreas analisadas
+0
+Espécies com correspondência
+0
+Composições salvas
+O que cada área permite investigar
+Áreas 01, 02, 03
+D · Verificação técnica prioritária
+
+Área identificada nas marcações do usuário.
+
+A aparente drenagem lenta impede assumir que um jardim de chuva infiltrará água adequadamente.
+
+Nenhuma espécie foi validada para plantio nesta área com os dados atuais. Os registros botânicos a seguir são apenas referências de pesquisa.
+
+Possibilidades para investigar
+
+Próxima verificação: Registrar por quanto tempo a água permanece após a chuva.
+
+Plantas para conhecer e investigar
+
+Nenhuma recomendação de plantio foi gerada. As fichas abaixo são exemplos estudados no contexto brasileiro, sem correspondência comprovada para seu terreno.
+
+SOMENTE PESQUISA
+Commelina erecta L.
+
+Trapoeraba (nome regional)
+
+Cobertura vegetal acompanhada em vasos irrigados. Verificar manejo e propagação; a fonte não estabelece uma faixa de encharcamento para este terreno.
+
+Áreas: 1, 2, 3
+
+Fonte científica
+Foto: Assaf Shtilman · CC BY-SA 3.0
+SOMENTE PESQUISA
+Distimake dissectus (Jacq.) A.R.Simões & Staples
+
+Flor-de-madeira
+
+Trepadeira que exigiu condução dos ramos no ensaio. Investigar suporte e expansão; irrigação em vasos não valida implantação local.
+
+Áreas: 1, 2, 3
+
+Fonte científica
+Foto: Jessica Spengler from Hove, United Kingdom · CC BY 2.0
+SOMENTE PESQUISA
+Trimezia coerulea (G.Lodd.) Ravenna
+
+Falso-íris
+
+Publicada no ensaio como Neomarica caerulea, sinônimo do nome aceito aqui. Confirmar identificação; sem faixa comparável de umidade para selecionar plantio.
+
+Áreas: 1, 2, 3
+
+Fonte científica
+Foto: Vitorperrut555 · CC BY-SA 4.0
+
+Atenção: as plantas classificadas como “Somente pesquisa” não são propostas de implantação, mesmo quando possuem fotografia.
+
+Como o espaço poderia ficar
+Estudo visual exploratório
+
+Disponível mesmo com seleção inconclusiva. Zonas âmbar pedem investigação; zonas vermelhas permanecem sem escavação até avaliação.
+
+Criar estudo exploratório A
+Criar estudo exploratório B
+Composição botânica documental
+
+Os dados atuais não permitem gerar uma composição botânica fundamentada. Você pode consultar as fichas e criar um estudo espacial exploratório.
+
+Ainda não há uma alternativa salva. A plataforma só gera automaticamente elementos associados a espécies com correspondência documental, sem alertas prioritários e com informações suficientes sobre drenagem, duração do acúmulo e afastamento de construções.
+
+Gerar proposta para meu terreno
+Criar alternativa B
+Editar no ateliê
+
+Ferramenta de apoio preliminar. A fotografia não mede infiltração, vazão, declividade nem segurança de implantação. Estudos em vasos não comprovam desempenho em jardins residenciais.
+
+DETALHES BOTÂNICOS
+CONFLORA / EVIDÊNCIAS BOTÂNICAS
+O que a ciência permite investigar aqui?
+
+Correspondências descrevem apenas a relação entre condições declaradas e fontes. Não são previsões de infiltração, segurança de obra ou eficiência hidráulica.
+
+3
+áreas analisadas
+0
+espécies com correspondência documental
+4
+registros para pesquisa
+LEITURA RÁPIDA
+Literatura relevante, sem validação de plantio
+
+3 observações, 1 conjuntos diferentes de condições. As fotografias e fontes comuns aparecem somente na primeira área equivalente.
+
+ANTES DE AVANÇAR
+Registrar duração do acúmulo após chuva segura.
+Verificar proximidade de construções e redes enterradas.
+A drenagem aparente não substitui ensaio ou avaliação de infiltração.
+01
+Área observada 01
+Há literatura botânica relevante, mas faltam faixas ambientais comparáveis para indicar plantio.
+0 correspondências
+Condições consideradas
+Região
+Brasil · do terreno
+Luz
+Muito sol · do terreno
+Umidade
+Molhado · do terreno
+Drenagem aparente
+Aparentemente lenta · do terreno
+Duração do acúmulo
+Não verificado · não informado
+Construções
+Não verificado · não informado
+
+Há condições que exigem avaliação local (drenagem aparente, duração da água ou proximidade de construções). Não inferimos segurança de implantação.
+
+Literatura para pesquisa — não indicação de plantio
+Foto: CostaPPPR · CC BY-SA 3.0
+SOMENTE PESQUISA
+Alternanthera brasiliana (L.) Kuntze
+
+Perpétua-do-mato / penicilina · Amaranthaceae
+
+Evidência adicional: Citada em revisão de espécies para soluções vegetadas; a fonte não demonstra tolerância específica à duração do acúmulo observado.
+
+Lacunas: Faixa comparável de luz não estabelecida. Faixa comparável de umidade não estabelecida.
+
+Registro para pesquisa, não indicação de plantio ou eficiência hidráulica.
+
+Fontes e limitações
+Foto: Vitor dos Santos · CC BY 4.0
+SOMENTE PESQUISA
+Arachis repens Handro
+
+Amendoim-rasteiro · Fabaceae
+
+Evidência adicional: Revisão brasileira a inclui entre espécies investigadas; estudos em taludes não comprovam desempenho em jardim de chuva.
+
+Lacunas: Faixa comparável de luz não estabelecida. Faixa comparável de umidade não estabelecida.
+
+Registro para pesquisa, não indicação de plantio ou eficiência hidráulica.
+
+Fontes e limitações
+Foto: Andrés González · CC BY-SA 4.0
+SOMENTE PESQUISA
+Cyperus giganteus Vahl
+
+Piri (nome registrado na literatura) · Cyperaceae
+
+Evidência adicional: Uma revisão brasileira cita a espécie entre possibilidades para áreas sujeitas a inundação sazonal; não mede seu desempenho neste terreno.
+
+Lacunas: Faixa comparável de luz não estabelecida. Faixa comparável de umidade não estabelecida.
+
+Registro para pesquisa, não indicação de plantio ou eficiência hidráulica.
+
+Fontes e limitações
+Foto: João Medeiros · CC BY 2.0
+SOMENTE PESQUISA
+Rhynchanthera grandiflora (Aubl.) DC.
+
+Quaresmeira (nome popular variável) · Melastomataceae
+
+Evidência adicional: Aparece em levantamento bibliográfico de vegetação para áreas úmidas; verificar identificação, porte e ambiente local.
+
+Lacunas: Faixa comparável de luz não estabelecida. Faixa comparável de umidade não estabelecida.
+
+Registro para pesquisa, não indicação de plantio ou eficiência hidráulica.
+
+Fontes e limitações
+O que verificar antes de avançar
+Registrar duração do acúmulo após chuva segura.
+Verificar proximidade de construções e redes enterradas.
+A drenagem aparente não substitui ensaio ou avaliação de infiltração.
+02
+Área observada 02
+Há literatura botânica relevante, mas faltam faixas ambientais comparáveis para indicar plantio.
+0 correspondências
+03
+Área observada 03
+Há literatura botânica relevante, mas faltam faixas ambientais comparáveis para indicar plantio.
+0 correspondências
+
+A literatura orienta perguntas; somente avaliação local apropriada permite decidir sobre uma intervenção. A fotografia e as marcações não medem infiltração.
+
+1
+Mostre seu espaço
+2
+Registre observações
+3
+Experimente
+4
+Organize o plano
+Mostre seu espaço
+
+Pode continuar com um esquema ilustrativo se não tiver foto.
+
+Nome do espaço
+Enviar fotografia
+Continuar
+CONFLORA / CENÁRIOS VISUAIS
+Uma fotografia. Duas alternativas editáveis.
+
+Crie marcas de jardim ou plantas no editor, salve A e B e carregue qualquer composição para continuar editando. Nenhuma ação altera a fotografia original.
+
+Terreno observado
+Composição A
+Não salva
+Crie uma composição no editor e salve aqui.
+Salvar composição A
+Composição B
+Não salva
+Crie uma composição no editor e salve aqui.
+Salvar composição B
+Voltar ao editor do terreno ↗
+
+Depois de salvar A/B, use também “Salvar” no projeto para manter as composições ao reabrir o navegador.
+
+Adicione primeiro uma marca de jardim ou uma planta identificada para criar uma proposta.
+
+Comparação conceitual, sem escala física, crescimento simulado ou previsão de redução de alagamentos.
+
+CONFLORA / RESULTADO DO MEU TERRENO
+O que seu terreno nos permite investigar
+
+Este resumo combina apenas as observações registradas com o catálogo e as fontes verificadas. Não é diagnóstico técnico nem promessa de redução de alagamentos.
+
+7
+Marcações e observações
+3
+Áreas com leitura preliminar
+0
+Composições A/B salvas
+Por área
+Área 01
+Alternativas para investigar
+Área marcada pelo usuário
+
+Observações e condições declaradas: Luz: Muito sol · Umidade: Molhado · Solo: aparentemente lenta
+
+A aparente drenagem lenta impede assumir que um jardim de chuva infiltrará água adequadamente.
+
+Seleção botânica: O Herbário não identificou espécies com correspondência documental suficiente para estas condições.
+
+Alternativas: Cobertura vegetada para investigar
+
+Próxima verificação: Registrar por quanto tempo a água permanece após a chuva.
+
+Área 02
+Alternativas para investigar
+Área marcada pelo usuário
+
+Observações e condições declaradas: Luz: Muito sol · Umidade: Molhado · Solo: aparentemente lenta
+
+A aparente drenagem lenta impede assumir que um jardim de chuva infiltrará água adequadamente.
+
+Seleção botânica: O Herbário não identificou espécies com correspondência documental suficiente para estas condições.
+
+Alternativas: Cobertura vegetada para investigar
+
+Próxima verificação: Registrar por quanto tempo a água permanece após a chuva.
+
+Área 03
+Alternativas para investigar
+Área marcada pelo usuário
+
+Observações e condições declaradas: Luz: Muito sol · Umidade: Molhado · Solo: aparentemente lenta
+
+A aparente drenagem lenta impede assumir que um jardim de chuva infiltrará água adequadamente.
+
+Seleção botânica: O Herbário não identificou espécies com correspondência documental suficiente para estas condições.
+
+Alternativas: Cobertura vegetada para investigar
+
+Próxima verificação: Registrar por quanto tempo a água permanece após a chuva.
+
+Espécies que você salvou para pesquisa
+
+Nenhuma espécie foi salva como interesse. A CONFLORA não presume que uma planta foi escolhida para implantação.
+
+Evidências e próximos passos
+
+Verifique as condições do solo, os caminhos reais da água, possíveis redes enterradas, afastamento das construções e a saída segura do excedente antes de qualquer intervenção.
+
+Composições A/B são hipóteses visuais sem escala e não são projetos executivos.
+
+O que verificar a partir dos seus registros
+OBSERVAÇÃO → VERIFICAÇÃO
+Você registrou acúmulo de água.
+
+Registre duração e frequência; não assuma que o ponto de acúmulo é adequado para infiltração.
+
+Iowa State University Extension — Natural Resource Stewardship (RG 605: link original indisponível)
+OBSERVAÇÃO → VERIFICAÇÃO
+Há superfície pavimentada marcada.
+
+Investigue material, compactação e destino do escoamento; a imagem não mede permeabilidade.
+
+US EPA. Soak Up the Rain: Rain Gardens.
+SELEÇÃO FUNDAMENTADA / PRELIMINAR
+Espécies para investigar
+
+Contexto regional: Brasil · Drenagem observada do solo: Parece drenar devagar · Luz observada: Muito sol · Umidade observada: Molhado
+
+Ainda precisa verificar: Quanto tempo a água fica?, Proximidade de construções, Espaço para intervenção, Disponibilidade de cuidados
+
+As fontes brasileiras disponíveis ainda não permitem relacionar luz e umidade às condições informadas. Consulte as fichas brasileiras para continuar a pesquisa; os dados de Iowa se aplicam a outro contexto.
+
+Como funciona esta seleção?
+Alternativas e próximos passos
+
+Investigue cobertura vegetada e localização de jardim de chuva com apoio local. Verifique infiltração, redes, fundações e saída da água excedente. Não há dimensionamento de drenagem nesta seleção.
+
+Iowa Rain Garden Guide
+Caminhos informados
+Soluções investigadas
+
+Nenhuma solução salva.
+
+Espécies de interesse — não são decisões de plantio
+Plantios informados no diário (não inferidos dos interesses)
+Ainda desconhecido
+
+Os campos foram preenchidos; isso não é verificação técnica.
+
+Próximo passo
+
+Registre uma observação após chuva, complete os dados desconhecidos e leve as hipóteses a uma avaliação local.
+
+As regras organizam o que você informou; não analisam a fotografia nem calculam drenagem.
+
+O que verificar antes de agir
+Observar para onde a água realmente escoa em uma chuva segura.
+Verificar redes enterradas, fundações e afastamentos antes de escavar.
+Avaliar as condições do solo e se a infiltração é apropriada.
+Prever o destino da água excedente em chuvas intensas.
+Consultar orientações locais sobre plantas e execução.
+Abrir relatório ›
+CONFLORA
+
+Projeto educativo do BRaVE 2026 — UNESP × Kirkwood Community College
+
+Uma ferramenta de observação e planejamento conceitual, não um projeto executivo.

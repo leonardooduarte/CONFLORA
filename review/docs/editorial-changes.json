@@ -1,0 +1,1218 @@
+[
+  {
+    "file": "src/App.jsx",
+    "before": "Uma foto, algumas observações e um plano inicial para pensar melhor na chuva.",
+    "after": "Registre o que acontece quando chove e organize os próximos passos para o seu terreno.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "A photo, a few observations, and an initial plan for understanding rain.",
+    "after": "Record what happens when it rains and plan what to investigate next.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Por trás de cada marcação, uma pergunta.",
+    "after": "Suas marcações ajudam a organizar a investigação.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Behind every marker is a question.",
+    "after": "Your annotations help organize the site review.",
+    "occurrences": 1,
+    "reason": "Troca formulação genérica por uma descrição do conteúdo ou da ação disponível nesta tela."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Uma maneira de olhar para o seu quintal.",
+    "after": "Observe a chuva no seu terreno.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "A different way to look at your yard.",
+    "after": "See what happens when rain reaches your site.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Uma fotografia. Muitas perguntas para acompanhar.",
+    "after": "Marque o que observou e registre as condições do terreno.",
+    "occurrences": 1,
+    "reason": "Troca formulação genérica por uma descrição do conteúdo ou da ação disponível nesta tela."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "One photograph. Questions to follow over time.",
+    "after": "Mark your observations and record the site conditions.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Não foi possível salvar aqui. Exporte o JSON para guardar uma cópia.",
+    "after": "Não foi possível salvar neste navegador. Exporte o projeto em JSON para guardar uma cópia.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Could not save here. Export a JSON backup instead.",
+    "after": "This browser could not save the project. Export a JSON copy to keep your work.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Não foi possível abrir o arquivo. Verifique o formato.",
+    "after": "Não foi possível abrir o projeto. Escolha um arquivo JSON exportado pelo CONFLORA.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Unable to open file. Check its format.",
+    "after": "The project could not be opened. Choose a JSON file exported from CONFLORA.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Imagem JPG, PNG ou WebP até 15 MB.",
+    "after": "Escolha uma fotografia JPG, PNG ou WebP de até 15 MB.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "JPG, PNG, or WebP image up to 15 MB.",
+    "after": "Choose a JPG, PNG or WebP photo no larger than 15 MB.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/i18n.js",
+    "before": "JPG, PNG, or WebP image up to 15 MB.",
+    "after": "Choose a JPG, PNG or WebP photo no larger than 15 MB.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Não foi possível gerar imagem.",
+    "after": "Não foi possível preparar a imagem do relatório. Confira a fotografia e tente novamente.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Unable to generate image.",
+    "after": "The report image could not be prepared. Check the photo and try again.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Não foi possível gerar o PDF. Confira as imagens e tente novamente.",
+    "after": "Não foi possível gerar o PDF. Confira se as imagens carregaram e tente novamente.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Unable to generate PDF. Check images and retry.",
+    "after": "The PDF could not be created. Check that the images have loaded, then try again.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Fotos e projetos ficam no seu navegador. Nada é enviado a um servidor.",
+    "after": "Suas fotos e seus projetos ficam neste navegador. A CONFLORA não envia suas fotos para análise.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Photos and projects stay in your browser. Nothing is uploaded to a server.",
+    "after": "Your photos and projects stay in this browser. CONFLORA does not upload your photos for analysis.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "O arquivo JSON contém suas fotos; guarde-o com cuidado.",
+    "after": "O arquivo JSON inclui suas fotos e anotações. Compartilhe apenas com quem deve ter acesso.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "The JSON includes your photos; store it carefully.",
+    "after": "The JSON file includes your photos and notes. Share it only with people who should have access.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Organize o que recebeu e registre o que fez. Os procedimentos dependem das instruções confirmadas pela equipe do kit.",
+    "after": "Confira os materiais recebidos e registre o acompanhamento. Para instalar ou usar o kit, siga as instruções confirmadas pela equipe responsável.",
+    "occurrences": 1,
+    "reason": "Explica o acompanhamento do kit e mantém explícito o caráter provisório das instruções."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Organize what you received and record progress. Procedures depend on verified instructions for your kit.",
+    "after": "Check the materials you received and keep a record of progress. Follow the kit team’s confirmed instructions for installation and use.",
+    "occurrences": 1,
+    "reason": "Explica o acompanhamento do kit e mantém explícito o caráter provisório das instruções."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Integração futura por QR: o identificador poderá abrir este módulo. Não existe distribuição oficial de códigos nesta edição.",
+    "after": "O acesso por QR code está previsto, mas ainda não está disponível nesta edição.",
+    "occurrences": 1,
+    "reason": "Explica o acompanhamento do kit e mantém explícito o caráter provisório das instruções."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Future QR integration: an identifier may open this module. There is no official code distribution in this edition.",
+    "after": "QR code access is planned but is not available in this edition.",
+    "occurrences": 1,
+    "reason": "Explica o acompanhamento do kit e mantém explícito o caráter provisório das instruções."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Seu diário ainda não tem registros. Guarde uma observação para acompanhar o kit.",
+    "after": "Nenhum registro do kit ainda. Anote uma observação ou adicione uma fotografia para começar.",
+    "occurrences": 1,
+    "reason": "Explica o acompanhamento do kit e mantém explícito o caráter provisório das instruções."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Your journal has no entries yet. Save an observation to track your kit.",
+    "after": "No kit entries yet. Add an observation or a photo to start your record.",
+    "occurrences": 1,
+    "reason": "Explica o acompanhamento do kit e mantém explícito o caráter provisório das instruções."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Armazenamento estimado desta origem:",
+    "after": "Uso estimado de armazenamento deste site:",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Estimated storage for this origin:",
+    "after": "Estimated storage used by this site:",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/v20Insight.js",
+    "before": "Observe de local seguro após a chuva e registre nas condições do terreno ou da área.",
+    "after": "Observe de um local seguro após a chuva e registre a duração nas condições do terreno ou da área.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/v20Insight.js",
+    "before": "Observe safely after rainfall and record it in site or area conditions.",
+    "after": "Observe from a safe place after rain and record the duration in the site or area conditions.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/v20Insight.js",
+    "before": "Umidade molhada, conforme relato.",
+    "after": "Solo descrito como molhado.",
+    "occurrences": 1,
+    "reason": "Corrige redação inadequada e distingue observações/irrigação de evidências de tolerância ao encharcamento."
+  },
+  {
+    "file": "src/core/v20Insight.js",
+    "before": "Wet moisture, as reported by the user.",
+    "after": "The soil was reported as wet.",
+    "occurrences": 1,
+    "reason": "Corrige redação inadequada e distingue observações/irrigação de evidências de tolerância ao encharcamento."
+  },
+  {
+    "file": "src/core/siteAnalysis.js",
+    "before": "Superfície de cobertura registrada; direção do escoamento não medida.",
+    "after": "Saída do telhado marcada; a direção do escoamento ainda precisa ser observada.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/siteAnalysis.js",
+    "before": "Roof observation recorded; runoff direction not measured.",
+    "after": "A roof outlet was marked; the direction of runoff still needs to be observed.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/siteAnalysis.js",
+    "before": "A água foi relatada por algumas horas.",
+    "after": "Segundo o registro, a água permanece por algumas horas.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/siteAnalysis.js",
+    "before": "Water was reported to remain for a few hours.",
+    "after": "Water remains for a few hours, according to the observation.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/IntegratedResults.jsx",
+    "before": "Seu terreno, em uma única leitura.",
+    "after": "O que você registrou sobre o terreno.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/IntegratedResults.jsx",
+    "before": "Your site, one clear picture.",
+    "after": "Your site observations, brought together.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/IntegratedResults.jsx",
+    "before": "Cada ponto tem seu contexto.",
+    "after": "Consulte as condições de cada área.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/IntegratedResults.jsx",
+    "before": "Every observation has its own context.",
+    "after": "Review the conditions for each area.",
+    "occurrences": 1,
+    "reason": "Troca formulação genérica por uma descrição do conteúdo ou da ação disponível nesta tela."
+  },
+  {
+    "file": "src/core/v212Experience.js",
+    "before": "Literatura para investigar, sem validação de plantio",
+    "after": "Referências para pesquisa; plantio não validado",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/core/v212Experience.js",
+    "before": "Literature to investigate, no planting validation",
+    "after": "Research references; planting suitability not established",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "before": "registros essenciais preparados",
+    "after": "registros essenciais preenchidos",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "before": "core records prepared",
+    "after": "core records completed",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "before": "Campos não definidos nesta área herdam o valor geral.",
+    "after": "Os campos sem informação específica usam as condições gerais do terreno.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "before": "Fields not set here inherit the whole-site value.",
+    "after": "Fields without area-specific information use the whole-site conditions.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "before": "As respostas ficam associadas ao contexto selecionado. “Não sei” continua sendo uma incerteza.",
+    "after": "As respostas valem para a marcação ou o terreno selecionado. Deixe “Não sei” quando não houver informação.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "before": "Answers are linked to the selected context. Unknown answers remain unknown.",
+    "after": "Answers apply to the selected observation or whole site. Choose “Not sure” when the information is unavailable.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "Observe o lugar; não é necessário medir. “Não sei” permanece como uma incerteza. As respostas se aplicam à área vinculada ou ao espaço inteiro.",
+    "after": "Registre o que observou; você pode deixar respostas como “Não sei”. Estes registros não substituem medições ou uma avaliação técnica.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "Observe the place; no measurements required. Unknown answers remain uncertainties. Responses apply to the linked area or whole space.",
+    "after": "Record what you observed and choose “Not sure” where needed. These records do not replace measurements or a technical assessment.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "O catálogo brasileiro ainda não reúne dados completos de luz e umidade para estas condições. Não vamos preencher lacunas com espécies de Iowa ou inventar compatibilidades. Consulte as fichas brasileiras e suas fontes para investigar.",
+    "after": "As fontes brasileiras disponíveis ainda não permitem relacionar luz e umidade às condições informadas. Consulte as fichas brasileiras para continuar a pesquisa; os dados de Iowa se aplicam a outro contexto.",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "The Brazilian catalog still lacks sufficient light and moisture evidence for these conditions. We do not transfer Iowa species or invent matches. Review Brazilian records and sources.",
+    "after": "The available Brazilian sources do not yet link light and moisture ranges to your reported conditions. Review the Brazilian records for further research; Iowa data apply to a different regional context.",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "Exige região e pelo menos uma correspondência documentada de luz ou umidade; exclui contradições conhecidas. Alagamentos episódicos em vasos não equivalem a solo permanentemente molhado. Guia regional e estudo experimental são apresentados como tipos distintos de evidência, sem pontuação nem garantia.",
+    "after": "A consulta usa a região e ao menos uma faixa documentada de luz ou umidade, excluindo contradições conhecidas. Irrigação em vasos não comprova tolerância ao encharcamento. Guias e experimentos têm alcances diferentes; não há nota de compatibilidade ou garantia de plantio.",
+    "occurrences": 1,
+    "reason": "Corrige redação inadequada e distingue observações/irrigação de evidências de tolerância ao encharcamento."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "Requires region and at least one documented light/moisture match; excludes known contradictions. Seasonal flooding in pots is not permanent saturation. Regional guides and experiments are distinct evidence types, without scores or guarantees.",
+    "after": "The search uses the region and at least one documented light or moisture range, excluding known contradictions. Irrigated pot trials do not establish waterlogging tolerance. Guides and experiments have different scopes; neither provides a compatibility score or planting guarantee.",
+    "occurrences": 1,
+    "reason": "Corrige redação inadequada e distingue observações/irrigação de evidências de tolerância ao encharcamento."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "EVIDENCE SELECTION / PRELIMINARY",
+    "after": "PRELIMINARY EVIDENCE REVIEW",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "before": "Know my space",
+    "after": "Record my space",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/AreaDossier.jsx",
+    "before": "Observe. Investigue. Acompanhe.",
+    "after": "Observações e registros desta área.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/AreaDossier.jsx",
+    "before": "Observe. Investigate. Follow up.",
+    "after": "Observations and records for this area.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/AtelierPreview.jsx",
+    "before": "Cada ponto guarda uma pergunta.",
+    "after": "Registre onde a água se acumula.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/AtelierPreview.jsx",
+    "before": "Each point holds a question.",
+    "after": "Mark where water collects.",
+    "occurrences": 1,
+    "reason": "Troca formulação genérica por uma descrição do conteúdo ou da ação disponível nesta tela."
+  },
+  {
+    "file": "src/features/BotanicalAtlas.jsx",
+    "before": "Encontre outro ponto de vista.",
+    "after": "Explore as fotografias das espécies.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/BotanicalAtlas.jsx",
+    "before": "Find another point of view.",
+    "after": "Explore the species photographs.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/BotanicalAtlas.jsx",
+    "before": "Uma experiência visual de refração; consulte a fotografia e a ficha para identificação.",
+    "after": "A lente é um recurso visual. Para identificar a planta, consulte a fotografia original e a ficha.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/BotanicalAtlas.jsx",
+    "before": "A visual refraction experience; use the photograph and record for identification.",
+    "after": "The lens is a visual effect. Use the original photograph and species record for identification.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/HerbariumFeature.jsx",
+    "before": "Não apenas uma planta. Uma escolha a investigar.",
+    "after": "Conheça as espécies e consulte as fontes.",
+    "occurrences": 1,
+    "reason": "Troca formulação genérica por uma descrição do conteúdo ou da ação disponível nesta tela."
+  },
+  {
+    "file": "src/features/HerbariumFeature.jsx",
+    "before": "More than a plant. A choice to investigate.",
+    "after": "Get to know the plants and their sources.",
+    "occurrences": 1,
+    "reason": "Troca formulação genérica por uma descrição do conteúdo ou da ação disponível nesta tela."
+  },
+  {
+    "file": "src/features/KineticGallery.jsx",
+    "before": "A natureza não fica parada.",
+    "after": "Retratos da diversidade vegetal.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/KineticGallery.jsx",
+    "before": "Nature is never still.",
+    "after": "A closer look at plant diversity.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlanEvidence.jsx",
+    "before": "O que seu registro pede verificar",
+    "after": "O que verificar a partir dos seus registros",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlanEvidence.jsx",
+    "before": "What your record asks you to check",
+    "after": "What to check based on your records",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlanEvidence.jsx",
+    "before": "FATO INFORMADO → VERIFICAÇÃO",
+    "after": "OBSERVAÇÃO → VERIFICAÇÃO",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlanEvidence.jsx",
+    "before": "REPORTED FACT → CHECK",
+    "after": "OBSERVATION → CHECK",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/ProjectBento.jsx",
+    "before": "Comece o registro abaixo. O tempo também faz parte da paisagem.",
+    "after": "Registre visitas, chuvas e cuidados para comparar suas observações ao longo do tempo.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/ProjectBento.jsx",
+    "before": "Start recording below. Time is part of the landscape.",
+    "after": "Record visits, rain and care to compare observations over time.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/ProjectBento.jsx",
+    "before": "Marcas que ajudam a formular perguntas.",
+    "after": "Reveja os pontos e caminhos que você marcou.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/ProjectBento.jsx",
+    "before": "Markers that help formulate questions.",
+    "after": "Review the points and paths you marked.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/ProjectBento.jsx",
+    "before": "MEU TERRITÓRIO",
+    "after": "MEU TERRENO",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/ProjectBento.jsx",
+    "before": "MY TERRITORY",
+    "after": "MY SITE",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/Solutions.jsx",
+    "before": "Uma solução começa com perguntas.",
+    "after": "Conheça três formas de lidar com a chuva.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/Solutions.jsx",
+    "before": "A solution starts with questions.",
+    "after": "Explore three approaches to rainwater.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/RainRoots.jsx",
+    "before": "Um corte ilustrativo para compreender relações. Nenhuma medida deste desenho é uma especificação de obra.",
+    "after": "Este corte mostra relações entre água, superfície, raízes e solo. É ilustrativo e não fornece medidas para executar uma obra.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/RainRoots.jsx",
+    "before": "An illustrative section to understand relationships. No measurement in this drawing is a construction specification.",
+    "after": "This section shows how water, surfaces, roots and soil relate. It is an illustration, not a set of construction measurements.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/RainRoots.jsx",
+    "before": "O caminho informado pelo lugar",
+    "after": "O caminho da água",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/RainRoots.jsx",
+    "before": "Water and the site",
+    "after": "Where water flows",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/WaterStory.jsx",
+    "before": "Uma ilustração para explorar relações. Selecione um ponto e leve a pergunta para o seu espaço.",
+    "after": "Selecione um ponto para entender o que observar no seu terreno.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/WaterStory.jsx",
+    "before": "An illustration for exploring connections. Select a point and take the question to your own space.",
+    "after": "Select a point to learn what to observe at your site.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/i18n.js",
+    "before": "Mova o divisor para ver o terreno com e sem a intervenção ilustrativa. É você quem escolhe onde posicioná-la.",
+    "after": "Arraste o divisor para comparar a fotografia com e sem os elementos que você adicionou.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/i18n.js",
+    "before": "Move the divider to compare the yard with and without the illustrative intervention. You decide where to place it.",
+    "after": "Move the slider to compare the photo with and without the elements you added.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "As observações permanecem dos dois lados. Apenas os jardins de chuva desenhados aparecem no Depois.",
+    "after": "As observações aparecem dos dois lados. Os elementos de proposta adicionados no editor aparecem no Depois.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "Observations remain on both sides. Only the rain gardens you draw appear in After.",
+    "after": "Observations remain on both sides. Proposed elements added in the editor appear in After.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/V21Botanical.jsx",
+    "before": "Não há espécies suficientemente documentadas para este contexto. Não vamos inventar uma indicação.",
+    "after": "A documentação disponível ainda não permite indicar espécies para este contexto. Revise as condições e consulte as fontes.",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/V21Botanical.jsx",
+    "before": "No species is sufficiently documented for this context. No planting suggestion is invented.",
+    "after": "The available documentation does not yet support plant selection for this context. Review the conditions and sources.",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/V21Botanical.jsx",
+    "before": "INTELIGÊNCIA BOTÂNICA",
+    "after": "EVIDÊNCIAS BOTÂNICAS",
+    "occurrences": 1,
+    "reason": "Troca formulação genérica por uma descrição do conteúdo ou da ação disponível nesta tela."
+  },
+  {
+    "file": "src/features/PersonalizedOutcome.jsx",
+    "before": "Individualized preliminary result",
+    "after": "Site-specific preliminary review",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/V19Proposal.jsx",
+    "before": "Dados atuais não permitem gerar plantio automático. As fichas de pesquisa continuam disponíveis.",
+    "after": "Os dados atuais não permitem gerar uma composição botânica fundamentada. Você pode consultar as fichas e criar um estudo espacial exploratório.",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/V19Proposal.jsx",
+    "before": "Current data do not allow automatic planting. Research records remain available.",
+    "after": "Current evidence does not support a botanical composition. You can review the records or create an exploratory spatial study.",
+    "occurrences": 1,
+    "reason": "Explica o alcance da evidência, as lacunas e o próximo passo sem afirmar adequação local ou diagnóstico."
+  },
+  {
+    "file": "src/features/V18Proposal.jsx",
+    "before": "No botanical composition is saved. Automatic placement requires documented matches, no priority warnings, and sufficient information on drainage, pooling duration and distance from buildings.",
+    "after": "No alternative is saved yet. You can create an exploratory spatial study. A botanical composition also requires documented plant matches and sufficient site conditions.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/V18Proposal.jsx",
+    "before": "Documented matching",
+    "after": "Documented match",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/reportPDF.js",
+    "before": "Fotocolagem de referências botânicas. Sem escala física, recorte de fundo perfeito ou previsão de crescimento.",
+    "after": "Fotocolagem com imagens de referência. Escala e perspectiva são ilustrativas; não há previsão de crescimento.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/reportPDF.js",
+    "before": "Botanical reference collage. No physical scale, perfect background cutout or growth prediction.",
+    "after": "A collage of botanical reference photos. Scale and perspective are illustrative; growth is not predicted.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "Herbário. Conhecer para escolher.",
+    "after": "Herbário: espécies, condições e fontes.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "Herbarium. Knowledge before choice.",
+    "after": "Herbarium: species, conditions and sources.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "Faixa comparável não estabelecida nas fontes desta ficha.",
+    "after": "As fontes desta ficha não estabelecem uma faixa comparável.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "No comparable range established by this record’s sources.",
+    "after": "The sources for this record do not establish a comparable range.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/i18n.js",
+    "before": "O arquivo não contém um projeto CONFLORA V11 válido.",
+    "after": "O arquivo não contém um projeto CONFLORA compatível.",
+    "occurrences": 1,
+    "reason": "Identifica a falha em linguagem simples e orienta como retomar a tarefa ou guardar uma cópia."
+  },
+  {
+    "file": "src/core/i18n.js",
+    "before": "This is not a valid CONFLORA V11 project.",
+    "after": "This file does not contain a compatible CONFLORA project.",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "Imagem em revisão de identificação",
+    "after": "Fotografia sem identificação confirmada",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "Image identification under review",
+    "after": "Photograph identification not confirmed",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/knowledge.js",
+    "before": "Mesic",
+    "after": "Moderately moist",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/TerrainSelection.jsx",
+    "before": "Mesic",
+    "after": "Moderately moist",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/V20Insight.jsx",
+    "before": "Mesic",
+    "after": "Moderately moist",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/features/V18Report.jsx",
+    "before": "Mesic",
+    "after": "Moderately moist",
+    "occurrences": 1,
+    "reason": "Torna a ação e seu contexto mais claros; evita tradução literal, jargão interno e promessas imprecisas."
+  },
+  {
+    "file": "src/core/i18n.js",
+    "before": "Choose a Choose a JPG",
+    "after": "Choose a JPG",
+    "occurrences": 1,
+    "reason": "Remove duplicação de palavras no aviso de arquivo."
+  },
+  {
+    "file": "src/core/reportPDF.js",
+    "before": "doc.save('conflora-v21-'",
+    "after": "doc.save('conflora-v22-'",
+    "occurrences": 1,
+    "reason": "O nome do PDF deve identificar a edição exportada."
+  },
+  {
+    "file": "src/features/V18Report.jsx",
+    "before": "project.context?.regionCode==='BR'?'Brasil'",
+    "after": "project.context?.regionCode==='BR'?(pt?'Brasil':'Brazil')",
+    "occurrences": 2,
+    "reason": "Localiza o contexto brasileiro no relatório em inglês."
+  },
+  {
+    "file": "src/App.jsx",
+    "before": "IA:'USA · Iowa'",
+    "after": "IA:lang==='pt'?'EUA · Iowa':'USA · Iowa'",
+    "occurrences": 1,
+    "reason": "Localiza o nome do país sem alterar o código regional."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "['IA','USA · Iowa']",
+    "after": "['IA',pt?'EUA · Iowa':'USA · Iowa']",
+    "occurrences": 1,
+    "reason": "Localiza o nome do país sem alterar o código regional."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "before": "p.height||t.unknown",
+    "after": "(pt?p.height:p.height?.replace(/(\\d),(\\d)/g,'$1.$2').replace('(guia)','(guide)').replace('(levantamento florístico)','(floristic survey)'))||t.unknown",
+    "occurrences": 2,
+    "reason": "Localiza os decimais e as notas de porte na apresentação em inglês; dados científicos originais preservados."
+  },
+  {
+    "file": "src/features/V19Visual.jsx",
+    "before": "{markers.length} {pt?'elementos':'elements'}",
+    "after": "{markers.length} {pt?(markers.length===1?'elemento':'elementos'):(markers.length===1?'element':'elements')}",
+    "occurrences": 1,
+    "reason": "Concordância entre o número de elementos e o substantivo nos dois idiomas."
+  },
+  {
+    "file": "src/features/V20Insight.jsx",
+    "before": "pick(pt,'elementos visuais','visual elements')",
+    "after": "pick(pt,s.count===1?'elemento visual':'elementos visuais',s.count===1?'visual element':'visual elements')",
+    "occurrences": 1,
+    "reason": "Concordância do resumo das alternativas."
+  },
+  {
+    "file": "index.html",
+    "before": "CONFLORA — observe seu espaço, explore possibilidades e organize um plano inicial.",
+    "after": "CONFLORA — registre a chuva no seu terreno, consulte espécies e fontes e organize os próximos passos.",
+    "occurrences": 1,
+    "reason": "A descrição para buscas explica tarefas concretas e evita prometer diagnóstico."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Todo lugar pode ganhar mais vida.",
+    "after": "Entenda a chuva no seu terreno.",
+    "reason": "Explica o objetivo logo na abertura, sem prometer transformação ambiental."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "Every place can gain more life.",
+    "after": "Understand rain on your site.",
+    "reason": "Troca a tradução literal do slogan por um objetivo claro e idiomático."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Observe a chuva. Descubra espécies. Desenhe o futuro do seu espaço.",
+    "after": "Marque onde a água se acumula, consulte as espécies e organize o que precisa verificar.",
+    "reason": "Descreve as três tarefas reais: registrar, consultar e organizar verificações."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "Observe rain. Discover species. Draw the future of your space.",
+    "after": "Mark where water collects, explore plant records and plan what to check next.",
+    "reason": "Explica o percurso com verbos concretos, sem sugerir previsão do futuro."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Um espaço. Muitos futuros.",
+    "after": "Da observação ao planejamento.",
+    "reason": "Dá um título informativo à sequência de apresentação do produto."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "One place. Many futures.",
+    "after": "From observation to planning.",
+    "reason": "Nomeia a sequência de trabalho em inglês natural."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Aprender a olhar.",
+    "after": "Observe o terreno.",
+    "reason": "Indica a ação da primeira etapa."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "Learn to observe.",
+    "after": "Observe your site.",
+    "reason": "Indica a ação sem um tom de aula genérica."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Conhecer o que vive.",
+    "after": "Consulte as espécies.",
+    "reason": "Conecta o cartão ao herbário."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "Know what lives here.",
+    "after": "Review plant records.",
+    "reason": "Evita afirmar que todas as plantas do catálogo ocorrem no terreno."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Cultivar possibilidades.",
+    "after": "Organize os próximos passos.",
+    "reason": "Explica a organização do plano sem repetir uma metáfora de cultivo."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "Cultivate possibilities.",
+    "after": "Plan your next steps.",
+    "reason": "Substitui uma metáfora literal por uma ação."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Tudo se conecta. A água. As raízes. Você.",
+    "after": "Água, vegetação e solo. Observe essas relações no seu terreno.",
+    "reason": "Mantém a ligação conceitual, mas esclarece o que observar."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "Everything connects. Water. Roots. You.",
+    "after": "Water, plants and soil. Observe how they interact on your site.",
+    "reason": "Mantém o tema ecológico com uma orientação concreta."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "PT",
+    "before": "Percorra a paisagem",
+    "after": "Veja como funciona",
+    "reason": "O link apresenta o funcionamento do site, não uma viagem virtual."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "Explore the landscape",
+    "after": "See how it works",
+    "reason": "Alinha o convite ao destino real do link."
+  },
+  {
+    "file": "src/features/PremiumExperience.jsx",
+    "language": "EN",
+    "before": "ÁGUA / SOLO / VIDA (também no inglês)",
+    "after": "WATER / SOIL / LIFE",
+    "reason": "Localiza a assinatura verbal na apresentação inglesa."
+  },
+  {
+    "file": "src/features/ConfloraMenu.jsx",
+    "language": "PT/EN",
+    "before": "Open menu / Close menu / Close",
+    "after": "Abrir menu / Fechar menu / Fechar",
+    "reason": "Localiza os controles do menu original sem alterar a animação."
+  },
+  {
+    "file": "src/features/useEffectLabels.js",
+    "language": "PT/EN",
+    "before": "Step / Previous slide / Next slide / Close / Previous / Next / Open",
+    "after": "Etapa / Imagem anterior / Próxima imagem / Fechar fotografia / Fotografia anterior / Próxima fotografia / Abrir ficha",
+    "reason": "Localiza os rótulos acessíveis e a galeria em português na integração com React Bits."
+  },
+  {
+    "file": "src/App.jsx",
+    "language": "PT/EN",
+    "before": "CONFLORA — início (nos dois idiomas)",
+    "after": "CONFLORA — início / CONFLORA — home",
+    "reason": "Localiza o destino do botão da marca."
+  },
+  {
+    "file": "src/App.jsx",
+    "language": "PT/EN",
+    "before": "Switch language",
+    "after": "EN — Mudar para inglês / PT — Switch to Portuguese",
+    "reason": "Explica o idioma de destino e inclui o texto visível no nome acessível."
+  },
+  {
+    "file": "src/App.jsx",
+    "language": "PT/EN",
+    "before": "Meu espaço (ao criar um projeto no modo inglês)",
+    "after": "My space",
+    "reason": "Localiza apenas o nome inicial de novos projetos; nomes salvos não são traduzidos."
+  },
+  {
+    "file": "src/features/HerbariumFeature.jsx",
+    "language": "PT/EN",
+    "before": "BRASIL · BAURU/SP / USA · IOWA",
+    "after": "BRASIL / BRAZIL; EUA · IOWA / USA · IOWA",
+    "reason": "Distingue o contexto do catálogo do local de um experimento. Bauru permanece na referência científica."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "language": "PT/EN",
+    "before": "BRASIL · PESQUISA / BRASIL · BAURU / Brasil / USA · Iowa",
+    "after": "BRASIL / BRAZIL; Brasil / Brazil; EUA · Iowa / USA · Iowa",
+    "reason": "Localiza os contextos e evita apresentar a cidade do estudo como abrangência do catálogo."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "language": "PT/EN",
+    "before": "0,61–0,91 m (guia) no modo inglês",
+    "after": "0.61–0.91 m (guide)",
+    "reason": "Adapta notação e nota de porte somente na apresentação em inglês."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "language": "PT/EN",
+    "before": "regionCode, sun, moisture",
+    "after": "Contexto regional, Luz, Umidade / Regional context, Light, Moisture",
+    "reason": "Substitui identificadores internos por nomes legíveis dos campos."
+  },
+  {
+    "file": "src/core/editor.js",
+    "language": "PT/EN",
+    "before": "CASA / ÁREA COBERTA; ÁREA EXTERNA; ESQUEMA ILUSTRATIVO nos dois idiomas",
+    "after": "HOUSE / COVERED AREA; OUTDOOR AREA; ILLUSTRATIVE DIAGRAM no inglês",
+    "reason": "Localiza também o texto dentro do SVG e da imagem exportada."
+  },
+  {
+    "file": "src/core/reportPDF.js",
+    "language": "PT/EN",
+    "before": "CONFLORA V21; Evidências botânicas V21; conflora-v21-…pdf",
+    "after": "CONFLORA V22; Evidências botânicas para este terreno / Botanical evidence for this site; conflora-v22-…pdf",
+    "reason": "Atualiza identificação do documento e remove a versão antiga do título de conteúdo."
+  },
+  {
+    "file": "src/features/V19Proposal.jsx",
+    "language": "PT/EN",
+    "before": "CONFLORA V19",
+    "after": "CONFLORA V22",
+    "reason": "Identifica a edição atual do painel, preservando a lógica de proposta."
+  },
+  {
+    "file": "src/features/V21Botanical.jsx",
+    "language": "PT/EN",
+    "before": "INTELIGÊNCIA BOTÂNICA / V21",
+    "after": "EVIDÊNCIAS BOTÂNICAS / BOTANICAL EVIDENCE",
+    "reason": "Descreve a consulta documental sem sugerir uma capacidade automática de diagnóstico."
+  },
+  {
+    "file": "src/features/GlobalBotanicalGlobe.jsx",
+    "language": "PT/EN",
+    "before": "Arraste para girar. / Drag to rotate.",
+    "after": "Arraste o globo ou use as setas do teclado. / Drag the globe or use the arrow keys.",
+    "reason": "Explica a alternativa de teclado implementada no globo."
+  },
+  {
+    "file": "src/features/BrandIntro.jsx",
+    "language": "PT/EN",
+    "before": "—",
+    "after": "Pular apresentação / Skip introduction; Apresentação CONFLORA / CONFLORA introduction",
+    "reason": "Textos novos, revisados, para pular e identificar a apresentação da marca."
+  },
+  {
+    "file": "src/features/WaterStory.jsx",
+    "language": "PT/EN",
+    "before": "Entrada da água (nome acessível do ponto 1)",
+    "after": "1. Entrada da água / 1. Water entry",
+    "reason": "Inclui o número visível no nome acessível, facilitando uso por voz."
+  },
+  {
+    "file": "src/features/StudioJourney.jsx",
+    "language": "PT/EN",
+    "before": "1 marcações registradas / 1 observations recorded",
+    "after": "1 marcação registrada / 1 observation recorded",
+    "reason": "Corrige a concordância na jornada para uma única observação."
+  },
+  {
+    "file": "src/features/V19Visual.jsx",
+    "language": "PT/EN",
+    "before": "1 elementos / 1 elements",
+    "after": "1 elemento / 1 element",
+    "reason": "Corrige o singular no editor das alternativas."
+  },
+  {
+    "file": "src/features/V20Insight.jsx",
+    "language": "PT/EN",
+    "before": "1 elementos visuais / 1 visual elements",
+    "after": "1 elemento visual / 1 visual element",
+    "reason": "Corrige o singular no comparativo A/B."
+  },
+  {
+    "file": "src/core/reportPDF.js",
+    "language": "PT/EN",
+    "before": "1 superfícies pavimentadas",
+    "after": "superfícies pavimentadas: 1 / paved surfaces: 1",
+    "reason": "Organiza as contagens como rótulo e valor, sem erro de concordância."
+  },
+  {
+    "file": "src/features/V18Report.jsx",
+    "language": "PT/EN",
+    "before": "1 saídas do telhado",
+    "after": "Saídas do telhado: 1 / Roof outlets: 1",
+    "reason": "Padroniza contagens como rótulo e valor no relatório visual."
+  },
+  {
+    "file": "src/features/PlantLibrary.jsx",
+    "language": "PT/EN",
+    "before": "1 espécies documentadas",
+    "after": "1 espécie documentada",
+    "reason": "Corrige a contagem do herbário após filtros."
+  },
+  {
+    "file": "public/scene-*-en.svg; src/features/Solutions.jsx",
+    "language": "EN",
+    "before": "CASA / ÁREA COBERTA; ÁREA EXTERNA; ÁGUA ACUMULADA; TELHADO; JARDIM DE CHUVA; PISO; VEGETAÇÃO; ESQUEMA ILUSTRATIVO · SEM ESCALA",
+    "after": "HOUSE / COVERED AREA; OUTDOOR AREA; POOLING WATER; ROOF; RAIN GARDEN; PAVING; VEGETATION; ILLUSTRATIVE DIAGRAM · NOT TO SCALE",
+    "reason": "Localiza também os textos embutidos nas três ilustrações. Versões EN derivadas dos SVG originais; originais PT, composição e dados preservados."
+  },
+  {
+    "file": "src/core/knowledge.js",
+    "before": "Alagamentos episódicos no ensaio",
+    "after": "Umidade sazonal documentada",
+    "reason": "O código seasonal também descreve umidade sazonal em pesquisa ecológica; o rótulo não deve sugerir um ensaio de alagamento. O código e os critérios não mudam."
+  },
+  {
+    "file": "src/core/knowledge.js",
+    "before": "Episodic flooding in trial",
+    "after": "Documented seasonal moisture",
+    "reason": "O código seasonal também descreve umidade sazonal em pesquisa ecológica; o rótulo não deve sugerir um ensaio de alagamento. O código e os critérios não mudam."
+  },
+  {
+    "file": "src/data/plants.json",
+    "language": "EN",
+    "before": "Native to Brazil Southeast according to POWO; studied near Alagados Reservoir (Paraná) and reported in Pantanal communities. Occurrence or suitability in Itapeva is not established.",
+    "after": "Native to southeastern Brazil according to POWO; studied near Alagados Reservoir (Paraná) and reported in Pantanal communities. Occurrence or suitability in Itapeva is not established.",
+    "reason": "Usa a expressão geográfica natural em inglês, preservando a distribuição documentada e as ressalvas."
+  },
+  {
+    "file": "src/data/plants.json",
+    "language": "EN",
+    "before": "Native to Brazil Southeast per POWO. Cutting propagation study in Brazil; secondary background mentioning drained and wet soils does not prove rain-garden performance.",
+    "after": "Native to southeastern Brazil per POWO. Cutting propagation study in Brazil; secondary background mentioning drained and wet soils does not prove rain-garden performance.",
+    "reason": "Usa a expressão geográfica natural em inglês, preservando a distribuição documentada e as ressalvas."
+  },
+  {
+    "file": "src/data/plants.json",
+    "language": "EN",
+    "before": "Kew lists native distribution in Brazil Southeast. Bacci and colleagues documented the species in wet habitats of a Minas Gerais reserve; not evidence of occurrence in Itapeva.",
+    "after": "Kew lists native distribution in southeastern Brazil. Bacci and colleagues documented the species in wet habitats of a Minas Gerais reserve; not evidence of occurrence in Itapeva.",
+    "reason": "Usa a expressão geográfica natural em inglês, preservando a distribuição documentada e as ressalvas."
+  },
+  {
+    "file": "src/data/plants.json",
+    "language": "EN",
+    "before": "Native to Brazil Southeast per POWO. A Brazilian field trial planted this species on sand-mining slopes, not in rain gardens.",
+    "after": "Native to southeastern Brazil per POWO. A Brazilian field trial planted this species on sand-mining slopes, not in rain gardens.",
+    "reason": "Usa a expressão geográfica natural em inglês, preservando a distribuição documentada e as ressalvas."
+  },
+  {
+    "file": "src/data/references.json",
+    "language": "EN",
+    "before": "Field-scale prototype with two plant covers; whole-system monitoring is not a species-specific performance measurement.",
+    "after": "Only the thesis record and abstract were reviewed. A field-scale prototype in São Paulo used two plant covers; whole-system monitoring is not a species-specific performance measurement or evidence of suitability in Itapeva.",
+    "reason": "Explicita no inglês o mesmo alcance da consulta e o limite de aplicação já informados em português; referência e critérios científicos preservados."
+  },
+  {
+    "file": "src/features/ConfloraMenu.jsx",
+    "language": "EN",
+    "before": "Fechar (persistia após trocar PT → EN)",
+    "after": "Close",
+    "reason": "Sincroniza o texto visível do menu nos dois sentidos da troca de idioma, além do nome acessível."
+  },
+  {
+    "file": "src/core/v21Botanical.js",
+    "language": "EN",
+    "before": "Region: Brasil",
+    "after": "Region: Brazil",
+    "reason": "Localiza o valor calculado do contexto regional em resultados e relatórios; localidades digitadas pelo usuário continuam preservadas."
+  },
+  {
+    "file": "src/core/reportPDF.js",
+    "language": "PT/EN",
+    "before": "Itapeva · estudo 20 m (título do PDF sem o caractere ²)",
+    "after": "Itapeva · estudo 20 m²",
+    "reason": "Usa a fonte DM incorporada para preservar o nome completo do projeto, inclusive o caractere ², no título do PDF; não altera os dados."
+  }
+]

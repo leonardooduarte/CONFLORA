@@ -1,0 +1,49 @@
+19 / BRAZIL / DOCUMENTED ECOLOGICAL STUDY
+Inga affinis DC.
+
+Inga tree (confirm local name) · Fabaceae
+
+Tree
+
+Feitosa and colleagues (2026) flooded seedlings for 44 days. They observed reduced growth and photosynthetic pigments alongside increased soluble sugars. Physiological adjustment is not hydraulic performance.
+
+Why investigate: Matches the selected regional context. Local validation and identification are still needed.
+
+Compare species
+Preview in my space
+Read record and sources
+Save interest
+Scientific reading · sources and limits
+ACCEPTED SCIENTIFIC NAME
+Inga affinis DC.
+FAMILY
+Fabaceae
+ORIGIN IN CONTEXT
+Native in context
+OCCURRENCE
+Native in parts of Brazil, including Southeast, according to Kew. A 2026 paper used the synonym Inga vera subsp. affinis in Upper Paraná River floodplain vegetation; occurrence in Itapeva is not established.
+DOCUMENTED LIGHT
+Not verified
+DOCUMENTED MOISTURE
+The sources for this record do not establish a comparable range.
+HEIGHT
+Not verified
+CARE
+Tree size and urban clearances require evaluation; the seedling experiment does not cover setbacks, utilities or residential maintenance.
+POTENTIAL POSITION
+Not a rain-garden planting recommendation. The trial investigated seedlings, not household gardens.
+DOCUMENTED ROLE
+Feitosa and colleagues (2026) flooded seedlings for 44 days. They observed reduced growth and photosynthetic pigments alongside increased soluble sugars. Physiological adjustment is not hydraulic performance.
+LIMITS AND CAUTIONS
+Direct experimental seedling flood response, but lacking sun, urban soil, suitable planting size and bioretention performance; not eligible for site-matching.
+Sources and verification
+
+2026-11-16 · POWO · Kew
+
+Feitosa, R. M. P.; Ximenez, G. R.; Pastorini, L. H.; Romagnolo, M. B. (2026). Adaptive strategies in young Inga vera subsp. affinis plants under flooding. Brazilian Journal of Biology 86, e301423. DOI 10.1590/1519-6984.301423.
+Brazilian 44-day flooded seedling trial, with growth, pigment and sugar responses; no uptake rate or rain-garden performance.
+
+Royal Botanic Gardens, Kew — Plants of the World Online: Inga affinis DC. (nome aceito; Inga vera subsp. affinis é sinônimo).
+Accepted name and broad distribution, not suitability for rain gardens or occurrence in Itapeva.
+
+cristianol1456 · CC BY-SA 4.0 · Resized and cropped in display.

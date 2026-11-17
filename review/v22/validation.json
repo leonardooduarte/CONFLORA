@@ -1,0 +1,178 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:5176/",
+  "checks": [
+    "intro lifetime 1918 ms",
+    "original logo, application mounts in parallel, automatic removal, once per session",
+    "skip with mouse, Escape, Enter and Space",
+    "reduced motion, original COBE canvas, 16 records, keyboard rotation and 16 credits",
+    "retina canvas scale applied once, real autoplay, pause and pointer drag",
+    "all primary modules PT/EN, localized original component labels, projects, import error, mobile menu"
+  ],
+  "errors": [],
+  "viewports": [
+    320,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "runtimeScreens": [
+    {
+      "screen": "home",
+      "language": "pt",
+      "characters": 4883,
+      "reviewed": true
+    },
+    {
+      "screen": "editor",
+      "language": "pt",
+      "characters": 4517,
+      "reviewed": true
+    },
+    {
+      "screen": "conditions",
+      "language": "pt",
+      "characters": 5494,
+      "reviewed": true
+    },
+    {
+      "screen": "results-and-plan",
+      "language": "pt",
+      "characters": 18213,
+      "reviewed": true
+    },
+    {
+      "screen": "gallery",
+      "language": "pt",
+      "characters": 2032,
+      "reviewed": true
+    },
+    {
+      "screen": "plants",
+      "language": "pt",
+      "characters": 10735,
+      "reviewed": true
+    },
+    {
+      "screen": "species-records",
+      "language": "pt",
+      "characters": 12681,
+      "reviewed": true
+    },
+    {
+      "screen": "roots",
+      "language": "pt",
+      "characters": 945,
+      "reviewed": true
+    },
+    {
+      "screen": "journal",
+      "language": "pt",
+      "characters": 2596,
+      "reviewed": true
+    },
+    {
+      "screen": "kit",
+      "language": "pt",
+      "characters": 983,
+      "reviewed": true
+    },
+    {
+      "screen": "saved-message",
+      "language": "pt",
+      "characters": 1014,
+      "reviewed": true
+    },
+    {
+      "screen": "projects-dialog",
+      "language": "pt",
+      "characters": 1265,
+      "reviewed": true
+    },
+    {
+      "screen": "import-error",
+      "language": "pt",
+      "characters": 1066,
+      "reviewed": true
+    },
+    {
+      "screen": "home",
+      "language": "en",
+      "characters": 4545,
+      "reviewed": true
+    },
+    {
+      "screen": "editor",
+      "language": "en",
+      "characters": 4023,
+      "reviewed": true
+    },
+    {
+      "screen": "conditions",
+      "language": "en",
+      "characters": 4926,
+      "reviewed": true
+    },
+    {
+      "screen": "results-and-plan",
+      "language": "en",
+      "characters": 16377,
+      "reviewed": true
+    },
+    {
+      "screen": "gallery",
+      "language": "en",
+      "characters": 1852,
+      "reviewed": true
+    },
+    {
+      "screen": "plants",
+      "language": "en",
+      "characters": 10353,
+      "reviewed": true
+    },
+    {
+      "screen": "species-records",
+      "language": "en",
+      "characters": 12183,
+      "reviewed": true
+    },
+    {
+      "screen": "roots",
+      "language": "en",
+      "characters": 888,
+      "reviewed": true
+    },
+    {
+      "screen": "journal",
+      "language": "en",
+      "characters": 2407,
+      "reviewed": true
+    },
+    {
+      "screen": "kit",
+      "language": "en",
+      "characters": 924,
+      "reviewed": true
+    },
+    {
+      "screen": "saved-message",
+      "language": "en",
+      "characters": 955,
+      "reviewed": true
+    },
+    {
+      "screen": "projects-dialog",
+      "language": "en",
+      "characters": 1264,
+      "reviewed": true
+    },
+    {
+      "screen": "import-error",
+      "language": "en",
+      "characters": 1000,
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+CONFLORA
+My space
+Herbarium
+Explore
+My kit
+My garden
+Rain to roots
+Projects
+PT
+Save ›
+OPEN NOTEBOOK
+Itapeva · estudo 20 m²
+01
+Space
+02
+Herbarium
+03
+Plan
+04
+Records
+Project imported.
+CONFLORA / MY SPACE ATELIER
+Itapeva · estudo 20 m²
+
+Mark your observations and record the site conditions.
+
+CONFLORA / FROM SITE TO PLANTS
+Where does water collect? Let’s investigate.
+
+Five stages, one project. Report your observations, then review what the sources support.
+
+3 / 3 core records completed
+Investigation and planning do not indicate technical approval.
+01
+Record my space
+Photo added
+Change photo ↗
+RECORDED
+02
+Observe the water
+7 observations recorded
+Mark water on image ↗
+RECORDED
+03
+Describe conditions
+Initial context recorded
+Describe conditions ↗
+RECORDED
+04
+Explore species
+Compare observations with Herbarium sources
+Review plants and sources ↗
+AVAILABLE
+05
+Organize my plan
+Bring findings, limits and next steps together
+Review site summary ↗
+AVAILABLE
+Which observation should we investigate?
+01 · Unlabeled mark
+02 · Unlabeled mark
+03 · Unlabeled mark
+04 · Unlabeled mark
+05 · Unlabeled mark
+06 · Unlabeled mark
+07 · Unlabeled mark
+CONFLORA / AREA REVIEW
+What we know about this area
+User marked a pooling observation.
+Soil drainage was described as slow without an infiltration test.
+
+Apparently slow drainage means rain garden infiltration cannot be presumed.
+
+Plant matching: The herbarium did not find species with sufficient documented matches for these conditions.
+
+Possible approaches to investigate
+Vegetated cover to explore
+
+Explore ground cover, regional species, care and local conditions; this is not proven flood control.
+
+What remains to be checked
+Record how long water remains after rainfall.
+Check nearby structures and buried utilities.
+Verify soil infiltration, runoff source and safe overflow with local guidance.
+
+Conditions are user reports; photographs do not measure infiltration, flow or flood reduction. EPA technical reference
+
+Read species and sources in the Herbarium ↗
+Suggested next action
+
+You can now review your integrated site findings.
+
+View integrated results ↗
+
+A photograph is optional; all information is user-reported. No state represents technical approval.
+
+CONFLORA / VISUAL SCENARIOS
+One photograph. Two editable alternatives.
+
+Create garden or plant marks in the editor, save A and B, and load either composition to keep editing. The original photograph is never changed.
+
+Observed site
+Composition A
+Not saved
+Create a proposal in the editor and save here.
+Save composition A
+Composition B
+Not saved
+Create a proposal in the editor and save here.
+Save composition B
+Back to site editor ↗
+
+After saving A/B, also save the project to keep both when reopening the browser.
+
+Add a garden or identified plant marker before saving a proposal.
+
+Conceptual comparison without physical scale, simulated growth or predicted flood reduction.
+
+01 Observe
+02 Draw
+03 Investigate
+Unsaved changes
+Focus mode
+Pick a marker and click the image. Select and drag markers to move them. Use arrow keys for fine adjustments.
+YOUR OBSERVATIONS
+START HERE
+Mark pooling water
+Mark roof outlet
+Trace water path
+More tools and precision controls below.
+01
+Select and move
+02
+Standing water
+03
+Roof runoff
+04
+Paved area
+05
+Vegetation
+06
+Available area
+07
+Rain garden
+TRACE & REVIEW
+Draw water path
+Draw area
+Play paths
+Add at center
+Undo
+Redo
+YOUR PHOTO
+Labels on image
+Clean preview
+Upload photo
+−
++
+1
+2
+3
+4
+5
+6
+7
+
+Interventions are conceptual illustrations. They do not calculate infiltration, slope, safety, or performance.
+
+Compare ›
+My plan
+FIELD NOTEBOOK
+Your observations
+
+Pick a marker and click the image. Select and drag markers to move them. Use arrow keys for fine adjustments.
+
+Your observations (7)
+1. Standing water
+·
+2. Standing water
+·
+3. Standing water
+·
+4. Roof runoff
+·
+5. Roof runoff
+·
+6. Roof runoff
+·
+7. Paved area
+·
+CONFLORA
+
+Educational project for BRaVE 2026 — UNESP × Kirkwood Community College
+
+An observation and conceptual-planning tool, not an engineering design.
